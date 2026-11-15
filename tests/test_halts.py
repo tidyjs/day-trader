@@ -52,3 +52,24 @@ def test_historical_run_is_unknown():
 def test_parse_handles_utf8_bom_bytes():
     assert len(halts.parse(b"\xef\xbb\xbf" + XML.encode())) == 3
     assert len(halts.parse("﻿" + XML)) == 3
+
+
+CONFIRMED = ["NASDAQ", "AMEX"]
+
+
+def test_nyse_listed_name_is_unknown_until_coverage_confirmed():
+    st = halts.status(FEED, "CCC", DAY, AS_OF, "NYSE", CONFIRMED)
+    assert st.startswith("halt status unknown") and "NYSE" in st
+    assert halts.status(FEED, "ZZZ", DAY, AS_OF, "ARCA", CONFIRMED).startswith("halt status unknown")
+    assert halts.status(FEED, "ZZZ", DAY, AS_OF, None, CONFIRMED).startswith("halt status unknown")
+    # confirmed markets behave as before
+    assert halts.status(FEED, "AAA", DAY, AS_OF, "NASDAQ", CONFIRMED).startswith("halted at")
+    assert halts.status(FEED, "ZZZ", DAY, AS_OF, "AMEX", CONFIRMED) is None
+
+
+def test_markets_log(tmp_path):
+    p = tmp_path / "halts_markets.csv"
+    halts.log_markets(FEED, p)
+    halts.log_markets(FEED, p)
+    lines = p.read_text().splitlines()
+    assert lines[0] == "fetched_at,ok,items,markets" and len(lines) == 3 and "AMEX:1 NASDAQ:1 NYSE:1" in lines[1]

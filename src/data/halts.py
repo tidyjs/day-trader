@@ -64,8 +64,32 @@ def _dt(d: str, t: str) -> Optional[datetime]:
         return None
 
 
-def status(feed: Optional[dict], sym: str, day: date, as_of: datetime) -> Optional[str]:
-    """Warning text, or None if not halted at as_of."""
+LOG_COLUMNS = ["fetched_at", "ok", "items", "markets"]
+
+
+def log_markets(feed: dict, path) -> None:
+    """Append which markets the feed labelled, so NYSE coverage can be confirmed."""
+    import csv
+    from collections import Counter
+
+    counts = Counter(i.get("Market", "") for i in feed.get("items", []))
+    new = not path.exists()
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("a", newline="") as f:
+        w = csv.writer(f)
+        if new:
+            w.writerow(LOG_COLUMNS)
+        w.writerow([feed["fetched_at"], feed["ok"], len(feed.get("items", [])), " ".join(f"{k}:{v}" for k, v in sorted(counts.items()))])
+
+
+def status(feed: Optional[dict], sym: str, day: date, as_of: datetime, exchange: Optional[str] = None,
+           confirmed_markets: Optional[List[str]] = None) -> Optional[str]:
+    """Warning text, or None if not halted at as_of.
+
+    A name listed on a market the feed is not confirmed to cover (today: NYSE,
+    ARCA, BATS) is always "unknown", so it can never get a clean pass."""
+    if confirmed_markets is not None and (exchange or "") not in confirmed_markets:
+        return f"halt status unknown ({exchange or 'unknown exchange'}: feed coverage not confirmed)"
     if not feed:
         return "halt status unknown (feed not fetched)"
     if not feed.get("ok"):

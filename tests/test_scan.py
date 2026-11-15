@@ -250,7 +250,7 @@ def test_failing_cheap_rule_skips_yahoo_and_spread():
 
 def test_disqualified_name_is_logged_with_reason():
     ed = _edgar_clean()
-    ed["filings"] = [filing("424B5", "2026-11-12", cover="2,000,000 Shares of Common Stock")]
+    ed["filings"] = [filing("424B5", "2026-11-12", cover="We are offering 2,000,000 shares of our common stock.")]
     inp = make_inputs({"GAPR": 1.0}, {"GAPR": _liquid()}, history={"GAPR": _hist_pass()}, edgar={"GAPR": ed})
     r = cands(inp)["GAPR"]
     assert r["dq_offering"] == "fail" and "424B5" in r["dq_reasons"] and not r["eligible"] and r["rule_float"] == ""
@@ -258,7 +258,7 @@ def test_disqualified_name_is_logged_with_reason():
 
 def test_possible_offering_and_unknowns_stay_eligible_with_warnings():
     ed = _edgar_clean()
-    ed["filings"] = [filing("424B2", "2026-11-12", cover="Notes due 2031")]
+    ed["filings"] = [filing("424B2", "2026-11-12", cover="Notes due 2031")]  # debt only: possible, not DQ
     ed["shares_points"] = [{"val": 20e6, "end": "2026-03-31", "filed": "2026-05-01"}]  # > 120 days old
     inp = make_inputs({"GAPR": 1.0}, {"GAPR": _liquid()}, history={"GAPR": _hist_pass()}, edgar={"GAPR": ed},
                       yahoo={"GAPR": {"fetched_at": "2026-11-13T09:15:00-05:00", "floatShares": None, "sharesOutstanding": 60e6}})
@@ -301,6 +301,7 @@ def test_gather_calls_yahoo_and_quotes_only_for_survivors(monkeypatch):
 
     called = {}
     monkeypatch.setattr(haltsmod, "fetch", lambda now: {"fetched_at": now.isoformat(), "ok": True, "items": [], "error": None, "markets": []})
+    monkeypatch.setattr(haltsmod, "log_markets", lambda feed, path: None)  # never write into real data/
     from src import catalyst as catmod
     monkeypatch.setattr(catmod, "gather", lambda alp, llm, cands, ed, as_of, cfg: ({}, {r["symbol"]: CAT_OK for r in cands}))
     monkeypatch.setattr(edgarmod, "gather", lambda ed, syms, *a, **k: {s: _edgar_clean() for s in syms})
@@ -326,7 +327,7 @@ def test_halt_feed_failure_is_a_warning_on_every_row():
 
 def test_evidence_has_sentence_and_url():
     ed = _edgar_clean()
-    f = filing("424B5", "2026-11-12", cover="Prospectus Supplement. We are offering 2,000,000 shares of our common stock at $1.00 per share. Other text.")
+    f = filing("424B5", "2026-11-12", cover="Prospectus Supplement. We are offering 2,000,000 shares of our common stock at $1.00 per share. Other text.")  # noqa
     f["url"] = "https://www.sec.gov/Archives/edgar/data/1/000000000026000001/d.htm"
     ed["filings"] = [f]
     inp = make_inputs({"GAPR": 1.0}, {"GAPR": _liquid()}, history={"GAPR": _hist_pass()}, edgar={"GAPR": ed})
@@ -346,6 +347,9 @@ def test_funnel_counts_only_this_rule():
     assert (f["rule_gap"]["fail"], f["rule_gap"]["fail_only_this"]) == (2, 1)
     assert (f["rule_t212"]["fail"], f["rule_t212"]["fail_only_this"]) == (1, 0)
     assert f["rule_float"]["not_checked"] == 1 and f["dq_offering"]["unknown"] == 1
+    # cost order: gap runs before t212, so A and B are removed at gap and only C reaches t212
+    assert f["rule_gap"]["reached"] == 3 and f["rule_gap"]["fail_at_step"] == 2
+    assert f["rule_t212"]["reached"] == 1 and f["rule_t212"]["fail_at_step"] == 0
 
 
 def _cat(**out):
@@ -384,3 +388,11 @@ def test_dollar_volume_is_python_version_independent():
     st = scan.premarket_stats(bars_, *[__import__("datetime").datetime.fromisoformat(x) for x in ("2026-11-13T04:00:00-05:00", "2026-11-13T08:59:00-05:00")])
     exact = sum(Decimal(v) * Decimal(repr(c)) for v, c in vals)
     assert st["pm_dollar_volume"] == round(float(exact), 2)
+
+
+def test_nyse_name_never_gets_a_clean_halt_pass():
+    inp = make_inputs({"GAPR": 1.0}, {"GAPR": _liquid()}, history={"GAPR": _hist_pass()}, edgar={"GAPR": _edgar_clean()}, catalyst={"GAPR": CAT_OK})
+    inp["universe"]["exchanges"] = {"GAPR": "NYSE"}
+    r = cands(inp)["GAPR"]
+    assert r["exchange"] == "NYSE" and r["halt_status"].startswith("halt status unknown") and "coverage not confirmed" in r["warnings"]
+    assert r["eligible"]  # a warning, never a disqualifier

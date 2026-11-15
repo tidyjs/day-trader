@@ -35,14 +35,14 @@ OFFERING_FORMS = ("424B", "S-1", "S-3", "F-1", "F-3")
 CURRENT_REPORTS = ("8-K", "6-K")
 PROXY_FORMS = ("DEF 14A", "PRE 14A", "DEF 14C", "PRE 14C")
 
-# Union of the patterns the rules look for; excerpts are cut around these.
-KEYWORDS = re.compile(
-    r"common stock|ordinary shares|american depositary|pre-funded|warrants? to purchase|units?,? each consisting"
-    r"|at[- ]the[- ]market|equity distribution agreement|sales agreement|public offering|registered direct"
-    r"|private placement|securities purchase agreement|underwriting agreement|placement agency|prospectus supplement"
-    r"|reverse (?:stock |share )?split|share consolidation|consolidation of",
-    re.I,
-)
+# Excerpts are cut around anything the rules test, built from the rules' own
+# patterns so a rule can never look for wording the excerpts dropped.
+def _keywords() -> "re.Pattern":
+    from src import rules as R
+    return re.compile("|".join(f"(?:{p.pattern})" for p in (R.EQUITY, R.OFFER, R.ISSUANCE, R.RESALE, R.UPDATE, R.SHELF, R.RSPLIT)), re.I)
+
+
+KEYWORDS = _keywords()
 
 
 def html_to_text(raw: str) -> str:
@@ -151,10 +151,45 @@ def recent_filings(sub: dict, as_of: datetime, since: date) -> List[dict]:
                 "doc": rec["primaryDocument"][i],
                 "items": rec.get("items", [""] * len(rec["form"]))[i] or "",
                 "desc": rec.get("primaryDocDescription", [""] * len(rec["form"]))[i] or "",
+                "file_number": rec.get("fileNumber", [""] * len(rec["form"]))[i] or "",
                 "url": DOC_URL.format(cik_int=cik, acc=rec["accessionNumber"][i].replace("-", ""), doc=rec["primaryDocument"][i]) if cik else "",
             }
         )
     return out
+
+
+BASE_FORMS = ("424B", "S-1", "F-1", "S-3", "F-3")
+
+
+def find_base(sub: dict, f: dict, as_of: datetime) -> Optional[dict]:
+    """For a prospectus supplement, the registration it supplements: the earliest
+    final prospectus (424B*) with the same file number, else the earliest
+    S-1/F-1/S-3/F-3, accepted before as_of."""
+    fn = f.get("file_number")
+    if not fn:
+        return None
+    rec = sub.get("filings", {}).get("recent", {})
+    cik = int(sub.get("cik", 0) or 0)
+    found = []
+    for i, form in enumerate(rec.get("form", [])):
+        if rec.get("fileNumber", [""] * len(rec["form"]))[i] != fn or rec["accessionNumber"][i] == f["accession"]:
+            continue
+        if not form.upper().startswith(BASE_FORMS):
+            continue
+        acc_t = datetime.fromisoformat(rec["acceptanceDateTime"][i].replace("Z", "+00:00"))
+        if acc_t > as_of.astimezone(UTC):
+            continue
+        found.append((0 if form.upper().startswith("424B") else 1, rec["filingDate"][i], i))
+    if not found:
+        return None
+    # The final prospectus (424B*) is the operative document; fall back to the
+    # registration statement only if no 424B exists. Earliest within that kind.
+    _, _, i = min(found, key=lambda x: (x[0], x[1]))
+    return {
+        "form": rec["form"][i], "filed": rec["filingDate"][i], "accession": rec["accessionNumber"][i],
+        "doc": rec["primaryDocument"][i],
+        "url": DOC_URL.format(cik_int=cik, acc=rec["accessionNumber"][i].replace("-", ""), doc=rec["primaryDocument"][i]),
+    }
 
 
 def wants_text(f: dict, day: date, cfg: dict) -> Optional[str]:
@@ -181,8 +216,10 @@ def gather(ed: Edgar, symbols: List[str], day: date, as_of: datetime, cfg: dict,
             out[sym] = {"cik": None}
             continue
         rec: dict = {"cik": cik, "filings": [], "shares_points": [], "errors": []}
+        sub = {}
         try:
-            fl = recent_filings(ed.submissions(cik), as_of, since)
+            sub = ed.submissions(cik)
+            fl = recent_filings(sub, as_of, since)
         except Exception as e:
             rec["errors"].append(f"submissions: {type(e).__name__}: {e}")
             fl = []
@@ -201,6 +238,18 @@ def gather(ed: Edgar, symbols: List[str], day: date, as_of: datetime, cfg: dict,
                 f["text"] = excerpts(txt, cfg["cover_chars"], cfg["excerpt_chars"])
             except Exception as e:
                 f["text_error"] = f"{type(e).__name__}: {e}"
+                continue
+            # A supplement that only attaches a report: read the registration it supplements.
+            from src import rules as R
+            if f["form"].upper().startswith("424B") and any(R.UPDATE.search(h) for h in [f["text"]["cover"]] + f["text"]["hits"]):
+                base = find_base(sub, f, as_of)
+                if base:
+                    try:
+                        btxt = ed.doc_text(cik, base["accession"], base["doc"], cfg["doc_max_bytes"])
+                        base["text"] = excerpts(btxt, cfg["cover_chars"], cfg["excerpt_chars"])
+                    except Exception as e:
+                        base["text_error"] = f"{type(e).__name__}: {e}"
+                    f["base"] = base
         rec["docs_capped"] = max(0, len(need) - cfg["max_docs_per_name"])
         rec["filings"] = fl
         out[sym] = rec

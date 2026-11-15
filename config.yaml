@@ -71,6 +71,12 @@ catalyst:                     # SPEC 6; the LLM output is one input, never a sel
   # "no verifiable catalyst AND no prior-day volume surge" disqualifies (4.2);
   # the surge uses filters.continuation volume_multiple / avg_volume_sessions.
 
+halts:
+  # Markets whose halts the Nasdaq Trader feed is confirmed to carry. A name listed
+  # anywhere else gets "halt status unknown", never a clean pass. NYSE, ARCA and
+  # BATS stay out until a scan's feed shows them (see data/halts_markets.csv).
+  confirmed_markets: [NASDAQ, AMEX]
+
 t212:
   base_url_env: T212_BASE_URL
   default_base_url: https://live.trading212.com

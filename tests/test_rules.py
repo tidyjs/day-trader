@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from datetime import date, datetime
+from pathlib import Path
 
 import pytest
 
@@ -122,23 +123,103 @@ def test_8k_item_302_disqualifies():
     assert st == "fail" and "3.02" in dq[0]
 
 
-def test_424b_with_equity_on_cover_disqualifies():
-    f = filing("424B5", "2026-11-12", cover="Prospectus Supplement 5,000,000 Shares of Common Stock and Pre-Funded Warrants")
-    st, dq, _, ev = R.offering([f], DAY, 5)
-    assert st == "fail"
+# ---- Real MRLN wording (11-13). The old rule disqualified it on boilerplate.
+MRLN_COVER = (Path(__file__).parent / "data" / "mrln_424b3_2026-11-13_cover.txt").read_text()
+MRLN_BASE = ("Secondary Offering of up to 13,336,000 SHARES OF COMMON STOCK This prospectus relates to the offer and resale, "
+             "from time to time, by the selling stockholder named in this prospectus, (including its successors or permitted assigns) "
+             "(the \u201c Selling Stockholder \u201d) of up to 13,336,000 shares of common stock, par value $0.0001. "
+             "We will not receive any proceeds from the sale of the Resale Shares by the Selling Stockholder.")
+
+
+def _mrln(base=True):
+    f = filing("424B3", "2026-11-13", cover=MRLN_COVER)
+    if base:
+        f["base"] = {"form": "424B3", "filed": "2026-05-13", "url": "https://www.sec.gov/x", "text": {"cover": MRLN_BASE, "hits": [], "chars": 1}}
+    return f
+
+
+def test_mrln_boilerplate_listing_sentence_is_not_an_offering():
+    assert "Our shares of Common Stock are listed on the Nasdaq" in MRLN_COVER
+    assert R.ISSUANCE.search(MRLN_COVER) is None
+
+
+def test_mrln_supplement_to_resale_registration_is_a_warning():
+    st, dq, warn, ev = R.offering([_mrln()], DAY, 5)
+    assert st == "pass" and dq == []
+    assert warn[0].startswith("resale registration, supply overhang") and "2026-05-13" in warn[0]
+    assert "We will not receive any proceeds" in ev[0]["sentence"]
+
+
+def test_mrln_attached_10q_history_does_not_count_as_a_new_raise():
+    # The real 11-13 supplement embeds the 10-Q, which describes the past PIPE.
+    f = _mrln()
+    f["text"]["hits"] = ['the Company would issue shares of its 12.0% Series A Cumulative Convertible Preferred Stock ("Series A Preferred Stock") '
+                         'and common stock purchase warrants ("PIPE Warrants") in a PIPE transaction for aggregate gross proceeds of $120,000 (the "Closing PIPE").']
+    st, dq, warn, ev = R.offering([f], DAY, 5)
+    assert st == "pass" and warn[0].startswith("resale registration, supply overhang")
+
+
+def test_supplement_whose_cover_is_a_new_offering_still_disqualifies():
+    f = filing("424B5", "2026-11-12", cover="This prospectus supplement amends and supplements the prospectus. We are offering 3,000,000 shares of our common stock.")
+    assert R.offering([f], DAY, 5)[0] == "fail"
+
+
+def test_mrln_supplement_without_base_is_still_a_warning_not_silent():
+    st, dq, warn, ev = R.offering([_mrln(base=False)], DAY, 5)
+    assert st == "pass" and warn and "updating an existing registration" in warn[0]
+
+
+def test_resale_prospectus_itself_is_a_warning():
+    st, dq, warn, _ = R.offering([filing("424B3", "2026-11-12", cover=MRLN_BASE)], DAY, 5)
+    assert st == "pass" and warn[0].startswith("resale registration")
+
+
+def test_supplement_to_active_atm_disqualifies():
+    f = filing("424B5", "2026-11-12", cover="This prospectus supplement updates, amends and supplements the prospectus with the information contained in our Quarterly Report on Form 10-Q.")
+    f["base"] = {"form": "424B5", "filed": "2026-03-01", "url": "u", "text": {"cover": "We have entered into an At The Market Offering Agreement with H.C. Wainwright under which we may offer and sell shares of our common stock having an aggregate offering price of up to $5,000,000.", "hits": [], "chars": 1}}
+    assert R.offering([f], DAY, 5)[0] == "fail"
+
+
+# ---- Company's own issuance disqualifies
+
+
+@pytest.mark.parametrize("text", [
+    "We are offering 2,000,000 shares of our common stock and pre-funded warrants to purchase up to 500,000 shares.",
+    "XYZ Corp. announced the pricing of its $5 million registered direct offering of ordinary shares.",
+    "The Company entered into a securities purchase agreement with certain institutional investors for the sale of 3,000,000 shares.",
+    "We have entered into an equity distribution agreement with Maxim Group LLC relating to our common stock.",
+    "The Company announced the closing of its previously announced underwritten public offering.",
+    "The Company has agreed to issue to the investors 1,000,000 shares of common stock in a warrant inducement transaction.",
+])
+@pytest.mark.parametrize("form", ["424B5", "8-K", "6-K"])
+def test_own_issuance_disqualifies(text, form):
+    st, dq, warn, ev = R.offering([filing(form, "2026-11-12", hits=[text])], DAY, 5)
+    assert st == "fail", (form, text)
+    assert ev[0]["sentence"] and ev[0]["result"] == "disqualify"
+
+
+@pytest.mark.parametrize("text", [
+    "Our shares of Common Stock are listed on the Nasdaq Stock Market LLC under the symbol \u201cABCD\u201d.",
+    "On November 11, 2026, the closing price of our Common Stock was $1.01 per share.",
+    "Holders of our common stock are entitled to one vote per share.",
+    "In 2025 we completed our initial public offering.",
+])
+def test_generic_common_stock_mentions_do_not_disqualify(text):
+    st, dq, warn, ev = R.offering([filing("424B3", "2026-11-12", cover=text)], DAY, 5)
+    assert st == "pass" and dq == []
+    assert warn and warn[0].startswith("possible offering")  # an offering form is still never silent
 
 
 def test_424b2_debt_only_is_possible_not_disqualify():
     # M0: Apple's notes offering came through as 424B2.
-    f = filing("424B2", "2026-11-12", cover="$1,000,000,000 4.25% Notes due 2036")
-    st, dq, maybe, ev = R.offering([f], DAY, 5)
-    assert st == "pass" and dq == [] and "no equity wording" in maybe[0]
+    st, dq, maybe, ev = R.offering([filing("424B2", "2026-11-12", cover="$1,000,000,000 4.25% Notes due 2036")], DAY, 5)
+    assert st == "pass" and dq == [] and "no equity-raise wording" in maybe[0]
 
 
-def test_424b_equity_only_deep_in_text_is_possible():
-    f = filing("424B3", "2026-11-12", cover="Prospectus", hits=["... the selling stockholders may resell common stock ..."])
-    st, dq, maybe, ev = R.offering([f], DAY, 5)
-    assert st == "pass" and "not on its cover" in maybe[0]
+def test_new_shelf_is_possible_not_disqualify():
+    f = filing("S-3", "2026-11-12", cover="We may offer and sell from time to time, in one or more offerings, common stock, preferred stock and warrants.")
+    st, dq, maybe, _ = R.offering([f], DAY, 5)
+    assert st == "pass" and "shelf registration" in maybe[0]
 
 
 def test_unreadable_offering_form_is_never_a_silent_pass():
@@ -148,20 +229,10 @@ def test_unreadable_offering_form_is_never_a_silent_pass():
     assert maybe and "document cap" in maybe[0]
 
 
-def test_8k_offering_language_with_equity_disqualifies():
-    f = filing("8-K", "2026-11-12", items="1.01,8.01", hits=["entered into a securities purchase agreement for the sale of 2,000,000 shares of common stock"])
-    assert R.offering([f], DAY, 5)[0] == "fail"
-
-
-def test_6k_offering_language_disqualifies_foreign_filer():
-    f = filing("6-K", "2026-11-12", hits=["announces pricing of $5 million registered direct offering of ordinary shares"])
-    assert R.offering([f], DAY, 5)[0] == "fail"
-
-
-def test_8k_offering_language_without_equity_is_possible():
+def test_8k_generic_offering_language_is_possible():
     f = filing("8-K", "2026-11-12", items="8.01", hits=["the Company closed its private placement"])
     st, dq, maybe, ev = R.offering([f], DAY, 5)
-    assert st == "pass" and "no equity terms" in maybe[0]
+    assert st == "pass" and "no issuance wording" in maybe[0]
 
 
 def test_earnings_8k_is_not_an_offering():
@@ -170,9 +241,9 @@ def test_earnings_8k_is_not_an_offering():
 
 
 def test_offering_older_than_lookback_ignored():
-    f = filing("424B5", "2026-11-07", cover="Shares of Common Stock")
-    assert R.offering([f], DAY, 5)[0] == "pass"
-    assert R.offering([filing("424B5", "2026-11-08", cover="Shares of Common Stock")], DAY, 5)[0] == "fail"
+    text = "We are offering 1,000,000 shares of common stock."
+    assert R.offering([filing("424B5", "2026-11-07", cover=text)], DAY, 5)[0] == "pass"
+    assert R.offering([filing("424B5", "2026-11-08", cover=text)], DAY, 5)[0] == "fail"
 
 
 # ------------------------------------------------------------ reverse split and 3.01
@@ -243,3 +314,38 @@ def test_shares_mismatch_warning():
     assert R.shares_mismatch({"sharesOutstanding": 3.3e6}, {"val": 13.95e6}, 25)  # YMAT in M0
     assert R.shares_mismatch({"sharesOutstanding": 10e6}, {"val": 11e6}, 25) is None
     assert R.shares_mismatch(None, {"val": 1}, 25) is None
+
+
+def test_at_the_market_needs_a_word_boundary():
+    # Real MRLN S-1 sentence that the unbounded pattern matched as an ATM.
+    s = "We cannot be sure that the market will continue to grow or that it will grow in ways we anticipate."
+    for rx in (R.EQUITY, R.OFFER, R.ISSUANCE, R.STRONG_PRIMARY):
+        assert rx.search(s) is None, rx.pattern[:40]
+    assert R.ISSUANCE.search("we entered into an at-the-market sales agreement")
+
+
+def test_resale_cover_wins_over_deep_mention_of_a_past_offering():
+    f = _mrln()
+    f["base"]["text"]["hits"] = ["In 2025 we completed an underwritten public offering of 2,000,000 shares."]
+    st, dq, warn, _ = R.offering([f], DAY, 5)
+    assert st == "pass" and warn[0].startswith("resale registration")
+
+
+def test_mixed_primary_and_secondary_registration_is_possible_not_resale():
+    # Real MRLN 424B3 2026-04-21 cover: warrant-exercise shares (primary) plus resale.
+    base = ("Primary Offering of up to 66,813,783 SHARES OF COMMON STOCK Secondary Offering of up to 157,700,431 SHARES OF COMMON STOCK "
+            "736,744 SHARES OF SERIES A PREFERRED STOCK 760,232 SERIES A PREFERRED INVESTOR WARRANTS This prospectus relates to the offer and resale by the selling stockholders.")
+    f = _mrln()
+    f["base"]["text"]["cover"] = base
+    st, dq, warn, _ = R.offering([f], DAY, 5)
+    assert st == "pass" and warn[0].startswith("possible offering") and "primary offering prospectus" in warn[0]
+
+
+def test_selling_holder_sale_methods_are_not_primary_wording():
+    # Real sentence from MRLN's 05-13 resale prospectus cover.
+    cover = MRLN_BASE + (" The Selling Stockholder may sell the Resale Shares through ordinary brokerage transactions, "
+                         "in underwritten offerings, directly to market makers of our securities or through any other means.")
+    f = _mrln()
+    f["base"]["text"]["cover"] = cover
+    st, dq, warn, _ = R.offering([f], DAY, 5)
+    assert st == "pass" and warn[0].startswith("resale registration, supply overhang")

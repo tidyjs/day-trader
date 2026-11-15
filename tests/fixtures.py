@@ -47,12 +47,13 @@ def make_inputs(prior_close: dict, bars: dict, t212=("GAPR",), names=None, as_of
     syms = sorted(set(prior_close) | set(bars))
     return copy.deepcopy(
         {
-            "schema": 4,
+            "schema": 5,
             "day": DAY,
             "as_of_et": as_of_dt.isoformat(),
             "data_cutoff_et": cutoff.isoformat(),
             "prior_day": "2026-11-12",
-            "universe": {"source": "fixture", "fetched_at": fetched_at or as_of_dt.isoformat(), "symbols": {s: (names or {}).get(s, f"{s} Inc. Common Stock") for s in syms}},
+            "universe": {"source": "fixture", "fetched_at": fetched_at or as_of_dt.isoformat(), "symbols": {s: (names or {}).get(s, f"{s} Inc. Common Stock") for s in syms},
+                         "exchanges": {s: "NASDAQ" for s in syms}},
             "prior_close": prior_close,
             "premarket_bars": bars,
             "t212": {"path": "fixture", "as_of": t212_as_of, "sha256": "x", "refresh_error": None, "symbols": list(t212)},

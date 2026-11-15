@@ -40,7 +40,7 @@ from src.data import halts
 from src.data import t212 as t212mod
 from src.timeutil import ET, at_et, bar_complete_before, data_cutoff, parse_ts
 
-SCHEMA = 4
+SCHEMA = 5
 
 # Must-pass rules (SPEC 4.1), in cost order. Float is checked last (Yahoo).
 MUST_PASS = ["rule_price", "rule_gap", "rule_t212", "rule_pm_dollar_volume", "rule_pm_trades", "rule_continuation", "rule_prior_range"]
@@ -58,11 +58,16 @@ CSV_COLUMNS = [
     "edgar_shares_out", "edgar_shares_asof", "yahoo_shares_out", "spread_pct",
     "catalyst_status", "catalyst_type", "catalyst_quality", "catalyst_summary", "catalyst_forced_none",
     "news_used", "news_dropped_roundup", "prior_day_volume_multiple",
-    "halt_status", "dq_reasons", "evidence", "eligible", "warnings", "t212_list", "scan_file",
+    "exchange", "halt_status", "dq_reasons", "evidence", "eligible", "warnings", "t212_list", "scan_file",
 ]
 
 
 # --------------------------------------------------------------------- universe
+
+
+def exchanges_of(assets: List[dict], symbols) -> Dict[str, str]:
+    ex = {a["symbol"]: a.get("exchange", "") for a in assets}
+    return {s: ex.get(s, "") for s in sorted(symbols)}
 
 
 def common_stock_filter(assets: List[dict], cfg: Dict[str, Any]) -> Dict[str, str]:
@@ -219,7 +224,10 @@ def apply_filters(r: dict, inp: Dict[str, Any], cfg: Dict[str, Any], scan_warns:
 
     # 4.2 / 4.3 from EDGAR
     # 4.3 halt at scan time (warning only; unknown is a warning, never silent)
-    r["halt_status"] = halts.status(inp.get("halts"), sym, day, datetime.fromisoformat(inp["as_of_et"])) or "not halted"
+    exch = inp["universe"].get("exchanges", {}).get(sym)
+    r["exchange"] = exch or ""
+    r["halt_status"] = halts.status(inp.get("halts"), sym, day, datetime.fromisoformat(inp["as_of_et"]),
+                                    exch, cfg["halts"]["confirmed_markets"]) or "not halted"
     if r["halt_status"] != "not halted":
         warns.append(r["halt_status"])
 
@@ -236,7 +244,7 @@ def apply_filters(r: dict, inp: Dict[str, Any], cfg: Dict[str, Any], scan_warns:
         r["dq_reverse_split"], rs, rs_warn, ev2 = R.reverse_split(fl, day, ec["reverse_split_lookback_days"])
         evidence += ev1 + ev2
         dq_reasons += dq + rs
-        warns += [f"possible offering: {m}" for m in maybe] + rs_warn
+        warns += maybe + rs_warn
         warns += R.deficiency(fl, day, ec["deficiency_lookback_days"])
         if ed.get("errors"):
             r["dq_offering"] = R.UNKNOWN if r["dq_offering"] == R.PASS else r["dq_offering"]
@@ -266,7 +274,7 @@ def apply_filters(r: dict, inp: Dict[str, Any], cfg: Dict[str, Any], scan_warns:
     r["catalyst_forced_none"] = (cat or {}).get("forced_none", False)
     r["news_used"] = (cat or {}).get("items_used")
     r["news_dropped_roundup"] = (cat or {}).get("items_dropped_roundup")
-    if out.get("dilution_language") and r.get("dq_offering") == R.PASS and not any(w.startswith("possible offering") for w in warns):
+    if out.get("dilution_language") and r.get("dq_offering") == R.PASS and not any(w.startswith(("possible offering", "resale registration")) for w in warns):
         warns.append("classifier: dilution language in news, no offering filing found")
 
     # Only names that survive everything cheaper get quotes and Yahoo.
@@ -317,7 +325,8 @@ def gather_inputs(alp, edgar, cfg: Dict[str, Any], day: date, as_of: datetime, t
     is_td, prior = trading_days(alp, day)
     if not is_td:
         raise RuntimeError(f"{day} is not a trading day")
-    universe = common_stock_filter(alp.assets(), cfg)
+    assets = alp.assets()
+    universe = common_stock_filter(assets, cfg)
     daily = alp.bars(list(universe), "1Day", at_et(prior, "00:00"), at_et(prior, "23:59"), feed="sip", batch=1000)
     prior_close = {}
     for sym, bs in daily.items():
@@ -338,7 +347,8 @@ def gather_inputs(alp, edgar, cfg: Dict[str, Any], day: date, as_of: datetime, t
         "as_of_et": as_of.astimezone(ET).isoformat(),
         "data_cutoff_et": cutoff.astimezone(ET).isoformat(),
         "prior_day": prior.isoformat(),
-        "universe": {"source": "alpaca /v2/assets, common-stock heuristic", "fetched_at": now.astimezone(ET).isoformat(), "symbols": universe},
+        "universe": {"source": "alpaca /v2/assets, common-stock heuristic", "fetched_at": now.astimezone(ET).isoformat(), "symbols": universe,
+                     "exchanges": exchanges_of(assets, universe)},
         "prior_close": dict(sorted(prior_close.items())),
         "premarket_bars": {k: pm[k] for k in sorted(pm)},
         "t212": {
@@ -366,6 +376,7 @@ def gather_filter_inputs(alp, edgar, cfg: Dict[str, Any], inp: Dict[str, Any], a
     day, prior = date.fromisoformat(inp["day"]), date.fromisoformat(inp["prior_day"])
     # The halts feed keeps no history, so its contents are saved at every scan.
     inp["halts"] = halts.fetch(now)
+    halts.log_markets(inp["halts"], ROOT / "data" / "halts_markets.csv")
     syms = [r["symbol"] for r in evaluate(inp, cfg)["candidates"]]
     if not syms:
         return inp
@@ -462,6 +473,92 @@ def load_scan_inputs(path: Path) -> tuple:
     return inp, j["outputs"]
 
 
+def _load_for_refresh(path: Path) -> tuple:
+    load_env()
+    path = path.resolve()
+    j = json.loads(path.read_text())
+    inp = j["inputs"]
+    if inp.get("schema") not in (SCHEMA - 1, SCHEMA):
+        raise RuntimeError(f"{path.name} is schema {inp.get('schema')}; refresh supports {SCHEMA - 1}-{SCHEMA}")
+    if "symbols" not in inp["t212"]:
+        inp["t212"]["symbols"] = t212mod.load_file(ROOT / inp["t212"]["path"], ROOT).symbols
+    inp["schema"] = SCHEMA
+    return path, inp
+
+
+def _fill_new_survivors(inp: Dict[str, Any], cfg: Dict[str, Any]) -> int:
+    """SIP quotes and Yahoo for names that newly pass every cheaper rule."""
+    from src.data import yahoo as yahoomod
+    from src.data.alpaca import Alpaca
+
+    new = [r["symbol"] for r in evaluate(inp, cfg)["candidates"] if passes_cheap(r) and r["symbol"] not in inp.get("yahoo", {})]
+    if new:
+        cutoff, now = datetime.fromisoformat(inp["data_cutoff_et"]), datetime.now(tz=ET)
+        w, keep = cfg["warnings"]["spread_window_minutes"], cfg["warnings"]["spread_max_quotes"]
+        q = Alpaca().quotes(new, cutoff - timedelta(minutes=w), cutoff, feed="sip")
+        for s_ in new:
+            inp["quotes"][s_] = [{"t": x["t"], "bp": x["bp"], "ap": x["ap"]} for x in sorted(q.get(s_, []), key=lambda x: x["t"]) if parse_ts(x["t"]) < cutoff][-keep:]
+        inp["yahoo"].update(yahoomod.gather(new, now))
+    return len(new)
+
+
+def reclassify(path: Path, cfg: Dict[str, Any]) -> Dict[str, Any]:
+    """Re-run the classifier on a saved scan's own news and filings (as saved at
+    scan time, so no look-ahead). Only the model is called again."""
+    import anthropic
+    from src import catalyst as catmod
+
+    path, inp = _load_for_refresh(path)
+    llm = anthropic.Anthropic()
+    as_of = datetime.fromisoformat(inp["as_of_et"])
+    since = (as_of.date() - timedelta(days=5)).isoformat()
+    for r in evaluate(inp, cfg)["candidates"]:
+        sym = r["symbol"]
+        fl = [f for f in (inp["edgar"].get(sym) or {}).get("filings", []) if f["filed"] >= since]
+        inp["catalyst"][sym] = catmod.classify(llm, sym, r["name"], inp["news"].get(sym, []), fl, cfg["catalyst"])
+    n_new = _fill_new_survivors(inp, cfg)
+    out = evaluate(inp, cfg)
+    save(cfg, inp, out, path)
+    print(f"{path.name}: reclassified {len(inp['catalyst'])} names, {n_new} new survivors, {out['summary']['eligible']} eligible")
+    return out
+
+
+def refresh_edgar(path: Path, cfg: Dict[str, Any]) -> Dict[str, Any]:
+    """Re-fetch only the EDGAR inputs of a saved scan, as of its original scan
+    time (no look-ahead), keeping bars, news and classifier outputs as saved.
+    Names that newly survive get SIP quotes and Yahoo, as in a normal scan."""
+    from src.data import edgar as edgarmod
+    from src.data import yahoo as yahoomod
+    from src.data.alpaca import Alpaca
+
+    load_env()
+    path = path.resolve()
+    j = json.loads(path.read_text())
+    inp = j["inputs"]
+    if inp.get("schema") not in (SCHEMA - 1, SCHEMA):
+        raise RuntimeError(f"{path.name} is schema {inp.get('schema')}; refresh supports {SCHEMA - 1}-{SCHEMA}")
+    if "symbols" not in inp["t212"]:
+        inp["t212"]["symbols"] = t212mod.load_file(ROOT / inp["t212"]["path"], ROOT).symbols
+    inp["schema"] = SCHEMA
+    day, as_of = date.fromisoformat(inp["day"]), datetime.fromisoformat(inp["as_of_et"])
+    cutoff, now = datetime.fromisoformat(inp["data_cutoff_et"]), datetime.now(tz=ET)
+    syms = [r["symbol"] for r in evaluate(inp, cfg)["candidates"]]
+    ed = edgarmod.Edgar()
+    inp["edgar"] = edgarmod.gather(ed, syms, day, as_of, cfg["edgar"], ROOT / cfg["paths"]["cache"], now.date())
+    new = [r["symbol"] for r in evaluate(inp, cfg)["candidates"] if passes_cheap(r) and r["symbol"] not in inp.get("yahoo", {})]
+    if new:
+        alp = Alpaca()
+        w, keep = cfg["warnings"]["spread_window_minutes"], cfg["warnings"]["spread_max_quotes"]
+        q = alp.quotes(new, cutoff - timedelta(minutes=w), cutoff, feed="sip")
+        for s_ in new:
+            inp["quotes"][s_] = [{"t": x["t"], "bp": x["bp"], "ap": x["ap"]} for x in sorted(q.get(s_, []), key=lambda x: x["t"]) if parse_ts(x["t"]) < cutoff][-keep:]
+        inp["yahoo"].update(yahoomod.gather(new, now))
+    out = evaluate(inp, cfg)
+    save(cfg, inp, out, path)
+    print(f"{path.name}: EDGAR refreshed ({ed.calls} calls), {len(new)} new survivors, {out['summary']['eligible']} eligible")
+    return out
+
+
 def rescore(path: Path, cfg: Dict[str, Any]) -> Dict[str, Any]:
     """Recompute and save a scan's outputs from its saved inputs. No network."""
     path = path.resolve()
@@ -532,10 +629,18 @@ def main(argv: Optional[List[str]] = None) -> int:
     ap.add_argument("--as-of", help="HH:MM ET, default the configured scan time")
     ap.add_argument("--replay", type=Path)
     ap.add_argument("--rescore", type=Path, help="recompute outputs from a saved scan's inputs (no network)")
+    ap.add_argument("--refresh-edgar", type=Path, help="re-fetch a saved scan's EDGAR inputs as of its scan time")
+    ap.add_argument("--reclassify", type=Path, help="re-run the classifier on a saved scan's own news")
     ap.add_argument("--no-t212-refresh", action="store_true")
     a = ap.parse_args(argv)
     if a.replay:
         return 0 if replay(a.replay, load_config()) else 1
+    if a.reclassify:
+        reclassify(a.reclassify, load_config())
+        return 0
+    if a.refresh_edgar:
+        refresh_edgar(a.refresh_edgar, load_config())
+        return 0
     if a.rescore:
         out = rescore(a.rescore, load_config())
         print(f"{a.rescore.name}: rescored ({out['summary']['candidates']} candidates, {out['summary']['eligible']} eligible)")

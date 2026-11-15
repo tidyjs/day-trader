@@ -44,18 +44,19 @@ All numbers below live in `config.yaml` and are assumptions to be tested, not kn
 
 ### 4.2 Disqualifiers (any one removes the name)
 
-- Offering, ATM program, shelf takedown or prospectus filing in the last 5 days, when the evidence is clear: an EDGAR 424B*, S-1, S-3, F-1 or F-3 (or amendment) whose text names common stock, warrants, pre-funded warrants, units or an ATM; an 8-K with offering language; or an 8-K item 3.02 (unregistered sale of equity). A filing type alone is not enough (M0: `424B2` also covers debt notes). Ambiguous cases become the "possible offering" warning in 4.3, never a silent pass.
+- Offering, ATM program, shelf takedown or prospectus filing in the last 5 days, when the evidence is clear: an EDGAR 424B*, S-1, S-3, F-1 or F-3 (or amendment) whose text names common stock, warrants, pre-funded warrants, units or an ATM; an 8-K with offering language; or an 8-K item 3.02 (unregistered sale of equity). A filing type alone is not enough (M0: `424B2` also covers debt notes). Ambiguous cases become the "possible offering" warning in 4.3, never a silent pass. The match must be wording about the company's **own** issuance ("we are offering", a securities purchase / underwriting / ATM agreement, pricing or closing of its offering), not a generic mention of listed common stock (M3: MRLN was wrongly disqualified on "Our shares of Common Stock are listed on Nasdaq"). A prospectus supplement that only attaches a periodic report is judged by the registration it supplements.
 - Reverse split announced or pending.
 - Classifier flags promo or pump-style news, or there is no verifiable catalyst and no prior-day volume surge.
 
 ### 4.3 Warnings (name stays on the list with a visible tag)
 
-- Halted at scan time (show halt time).
+- Halted at scan time (show halt time). Source: Nasdaq Trader halts feed, saved in each scan. Feed failure, a historical run, or a listing market whose feed coverage is not confirmed (NYSE, ARCA, BATS until seen in the feed) gives "halt status unknown", never a clean pass.
 - Estimated spread over 3% (show the number).
 - Float figure missing or stale, including EDGAR shares outstanding that is missing or older than 120 days (common for foreign filers).
 - Yahoo and EDGAR shares outstanding differ by more than 25% (often a reverse split or new issuance since the last filing).
 - 8-K item 3.01 (listing-standards deficiency) in the last 90 days. Often comes before a reverse split.
 - Possible offering: an offering-type filing in the last 5 days that does not clearly meet the 4.2 disqualifier test.
+- Resale registration, supply overhang: selling holders may sell registered shares and the company receives no proceeds. A warning, not a disqualifier.
 - Classifier reports dilution language in recent news but no filing was found.
 - T212 list older than 1 day (show its age).
 
