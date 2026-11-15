@@ -60,6 +60,17 @@ edgar:
   cover_chars: 5000
   excerpt_chars: 300
 
+catalyst:                     # SPEC 6; the LLM output is one input, never a selector
+  model: claude-haiku-5-5
+  effort: low
+  max_tokens: 4000
+  news_lookback_hours: 48
+  max_symbols_per_item: 3     # more tags than this = a "stocks moving" roundup, dropped
+  max_items: 20
+  summary_chars: 600
+  # "no verifiable catalyst AND no prior-day volume surge" disqualifies (4.2);
+  # the surge uses filters.continuation volume_multiple / avg_volume_sessions.
+
 t212:
   base_url_env: T212_BASE_URL
   default_base_url: https://live.trading212.com

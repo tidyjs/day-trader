@@ -278,3 +278,35 @@ def shares_mismatch(yahoo: Optional[dict], edgar_so: Optional[dict], pct: float)
         return None
     diff = abs(y - e) / min(y, e) * 100
     return f"Yahoo vs EDGAR shares outstanding differ {diff:.0f}% ({y / 1e6:.1f}M vs {e / 1e6:.1f}M)" if diff > pct else None
+
+
+# --------------------------------------------------------------------- 4.2 catalyst (M3)
+
+
+def prior_day_volume_multiple(daily: List[dict], prior_day: date, cfg: dict) -> Optional[float]:
+    """Prior session volume / average of the sessions before it, or None."""
+    bars = sorted((b for b in daily if parse_ts(b["t"]).astimezone(ET).date() <= prior_day), key=lambda b: b["t"])
+    if not bars or parse_ts(bars[-1]["t"]).astimezone(ET).date() != prior_day:
+        return None
+    before = bars[:-1][-cfg["avg_volume_sessions"]:]
+    if len(before) < cfg["min_avg_sessions"]:
+        return None
+    avg = statistics.mean(b["v"] for b in before)
+    return round(bars[-1]["v"] / avg, 2) if avg else None
+
+
+def catalyst_rule(rec: Optional[dict], surge: Optional[float], surge_min: float) -> Tuple[str, str, List[str]]:
+    """dq_promo_or_no_catalyst: (status, disqualify reason, warnings)."""
+    if not rec:
+        return UNKNOWN, "", ["classifier not run"]
+    if rec.get("status") == "unavailable":
+        return UNKNOWN, "", [f"classifier unavailable{': ' + rec['error'] if rec.get('error') else ''}"]
+    out = rec["output"]
+    if out["promo_or_pump_flag"] or out["catalyst_type"] == "promo":
+        return FAIL, f"classifier: promo/pump ({out['one_line_summary'][:80]})", []
+    if out["catalyst_type"] == "none":
+        if surge is None:
+            return UNKNOWN, "", ["no verifiable catalyst; prior-day volume surge unknown (short history)"]
+        if surge < surge_min:
+            return FAIL, f"no verifiable catalyst and no prior-day volume surge ({surge:.1f}x)", []
+    return PASS, "", []

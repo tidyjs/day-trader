@@ -1,6 +1,208 @@
 {
  "inputs": {
   "as_of_et": "2026-11-10T09:15:00-05:00",
+  "catalyst": {
+   "AMIX": {
+    "attempts": [
+     {
+      "input_tokens": 1080,
+      "output_tokens": 98,
+      "stop_reason": "end_turn",
+      "valid": true
+     }
+    ],
+    "forced_none": false,
+    "items_dropped_roundup": 0,
+    "items_mentioning_company": 1,
+    "items_used": 1,
+    "model": "claude-haiku-5-5",
+    "model_output": {
+     "catalyst_type": "other",
+     "dilution_language": false,
+     "one_line_summary": "Autonomix Medical announces it will be issued U.S. Patent 12,793,841 covering physiological signal circuitry for medical devices.",
+     "promo_or_pump_flag": false,
+     "quality": 2
+    },
+    "output": {
+     "catalyst_type": "other",
+     "dilution_language": false,
+     "one_line_summary": "Autonomix Medical announces it will be issued U.S. Patent 12,793,841 covering physiological signal circuitry for medical devices.",
+     "promo_or_pump_flag": false,
+     "quality": 2
+    },
+    "status": "ok"
+   },
+   "HTOO": {
+    "attempts": [],
+    "forced_none": false,
+    "items_dropped_roundup": 0,
+    "items_mentioning_company": 0,
+    "items_used": 0,
+    "model": "claude-haiku-5-5",
+    "output": {
+     "catalyst_type": "none",
+     "dilution_language": false,
+     "one_line_summary": "",
+     "promo_or_pump_flag": false,
+     "quality": 0
+    },
+    "status": "no_news"
+   },
+   "KLTR": {
+    "attempts": [
+     {
+      "input_tokens": 1495,
+      "output_tokens": 107,
+      "stop_reason": "end_turn",
+      "valid": true
+     }
+    ],
+    "forced_none": false,
+    "items_dropped_roundup": 1,
+    "items_mentioning_company": 5,
+    "items_used": 5,
+    "model": "claude-haiku-5-5",
+    "model_output": {
+     "catalyst_type": "earnings",
+     "dilution_language": false,
+     "one_line_summary": "Kaltura reported Q3 2026 sales of $47.3M beating estimates, adj. EPS $0.02, and raised FY2026 sales guidance.",
+     "promo_or_pump_flag": false,
+     "quality": 5
+    },
+    "output": {
+     "catalyst_type": "earnings",
+     "dilution_language": false,
+     "one_line_summary": "Kaltura reported Q3 2026 sales of $47.3M beating estimates, adj. EPS $0.02, and raised FY2026 sales guidance.",
+     "promo_or_pump_flag": false,
+     "quality": 5
+    },
+    "status": "ok"
+   },
+   "MNDO": {
+    "attempts": [],
+    "forced_none": false,
+    "items_dropped_roundup": 1,
+    "items_mentioning_company": 0,
+    "items_used": 0,
+    "model": "claude-haiku-5-5",
+    "output": {
+     "catalyst_type": "none",
+     "dilution_language": false,
+     "one_line_summary": "",
+     "promo_or_pump_flag": false,
+     "quality": 0
+    },
+    "status": "no_news"
+   },
+   "ONEN": {
+    "attempts": [],
+    "forced_none": false,
+    "items_dropped_roundup": 0,
+    "items_mentioning_company": 0,
+    "items_used": 0,
+    "model": "claude-haiku-5-5",
+    "output": {
+     "catalyst_type": "none",
+     "dilution_language": false,
+     "one_line_summary": "",
+     "promo_or_pump_flag": false,
+     "quality": 0
+    },
+    "status": "no_news"
+   },
+   "TTEC": {
+    "attempts": [
+     {
+      "input_tokens": 1325,
+      "output_tokens": 106,
+      "stop_reason": "end_turn",
+      "valid": true
+     }
+    ],
+    "forced_none": false,
+    "items_dropped_roundup": 1,
+    "items_mentioning_company": 3,
+    "items_used": 3,
+    "model": "claude-haiku-5-5",
+    "model_output": {
+     "catalyst_type": "earnings",
+     "dilution_language": false,
+     "one_line_summary": "TTEC reported Q3 2026 sales of $492.2M beating estimates, with EPS of $(0.10) and affirmed FY2026 guidance.",
+     "promo_or_pump_flag": false,
+     "quality": 4
+    },
+    "output": {
+     "catalyst_type": "earnings",
+     "dilution_language": false,
+     "one_line_summary": "TTEC reported Q3 2026 sales of $492.2M beating estimates, with EPS of $(0.10) and affirmed FY2026 guidance.",
+     "promo_or_pump_flag": false,
+     "quality": 4
+    },
+    "status": "ok"
+   },
+   "WFF": {
+    "attempts": [],
+    "forced_none": false,
+    "items_dropped_roundup": 3,
+    "items_mentioning_company": 0,
+    "items_used": 0,
+    "model": "claude-haiku-5-5",
+    "output": {
+     "catalyst_type": "none",
+     "dilution_language": false,
+     "one_line_summary": "",
+     "promo_or_pump_flag": false,
+     "quality": 0
+    },
+    "status": "no_news"
+   },
+   "YXT": {
+    "attempts": [],
+    "forced_none": false,
+    "items_dropped_roundup": 0,
+    "items_mentioning_company": 0,
+    "items_used": 0,
+    "model": "claude-haiku-5-5",
+    "output": {
+     "catalyst_type": "none",
+     "dilution_language": false,
+     "one_line_summary": "",
+     "promo_or_pump_flag": false,
+     "quality": 0
+    },
+    "status": "no_news"
+   },
+   "ZNTL": {
+    "attempts": [
+     {
+      "input_tokens": 1324,
+      "output_tokens": 109,
+      "stop_reason": "end_turn",
+      "valid": true
+     }
+    ],
+    "forced_none": false,
+    "items_dropped_roundup": 0,
+    "items_mentioning_company": 3,
+    "items_used": 3,
+    "model": "claude-haiku-5-5",
+    "model_output": {
+     "catalyst_type": "earnings",
+     "dilution_language": false,
+     "one_line_summary": "Zentalis reported Q3 2026 results with EPS of $(0.34) beating estimates and $228.9M cash; Wedbush upgraded to Outperform.",
+     "promo_or_pump_flag": false,
+     "quality": 4
+    },
+    "output": {
+     "catalyst_type": "earnings",
+     "dilution_language": false,
+     "one_line_summary": "Zentalis reported Q3 2026 results with EPS of $(0.34) beating estimates and $228.9M cash; Wedbush upgraded to Outperform.",
+     "promo_or_pump_flag": false,
+     "quality": 4
+    },
+    "status": "ok"
+   }
+  },
   "data_cutoff_et": "2026-11-10T08:59:00-05:00",
   "day": "2026-11-10",
   "edgar": {
@@ -1841,7 +2043,7 @@
   },
   "halts": {
    "error": null,
-   "fetched_at": "2026-11-15T15:40:36.938563-05:00",
+   "fetched_at": "2026-11-15T15:49:55.666669-05:00",
    "items": [
     {
      "HaltDate": "11/13/2026",
@@ -5023,6 +5225,295 @@
      "t": "2026-11-09T05:00:00Z",
      "v": 1274325,
      "vw": 1.747262
+    }
+   ]
+  },
+  "news": {
+   "AMIX": [
+    {
+     "created_at": "2026-11-09T20:59:14Z",
+     "headline": "Autonomix Medical Will Be Issued U.S. Patent Number 12,793,841 Tomorrow Titled \"MEDICAL DEVICES WITH CIRCUITRY FOR CAPTURING AND PROCESSING PHYSIOLOGICAL SIGNALS\"",
+     "id": 63068009,
+     "source": "benzinga",
+     "summary": "",
+     "symbols": [
+      "AMIX"
+     ],
+     "url": "https://www.benzinga.com/general/biotech/26/11/63068009/autonomix-medical-will-be-issued-u-s-patent-number-12-793-841-tomorrow-titled-medical-devices-circui"
+    }
+   ],
+   "HTOO": [],
+   "KLTR": [
+    {
+     "created_at": "2026-11-10T14:03:11Z",
+     "headline": "Kaltura Announces Financial Results for Third Quarter 2026",
+     "id": 118307341,
+     "source": "fiscal.ai",
+     "summary": "Kaltura, Inc. reported its third-quarter 2026 financial results, showing revenue growth and an increase in its full-year financial outlook.",
+     "symbols": [
+      "KLTR"
+     ],
+     "url": "https://www.globenewswire.com/news-release/2026/11/09/3398934/0/en/kaltura-announces-financial-results-for-third-quarter-2026.html"
+    },
+    {
+     "created_at": "2026-11-10T12:05:43Z",
+     "headline": "12 Information Technology Stocks Moving In Tuesday's Pre-Market Session",
+     "id": 63082991,
+     "source": "benzinga",
+     "summary": "Gainers\n\nMIND C.T.I. (NASDAQ:MNDO) stock increased by 43.7% to $1.25 during Tuesday&#39;s pre-market session. The market value of their outstanding shares is at $17.5 million. \nSanmina (NASDAQ:SANM) shares rose 19.95%",
+     "symbols": [
+      "APPS",
+      "DETX",
+      "KLTR",
+      "LIF",
+      "MNDO",
+      "PARA",
+      "QMCO",
+      "SANM",
+      "THRY",
+      "UPLD",
+      "VIDA",
+      "WYFI"
+     ],
+     "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63082991/12-information-technology-stocks-moving-tuesday-s-pre-market-session"
+    },
+    {
+     "created_at": "2026-11-09T22:41:53Z",
+     "headline": "Kaltura Q3 2026 Earnings Call Transcript",
+     "id": 63075847,
+     "source": "benzinga",
+     "summary": "Kaltura (NASDAQ:KLTR) reported third-quarter financial results on Monday. The transcript from the company\u2019s third-quarter earnings call has been provided below.This transcript is brought to you by Benzinga APIs. For",
+     "symbols": [
+      "KLTR"
+     ],
+     "url": "https://www.benzinga.com/news/26/11/63075847/kaltura-q3-2026-earnings-call-transcript"
+    },
+    {
+     "created_at": "2026-11-09T21:07:56Z",
+     "headline": "Kaltura Raises FY2026 Sales Guidance from $183.000M-$185.000M to $185.000M-$185.700M vs $184.000M Est",
+     "id": 63069369,
+     "source": "benzinga",
+     "summary": "",
+     "symbols": [
+      "KLTR"
+     ],
+     "url": "https://www.benzinga.com/news/26/11/63069369/kaltura-raises-fy2026-sales-guidance-183-000m-185-000m-185-000m-185-700m-vs-184-000m-est"
+    },
+    {
+     "created_at": "2026-11-09T21:07:34Z",
+     "headline": "Kaltura Sees Q4 Sales $46.200M-$46.900M vs $46.500M Est",
+     "id": 63069333,
+     "source": "benzinga",
+     "summary": "",
+     "symbols": [
+      "KLTR"
+     ],
+     "url": "https://www.benzinga.com/news/26/11/63069333/kaltura-sees-q4-sales-46-200m-46-900m-vs-46-500m-est"
+    },
+    {
+     "created_at": "2026-11-09T21:07:25Z",
+     "headline": "Kaltura Q3 Adj. EPS $0.02 Beats $(0.01) Estimate, Sales $47.265M Beat $46.100M Estimate",
+     "id": 63069305,
+     "source": "benzinga",
+     "summary": "",
+     "symbols": [
+      "KLTR"
+     ],
+     "url": "https://www.benzinga.com/news/earnings/26/11/63069305/kaltura-q3-adj-eps-0-02-beats-0-01-estimate-sales-47-265m-beat-46-100m-estimate"
+    }
+   ],
+   "MNDO": [
+    {
+     "created_at": "2026-11-10T12:05:43Z",
+     "headline": "12 Information Technology Stocks Moving In Tuesday's Pre-Market Session",
+     "id": 63082991,
+     "source": "benzinga",
+     "summary": "Gainers\n\nMIND C.T.I. (NASDAQ:MNDO) stock increased by 43.7% to $1.25 during Tuesday&#39;s pre-market session. The market value of their outstanding shares is at $17.5 million. \nSanmina (NASDAQ:SANM) shares rose 19.95%",
+     "symbols": [
+      "APPS",
+      "DETX",
+      "KLTR",
+      "LIF",
+      "MNDO",
+      "PARA",
+      "QMCO",
+      "SANM",
+      "THRY",
+      "UPLD",
+      "VIDA",
+      "WYFI"
+     ],
+     "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63082991/12-information-technology-stocks-moving-tuesday-s-pre-market-session"
+    }
+   ],
+   "ONEN": [],
+   "TTEC": [
+    {
+     "created_at": "2026-11-10T14:03:47Z",
+     "headline": "TTEC Holdings, Inc. Reports Third Quarter 2026 Financial Results",
+     "id": 118307452,
+     "source": "fiscal.ai",
+     "summary": "TTEC Holdings, Inc. announced its financial results for the third quarter of 2026, detailing performance metrics for its TTEC Digital and TTEC Engage business segments.",
+     "symbols": [
+      "TTEC"
+     ],
+     "url": "https://www.globenewswire.com/news-release/2026/11/09/3399092/0/en/ttec-announces-third-quarter-2026-financial-results-and-reaffirms-outlook-for-full-year-2026.html"
+    },
+    {
+     "created_at": "2026-11-10T12:05:43Z",
+     "headline": "12 Industrials Stocks Moving In Tuesday's Pre-Market Session",
+     "id": 63082992,
+     "source": "benzinga",
+     "summary": "Gainers\n\nWF Holding (NASDAQ:WFF) stock rose 22.2% to $1.32 during Tuesday&#39;s pre-market session. The market value of their outstanding shares is at $2.7 million. \nAAON (NASDAQ:AAON) shares rose 17.24% to $73.71. The",
+     "symbols": [
+      "AAON",
+      "AIAI",
+      "AMRO",
+      "BW",
+      "JBI",
+      "MVST",
+      "RLGT",
+      "SFWL",
+      "TGE",
+      "TTEC",
+      "WFF",
+      "YFOR"
+     ],
+     "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63082992/12-industrials-stocks-moving-tuesday-s-pre-market-session"
+    },
+    {
+     "created_at": "2026-11-09T23:50:13Z",
+     "headline": "TTEC Holdings Affirms FY2026 Adj EPS Guidance of $0.79-$0.99 vs $0.85 Est; Affirms FY2026 Sales Guidance of $1.940B-$1.990B vs $1.956B Est",
+     "id": 63076899,
+     "source": "benzinga",
+     "summary": "",
+     "symbols": [
+      "TTEC"
+     ],
+     "url": "https://www.benzinga.com/news/26/11/63076899/ttec-holdings-affirms-fy2026-adj-eps-guidance-0-79-0-99-vs-0-85-est-affirms-fy2026-sales-guidance-1-"
+    },
+    {
+     "created_at": "2026-11-09T22:31:36Z",
+     "headline": "TTEC Holdings Q3 EPS $(0.10), Sales $492.245M Beat $480.204M Estimate",
+     "id": 63075534,
+     "source": "benzinga",
+     "summary": "",
+     "symbols": [
+      "TTEC"
+     ],
+     "url": "https://www.benzinga.com/news/earnings/26/11/63075534/ttec-holdings-q3-eps-0-10-sales-492-245m-beat-480-204m-estimate"
+    }
+   ],
+   "WFF": [
+    {
+     "created_at": "2026-11-10T12:05:43Z",
+     "headline": "12 Industrials Stocks Moving In Tuesday's Pre-Market Session",
+     "id": 63082992,
+     "source": "benzinga",
+     "summary": "Gainers\n\nWF Holding (NASDAQ:WFF) stock rose 22.2% to $1.32 during Tuesday&#39;s pre-market session. The market value of their outstanding shares is at $2.7 million. \nAAON (NASDAQ:AAON) shares rose 17.24% to $73.71. The",
+     "symbols": [
+      "AAON",
+      "AIAI",
+      "AMRO",
+      "BW",
+      "JBI",
+      "MVST",
+      "RLGT",
+      "SFWL",
+      "TGE",
+      "TTEC",
+      "WFF",
+      "YFOR"
+     ],
+     "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63082992/12-industrials-stocks-moving-tuesday-s-pre-market-session"
+    },
+    {
+     "created_at": "2026-11-10T09:29:45Z",
+     "headline": "Why Sanmina Shares Are Trading Higher By Around 19%; Here Are 20 Stocks Moving Premarket",
+     "id": 63080101,
+     "source": "benzinga",
+     "summary": "Sanmina surges 18.8% after strong Q4 results and above-estimate FY27 guidance; Rubico leads gainers, while Microvast plunges 48.5%.",
+     "symbols": [
+      "AAON",
+      "APPS",
+      "CISS",
+      "FF",
+      "GFL",
+      "GRPN",
+      "IHRT",
+      "KPTI",
+      "MVST",
+      "OMH",
+      "QMCO",
+      "RUBI",
+      "SANM",
+      "SFWL",
+      "TANH",
+      "TGE",
+      "THRY",
+      "VIVK",
+      "WFF",
+      "WGS"
+     ],
+     "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63080101/why-sanmina-shares-are-trading-higher-by-around-19-here-are-20-stocks-moving-premarket"
+    },
+    {
+     "created_at": "2026-11-09T21:05:47Z",
+     "headline": "12 Industrials Stocks Moving In Monday's After-Market Session",
+     "id": 63069049,
+     "source": "benzinga",
+     "summary": "Gainers\n\nAAON (NASDAQ:AAON) stock rose 11.0% to $69.8 during Monday&#39;s after-market session. The company&#39;s market cap stands at $4.7 billion. As per the news, the Q3 earnings report came out today. \nWF Holding",
+     "symbols": [
+      "AADX",
+      "AAON",
+      "BW",
+      "CIGL",
+      "FGL",
+      "INLF",
+      "LNKS",
+      "NCT",
+      "POLA",
+      "SOS",
+      "TGE",
+      "WFF"
+     ],
+     "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63069049/12-industrials-stocks-moving-monday-s-after-market-session"
+    }
+   ],
+   "YXT": [],
+   "ZNTL": [
+    {
+     "created_at": "2026-11-10T14:03:46Z",
+     "headline": "Wedbush Upgrades Zentalis Pharmaceuticals to Outperform",
+     "id": 118307446,
+     "source": "fiscal.ai",
+     "summary": "Wedbush upgraded Zentalis Pharmaceuticals from Neutral to Outperform and increased its price target for the company's stock to $6 from $5.",
+     "symbols": [
+      "ZNTL"
+     ],
+     "url": "https://www.marketscreener.com/news/wedbush-upgrades-zentalis-pharmaceuticals-to-outperform-from-neutral-raises-price-target-to-6-from-ce785edadc8dff21"
+    },
+    {
+     "created_at": "2026-11-10T14:03:46Z",
+     "headline": "Zentalis Pharmaceuticals Reports Third Quarter 2026 Financial Results",
+     "id": 118307443,
+     "source": "fiscal.ai",
+     "summary": "Zentalis Pharmaceuticals announced its financial results for the third quarter ended September 30, 2026, reporting a cash position of $228.9 million.",
+     "symbols": [
+      "ZNTL"
+     ],
+     "url": "https://www.globenewswire.com/news-release/2026/11/09/3398958/0/en/zentalis-pharmaceuticals-reports-third-quarter-2026-financial-results-and-business-updates.html"
+    },
+    {
+     "created_at": "2026-11-09T21:40:21Z",
+     "headline": "Zentalis Pharma Q3 EPS $(0.34) Beats $(0.53) Estimate",
+     "id": 63072607,
+     "source": "benzinga",
+     "summary": "",
+     "symbols": [
+      "ZNTL"
+     ],
+     "url": "https://www.benzinga.com/quote/ZNTL"
     }
    ]
   },
@@ -26235,7 +26726,7 @@
   },
   "prior_day": "2026-11-09",
   "quotes": {},
-  "schema": 3,
+  "schema": 4,
   "t212": {
    "as_of": "2026-11-15",
    "path": "data/t212/2026-11-15.json",
@@ -26243,7 +26734,7 @@
    "sha256": "64644a9658ccf657d19718f70937e08e85245bd243d614253255a92226c66ce5"
   },
   "universe": {
-   "fetched_at": "2026-11-15T15:40:36.938563-05:00",
+   "fetched_at": "2026-11-15T15:49:55.666669-05:00",
    "source": "alpaca /v2/assets, common-stock heuristic",
    "symbols": {
     "A": "Agilent Technologies Inc.",
@@ -31721,11 +32212,16 @@
   "candidates": [
    {
     "as_of_et": "2026-11-10T09:15:00-05:00",
+    "catalyst_forced_none": false,
+    "catalyst_quality": 2,
+    "catalyst_status": "ok",
+    "catalyst_summary": "Autonomix Medical announces it will be issued U.S. Patent 12,793,841 covering physiological signal circuitry for medical devices.",
+    "catalyst_type": "other",
     "continuation_detail": "11-09 +11.8% 6.4x vol",
     "data_cutoff_et": "2026-11-10T08:59:00-05:00",
     "date": "2026-11-10",
     "dq_offering": "pass",
-    "dq_promo_or_no_catalyst": "",
+    "dq_promo_or_no_catalyst": "pass",
     "dq_reasons": "8-K 2026-11-03 reverse split approved or pending; DEF 14A 2026-09-14 reverse split approved or pending",
     "dq_reverse_split": "fail",
     "edgar_shares_asof": "2026-08-06",
@@ -31738,6 +32234,8 @@
     "halt_status": "halt status unknown (historical run: the feed only holds current halts)",
     "last_bar_et": "08:58",
     "name": "Autonomix Medical, Inc. Common Stock",
+    "news_dropped_roundup": 0,
+    "news_used": 1,
     "pm_bars": 297,
     "pm_dollar_volume": 11195427.5,
     "pm_high": 2.3797,
@@ -31746,6 +32244,7 @@
     "price": 1.89,
     "prior_close": 1.7,
     "prior_date": "2026-11-09",
+    "prior_day_volume_multiple": 6.2,
     "prior_range_pos_pct": 70.8,
     "rule_continuation": "pass",
     "rule_float": "",
@@ -31764,12 +32263,17 @@
    },
    {
     "as_of_et": "2026-11-10T09:15:00-05:00",
+    "catalyst_forced_none": false,
+    "catalyst_quality": 0,
+    "catalyst_status": "no_news",
+    "catalyst_summary": "",
+    "catalyst_type": "none",
     "continuation_detail": "11-05 -3.3% 0.9x; 11-06 -0.7% 1.6x; 11-09 +0.7% 1.8x",
     "data_cutoff_et": "2026-11-10T08:59:00-05:00",
     "date": "2026-11-10",
     "dq_offering": "pass",
-    "dq_promo_or_no_catalyst": "",
-    "dq_reasons": "",
+    "dq_promo_or_no_catalyst": "fail",
+    "dq_reasons": "no verifiable catalyst and no prior-day volume surge (1.8x)",
     "dq_reverse_split": "pass",
     "edgar_shares_asof": "2025-12-31",
     "edgar_shares_out": 20372828,
@@ -31781,6 +32285,8 @@
     "halt_status": "halt status unknown (historical run: the feed only holds current halts)",
     "last_bar_et": "08:58",
     "name": "MIND C.T.I. Ltd. Ordinary Shares",
+    "news_dropped_roundup": 1,
+    "news_used": 0,
     "pm_bars": 141,
     "pm_dollar_volume": 10454275.06,
     "pm_high": 1.28,
@@ -31789,6 +32295,7 @@
     "price": 1.2599,
     "prior_close": 0.87,
     "prior_date": "2026-11-09",
+    "prior_day_volume_multiple": 1.83,
     "prior_range_pos_pct": 39.8,
     "rule_continuation": "fail",
     "rule_float": "",
@@ -31807,12 +32314,17 @@
    },
    {
     "as_of_et": "2026-11-10T09:15:00-05:00",
+    "catalyst_forced_none": false,
+    "catalyst_quality": 0,
+    "catalyst_status": "no_news",
+    "catalyst_summary": "",
+    "catalyst_type": "none",
     "continuation_detail": "11-05 -13.6% 0.0x; 11-06 +2.6% 0.0x; 11-09 -7.7% 0.1x",
     "data_cutoff_et": "2026-11-10T08:59:00-05:00",
     "date": "2026-11-10",
     "dq_offering": "pass",
-    "dq_promo_or_no_catalyst": "",
-    "dq_reasons": "",
+    "dq_promo_or_no_catalyst": "fail",
+    "dq_reasons": "no verifiable catalyst and no prior-day volume surge (0.1x)",
     "dq_reverse_split": "pass",
     "edgar_shares_asof": "2025-12-31",
     "edgar_shares_out": 5038018,
@@ -31824,6 +32336,8 @@
     "halt_status": "halt status unknown (historical run: the feed only holds current halts)",
     "last_bar_et": "08:58",
     "name": "WF Holding Limited Ordinary Shares",
+    "news_dropped_roundup": 3,
+    "news_used": 0,
     "pm_bars": 299,
     "pm_dollar_volume": 8775346.51,
     "pm_high": 1.57,
@@ -31832,6 +32346,7 @@
     "price": 1.2797,
     "prior_close": 1.08,
     "prior_date": "2026-11-09",
+    "prior_day_volume_multiple": 0.06,
     "prior_range_pos_pct": 27.3,
     "rule_continuation": "fail",
     "rule_float": "",
@@ -31850,11 +32365,16 @@
    },
    {
     "as_of_et": "2026-11-10T09:15:00-05:00",
+    "catalyst_forced_none": false,
+    "catalyst_quality": 4,
+    "catalyst_status": "ok",
+    "catalyst_summary": "TTEC reported Q3 2026 sales of $492.2M beating estimates, with EPS of $(0.10) and affirmed FY2026 guidance.",
+    "catalyst_type": "earnings",
     "continuation_detail": "11-05 -3.3% 0.5x; 11-06 -6.8% 0.5x; 11-09 +1.1% 0.7x",
     "data_cutoff_et": "2026-11-10T08:59:00-05:00",
     "date": "2026-11-10",
     "dq_offering": "pass",
-    "dq_promo_or_no_catalyst": "",
+    "dq_promo_or_no_catalyst": "pass",
     "dq_reasons": "",
     "dq_reverse_split": "pass",
     "edgar_shares_asof": "2026-10-30",
@@ -31867,6 +32387,8 @@
     "halt_status": "halt status unknown (historical run: the feed only holds current halts)",
     "last_bar_et": "08:58",
     "name": "TTEC Holdings, Inc. Common Stock",
+    "news_dropped_roundup": 1,
+    "news_used": 3,
     "pm_bars": 47,
     "pm_dollar_volume": 550333.56,
     "pm_high": 1.7,
@@ -31875,6 +32397,7 @@
     "price": 1.65,
     "prior_close": 1.395,
     "prior_date": "2026-11-09",
+    "prior_day_volume_multiple": 0.79,
     "prior_range_pos_pct": 94.1,
     "rule_continuation": "fail",
     "rule_float": "",
@@ -31893,11 +32416,16 @@
    },
    {
     "as_of_et": "2026-11-10T09:15:00-05:00",
+    "catalyst_forced_none": false,
+    "catalyst_quality": 5,
+    "catalyst_status": "ok",
+    "catalyst_summary": "Kaltura reported Q3 2026 sales of $47.3M beating estimates, adj. EPS $0.02, and raised FY2026 sales guidance.",
+    "catalyst_type": "earnings",
     "continuation_detail": "11-05 -3.9% 1.0x; 11-06 +2.7% 0.8x; 11-09 -5.9% 1.9x",
     "data_cutoff_et": "2026-11-10T08:59:00-05:00",
     "date": "2026-11-10",
     "dq_offering": "pass",
-    "dq_promo_or_no_catalyst": "",
+    "dq_promo_or_no_catalyst": "pass",
     "dq_reasons": "",
     "dq_reverse_split": "pass",
     "edgar_shares_asof": "2026-11-02",
@@ -31910,6 +32438,8 @@
     "halt_status": "halt status unknown (historical run: the feed only holds current halts)",
     "last_bar_et": "08:55",
     "name": "Kaltura, Inc. Common Stock",
+    "news_dropped_roundup": 1,
+    "news_used": 5,
     "pm_bars": 96,
     "pm_dollar_volume": 197889.22,
     "pm_high": 1.73,
@@ -31918,6 +32448,7 @@
     "price": 1.68,
     "prior_close": 1.43,
     "prior_date": "2026-11-09",
+    "prior_day_volume_multiple": 1.91,
     "prior_range_pos_pct": 7.1,
     "rule_continuation": "fail",
     "rule_float": "",
@@ -31936,11 +32467,16 @@
    },
    {
     "as_of_et": "2026-11-10T09:15:00-05:00",
+    "catalyst_forced_none": false,
+    "catalyst_quality": 4,
+    "catalyst_status": "ok",
+    "catalyst_summary": "Zentalis reported Q3 2026 results with EPS of $(0.34) beating estimates and $228.9M cash; Wedbush upgraded to Outperform.",
+    "catalyst_type": "earnings",
     "continuation_detail": "11-05 -2.8% 1.3x; 11-06 +0.6% 1.0x; 11-09 +1.2% 1.0x",
     "data_cutoff_et": "2026-11-10T08:59:00-05:00",
     "date": "2026-11-10",
     "dq_offering": "pass",
-    "dq_promo_or_no_catalyst": "",
+    "dq_promo_or_no_catalyst": "pass",
     "dq_reasons": "",
     "dq_reverse_split": "pass",
     "edgar_shares_asof": "2026-11-04",
@@ -31953,6 +32489,8 @@
     "halt_status": "halt status unknown (historical run: the feed only holds current halts)",
     "last_bar_et": "08:45",
     "name": "Zentalis Pharmaceuticals, Inc. Common Stock",
+    "news_dropped_roundup": 0,
+    "news_used": 3,
     "pm_bars": 31,
     "pm_dollar_volume": 157885.59,
     "pm_high": 1.9738,
@@ -31961,6 +32499,7 @@
     "price": 1.9562,
     "prior_close": 1.74,
     "prior_date": "2026-11-09",
+    "prior_day_volume_multiple": 0.96,
     "prior_range_pos_pct": 53.3,
     "rule_continuation": "fail",
     "rule_float": "",
@@ -31979,12 +32518,17 @@
    },
    {
     "as_of_et": "2026-11-10T09:15:00-05:00",
+    "catalyst_forced_none": false,
+    "catalyst_quality": 0,
+    "catalyst_status": "no_news",
+    "catalyst_summary": "",
+    "catalyst_type": "none",
     "continuation_detail": "11-05 +16.6% 1.6x; 11-06 -7.7% 0.9x; 11-09 -7.1% 0.2x",
     "data_cutoff_et": "2026-11-10T08:59:00-05:00",
     "date": "2026-11-10",
     "dq_offering": "pass",
-    "dq_promo_or_no_catalyst": "",
-    "dq_reasons": "",
+    "dq_promo_or_no_catalyst": "fail",
+    "dq_reasons": "no verifiable catalyst and no prior-day volume surge (0.2x)",
     "dq_reverse_split": "pass",
     "edgar_shares_asof": null,
     "edgar_shares_out": null,
@@ -31996,6 +32540,8 @@
     "halt_status": "halt status unknown (historical run: the feed only holds current halts)",
     "last_bar_et": "08:55",
     "name": "ONE Nuclear Energy Inc. Common Stock",
+    "news_dropped_roundup": 0,
+    "news_used": 0,
     "pm_bars": 12,
     "pm_dollar_volume": 8700.28,
     "pm_high": 1.72,
@@ -32004,6 +32550,7 @@
     "price": 1.69,
     "prior_close": 1.45,
     "prior_date": "2026-11-09",
+    "prior_day_volume_multiple": 0.24,
     "prior_range_pos_pct": 13.0,
     "rule_continuation": "fail",
     "rule_float": "",
@@ -32022,12 +32569,17 @@
    },
    {
     "as_of_et": "2026-11-10T09:15:00-05:00",
+    "catalyst_forced_none": false,
+    "catalyst_quality": 0,
+    "catalyst_status": "no_news",
+    "catalyst_summary": "",
+    "catalyst_type": "none",
     "continuation_detail": "11-05 -4.8% 0.2x; 11-06 -2.9% 0.0x; 11-09 -6.6% 0.4x",
     "data_cutoff_et": "2026-11-10T08:59:00-05:00",
     "date": "2026-11-10",
     "dq_offering": "pass",
-    "dq_promo_or_no_catalyst": "",
-    "dq_reasons": "",
+    "dq_promo_or_no_catalyst": "fail",
+    "dq_reasons": "no verifiable catalyst and no prior-day volume surge (0.4x)",
     "dq_reverse_split": "pass",
     "edgar_shares_asof": "2025-12-31",
     "edgar_shares_out": 178456987,
@@ -32039,6 +32591,8 @@
     "halt_status": "halt status unknown (historical run: the feed only holds current halts)",
     "last_bar_et": "05:41",
     "name": "YXT.COM GROUP HOLDING LIMITED American Depository Shares",
+    "news_dropped_roundup": 0,
+    "news_used": 0,
     "pm_bars": 3,
     "pm_dollar_volume": 3190.7,
     "pm_high": 1.4,
@@ -32047,6 +32601,7 @@
     "price": 1.4,
     "prior_close": 1.27,
     "prior_date": "2026-11-09",
+    "prior_day_volume_multiple": 0.41,
     "prior_range_pos_pct": 16.0,
     "rule_continuation": "fail",
     "rule_float": "",
@@ -32065,12 +32620,17 @@
    },
    {
     "as_of_et": "2026-11-10T09:15:00-05:00",
+    "catalyst_forced_none": false,
+    "catalyst_quality": 0,
+    "catalyst_status": "no_news",
+    "catalyst_summary": "",
+    "catalyst_type": "none",
     "continuation_detail": "11-05 -13.0% 1.2x; 11-06 -7.1% 1.5x; 11-09 -9.2% 1.1x",
     "data_cutoff_et": "2026-11-10T08:59:00-05:00",
     "date": "2026-11-10",
     "dq_offering": "pass",
-    "dq_promo_or_no_catalyst": "",
-    "dq_reasons": "",
+    "dq_promo_or_no_catalyst": "fail",
+    "dq_reasons": "no verifiable catalyst and no prior-day volume surge (1.1x)",
     "dq_reverse_split": "pass",
     "edgar_shares_asof": "2025-12-31",
     "edgar_shares_out": 2288291,
@@ -32082,6 +32642,8 @@
     "halt_status": "halt status unknown (historical run: the feed only holds current halts)",
     "last_bar_et": "08:58",
     "name": "Fusion Fuel Green PLC Class A Ordinary Shares",
+    "news_dropped_roundup": 0,
+    "news_used": 0,
     "pm_bars": 5,
     "pm_dollar_volume": 1701.63,
     "pm_high": 1.45,
@@ -32090,6 +32652,7 @@
     "price": 1.36,
     "prior_close": 1.19,
     "prior_date": "2026-11-09",
+    "prior_day_volume_multiple": 1.09,
     "prior_range_pos_pct": 23.5,
     "rule_continuation": "fail",
     "rule_float": "",
@@ -32118,6 +32681,10 @@
    "rules": {
     "dq_offering": {
      "pass": 9
+    },
+    "dq_promo_or_no_catalyst": {
+     "fail": 5,
+     "pass": 4
     },
     "dq_reverse_split": {
      "fail": 1,

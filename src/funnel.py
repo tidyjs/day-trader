@@ -13,7 +13,7 @@ from typing import Dict, List
 from src.config import ROOT, load_config
 from src.scan import DISQUALIFIERS, MUST_PASS
 
-RULES = MUST_PASS + ["rule_float"] + DISQUALIFIERS + ["dq_promo_or_no_catalyst"]
+RULES = MUST_PASS + ["rule_float"] + DISQUALIFIERS
 
 
 def funnel(rows: List[dict]) -> List[Dict[str, object]]:

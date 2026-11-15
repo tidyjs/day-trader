@@ -41,13 +41,13 @@ def filing(form: str, filed: str, items: str = "", cover: str = "", hits=(), tex
 
 
 def make_inputs(prior_close: dict, bars: dict, t212=("GAPR",), names=None, as_of="09:15", t212_as_of=DAY, fetched_at=None,
-                history=None, edgar=None, quotes=None, yahoo=None, halts=None) -> dict:
+                history=None, edgar=None, quotes=None, yahoo=None, halts=None, catalyst=None, news=None) -> dict:
     as_of_dt = datetime.fromisoformat(f"{DAY}T{as_of}").replace(tzinfo=ET)
     cutoff = (as_of_dt - timedelta(minutes=CFG["schedule"]["sip_delay_minutes"])).replace(second=0)
     syms = sorted(set(prior_close) | set(bars))
     return copy.deepcopy(
         {
-            "schema": 3,
+            "schema": 4,
             "day": DAY,
             "as_of_et": as_of_dt.isoformat(),
             "data_cutoff_et": cutoff.isoformat(),
@@ -60,6 +60,8 @@ def make_inputs(prior_close: dict, bars: dict, t212=("GAPR",), names=None, as_of
             "edgar": edgar or {},
             "quotes": quotes or {},
             "yahoo": yahoo or {},
+            "news": news or {},
+            "catalyst": catalyst or {},
             "halts": halts if halts is not None else {"fetched_at": as_of_dt.isoformat(), "ok": True, "items": [], "error": None, "markets": []},
         }
     )

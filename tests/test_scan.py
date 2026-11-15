@@ -207,6 +207,10 @@ def test_candidates_csv_upsert_is_idempotent(tmp_path):
 from tests.fixtures import daily, filing, flat_history  # noqa: E402
 
 
+CAT_OK = {"status": "ok", "forced_none": False, "items_used": 2, "items_dropped_roundup": 1,
+          "output": {"catalyst_type": "contract", "quality": 4, "promo_or_pump_flag": False, "dilution_language": False, "one_line_summary": "Signed $5M contract"}}
+
+
 def _hist_pass():
     h = flat_history(25, v=1_000_000)
     h[-1] = daily("2026-11-12", 1.0, v=5_000_000, h=1.0, l=0.8)  # 5x volume, closed at the high
@@ -224,11 +228,12 @@ def _edgar_clean(cik=1):
 def test_full_row_eligible_with_all_rules():
     inp = make_inputs({"GAPR": 1.0}, {"GAPR": _liquid()}, history={"GAPR": _hist_pass()}, edgar={"GAPR": _edgar_clean()},
                       quotes={"GAPR": [{"t": "2026-11-13T13:58:00Z", "bp": 1.19, "ap": 1.21}]},
-                      yahoo={"GAPR": {"fetched_at": "2026-11-13T09:15:00-05:00", "floatShares": 12e6, "sharesOutstanding": 20e6}})
+                      yahoo={"GAPR": {"fetched_at": "2026-11-13T09:15:00-05:00", "floatShares": 12e6, "sharesOutstanding": 20e6}},
+                      catalyst={"GAPR": CAT_OK})
     r = cands(inp)["GAPR"]
     for c in scan.MUST_PASS + ["rule_float"] + scan.DISQUALIFIERS:
         assert r[c] == "pass", c
-    assert r["dq_promo_or_no_catalyst"] == ""  # M3
+    assert r["catalyst_type"] == "contract" and r["catalyst_quality"] == 4
     assert r["eligible"] and r["spread_pct"] == pytest.approx(1.67, abs=0.01)
     assert r["warnings"] == ""
 
@@ -296,6 +301,8 @@ def test_gather_calls_yahoo_and_quotes_only_for_survivors(monkeypatch):
 
     called = {}
     monkeypatch.setattr(haltsmod, "fetch", lambda now: {"fetched_at": now.isoformat(), "ok": True, "items": [], "error": None, "markets": []})
+    from src import catalyst as catmod
+    monkeypatch.setattr(catmod, "gather", lambda alp, llm, cands, ed, as_of, cfg: ({}, {r["symbol"]: CAT_OK for r in cands}))
     monkeypatch.setattr(edgarmod, "gather", lambda ed, syms, *a, **k: {s: _edgar_clean() for s in syms})
     monkeypatch.setattr(yahoomod, "gather", lambda syms, now: called.setdefault("yahoo", sorted(syms)) and {s: {"fetched_at": now.isoformat(), "floatShares": 5e6} for s in syms})
     bars = {"GOOD": _liquid(), "THIN": [bar("08:30", 1.2, v=100, n=1)], "NOTT": _liquid()}
@@ -339,3 +346,30 @@ def test_funnel_counts_only_this_rule():
     assert (f["rule_gap"]["fail"], f["rule_gap"]["fail_only_this"]) == (2, 1)
     assert (f["rule_t212"]["fail"], f["rule_t212"]["fail_only_this"]) == (1, 0)
     assert f["rule_float"]["not_checked"] == 1 and f["dq_offering"]["unknown"] == 1
+
+
+def _cat(**out):
+    base = dict(CAT_OK["output"]); base.update(out)
+    return dict(CAT_OK, output=base)
+
+
+def test_catalyst_rule_on_rows():
+    def row(cat, hist=None):
+        inp = make_inputs({"GAPR": 1.0}, {"GAPR": _liquid()}, history={"GAPR": hist or _hist_pass()}, edgar={"GAPR": _edgar_clean()}, catalyst={"GAPR": cat})
+        return cands(inp)["GAPR"]
+
+    assert row(_cat(promo_or_pump_flag=True))["dq_promo_or_no_catalyst"] == "fail"
+    assert row(_cat(catalyst_type="promo"))["dq_promo_or_no_catalyst"] == "fail"
+    # no catalyst but a 5x prior-day volume surge: passes (SPEC 4.2 needs both missing)
+    r = row(_cat(catalyst_type="none", quality=0))
+    assert r["dq_promo_or_no_catalyst"] == "pass" and r["prior_day_volume_multiple"] == 5.0
+    # no catalyst and flat volume: disqualified
+    flat = flat_history(25)
+    flat[-1] = daily("2026-11-12", 1.0, h=1.0, l=0.8)
+    r = row(_cat(catalyst_type="none", quality=0), flat)
+    assert r["dq_promo_or_no_catalyst"] == "fail" and "no prior-day volume surge (1.0x)" in r["dq_reasons"]
+    # unavailable classifier is unknown + warning, not a pass or a fail
+    r = row({"status": "unavailable", "output": None, "error": "stop_reason refusal"})
+    assert r["dq_promo_or_no_catalyst"] == "unknown" and "classifier unavailable" in r["warnings"]
+    # dilution language with no filing -> warning
+    assert "dilution language in news" in row(_cat(dilution_language=True))["warnings"]

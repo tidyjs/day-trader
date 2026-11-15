@@ -122,6 +122,20 @@ class Alpaca:
                     break
         return out
 
+    def news(self, symbols: List[str], start: datetime, end: datetime, limit: int = 50, max_items: int = 200) -> List[dict]:
+        out: List[dict] = []
+        token = None
+        while len(out) < max_items:
+            params = {"symbols": ",".join(symbols), "start": to_utc_z(start), "end": to_utc_z(end), "limit": limit, "sort": "desc", "include_content": "false"}
+            if token:
+                params["page_token"] = token
+            j = self._get(f"{DATA_URL}/v1beta1/news", params)
+            out.extend(j.get("news", []))
+            token = j.get("next_page_token")
+            if not token:
+                break
+        return out[:max_items]
+
     def snapshots(self, symbols: List[str], feed: str = "iex") -> Dict[str, dict]:
         out: Dict[str, dict] = {}
         for syms in _chunks(sorted(symbols), 200):

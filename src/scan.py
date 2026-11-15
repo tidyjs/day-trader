@@ -39,11 +39,11 @@ from src.data import halts
 from src.data import t212 as t212mod
 from src.timeutil import ET, at_et, bar_complete_before, data_cutoff, parse_ts
 
-SCHEMA = 3
+SCHEMA = 4
 
 # Must-pass rules (SPEC 4.1), in cost order. Float is checked last (Yahoo).
 MUST_PASS = ["rule_price", "rule_gap", "rule_t212", "rule_pm_dollar_volume", "rule_pm_trades", "rule_continuation", "rule_prior_range"]
-DISQUALIFIERS = ["dq_offering", "dq_reverse_split"]
+DISQUALIFIERS = ["dq_offering", "dq_reverse_split", "dq_promo_or_no_catalyst"]
 
 CSV_COLUMNS = [
     "date", "as_of_et", "data_cutoff_et", "symbol", "name",
@@ -51,10 +51,12 @@ CSV_COLUMNS = [
     "pm_high", "pm_volume", "pm_dollar_volume", "pm_trades", "pm_bars", "last_bar_et",
     # per-rule status: pass / fail / unknown / "" (not checked)
     *MUST_PASS, "rule_float",
-    *DISQUALIFIERS, "dq_promo_or_no_catalyst",
+    *DISQUALIFIERS,
     # what each rule tested
     "continuation_detail", "prior_range_pos_pct", "float_shares", "float_source",
     "edgar_shares_out", "edgar_shares_asof", "yahoo_shares_out", "spread_pct",
+    "catalyst_status", "catalyst_type", "catalyst_quality", "catalyst_summary", "catalyst_forced_none",
+    "news_used", "news_dropped_roundup", "prior_day_volume_multiple",
     "halt_status", "dq_reasons", "evidence", "eligible", "warnings", "t212_list", "scan_file",
 ]
 
@@ -245,7 +247,24 @@ def apply_filters(r: dict, inp: Dict[str, Any], cfg: Dict[str, Any], scan_warns:
             warns.append(f"EDGAR shares outstanding stale (as of {so['end']})")
     r["edgar_shares_out"] = so["val"] if so else None
     r["edgar_shares_asof"] = so["end"] if so else None
-    r["dq_promo_or_no_catalyst"] = R.NOT_CHECKED  # needs the classifier (M3)
+    # 4.2 catalyst (M3): classifier output saved in the inputs; never re-called on replay.
+    cat = inp.get("catalyst", {}).get(sym)
+    surge = R.prior_day_volume_multiple(daily or [], prior, f["continuation"])
+    r["prior_day_volume_multiple"] = surge
+    r["dq_promo_or_no_catalyst"], why, cw = R.catalyst_rule(cat, surge, f["continuation"]["volume_multiple"])
+    if why:
+        dq_reasons.append(why)
+    warns += cw
+    out = (cat or {}).get("output") or {}
+    r["catalyst_status"] = (cat or {}).get("status", "")
+    r["catalyst_type"] = out.get("catalyst_type", "")
+    r["catalyst_quality"] = out.get("quality")
+    r["catalyst_summary"] = out.get("one_line_summary", "")
+    r["catalyst_forced_none"] = (cat or {}).get("forced_none", False)
+    r["news_used"] = (cat or {}).get("items_used")
+    r["news_dropped_roundup"] = (cat or {}).get("items_dropped_roundup")
+    if out.get("dilution_language") and r.get("dq_offering") == R.PASS and not any(w.startswith("possible offering") for w in warns):
+        warns.append("classifier: dilution language in news, no offering filing found")
 
     # Only names that survive everything cheaper get quotes and Yahoo.
     if passes_cheap(r):
@@ -290,7 +309,7 @@ def trading_days(alp, day: date) -> tuple:
     return day in days, prior[-1]
 
 
-def gather_inputs(alp, edgar, cfg: Dict[str, Any], day: date, as_of: datetime, t212: "t212mod.T212List", now: datetime) -> Dict[str, Any]:
+def gather_inputs(alp, edgar, cfg: Dict[str, Any], day: date, as_of: datetime, t212: "t212mod.T212List", now: datetime, llm=None) -> Dict[str, Any]:
     cutoff = data_cutoff(as_of, cfg["schedule"]["sip_delay_minutes"])
     is_td, prior = trading_days(alp, day)
     if not is_td:
@@ -330,11 +349,13 @@ def gather_inputs(alp, edgar, cfg: Dict[str, Any], day: date, as_of: datetime, t
         "edgar": {},
         "quotes": {},
         "yahoo": {},
+        "news": {},
+        "catalyst": {},
     }
-    return gather_filter_inputs(alp, edgar, cfg, inp, as_of, cutoff, now)
+    return gather_filter_inputs(alp, edgar, cfg, inp, as_of, cutoff, now, llm)
 
 
-def gather_filter_inputs(alp, edgar, cfg: Dict[str, Any], inp: Dict[str, Any], as_of: datetime, cutoff: datetime, now: datetime) -> Dict[str, Any]:
+def gather_filter_inputs(alp, edgar, cfg: Dict[str, Any], inp: Dict[str, Any], as_of: datetime, cutoff: datetime, now: datetime, llm=None) -> Dict[str, Any]:
     """M2 inputs, fetched in cost order (SPEC 4.1-4.3)."""
     from src.data import edgar as edgarmod
     from src.data import yahoo as yahoomod
@@ -351,6 +372,10 @@ def gather_filter_inputs(alp, edgar, cfg: Dict[str, Any], inp: Dict[str, Any], a
     inp["history"] = {s: hist.get(s, []) for s in syms}
     # EDGAR is official and allows 10 req/s; checked for every candidate.
     inp["edgar"] = edgarmod.gather(edgar, syms, day, as_of, cfg["edgar"], ROOT / cfg["paths"]["cache"], now.date())
+    # Classifier: one call per candidate company (about $0.0002 each on Haiku).
+    from src import catalyst as catmod
+    cands = [r for r in evaluate(inp, cfg)["candidates"]]
+    inp["news"], inp["catalyst"] = catmod.gather(alp, llm, cands, inp["edgar"], as_of, cfg["catalyst"])
     # Quotes and Yahoo only for names that pass every cheaper rule.
     survivors = [r["symbol"] for r in evaluate(inp, cfg)["candidates"] if passes_cheap(r)]
     if survivors:
@@ -464,8 +489,10 @@ def run(day: Optional[date], as_of_hhmm: Optional[str], refresh_t212: bool = Tru
     t212 = t212mod.get_list(now.date(), ROOT / cfg["paths"]["t212"], ROOT, base, refresh=refresh_t212)
     from src.data.edgar import Edgar
 
-    alp, ed = Alpaca(), Edgar()
-    inp = gather_inputs(alp, ed, cfg, day, as_of, t212, now)
+    import anthropic
+
+    alp, ed, llm = Alpaca(), Edgar(), anthropic.Anthropic()
+    inp = gather_inputs(alp, ed, cfg, day, as_of, t212, now, llm)
     out = evaluate(inp, cfg)
     path = scan_path(cfg, day, as_of)
     save(cfg, inp, out, path)

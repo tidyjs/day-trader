@@ -1,6 +1,130 @@
 {
  "inputs": {
   "as_of_et": "2026-11-12T09:15:00-05:00",
+  "catalyst": {
+   "CRMN": {
+    "attempts": [
+     {
+      "input_tokens": 1077,
+      "output_tokens": 93,
+      "stop_reason": "end_turn",
+      "valid": true
+     }
+    ],
+    "forced_none": false,
+    "items_dropped_roundup": 0,
+    "items_mentioning_company": 1,
+    "items_used": 1,
+    "model": "claude-haiku-5-5",
+    "model_output": {
+     "catalyst_type": "other",
+     "dilution_language": false,
+     "one_line_summary": "Skyline Builders Group changes its NASDAQ ticker from KAZR to CRMN effective November 12, 2026.",
+     "promo_or_pump_flag": false,
+     "quality": 1
+    },
+    "output": {
+     "catalyst_type": "other",
+     "dilution_language": false,
+     "one_line_summary": "Skyline Builders Group changes its NASDAQ ticker from KAZR to CRMN effective November 12, 2026.",
+     "promo_or_pump_flag": false,
+     "quality": 1
+    },
+    "status": "ok"
+   },
+   "GITS": {
+    "attempts": [],
+    "forced_none": false,
+    "items_dropped_roundup": 0,
+    "items_mentioning_company": 0,
+    "items_used": 0,
+    "model": "claude-haiku-5-5",
+    "output": {
+     "catalyst_type": "none",
+     "dilution_language": false,
+     "one_line_summary": "",
+     "promo_or_pump_flag": false,
+     "quality": 0
+    },
+    "status": "no_news"
+   },
+   "ICMB": {
+    "attempts": [
+     {
+      "input_tokens": 1385,
+      "output_tokens": 102,
+      "stop_reason": "end_turn",
+      "valid": true
+     }
+    ],
+    "forced_none": false,
+    "items_dropped_roundup": 0,
+    "items_mentioning_company": 2,
+    "items_used": 4,
+    "model": "claude-haiku-5-5",
+    "model_output": {
+     "catalyst_type": "merger",
+     "dilution_language": false,
+     "one_line_summary": "ICMB agreed to merge into BCIC/BCP Investment subject to ICMB stockholder approval; shares jumped over 50% after hours.",
+     "promo_or_pump_flag": false,
+     "quality": 5
+    },
+    "output": {
+     "catalyst_type": "merger",
+     "dilution_language": false,
+     "one_line_summary": "ICMB agreed to merge into BCIC/BCP Investment subject to ICMB stockholder approval; shares jumped over 50% after hours.",
+     "promo_or_pump_flag": false,
+     "quality": 5
+    },
+    "status": "ok"
+   },
+   "MSC": {
+    "attempts": [
+     {
+      "input_tokens": 1113,
+      "output_tokens": 82,
+      "stop_reason": "end_turn",
+      "valid": true
+     }
+    ],
+    "forced_none": true,
+    "items_dropped_roundup": 0,
+    "items_mentioning_company": 0,
+    "items_used": 1,
+    "model": "claude-haiku-5-5",
+    "model_output": {
+     "catalyst_type": "none",
+     "dilution_language": false,
+     "one_line_summary": "No news about Studio City International; the only item concerns Millennium Silver Corp, a different company.",
+     "promo_or_pump_flag": false,
+     "quality": 0
+    },
+    "output": {
+     "catalyst_type": "none",
+     "dilution_language": false,
+     "one_line_summary": "No news about Studio City International; the only item concerns Millennium Silver Corp, a different company.",
+     "promo_or_pump_flag": false,
+     "quality": 0
+    },
+    "status": "ok"
+   },
+   "YXT": {
+    "attempts": [],
+    "forced_none": false,
+    "items_dropped_roundup": 1,
+    "items_mentioning_company": 0,
+    "items_used": 0,
+    "model": "claude-haiku-5-5",
+    "output": {
+     "catalyst_type": "none",
+     "dilution_language": false,
+     "one_line_summary": "",
+     "promo_or_pump_flag": false,
+     "quality": 0
+    },
+    "status": "no_news"
+   }
+  },
   "data_cutoff_et": "2026-11-12T08:59:00-05:00",
   "day": "2026-11-12",
   "edgar": {
@@ -616,7 +740,7 @@
   },
   "halts": {
    "error": null,
-   "fetched_at": "2026-11-15T15:41:24.225317-05:00",
+   "fetched_at": "2026-11-15T15:51:05.196346-05:00",
    "items": [
     {
      "HaltDate": "11/13/2026",
@@ -2560,6 +2684,108 @@
      "t": "2026-11-11T05:00:00Z",
      "v": 5585,
      "vw": 1.246324
+    }
+   ]
+  },
+  "news": {
+   "CRMN": [
+    {
+     "created_at": "2026-11-12T12:51:25Z",
+     "headline": "Skyline Builders Group To Change Its NASDAQ Ticker Symbol From 'KAZR' To 'CRMN', Effective November 12",
+     "id": 63180927,
+     "source": "benzinga",
+     "summary": "",
+     "symbols": [
+      "CRMN",
+      "KAZR"
+     ],
+     "url": "https://www.benzinga.com/news/26/11/63180927/skyline-builders-group-change-its-nasdaq-ticker-symbol-kazr-crmn-effective-november-12"
+    }
+   ],
+   "GITS": [],
+   "ICMB": [
+    {
+     "created_at": "2026-11-12T06:32:21Z",
+     "headline": "Investcorp Credit Management (ICMB) Stock Jumps Over 53% After Hours on BCIC Merger Deal",
+     "id": 63172426,
+     "source": "benzinga",
+     "summary": "Investcorp Credit Management shares surge 53.54% after hours as merger agreement with BCIC promises shareholders a substantial premium.",
+     "symbols": [
+      "BCIC",
+      "ICMB"
+     ],
+     "url": "https://www.benzinga.com/markets/equities/26/11/63172426/investcorp-credit-management-shares-surge-after-hours-bcic-merger"
+    },
+    {
+     "created_at": "2026-11-11T23:25:00Z",
+     "headline": "Trading Halt: Halt status updated at 6:25:00 PM ET: Quotation Resumption: News and Resumption Times",
+     "id": 63171033,
+     "source": "benzinga",
+     "summary": "",
+     "symbols": [
+      "ICMB"
+     ],
+     "url": "https://www.benzinga.com/quote/ICMB"
+    },
+    {
+     "created_at": "2026-11-11T23:03:06Z",
+     "headline": "Investcorp Credit Management BDC  To Merge Into BCP Investment Subject To Approval By ICMB Stockholders",
+     "id": 63170918,
+     "source": "benzinga",
+     "summary": "",
+     "symbols": [
+      "BCIC",
+      "ICMB"
+     ],
+     "url": "https://www.benzinga.com/quote/BCIC"
+    },
+    {
+     "created_at": "2026-11-11T22:55:00Z",
+     "headline": "Trading Halt: Halted at 5:55:00 p.m. ET - Trading Halt: Halt News Pending",
+     "id": 63170834,
+     "source": "benzinga",
+     "summary": "",
+     "symbols": [
+      "ICMB"
+     ],
+     "url": "https://www.benzinga.com/quote/ICMB"
+    }
+   ],
+   "MSC": [
+    {
+     "created_at": "2026-11-11T14:04:45Z",
+     "headline": "PFH Energy Solutions (BVI) Limited Files Early Warning Report Regarding Millennium Silver Corp.",
+     "id": 119491438,
+     "source": "fiscal.ai",
+     "summary": "PFH Energy Solutions (BVI) Limited has filed an early warning report concerning its equity holdings in Millennium Silver Corp.",
+     "symbols": [
+      "MSC"
+     ],
+     "url": "https://www.finanznachrichten.de/nachrichten-medien/newsfile.htm"
+    }
+   ],
+   "YXT": [
+    {
+     "created_at": "2026-11-12T12:05:36Z",
+     "headline": "12 Information Technology Stocks Moving In Thursday's Pre-Market Session",
+     "id": 63178303,
+     "source": "benzinga",
+     "summary": "Gainers\n\nPhaos Technology Holdings (AMEX:POAS) shares moved upwards by 144.2% to $2.2 during Thursday&#39;s pre-market session. \nAmplitech Group, Inc. - Series B Right (NASDAQ:AMPGZ) shares rose 98.01% to $0.03.",
+     "symbols": [
+      "AMPGZ",
+      "BOXL",
+      "DFNS",
+      "DGII",
+      "MASK",
+      "MYSZ",
+      "PARA",
+      "POAS",
+      "SMTK",
+      "SMX",
+      "VIDA",
+      "YXT"
+     ],
+     "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63178303/12-information-technology-stocks-moving-thursday-s-pre-market-session"
     }
    ]
   },
@@ -22044,7 +22270,7 @@
     }
    ]
   },
-  "schema": 3,
+  "schema": 4,
   "t212": {
    "as_of": "2026-11-15",
    "path": "data/t212/2026-11-15.json",
@@ -22052,7 +22278,7 @@
    "sha256": "64644a9658ccf657d19718f70937e08e85245bd243d614253255a92226c66ce5"
   },
   "universe": {
-   "fetched_at": "2026-11-15T15:41:24.225317-05:00",
+   "fetched_at": "2026-11-15T15:51:05.196346-05:00",
    "source": "alpaca /v2/assets, common-stock heuristic",
    "symbols": {
     "A": "Agilent Technologies Inc.",
@@ -27526,7 +27752,7 @@
   },
   "yahoo": {
    "ICMB": {
-    "fetched_at": "2026-11-15T15:41:24.225317-05:00",
+    "fetched_at": "2026-11-15T15:51:05.196346-05:00",
     "floatShares": null,
     "impliedSharesOutstanding": 14432472,
     "sharesOutstanding": 14432472
@@ -27537,11 +27763,16 @@
   "candidates": [
    {
     "as_of_et": "2026-11-12T09:15:00-05:00",
+    "catalyst_forced_none": false,
+    "catalyst_quality": 1,
+    "catalyst_status": "ok",
+    "catalyst_summary": "Skyline Builders Group changes its NASDAQ ticker from KAZR to CRMN effective November 12, 2026.",
+    "catalyst_type": "other",
     "continuation_detail": "11-09 +1.6% 0.4x; 11-10 -4.6% 1.2x; 11-11 -7.2% 0.9x",
     "data_cutoff_et": "2026-11-12T08:59:00-05:00",
     "date": "2026-11-12",
     "dq_offering": "pass",
-    "dq_promo_or_no_catalyst": "",
+    "dq_promo_or_no_catalyst": "pass",
     "dq_reasons": "",
     "dq_reverse_split": "pass",
     "edgar_shares_asof": null,
@@ -27554,6 +27785,8 @@
     "halt_status": "halt status unknown (historical run: the feed only holds current halts)",
     "last_bar_et": "08:58",
     "name": "Skyline Builders Group Holding Limited Class A Ordinary Shares",
+    "news_dropped_roundup": 0,
+    "news_used": 1,
     "pm_bars": 297,
     "pm_dollar_volume": 110337600.69,
     "pm_high": 10.84,
@@ -27562,6 +27795,7 @@
     "price": 1.71,
     "prior_close": 1.16,
     "prior_date": "2026-11-11",
+    "prior_day_volume_multiple": 0.85,
     "prior_range_pos_pct": 17.9,
     "rule_continuation": "fail",
     "rule_float": "",
@@ -27580,11 +27814,16 @@
    },
    {
     "as_of_et": "2026-11-12T09:15:00-05:00",
+    "catalyst_forced_none": false,
+    "catalyst_quality": 5,
+    "catalyst_status": "ok",
+    "catalyst_summary": "ICMB agreed to merge into BCIC/BCP Investment subject to ICMB stockholder approval; shares jumped over 50% after hours.",
+    "catalyst_type": "merger",
     "continuation_detail": "11-11 +2.6% 55.3x vol",
     "data_cutoff_et": "2026-11-12T08:59:00-05:00",
     "date": "2026-11-12",
     "dq_offering": "pass",
-    "dq_promo_or_no_catalyst": "",
+    "dq_promo_or_no_catalyst": "pass",
     "dq_reasons": "",
     "dq_reverse_split": "pass",
     "edgar_shares_asof": "2026-08-14",
@@ -27597,6 +27836,8 @@
     "halt_status": "halt status unknown (historical run: the feed only holds current halts)",
     "last_bar_et": "08:58",
     "name": "Investcorp Credit Management BDC, Inc. Common Stock",
+    "news_dropped_roundup": 0,
+    "news_used": 4,
     "pm_bars": 299,
     "pm_dollar_volume": 31516830.45,
     "pm_high": 1.16,
@@ -27605,6 +27846,7 @@
     "price": 1.04,
     "prior_close": 0.6181,
     "prior_date": "2026-11-11",
+    "prior_day_volume_multiple": 53.8,
     "prior_range_pos_pct": 100.0,
     "rule_continuation": "pass",
     "rule_float": "pass",
@@ -27623,12 +27865,17 @@
    },
    {
     "as_of_et": "2026-11-12T09:15:00-05:00",
+    "catalyst_forced_none": false,
+    "catalyst_quality": 0,
+    "catalyst_status": "no_news",
+    "catalyst_summary": "",
+    "catalyst_type": "none",
     "continuation_detail": "11-09 -1.3% 0.8x; 11-10 -4.6% 1.1x; 11-11 -6.8% 0.6x",
     "data_cutoff_et": "2026-11-12T08:59:00-05:00",
     "date": "2026-11-12",
     "dq_offering": "pass",
-    "dq_promo_or_no_catalyst": "",
-    "dq_reasons": "",
+    "dq_promo_or_no_catalyst": "fail",
+    "dq_reasons": "no verifiable catalyst and no prior-day volume surge (0.6x)",
     "dq_reverse_split": "pass",
     "edgar_shares_asof": "2026-09-09",
     "edgar_shares_out": 4203104,
@@ -27640,6 +27887,8 @@
     "halt_status": "halt status unknown (historical run: the feed only holds current halts)",
     "last_bar_et": "07:24",
     "name": "Global Interactive Technologies, Inc. Common Stock",
+    "news_dropped_roundup": 0,
+    "news_used": 0,
     "pm_bars": 3,
     "pm_dollar_volume": 1088.03,
     "pm_high": 1.55,
@@ -27648,6 +27897,7 @@
     "price": 1.5291,
     "prior_close": 1.36,
     "prior_date": "2026-11-11",
+    "prior_day_volume_multiple": 0.56,
     "prior_range_pos_pct": 3.8,
     "rule_continuation": "fail",
     "rule_float": "",
@@ -27666,12 +27916,17 @@
    },
    {
     "as_of_et": "2026-11-12T09:15:00-05:00",
+    "catalyst_forced_none": false,
+    "catalyst_quality": 0,
+    "catalyst_status": "no_news",
+    "catalyst_summary": "",
+    "catalyst_type": "none",
     "continuation_detail": "11-09 -6.6% 0.4x; 11-10 -0.8% 0.3x; 11-11 -2.4% 0.1x",
     "data_cutoff_et": "2026-11-12T08:59:00-05:00",
     "date": "2026-11-12",
     "dq_offering": "pass",
-    "dq_promo_or_no_catalyst": "",
-    "dq_reasons": "",
+    "dq_promo_or_no_catalyst": "fail",
+    "dq_reasons": "no verifiable catalyst and no prior-day volume surge (0.1x)",
     "dq_reverse_split": "pass",
     "edgar_shares_asof": "2025-12-31",
     "edgar_shares_out": 178456987,
@@ -27683,6 +27938,8 @@
     "halt_status": "halt status unknown (historical run: the feed only holds current halts)",
     "last_bar_et": "04:59",
     "name": "YXT.COM GROUP HOLDING LIMITED American Depository Shares",
+    "news_dropped_roundup": 1,
+    "news_used": 0,
     "pm_bars": 1,
     "pm_dollar_volume": 151.8,
     "pm_high": 1.38,
@@ -27691,6 +27948,7 @@
     "price": 1.38,
     "prior_close": 1.23,
     "prior_date": "2026-11-11",
+    "prior_day_volume_multiple": 0.09,
     "prior_range_pos_pct": 42.9,
     "rule_continuation": "fail",
     "rule_float": "",
@@ -27709,12 +27967,17 @@
    },
    {
     "as_of_et": "2026-11-12T09:15:00-05:00",
+    "catalyst_forced_none": true,
+    "catalyst_quality": 0,
+    "catalyst_status": "ok",
+    "catalyst_summary": "No news about Studio City International; the only item concerns Millennium Silver Corp, a different company.",
+    "catalyst_type": "none",
     "continuation_detail": "11-09 -7.1% 0.4x; 11-10 +4.4% 1.0x; 11-11 +5.2% 0.1x",
     "data_cutoff_et": "2026-11-12T08:59:00-05:00",
     "date": "2026-11-12",
     "dq_offering": "pass",
-    "dq_promo_or_no_catalyst": "",
-    "dq_reasons": "",
+    "dq_promo_or_no_catalyst": "fail",
+    "dq_reasons": "no verifiable catalyst and no prior-day volume surge (0.1x)",
     "dq_reverse_split": "pass",
     "edgar_shares_asof": null,
     "edgar_shares_out": null,
@@ -27726,6 +27989,8 @@
     "halt_status": "halt status unknown (historical run: the feed only holds current halts)",
     "last_bar_et": "07:55",
     "name": "Studio City International Holdings Limited American depositary shares, each representing four Class A ordinary shares",
+    "news_dropped_roundup": 0,
+    "news_used": 1,
     "pm_bars": 1,
     "pm_dollar_volume": 124.3,
     "pm_high": 1.1,
@@ -27734,6 +27999,7 @@
     "price": 1.1,
     "prior_close": 1,
     "prior_date": "2026-11-11",
+    "prior_day_volume_multiple": 0.07,
     "prior_range_pos_pct": 100.0,
     "rule_continuation": "fail",
     "rule_float": "",
@@ -27762,6 +28028,10 @@
    "rules": {
     "dq_offering": {
      "pass": 5
+    },
+    "dq_promo_or_no_catalyst": {
+     "fail": 3,
+     "pass": 2
     },
     "dq_reverse_split": {
      "pass": 5

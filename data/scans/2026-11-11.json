@@ -1,6 +1,252 @@
 {
  "inputs": {
   "as_of_et": "2026-11-11T09:15:00-05:00",
+  "catalyst": {
+   "BDAI": {
+    "attempts": [],
+    "forced_none": false,
+    "items_dropped_roundup": 0,
+    "items_mentioning_company": 0,
+    "items_used": 0,
+    "model": "claude-haiku-5-5",
+    "output": {
+     "catalyst_type": "none",
+     "dilution_language": false,
+     "one_line_summary": "",
+     "promo_or_pump_flag": false,
+     "quality": 0
+    },
+    "status": "no_news"
+   },
+   "BRAI": {
+    "attempts": [
+     {
+      "input_tokens": 1085,
+      "output_tokens": 95,
+      "stop_reason": "end_turn",
+      "valid": true
+     }
+    ],
+    "forced_none": false,
+    "items_dropped_roundup": 0,
+    "items_mentioning_company": 1,
+    "items_used": 1,
+    "model": "claude-haiku-5-5",
+    "model_output": {
+     "catalyst_type": "promo",
+     "dilution_language": false,
+     "one_line_summary": "Braiin named presenting partner of a defence robotics and counter-UAS congress in Queensland; no financial terms disclosed.",
+     "promo_or_pump_flag": true,
+     "quality": 1
+    },
+    "output": {
+     "catalyst_type": "promo",
+     "dilution_language": false,
+     "one_line_summary": "Braiin named presenting partner of a defence robotics and counter-UAS congress in Queensland; no financial terms disclosed.",
+     "promo_or_pump_flag": true,
+     "quality": 1
+    },
+    "status": "ok"
+   },
+   "CABR": {
+    "attempts": [],
+    "forced_none": false,
+    "items_dropped_roundup": 0,
+    "items_mentioning_company": 0,
+    "items_used": 0,
+    "model": "claude-haiku-5-5",
+    "output": {
+     "catalyst_type": "none",
+     "dilution_language": false,
+     "one_line_summary": "",
+     "promo_or_pump_flag": false,
+     "quality": 0
+    },
+    "status": "no_news"
+   },
+   "CANG": {
+    "attempts": [],
+    "forced_none": false,
+    "items_dropped_roundup": 0,
+    "items_mentioning_company": 0,
+    "items_used": 0,
+    "model": "claude-haiku-5-5",
+    "output": {
+     "catalyst_type": "none",
+     "dilution_language": false,
+     "one_line_summary": "",
+     "promo_or_pump_flag": false,
+     "quality": 0
+    },
+    "status": "no_news"
+   },
+   "DLPN": {
+    "attempts": [
+     {
+      "input_tokens": 1623,
+      "output_tokens": 109,
+      "stop_reason": "end_turn",
+      "valid": true
+     }
+    ],
+    "forced_none": false,
+    "items_dropped_roundup": 0,
+    "items_mentioning_company": 5,
+    "items_used": 5,
+    "model": "claude-haiku-5-5",
+    "model_output": {
+     "catalyst_type": "earnings",
+     "dilution_language": false,
+     "one_line_summary": "Dolphin reported record Q3 2026 revenue of $16.0M, up 8.3% year over year, with adjusted EPS of $0.08 beating estimates.",
+     "promo_or_pump_flag": false,
+     "quality": 5
+    },
+    "output": {
+     "catalyst_type": "earnings",
+     "dilution_language": false,
+     "one_line_summary": "Dolphin reported record Q3 2026 revenue of $16.0M, up 8.3% year over year, with adjusted EPS of $0.08 beating estimates.",
+     "promo_or_pump_flag": false,
+     "quality": 5
+    },
+    "status": "ok"
+   },
+   "DPU": {
+    "attempts": [
+     {
+      "input_tokens": 1098,
+      "output_tokens": 93,
+      "stop_reason": "end_turn",
+      "valid": true
+     }
+    ],
+    "forced_none": false,
+    "items_dropped_roundup": 0,
+    "items_mentioning_company": 1,
+    "items_used": 1,
+    "model": "claude-haiku-5-5",
+    "model_output": {
+     "catalyst_type": "promo",
+     "dilution_language": false,
+     "one_line_summary": "Subsidiary Top Kingwin plans a music creation challenge on DPU Platform, November 8-18, 2026.",
+     "promo_or_pump_flag": true,
+     "quality": 1
+    },
+    "output": {
+     "catalyst_type": "promo",
+     "dilution_language": false,
+     "one_line_summary": "Subsidiary Top Kingwin plans a music creation challenge on DPU Platform, November 8-18, 2026.",
+     "promo_or_pump_flag": true,
+     "quality": 1
+    },
+    "status": "ok"
+   },
+   "GEVO": {
+    "attempts": [
+     {
+      "input_tokens": 1480,
+      "output_tokens": 97,
+      "stop_reason": "end_turn",
+      "valid": true
+     }
+    ],
+    "forced_none": false,
+    "items_dropped_roundup": 1,
+    "items_mentioning_company": 4,
+    "items_used": 4,
+    "model": "claude-haiku-5-5",
+    "model_output": {
+     "catalyst_type": "earnings",
+     "dilution_language": false,
+     "one_line_summary": "Gevo reported record Q3 2026 results: revenue about $83M, up 94%, EPS $0.12 beating estimates.",
+     "promo_or_pump_flag": false,
+     "quality": 5
+    },
+    "output": {
+     "catalyst_type": "earnings",
+     "dilution_language": false,
+     "one_line_summary": "Gevo reported record Q3 2026 results: revenue about $83M, up 94%, EPS $0.12 beating estimates.",
+     "promo_or_pump_flag": false,
+     "quality": 5
+    },
+    "status": "ok"
+   },
+   "SCLX": {
+    "attempts": [],
+    "forced_none": false,
+    "items_dropped_roundup": 1,
+    "items_mentioning_company": 0,
+    "items_used": 0,
+    "model": "claude-haiku-5-5",
+    "output": {
+     "catalyst_type": "none",
+     "dilution_language": false,
+     "one_line_summary": "",
+     "promo_or_pump_flag": false,
+     "quality": 0
+    },
+    "status": "no_news"
+   },
+   "SNOA": {
+    "attempts": [
+     {
+      "input_tokens": 1217,
+      "output_tokens": 102,
+      "stop_reason": "end_turn",
+      "valid": true
+     }
+    ],
+    "forced_none": false,
+    "items_dropped_roundup": 1,
+    "items_mentioning_company": 2,
+    "items_used": 2,
+    "model": "claude-haiku-5-5",
+    "model_output": {
+     "catalyst_type": "earnings",
+     "dilution_language": false,
+     "one_line_summary": "Sonoma Pharmaceuticals reported fiscal Q2 2027 sales of $7.17M and first-ever pre-tax net income.",
+     "promo_or_pump_flag": false,
+     "quality": 4
+    },
+    "output": {
+     "catalyst_type": "earnings",
+     "dilution_language": false,
+     "one_line_summary": "Sonoma Pharmaceuticals reported fiscal Q2 2027 sales of $7.17M and first-ever pre-tax net income.",
+     "promo_or_pump_flag": false,
+     "quality": 4
+    },
+    "status": "ok"
+   },
+   "YMAT": {
+    "attempts": [
+     {
+      "input_tokens": 1203,
+      "output_tokens": 102,
+      "stop_reason": "end_turn",
+      "valid": true
+     }
+    ],
+    "forced_none": false,
+    "items_dropped_roundup": 2,
+    "items_mentioning_company": 2,
+    "items_used": 2,
+    "model": "claude-haiku-5-5",
+    "model_output": {
+     "catalyst_type": "other",
+     "dilution_language": false,
+     "one_line_summary": "J-Star updates U.S. carbon fiber supply chain efforts, hosts delegation visit, and chairman converts $8.2M debt to equity.",
+     "promo_or_pump_flag": true,
+     "quality": 2
+    },
+    "output": {
+     "catalyst_type": "other",
+     "dilution_language": false,
+     "one_line_summary": "J-Star updates U.S. carbon fiber supply chain efforts, hosts delegation visit, and chairman converts $8.2M debt to equity.",
+     "promo_or_pump_flag": true,
+     "quality": 2
+    },
+    "status": "ok"
+   }
+  },
   "data_cutoff_et": "2026-11-11T08:59:00-05:00",
   "day": "2026-11-11",
   "edgar": {
@@ -1444,7 +1690,7 @@
   },
   "halts": {
    "error": null,
-   "fetched_at": "2026-11-15T15:40:57.938780-05:00",
+   "fetched_at": "2026-11-15T15:50:28.135282-05:00",
    "items": [
     {
      "HaltDate": "11/13/2026",
@@ -4948,6 +5194,306 @@
      "t": "2026-11-10T05:00:00Z",
      "v": 523866,
      "vw": 1.079924
+    }
+   ]
+  },
+  "news": {
+   "BDAI": [],
+   "BRAI": [
+    {
+     "created_at": "2026-11-10T22:01:44Z",
+     "headline": "Braiin Ltd. Named Presenting Partner of Defence Robotics & Counter-UAS Congress",
+     "id": 119057404,
+     "source": "fiscal.ai",
+     "summary": "Braiin Ltd. has been announced as the presenting partner for the Defence Robotics & Counter-UAS Congress, held during the Global Drone 2026 event in Queensland, Australia.",
+     "symbols": [
+      "BRAI"
+     ],
+     "url": "https://www.globenewswire.com/news-release/2026/11/10/3399507/0/en/braiin-advances-defence-sector-strategy-as-presenting-partner-of-the-defence-robotics-counter-uas-congress-at-global-drone-2026.html"
+    }
+   ],
+   "CABR": [],
+   "CANG": [],
+   "DLPN": [
+    {
+     "created_at": "2026-11-11T14:04:09Z",
+     "headline": "Dolphin Entertainment Reports Record Revenue in Third Quarter 2026",
+     "id": 119491333,
+     "source": "fiscal.ai",
+     "summary": "Dolphin Entertainment announced record third-quarter 2026 revenue of $16.0 million, reflecting an 8.3% year-over-year increase, alongside a return to profitability.",
+     "symbols": [
+      "DLPN"
+     ],
+     "url": "https://www.newswire.com/news/dolphin-entertainment-reports-record-revenue-in-third-quarter-2026"
+    },
+    {
+     "created_at": "2026-11-10T22:38:46Z",
+     "headline": "UPDATE: Dolphin Entertainment Q3 Adj. EPS $0.08 Beats $(0.04) Estimate, Sales $16.021M Beat $15.200M Estimate",
+     "id": 63127865,
+     "source": "benzinga",
+     "summary": "",
+     "symbols": [
+      "DLPN"
+     ],
+     "url": "https://www.benzinga.com/news/earnings/26/11/63127865/update-dolphin-entertainment-q3-adj-eps-0-08-beats-0-04-estimate-sales-16-021m-beat-15-200m-estimate"
+    },
+    {
+     "created_at": "2026-11-10T22:04:21Z",
+     "headline": "Dolphin Entertainment Q3 2026 Earnings Call Transcript",
+     "id": 63126618,
+     "source": "benzinga",
+     "summary": "Dolphin Entertainment (NASDAQ:DLPN) reported third-quarter financial results on Tuesday. The transcript from the company\u2019s third-quarter earnings call has been provided below.This transcript is brought to you by",
+     "symbols": [
+      "DLPN"
+     ],
+     "url": "https://www.benzinga.com/news/26/11/63126618/dolphin-entertainment-q3-2026-earnings-call-transcript"
+    },
+    {
+     "created_at": "2026-11-10T21:26:43Z",
+     "headline": "Dolphin Entertainment Q3 Adj. EPS $0.08 Beats $(0.04) Estimate, Sales $16.021M Beat $15.200M Estimate",
+     "id": 63124473,
+     "source": "benzinga",
+     "summary": "",
+     "symbols": [
+      "DLPN"
+     ],
+     "url": "https://www.benzinga.com/news/earnings/26/11/63124473/dolphin-entertainment-q3-adj-eps-0-08-beats-0-04-estimate-sales-16-021m-beat-15-200m-estimate"
+    },
+    {
+     "created_at": "2026-11-10T14:04:27Z",
+     "headline": "Dolphin Entertainment Subsidiary 42West Leads Communications for Top Global Box Office Films",
+     "id": 118308624,
+     "source": "fiscal.ai",
+     "summary": "Dolphin Entertainment announced that its subsidiary, 42West, served as the strategic North American communications lead for the top two theatrical releases at the global box office.",
+     "symbols": [
+      "DLPN"
+     ],
+     "url": "https://www.newswire.com/news/dolphin-subsidiary-42west-drives-global-communications-behind-box-office"
+    }
+   ],
+   "DPU": [
+    {
+     "created_at": "2026-11-10T01:01:50Z",
+     "headline": "Nexpu Subsidiary Plans Asia-Pacific Music Creation Challenge",
+     "id": 118120584,
+     "source": "fiscal.ai",
+     "summary": "Nexpu Ltd. announced that its subsidiary, Top Kingwin Technology Inc., will host an Asia-Pacific-themed music creation challenge on its DPU Platform from November 8 to November 18, 2026.",
+     "symbols": [
+      "DPU"
+     ],
+     "url": "https://www.globenewswire.com/news-release/2026/11/09/3398192/0/en/nexpu-subsidiary-plans-music-creation-challenge.html"
+    }
+   ],
+   "GEVO": [
+    {
+     "created_at": "2026-11-11T11:50:40Z",
+     "headline": "Why Is Gevo Stock Gaining Wednesday?",
+     "id": 63133569,
+     "source": "benzinga",
+     "summary": "Gevo stock surges after Q3 revenue jumps 94% to $82.95M and EPS beats estimates at $0.12. Read the full Q3 earnings breakdown.",
+     "symbols": [
+      "GEVO"
+     ],
+     "url": "https://www.benzinga.com/markets/earnings/26/11/63133569/why-is-gevo-stock-gaining-wednesday"
+    },
+    {
+     "created_at": "2026-11-10T22:32:19Z",
+     "headline": "Gevo, Inc. Reports Record Financial Results for Third Quarter 2026",
+     "id": 119114880,
+     "source": "fiscal.ai",
+     "summary": "Gevo, Inc. announced record financial performance for the third quarter ended September 30, 2026, including $83 million in revenue and $23 million in net income.",
+     "symbols": [
+      "GEVO"
+     ],
+     "url": "https://www.globenewswire.com/news-release/2026/11/10/3400173/23976/en/gevo-reports-record-third-quarter-2026-financial-results.html"
+    },
+    {
+     "created_at": "2026-11-10T22:13:53Z",
+     "headline": "Gevo Q3 2026 Earnings Call Transcript",
+     "id": 63126963,
+     "source": "benzinga",
+     "summary": "Gevo (NASDAQ:GEVO) reported third-quarter financial results on Tuesday. The transcript from the company\u2019s third-quarter earnings call has been provided below.This transcript is brought to you by Benzinga APIs. For",
+     "symbols": [
+      "GEVO"
+     ],
+     "url": "https://www.benzinga.com/news/26/11/63126963/gevo-q3-2026-earnings-call-transcript"
+    },
+    {
+     "created_at": "2026-11-10T21:15:52Z",
+     "headline": "12 Energy Stocks Moving In Tuesday's After-Market Session",
+     "id": 63123294,
+     "source": "benzinga",
+     "summary": "Gainers\n\nGevo (NASDAQ:GEVO) shares moved upwards by 10.8% to $1.54 during Tuesday&#39;s after-market session. The company&#39;s market cap stands at $363.4 million. As per the press release, Q3 earnings came out today.",
+     "symbols": [
+      "AR",
+      "EU",
+      "GEVO",
+      "GLND",
+      "NXXT",
+      "RRC",
+      "RUBI",
+      "SAFX",
+      "SEI",
+      "SND",
+      "SOC",
+      "STAK"
+     ],
+     "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63123294/12-energy-stocks-moving-tuesday-s-after-market-session"
+    },
+    {
+     "created_at": "2026-11-10T21:08:29Z",
+     "headline": "Gevo Q3 Adj. EPS $0.12 Beats $0.03 Estimate, Sales $82.953M Beat $54.413M Estimate",
+     "id": 63122329,
+     "source": "benzinga",
+     "summary": "",
+     "symbols": [
+      "GEVO"
+     ],
+     "url": "https://www.benzinga.com/news/earnings/26/11/63122329/gevo-q3-adj-eps-0-12-beats-0-03-estimate-sales-82-953m-beat-54-413m-estimate"
+    }
+   ],
+   "SCLX": [
+    {
+     "created_at": "2026-11-11T12:05:30Z",
+     "headline": "12 Health Care Stocks Moving In Wednesday's Pre-Market Session",
+     "id": 63134047,
+     "source": "benzinga",
+     "summary": "Gainers\n\nSonoma Pharmaceuticals (NASDAQ:SNOA) stock increased by 13.2% to $1.29 during Wednesday&#39;s pre-market session. The company&#39;s market cap stands at $5.4 million. The company&#39;s, Q2 earnings came out",
+     "symbols": [
+      "ALGS",
+      "APUS",
+      "BMGL",
+      "BSEM",
+      "EVGN",
+      "FLNA",
+      "MRKR",
+      "NMAD",
+      "SCLX",
+      "SNOA",
+      "STIM",
+      "STXS"
+     ],
+     "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63134047/12-health-care-stocks-moving-wednesday-s-pre-market-session"
+    }
+   ],
+   "SNOA": [
+    {
+     "created_at": "2026-11-11T14:04:26Z",
+     "headline": "Sonoma Pharmaceuticals Reports Second Fiscal Quarter 2027 Financial Results",
+     "id": 119491381,
+     "source": "fiscal.ai",
+     "summary": "Sonoma Pharmaceuticals announced its financial results for the second fiscal quarter ended September 30, 2026, achieving positive net income before income taxes for the first time in its history.",
+     "symbols": [
+      "SNOA"
+     ],
+     "url": "https://www.newswire.com/news/sonoma-pharmaceuticals-reports-second-fiscal-quarter-2027-financial-22887344"
+    },
+    {
+     "created_at": "2026-11-11T12:05:30Z",
+     "headline": "12 Health Care Stocks Moving In Wednesday's Pre-Market Session",
+     "id": 63134047,
+     "source": "benzinga",
+     "summary": "Gainers\n\nSonoma Pharmaceuticals (NASDAQ:SNOA) stock increased by 13.2% to $1.29 during Wednesday&#39;s pre-market session. The company&#39;s market cap stands at $5.4 million. The company&#39;s, Q2 earnings came out",
+     "symbols": [
+      "ALGS",
+      "APUS",
+      "BMGL",
+      "BSEM",
+      "EVGN",
+      "FLNA",
+      "MRKR",
+      "NMAD",
+      "SCLX",
+      "SNOA",
+      "STIM",
+      "STXS"
+     ],
+     "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63134047/12-health-care-stocks-moving-wednesday-s-pre-market-session"
+    },
+    {
+     "created_at": "2026-11-10T21:27:25Z",
+     "headline": "Sonoma Pharmaceuticals Q2 EPS $(0.01) Up From $(0.32) YoY, Sales $7.174M Up From $5.604M YoY",
+     "id": 63124558,
+     "source": "benzinga",
+     "summary": "",
+     "symbols": [
+      "SNOA"
+     ],
+     "url": "https://www.benzinga.com/news/earnings/26/11/63124558/sonoma-pharmaceuticals-q2-eps-0-01-0-32-yoy-sales-7-174m-5-604m-yoy"
+    }
+   ],
+   "YMAT": [
+    {
+     "created_at": "2026-11-11T13:33:14Z",
+     "headline": "J-Star Issues Update On U.S. Carbon Fiber Supply Chain Efforts; Chairman And CEO Converts $8.2M Debt To Equity",
+     "id": 63136328,
+     "source": "benzinga",
+     "summary": "",
+     "symbols": [
+      "YMAT"
+     ],
+     "url": "https://www.benzinga.com/news/26/11/63136328/j-star-issues-update-u-s-carbon-fiber-supply-chain-efforts-chairman-and-ceo-converts-8-2m-debt-equit"
+    },
+    {
+     "created_at": "2026-11-11T12:05:30Z",
+     "headline": "10 Consumer Discretionary Stocks Moving In Wednesday's Pre-Market Session",
+     "id": 63134048,
+     "source": "benzinga",
+     "summary": "Gainers\n\nRedCloud Holdings (NASDAQ:RCT) shares increased by 28.7% to $0.04 during Wednesday&#39;s pre-market session. The market value of their outstanding shares is at $2.3 million. \nJ-Star Hldg (NASDAQ:YMAT) stock",
+     "symbols": [
+      "BYAH",
+      "DBGI",
+      "FOSL",
+      "GENK",
+      "GPRO",
+      "JZ",
+      "KIDZ",
+      "RCT",
+      "SDA",
+      "YMAT"
+     ],
+     "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63134048/10-consumer-discretionary-stocks-moving-wednesday-s-pre-market-session"
+    },
+    {
+     "created_at": "2026-11-11T11:42:30Z",
+     "headline": "Why Fossil Group Shares Are Trading Higher By Over 26%; Here Are 20 Stocks Moving Premarket",
+     "id": 63133304,
+     "source": "benzinga",
+     "summary": "Fossil surged 26% after beating Q3 estimates and raising FY26 sales guidance; SHF and OMH led gainers, while STAK and LWLG fell.",
+     "symbols": [
+      "ATRO",
+      "BMGL",
+      "BV",
+      "FOSL",
+      "HGTY",
+      "HUHU",
+      "INLF",
+      "LWLG",
+      "OMH",
+      "RAYA",
+      "RCT",
+      "SATL",
+      "SFWL",
+      "SHFS",
+      "SPIR",
+      "STAK",
+      "STXS",
+      "TLF",
+      "VIVK",
+      "YMAT"
+     ],
+     "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63133304/why-fossil-group-shares-are-trading-higher-by-over-26-here-are-20-stocks-moving-premarket"
+    },
+    {
+     "created_at": "2026-11-11T01:02:14Z",
+     "headline": "J-Star Holding Announces U.S. Operational Progress and Upcoming Delegation Visit",
+     "id": 119301285,
+     "source": "fiscal.ai",
+     "summary": "J-Star Holding Co., Ltd. is advancing its U.S. manufacturing initiative by hosting a delegation from a Japan-based global Tier 1 carbon fiber manufacturer for a site review of its planned Texas facility.",
+     "symbols": [
+      "YMAT"
+     ],
+     "url": "https://www.globenewswire.com/news-release/2026/11/09/3398259/0/en/j-star-holding-co-ltd-highlights-u-s-operational-progress-with-delegation-visit-from-global-tier-1-carbon-fiber-manufacturer.html"
     }
    ]
   },
@@ -26527,7 +27073,7 @@
   },
   "prior_day": "2026-11-10",
   "quotes": {},
-  "schema": 3,
+  "schema": 4,
   "t212": {
    "as_of": "2026-11-15",
    "path": "data/t212/2026-11-15.json",
@@ -26535,7 +27081,7 @@
    "sha256": "64644a9658ccf657d19718f70937e08e85245bd243d614253255a92226c66ce5"
   },
   "universe": {
-   "fetched_at": "2026-11-15T15:40:57.938780-05:00",
+   "fetched_at": "2026-11-15T15:50:28.135282-05:00",
    "source": "alpaca /v2/assets, common-stock heuristic",
    "symbols": {
     "A": "Agilent Technologies Inc.",
@@ -32013,12 +32559,17 @@
   "candidates": [
    {
     "as_of_et": "2026-11-11T09:15:00-05:00",
+    "catalyst_forced_none": false,
+    "catalyst_quality": 2,
+    "catalyst_status": "ok",
+    "catalyst_summary": "J-Star updates U.S. carbon fiber supply chain efforts, hosts delegation visit, and chairman converts $8.2M debt to equity.",
+    "catalyst_type": "other",
     "continuation_detail": "11-06 -3.7% 0.0x; 11-09 +12.4% 1.2x; 11-10 -15.3% 0.0x",
     "data_cutoff_et": "2026-11-11T08:59:00-05:00",
     "date": "2026-11-11",
     "dq_offering": "pass",
-    "dq_promo_or_no_catalyst": "",
-    "dq_reasons": "6-K 2026-10-30 reverse split approved or pending; 6-K 2026-10-23 reverse split approved or pending",
+    "dq_promo_or_no_catalyst": "fail",
+    "dq_reasons": "6-K 2026-10-30 reverse split approved or pending; 6-K 2026-10-23 reverse split approved or pending; classifier: promo/pump (J-Star updates U.S. carbon fiber supply chain efforts, hosts delegation visit, a)",
     "dq_reverse_split": "fail",
     "edgar_shares_asof": "2026-04-30",
     "edgar_shares_out": 13953333,
@@ -32030,6 +32581,8 @@
     "halt_status": "halt status unknown (historical run: the feed only holds current halts)",
     "last_bar_et": "08:58",
     "name": "J-Star Holding Co., Ltd. Class A Ordinary Shares",
+    "news_dropped_roundup": 2,
+    "news_used": 2,
     "pm_bars": 299,
     "pm_dollar_volume": 20302486.4,
     "pm_high": 1.79,
@@ -32038,6 +32591,7 @@
     "price": 1.275,
     "prior_close": 1,
     "prior_date": "2026-11-10",
+    "prior_day_volume_multiple": 0.06,
     "prior_range_pos_pct": 0.0,
     "rule_continuation": "fail",
     "rule_float": "",
@@ -32056,12 +32610,17 @@
    },
    {
     "as_of_et": "2026-11-11T09:15:00-05:00",
+    "catalyst_forced_none": false,
+    "catalyst_quality": 0,
+    "catalyst_status": "no_news",
+    "catalyst_summary": "",
+    "catalyst_type": "none",
     "continuation_detail": "11-06 -7.1% 0.1x; 11-09 +6.3% 0.0x; 11-10 -5.9% 0.0x",
     "data_cutoff_et": "2026-11-11T08:59:00-05:00",
     "date": "2026-11-11",
     "dq_offering": "pass",
-    "dq_promo_or_no_catalyst": "",
-    "dq_reasons": "",
+    "dq_promo_or_no_catalyst": "fail",
+    "dq_reasons": "no verifiable catalyst and no prior-day volume surge (0.1x)",
     "dq_reverse_split": "pass",
     "edgar_shares_asof": "2022-12-31",
     "edgar_shares_out": 10987679,
@@ -32073,6 +32632,8 @@
     "halt_status": "halt status unknown (historical run: the feed only holds current halts)",
     "last_bar_et": "08:58",
     "name": "Biddance AI Systems, Inc. Class A Ordinary Share",
+    "news_dropped_roundup": 0,
+    "news_used": 0,
     "pm_bars": 231,
     "pm_dollar_volume": 1516889.22,
     "pm_high": 2.3,
@@ -32081,6 +32642,7 @@
     "price": 2,
     "prior_close": 1.75,
     "prior_date": "2026-11-10",
+    "prior_day_volume_multiple": 0.05,
     "prior_range_pos_pct": 15.4,
     "rule_continuation": "fail",
     "rule_float": "",
@@ -32099,11 +32661,16 @@
    },
    {
     "as_of_et": "2026-11-11T09:15:00-05:00",
+    "catalyst_forced_none": false,
+    "catalyst_quality": 5,
+    "catalyst_status": "ok",
+    "catalyst_summary": "Gevo reported record Q3 2026 results: revenue about $83M, up 94%, EPS $0.12 beating estimates.",
+    "catalyst_type": "earnings",
     "continuation_detail": "11-06 +13.9% 1.0x; 11-09 +5.8% 1.0x; 11-10 -5.4% 2.5x",
     "data_cutoff_et": "2026-11-11T08:59:00-05:00",
     "date": "2026-11-11",
     "dq_offering": "pass",
-    "dq_promo_or_no_catalyst": "",
+    "dq_promo_or_no_catalyst": "pass",
     "dq_reasons": "",
     "dq_reverse_split": "pass",
     "edgar_shares_asof": "2026-11-06",
@@ -32116,6 +32683,8 @@
     "halt_status": "halt status unknown (historical run: the feed only holds current halts)",
     "last_bar_et": "08:58",
     "name": "Gevo, Inc. Common Stock",
+    "news_dropped_roundup": 1,
+    "news_used": 4,
     "pm_bars": 202,
     "pm_dollar_volume": 848230.82,
     "pm_high": 1.68,
@@ -32124,6 +32693,7 @@
     "price": 1.66,
     "prior_close": 1.39,
     "prior_date": "2026-11-10",
+    "prior_day_volume_multiple": 2.42,
     "prior_range_pos_pct": 0.0,
     "rule_continuation": "fail",
     "rule_float": "",
@@ -32142,12 +32712,17 @@
    },
    {
     "as_of_et": "2026-11-11T09:15:00-05:00",
+    "catalyst_forced_none": false,
+    "catalyst_quality": 1,
+    "catalyst_status": "ok",
+    "catalyst_summary": "Braiin named presenting partner of a defence robotics and counter-UAS congress in Queensland; no financial terms disclosed.",
+    "catalyst_type": "promo",
     "continuation_detail": "11-06 +1.4% 0.1x; 11-09 -7.4% 0.1x; 11-10 -11.4% 0.1x",
     "data_cutoff_et": "2026-11-11T08:59:00-05:00",
     "date": "2026-11-11",
     "dq_offering": "pass",
-    "dq_promo_or_no_catalyst": "",
-    "dq_reasons": "",
+    "dq_promo_or_no_catalyst": "fail",
+    "dq_reasons": "classifier: promo/pump (Braiin named presenting partner of a defence robotics and counter-UAS congress i)",
     "dq_reverse_split": "pass",
     "edgar_shares_asof": null,
     "edgar_shares_out": null,
@@ -32159,6 +32734,8 @@
     "halt_status": "halt status unknown (historical run: the feed only holds current halts)",
     "last_bar_et": "08:56",
     "name": "Braiin Limited Common Stock",
+    "news_dropped_roundup": 0,
+    "news_used": 1,
     "pm_bars": 94,
     "pm_dollar_volume": 270216.24,
     "pm_high": 2,
@@ -32167,6 +32744,7 @@
     "price": 1.97,
     "prior_close": 1.78,
     "prior_date": "2026-11-10",
+    "prior_day_volume_multiple": 0.07,
     "prior_range_pos_pct": 10.5,
     "rule_continuation": "fail",
     "rule_float": "",
@@ -32185,12 +32763,17 @@
    },
    {
     "as_of_et": "2026-11-11T09:15:00-05:00",
+    "catalyst_forced_none": false,
+    "catalyst_quality": 0,
+    "catalyst_status": "no_news",
+    "catalyst_summary": "",
+    "catalyst_type": "none",
     "continuation_detail": "11-06 +8.7% 0.2x; 11-09 +11.6% 0.3x; 11-10 +2.7% 0.1x",
     "data_cutoff_et": "2026-11-11T08:59:00-05:00",
     "date": "2026-11-11",
     "dq_offering": "pass",
-    "dq_promo_or_no_catalyst": "",
-    "dq_reasons": "",
+    "dq_promo_or_no_catalyst": "fail",
+    "dq_reasons": "no verifiable catalyst and no prior-day volume surge (0.1x)",
     "dq_reverse_split": "pass",
     "edgar_shares_asof": null,
     "edgar_shares_out": null,
@@ -32202,6 +32785,8 @@
     "halt_status": "halt status unknown (historical run: the feed only holds current halts)",
     "last_bar_et": "08:56",
     "name": "Cango Inc.",
+    "news_dropped_roundup": 0,
+    "news_used": 0,
     "pm_bars": 58,
     "pm_dollar_volume": 241744.81,
     "pm_high": 1.34,
@@ -32210,6 +32795,7 @@
     "price": 1.31,
     "prior_close": 1.14,
     "prior_date": "2026-11-10",
+    "prior_day_volume_multiple": 0.15,
     "prior_range_pos_pct": 73.7,
     "rule_continuation": "fail",
     "rule_float": "",
@@ -32228,11 +32814,16 @@
    },
    {
     "as_of_et": "2026-11-11T09:15:00-05:00",
+    "catalyst_forced_none": false,
+    "catalyst_quality": 4,
+    "catalyst_status": "ok",
+    "catalyst_summary": "Sonoma Pharmaceuticals reported fiscal Q2 2027 sales of $7.17M and first-ever pre-tax net income.",
+    "catalyst_type": "earnings",
     "continuation_detail": "11-06 +3.7% 1.1x; 11-09 +1.8% 0.7x; 11-10 +0.9% 2.4x",
     "data_cutoff_et": "2026-11-11T08:59:00-05:00",
     "date": "2026-11-11",
     "dq_offering": "pass",
-    "dq_promo_or_no_catalyst": "",
+    "dq_promo_or_no_catalyst": "pass",
     "dq_reasons": "",
     "dq_reverse_split": "pass",
     "edgar_shares_asof": "2026-11-10",
@@ -32245,6 +32836,8 @@
     "halt_status": "halt status unknown (historical run: the feed only holds current halts)",
     "last_bar_et": "08:58",
     "name": "Sonoma Pharmaceuticals, Inc. Common Stock",
+    "news_dropped_roundup": 1,
+    "news_used": 2,
     "pm_bars": 53,
     "pm_dollar_volume": 78554.71,
     "pm_high": 1.41,
@@ -32253,6 +32846,7 @@
     "price": 1.28,
     "prior_close": 1.14,
     "prior_date": "2026-11-10",
+    "prior_day_volume_multiple": 2.35,
     "prior_range_pos_pct": 62.3,
     "rule_continuation": "fail",
     "rule_float": "",
@@ -32271,11 +32865,16 @@
    },
    {
     "as_of_et": "2026-11-11T09:15:00-05:00",
+    "catalyst_forced_none": false,
+    "catalyst_quality": 5,
+    "catalyst_status": "ok",
+    "catalyst_summary": "Dolphin reported record Q3 2026 revenue of $16.0M, up 8.3% year over year, with adjusted EPS of $0.08 beating estimates.",
+    "catalyst_type": "earnings",
     "continuation_detail": "11-06 +3.5% 0.9x; 11-09 +5.7% 1.9x; 11-10 -6.1% 0.5x",
     "data_cutoff_et": "2026-11-11T08:59:00-05:00",
     "date": "2026-11-11",
     "dq_offering": "pass",
-    "dq_promo_or_no_catalyst": "",
+    "dq_promo_or_no_catalyst": "pass",
     "dq_reasons": "",
     "dq_reverse_split": "pass",
     "edgar_shares_asof": "2026-11-06",
@@ -32288,6 +32887,8 @@
     "halt_status": "halt status unknown (historical run: the feed only holds current halts)",
     "last_bar_et": "08:53",
     "name": "Dolphin Entertainment, Inc. Common Stock",
+    "news_dropped_roundup": 0,
+    "news_used": 5,
     "pm_bars": 8,
     "pm_dollar_volume": 3275.99,
     "pm_high": 1.1611,
@@ -32296,6 +32897,7 @@
     "price": 1.06,
     "prior_close": 0.9252,
     "prior_date": "2026-11-10",
+    "prior_day_volume_multiple": 0.43,
     "prior_range_pos_pct": 0.6,
     "rule_continuation": "fail",
     "rule_float": "",
@@ -32314,12 +32916,17 @@
    },
    {
     "as_of_et": "2026-11-11T09:15:00-05:00",
+    "catalyst_forced_none": false,
+    "catalyst_quality": 1,
+    "catalyst_status": "ok",
+    "catalyst_summary": "Subsidiary Top Kingwin plans a music creation challenge on DPU Platform, November 8-18, 2026.",
+    "catalyst_type": "promo",
     "continuation_detail": "11-09 +11.3% 3.8x vol",
     "data_cutoff_et": "2026-11-11T08:59:00-05:00",
     "date": "2026-11-11",
     "dq_offering": "pass",
-    "dq_promo_or_no_catalyst": "",
-    "dq_reasons": "",
+    "dq_promo_or_no_catalyst": "fail",
+    "dq_reasons": "classifier: promo/pump (Subsidiary Top Kingwin plans a music creation challenge on DPU Platform, Novembe)",
     "dq_reverse_split": "pass",
     "edgar_shares_asof": null,
     "edgar_shares_out": null,
@@ -32331,6 +32938,8 @@
     "halt_status": "halt status unknown (historical run: the feed only holds current halts)",
     "last_bar_et": "08:29",
     "name": "Nexpu Ltd. Class A Ordinary Shares",
+    "news_dropped_roundup": 0,
+    "news_used": 1,
     "pm_bars": 3,
     "pm_dollar_volume": 1596.97,
     "pm_high": 1.5,
@@ -32339,6 +32948,7 @@
     "price": 1.5,
     "prior_close": 1.31,
     "prior_date": "2026-11-10",
+    "prior_day_volume_multiple": 0.21,
     "prior_range_pos_pct": 9.1,
     "rule_continuation": "pass",
     "rule_float": "",
@@ -32357,11 +32967,16 @@
    },
    {
     "as_of_et": "2026-11-11T09:15:00-05:00",
+    "catalyst_forced_none": false,
+    "catalyst_quality": 0,
+    "catalyst_status": "no_news",
+    "catalyst_summary": "",
+    "catalyst_type": "none",
     "continuation_detail": "11-06 +36.0% 5.9x vol",
     "data_cutoff_et": "2026-11-11T08:59:00-05:00",
     "date": "2026-11-11",
     "dq_offering": "pass",
-    "dq_promo_or_no_catalyst": "",
+    "dq_promo_or_no_catalyst": "pass",
     "dq_reasons": "",
     "dq_reverse_split": "pass",
     "edgar_shares_asof": "2026-08-13",
@@ -32374,6 +32989,8 @@
     "halt_status": "halt status unknown (historical run: the feed only holds current halts)",
     "last_bar_et": "04:24",
     "name": "Caring Brands, Inc. Common Stock",
+    "news_dropped_roundup": 0,
+    "news_used": 0,
     "pm_bars": 3,
     "pm_dollar_volume": 1580.06,
     "pm_high": 1.04,
@@ -32382,6 +32999,7 @@
     "price": 1.04,
     "prior_close": 0.9454,
     "prior_date": "2026-11-10",
+    "prior_day_volume_multiple": 3.01,
     "prior_range_pos_pct": 32.5,
     "rule_continuation": "pass",
     "rule_float": "",
@@ -32400,12 +33018,17 @@
    },
    {
     "as_of_et": "2026-11-11T09:15:00-05:00",
+    "catalyst_forced_none": false,
+    "catalyst_quality": 0,
+    "catalyst_status": "no_news",
+    "catalyst_summary": "",
+    "catalyst_type": "none",
     "continuation_detail": "11-06 +0.0% 0.5x; 11-09 +2.4% 0.7x; 11-10 -7.5% 0.8x",
     "data_cutoff_et": "2026-11-11T08:59:00-05:00",
     "date": "2026-11-11",
     "dq_offering": "pass",
-    "dq_promo_or_no_catalyst": "",
-    "dq_reasons": "",
+    "dq_promo_or_no_catalyst": "fail",
+    "dq_reasons": "no verifiable catalyst and no prior-day volume surge (0.8x)",
     "dq_reverse_split": "pass",
     "edgar_shares_asof": "2026-08-10",
     "edgar_shares_out": 8493000,
@@ -32417,6 +33040,8 @@
     "halt_status": "halt status unknown (historical run: the feed only holds current halts)",
     "last_bar_et": "04:03",
     "name": "Scilex Holding Company Common Stock",
+    "news_dropped_roundup": 1,
+    "news_used": 0,
     "pm_bars": 2,
     "pm_dollar_volume": 963.94,
     "pm_high": 1.8,
@@ -32425,6 +33050,7 @@
     "price": 1.8,
     "prior_close": 1.61,
     "prior_date": "2026-11-10",
+    "prior_day_volume_multiple": 0.82,
     "prior_range_pos_pct": 0.0,
     "rule_continuation": "fail",
     "rule_float": "",
@@ -32453,6 +33079,10 @@
    "rules": {
     "dq_offering": {
      "pass": 10
+    },
+    "dq_promo_or_no_catalyst": {
+     "fail": 6,
+     "pass": 4
     },
     "dq_reverse_split": {
      "fail": 1,

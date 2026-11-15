@@ -1,6 +1,190 @@
 {
  "inputs": {
   "as_of_et": "2026-11-09T09:15:00-05:00",
+  "catalyst": {
+   "BMR": {
+    "attempts": [],
+    "forced_none": false,
+    "items_dropped_roundup": 1,
+    "items_mentioning_company": 0,
+    "items_used": 0,
+    "model": "claude-haiku-5-5",
+    "output": {
+     "catalyst_type": "none",
+     "dilution_language": false,
+     "one_line_summary": "",
+     "promo_or_pump_flag": false,
+     "quality": 0
+    },
+    "status": "no_news"
+   },
+   "CLRB": {
+    "attempts": [],
+    "forced_none": false,
+    "items_dropped_roundup": 0,
+    "items_mentioning_company": 0,
+    "items_used": 0,
+    "model": "claude-haiku-5-5",
+    "output": {
+     "catalyst_type": "none",
+     "dilution_language": false,
+     "one_line_summary": "",
+     "promo_or_pump_flag": false,
+     "quality": 0
+    },
+    "status": "no_news"
+   },
+   "EZGO": {
+    "attempts": [
+     {
+      "input_tokens": 984,
+      "output_tokens": 86,
+      "stop_reason": "end_turn",
+      "valid": true
+     }
+    ],
+    "forced_none": true,
+    "items_dropped_roundup": 0,
+    "items_mentioning_company": 0,
+    "items_used": 0,
+    "model": "claude-haiku-5-5",
+    "model_output": {
+     "catalyst_type": "none",
+     "dilution_language": false,
+     "one_line_summary": "No company-specific news in the last 48 hours; only a routine 6-K foreign private issuer report filed.",
+     "promo_or_pump_flag": false,
+     "quality": 0
+    },
+    "output": {
+     "catalyst_type": "none",
+     "dilution_language": false,
+     "one_line_summary": "No company-specific news in the last 48 hours; only a routine 6-K foreign private issuer report filed.",
+     "promo_or_pump_flag": false,
+     "quality": 0
+    },
+    "status": "ok"
+   },
+   "NCPL": {
+    "attempts": [
+     {
+      "input_tokens": 1174,
+      "output_tokens": 95,
+      "stop_reason": "end_turn",
+      "valid": true
+     }
+    ],
+    "forced_none": false,
+    "items_dropped_roundup": 0,
+    "items_mentioning_company": 2,
+    "items_used": 2,
+    "model": "claude-haiku-5-5",
+    "model_output": {
+     "catalyst_type": "other",
+     "dilution_language": false,
+     "one_line_summary": "Netcapital received Nasdaq exception extending deadline to regain compliance with periodic filing requirements through February 9, 2027.",
+     "promo_or_pump_flag": false,
+     "quality": 1
+    },
+    "output": {
+     "catalyst_type": "other",
+     "dilution_language": false,
+     "one_line_summary": "Netcapital received Nasdaq exception extending deadline to regain compliance with periodic filing requirements through February 9, 2027.",
+     "promo_or_pump_flag": false,
+     "quality": 1
+    },
+    "status": "ok"
+   },
+   "WLDS": {
+    "attempts": [
+     {
+      "input_tokens": 1011,
+      "output_tokens": 88,
+      "stop_reason": "end_turn",
+      "valid": true
+     }
+    ],
+    "forced_none": true,
+    "items_dropped_roundup": 0,
+    "items_mentioning_company": 0,
+    "items_used": 0,
+    "model": "claude-haiku-5-5",
+    "model_output": {
+     "catalyst_type": "none",
+     "dilution_language": false,
+     "one_line_summary": "No company-specific news in the last 48 hours; only Form 4 insider filings appear in recent SEC filings.",
+     "promo_or_pump_flag": false,
+     "quality": 0
+    },
+    "output": {
+     "catalyst_type": "none",
+     "dilution_language": false,
+     "one_line_summary": "No company-specific news in the last 48 hours; only Form 4 insider filings appear in recent SEC filings.",
+     "promo_or_pump_flag": false,
+     "quality": 0
+    },
+    "status": "ok"
+   },
+   "WORX": {
+    "attempts": [
+     {
+      "input_tokens": 958,
+      "output_tokens": 81,
+      "stop_reason": "end_turn",
+      "valid": true
+     }
+    ],
+    "forced_none": true,
+    "items_dropped_roundup": 0,
+    "items_mentioning_company": 0,
+    "items_used": 0,
+    "model": "claude-haiku-5-5",
+    "model_output": {
+     "catalyst_type": "none",
+     "dilution_language": false,
+     "one_line_summary": "No company-specific news in the last 48 hours; only a Schedule 13G filing appears.",
+     "promo_or_pump_flag": false,
+     "quality": 0
+    },
+    "output": {
+     "catalyst_type": "none",
+     "dilution_language": false,
+     "one_line_summary": "No company-specific news in the last 48 hours; only a Schedule 13G filing appears.",
+     "promo_or_pump_flag": false,
+     "quality": 0
+    },
+    "status": "ok"
+   },
+   "YMAT": {
+    "attempts": [
+     {
+      "input_tokens": 1037,
+      "output_tokens": 95,
+      "stop_reason": "end_turn",
+      "valid": true
+     }
+    ],
+    "forced_none": false,
+    "items_dropped_roundup": 2,
+    "items_mentioning_company": 1,
+    "items_used": 1,
+    "model": "claude-haiku-5-5",
+    "model_output": {
+     "catalyst_type": "other",
+     "dilution_language": false,
+     "one_line_summary": "J-Star Holding will host a Japanese carbon fiber and composite manufacturer for a site review; no financial terms disclosed.",
+     "promo_or_pump_flag": false,
+     "quality": 1
+    },
+    "output": {
+     "catalyst_type": "other",
+     "dilution_language": false,
+     "one_line_summary": "J-Star Holding will host a Japanese carbon fiber and composite manufacturer for a site review; no financial terms disclosed.",
+     "promo_or_pump_flag": false,
+     "quality": 1
+    },
+    "status": "ok"
+   }
+  },
   "data_cutoff_et": "2026-11-09T08:59:00-05:00",
   "day": "2026-11-09",
   "edgar": {
@@ -1309,7 +1493,7 @@
   },
   "halts": {
    "error": null,
-   "fetched_at": "2026-11-15T15:40:18.601837-05:00",
+   "fetched_at": "2026-11-15T15:49:22.191835-05:00",
    "items": [
     {
      "HaltDate": "11/13/2026",
@@ -3987,6 +4171,124 @@
      "t": "2026-11-06T05:00:00Z",
      "v": 72043,
      "vw": 1.082019
+    }
+   ]
+  },
+  "news": {
+   "BMR": [
+    {
+     "created_at": "2026-11-09T12:05:32Z",
+     "headline": "11 Information Technology Stocks Moving In Monday's Pre-Market Session",
+     "id": 63026975,
+     "source": "benzinga",
+     "summary": "Gainers\n\nAmplitech Group, Inc. - Series B Right (NASDAQ:AMPGZ) shares rose 68.6% to $0.02 during Monday&#39;s pre-market session. \nARB IOT Group (NASDAQ:ARBB) stock increased by 11.79% to $3.84. The market value of",
+     "symbols": [
+      "AMPGZ",
+      "ARBB",
+      "ARBK",
+      "AUUD",
+      "BMR",
+      "CCTG",
+      "CEVA",
+      "FUSE",
+      "MASK",
+      "MNDY",
+      "VISN"
+     ],
+     "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63026975/11-information-technology-stocks-moving-monday-s-pre-market-session"
+    }
+   ],
+   "CLRB": [],
+   "EZGO": [],
+   "NCPL": [
+    {
+     "created_at": "2026-11-09T14:03:45Z",
+     "headline": "Netcapital Inc. Receives Nasdaq Extension to Regain Compliance",
+     "id": 117289398,
+     "source": "fiscal.ai",
+     "summary": "Netcapital Inc. announced it received a letter from Nasdaq granting an exception to regain compliance with Listing Rule 5250(c)(1) regarding periodic filing requirements.",
+     "symbols": [
+      "NCPL"
+     ],
+     "url": "https://www.globenewswire.com/news-release/2026/11/09/3398303/0/en/netcapital-inc-receives-nasdaq-extension-to-regain-compliance-with-periodic-filing-requirement.html"
+    },
+    {
+     "created_at": "2026-11-09T12:30:51Z",
+     "headline": "Netcapital Receives Nasdaq Extension Through Feb. 9, 2027, To Regain Compliance",
+     "id": 63027875,
+     "source": "benzinga",
+     "summary": "",
+     "symbols": [
+      "NCPL"
+     ],
+     "url": "https://www.benzinga.com/news/26/11/63027875/netcapital-receives-nasdaq-extension-through-feb-9-2027-regain-compliance"
+    }
+   ],
+   "WLDS": [],
+   "WORX": [],
+   "YMAT": [
+    {
+     "created_at": "2026-11-09T12:21:39Z",
+     "headline": "J-Star Holding To Host Japanese Carbon Fiber And Advanced Composite Manufacturer For A Comprehensive Site Review",
+     "id": 63027666,
+     "source": "benzinga",
+     "summary": "",
+     "symbols": [
+      "YMAT"
+     ],
+     "url": "https://www.benzinga.com/news/26/11/63027666/j-star-holding-host-japanese-carbon-fiber-and-advanced-composite-manufacturer-comprehensive-site-rev"
+    },
+    {
+     "created_at": "2026-11-09T12:05:32Z",
+     "headline": "12 Consumer Discretionary Stocks Moving In Monday's Pre-Market Session",
+     "id": 63026974,
+     "source": "benzinga",
+     "summary": "Gainers\n\nJiade (NASDAQ:JDZG) shares rose 65.8% to $0.35 during Monday&#39;s pre-market session. The market value of their outstanding shares is at $1.1 million. \nNetclass Technology (NASDAQ:NTCL) shares rose 47.95% to",
+     "symbols": [
+      "AZIO",
+      "DBGI",
+      "EPSM",
+      "JDZG",
+      "JEM",
+      "NTCL",
+      "PLCE",
+      "RCT",
+      "SDA",
+      "YHGJ",
+      "YMAT",
+      "ZCMD"
+     ],
+     "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63026974/12-consumer-discretionary-stocks-moving-monday-s-pre-market-session"
+    },
+    {
+     "created_at": "2026-11-09T09:25:43Z",
+     "headline": "Why Greenfire Resources Shares Are Trading Higher By Over 25%; Here Are 20 Stocks Moving Premarket",
+     "id": 63023663,
+     "source": "benzinga",
+     "summary": "Greenfire shares surged 25% after Strathcona announced a C$2.7B-C$2.9B acquisition; several small-cap stocks posted sharp premarket gains and losses.",
+     "symbols": [
+      "CDT",
+      "CEVA",
+      "CIIT",
+      "CYPH",
+      "FTH",
+      "GFR",
+      "INLF",
+      "JDZG",
+      "KPTI",
+      "NTCL",
+      "NWGL",
+      "OMH",
+      "ONCO",
+      "PLUR",
+      "PLUT",
+      "RCT",
+      "SDA",
+      "TGE",
+      "VIR",
+      "YMAT"
+     ],
+     "url": "https://www.benzinga.com/trading-ideas/movers/26/11/63023663/why-greenfire-resources-shares-are-trading-higher-by-over-25-here-are-20-stocks-moving-premarket"
     }
    ]
   },
@@ -20977,7 +21279,7 @@
   },
   "prior_day": "2026-11-06",
   "quotes": {},
-  "schema": 3,
+  "schema": 4,
   "t212": {
    "as_of": "2026-11-15",
    "path": "data/t212/2026-11-15.json",
@@ -20985,7 +21287,7 @@
    "sha256": "64644a9658ccf657d19718f70937e08e85245bd243d614253255a92226c66ce5"
   },
   "universe": {
-   "fetched_at": "2026-11-15T15:40:18.601837-05:00",
+   "fetched_at": "2026-11-15T15:49:22.191835-05:00",
    "source": "alpaca /v2/assets, common-stock heuristic",
    "symbols": {
     "A": "Agilent Technologies Inc.",
@@ -26463,11 +26765,16 @@
   "candidates": [
    {
     "as_of_et": "2026-11-09T09:15:00-05:00",
+    "catalyst_forced_none": false,
+    "catalyst_quality": 1,
+    "catalyst_status": "ok",
+    "catalyst_summary": "J-Star Holding will host a Japanese carbon fiber and composite manufacturer for a site review; no financial terms disclosed.",
+    "catalyst_type": "other",
     "continuation_detail": "11-04 +2.4% 0.0x; 11-05 -13.5% 0.0x; 11-06 -3.7% 0.0x",
     "data_cutoff_et": "2026-11-09T08:59:00-05:00",
     "date": "2026-11-09",
     "dq_offering": "pass",
-    "dq_promo_or_no_catalyst": "",
+    "dq_promo_or_no_catalyst": "pass",
     "dq_reasons": "6-K 2026-10-30 reverse split approved or pending; 6-K 2026-10-23 reverse split approved or pending",
     "dq_reverse_split": "fail",
     "edgar_shares_asof": "2026-04-30",
@@ -26480,6 +26787,8 @@
     "halt_status": "halt status unknown (historical run: the feed only holds current halts)",
     "last_bar_et": "08:58",
     "name": "J-Star Holding Co., Ltd. Class A Ordinary Shares",
+    "news_dropped_roundup": 2,
+    "news_used": 1,
     "pm_bars": 299,
     "pm_dollar_volume": 17014277.63,
     "pm_high": 1.9697,
@@ -26488,6 +26797,7 @@
     "price": 1.2502,
     "prior_close": 1.05,
     "prior_date": "2026-11-06",
+    "prior_day_volume_multiple": 0.01,
     "prior_range_pos_pct": 0.0,
     "rule_continuation": "fail",
     "rule_float": "",
@@ -26506,11 +26816,16 @@
    },
    {
     "as_of_et": "2026-11-09T09:15:00-05:00",
+    "catalyst_forced_none": false,
+    "catalyst_quality": 1,
+    "catalyst_status": "ok",
+    "catalyst_summary": "Netcapital received Nasdaq exception extending deadline to regain compliance with periodic filing requirements through February 9, 2027.",
+    "catalyst_type": "other",
     "continuation_detail": "11-04 -9.6% 0.1x; 11-05 -7.8% 0.1x; 11-06 -3.1% 0.0x",
     "data_cutoff_et": "2026-11-09T08:59:00-05:00",
     "date": "2026-11-09",
     "dq_offering": "pass",
-    "dq_promo_or_no_catalyst": "",
+    "dq_promo_or_no_catalyst": "pass",
     "dq_reasons": "",
     "dq_reverse_split": "pass",
     "edgar_shares_asof": "2026-03-19",
@@ -26523,6 +26838,8 @@
     "halt_status": "halt status unknown (historical run: the feed only holds current halts)",
     "last_bar_et": "08:58",
     "name": "Netcapital Inc. Common Stock",
+    "news_dropped_roundup": 0,
+    "news_used": 2,
     "pm_bars": 113,
     "pm_dollar_volume": 1693253.16,
     "pm_high": 1.53,
@@ -26531,6 +26848,7 @@
     "price": 1.5285,
     "prior_close": 1.26,
     "prior_date": "2026-11-06",
+    "prior_day_volume_multiple": 0.03,
     "prior_range_pos_pct": 53.8,
     "rule_continuation": "fail",
     "rule_float": "",
@@ -26549,12 +26867,17 @@
    },
    {
     "as_of_et": "2026-11-09T09:15:00-05:00",
+    "catalyst_forced_none": true,
+    "catalyst_quality": 0,
+    "catalyst_status": "ok",
+    "catalyst_summary": "No company-specific news in the last 48 hours; only a routine 6-K foreign private issuer report filed.",
+    "catalyst_type": "none",
     "continuation_detail": "11-05 +192.1% 1.3x vol",
     "data_cutoff_et": "2026-11-09T08:59:00-05:00",
     "date": "2026-11-09",
     "dq_offering": "pass",
-    "dq_promo_or_no_catalyst": "",
-    "dq_reasons": "6-K 2026-11-05 reverse split approved or pending",
+    "dq_promo_or_no_catalyst": "fail",
+    "dq_reasons": "6-K 2026-11-05 reverse split approved or pending; no verifiable catalyst and no prior-day volume surge (0.2x)",
     "dq_reverse_split": "fail",
     "edgar_shares_asof": "2025-01-17",
     "edgar_shares_out": 5675172,
@@ -26566,6 +26889,8 @@
     "halt_status": "halt status unknown (historical run: the feed only holds current halts)",
     "last_bar_et": "08:58",
     "name": "EZGO Technologies Ltd. Ordinary Shares",
+    "news_dropped_roundup": 0,
+    "news_used": 0,
     "pm_bars": 48,
     "pm_dollar_volume": 58080.24,
     "pm_high": 1.9932,
@@ -26574,6 +26899,7 @@
     "price": 1.8874,
     "prior_close": 1.715,
     "prior_date": "2026-11-06",
+    "prior_day_volume_multiple": 0.2,
     "prior_range_pos_pct": 38.7,
     "rule_continuation": "pass",
     "rule_float": "",
@@ -26592,12 +26918,17 @@
    },
    {
     "as_of_et": "2026-11-09T09:15:00-05:00",
+    "catalyst_forced_none": true,
+    "catalyst_quality": 0,
+    "catalyst_status": "ok",
+    "catalyst_summary": "No company-specific news in the last 48 hours; only a Schedule 13G filing appears.",
+    "catalyst_type": "none",
     "continuation_detail": "11-04 +8.4% 0.4x; 11-05 -8.4% 0.0x; 11-06 -9.2% 0.0x",
     "data_cutoff_et": "2026-11-09T08:59:00-05:00",
     "date": "2026-11-09",
     "dq_offering": "pass",
-    "dq_promo_or_no_catalyst": "",
-    "dq_reasons": "",
+    "dq_promo_or_no_catalyst": "fail",
+    "dq_reasons": "no verifiable catalyst and no prior-day volume surge (0.0x)",
     "dq_reverse_split": "pass",
     "edgar_shares_asof": "2026-08-14",
     "edgar_shares_out": 89789,
@@ -26609,6 +26940,8 @@
     "halt_status": "halt status unknown (historical run: the feed only holds current halts)",
     "last_bar_et": "08:56",
     "name": "SCWorx Corp. Common Stock",
+    "news_dropped_roundup": 0,
+    "news_used": 0,
     "pm_bars": 18,
     "pm_dollar_volume": 10537.77,
     "pm_high": 1.45,
@@ -26617,6 +26950,7 @@
     "price": 1.45,
     "prior_close": 1.29,
     "prior_date": "2026-11-06",
+    "prior_day_volume_multiple": 0.01,
     "prior_range_pos_pct": 14.3,
     "rule_continuation": "fail",
     "rule_float": "",
@@ -26635,12 +26969,17 @@
    },
    {
     "as_of_et": "2026-11-09T09:15:00-05:00",
+    "catalyst_forced_none": false,
+    "catalyst_quality": 0,
+    "catalyst_status": "no_news",
+    "catalyst_summary": "",
+    "catalyst_type": "none",
     "continuation_detail": "11-04 -6.1% 0.5x; 11-05 -6.5% 0.8x; 11-06 +8.7% 0.4x",
     "data_cutoff_et": "2026-11-09T08:59:00-05:00",
     "date": "2026-11-09",
     "dq_offering": "pass",
-    "dq_promo_or_no_catalyst": "",
-    "dq_reasons": "",
+    "dq_promo_or_no_catalyst": "fail",
+    "dq_reasons": "no verifiable catalyst and no prior-day volume surge (0.4x)",
     "dq_reverse_split": "pass",
     "edgar_shares_asof": "2026-08-11",
     "edgar_shares_out": 9452108,
@@ -26652,6 +26991,8 @@
     "halt_status": "halt status unknown (historical run: the feed only holds current halts)",
     "last_bar_et": "08:52",
     "name": "Cellectar Biosciences, Inc. Common Stock",
+    "news_dropped_roundup": 0,
+    "news_used": 0,
     "pm_bars": 4,
     "pm_dollar_volume": 2858.26,
     "pm_high": 1.3981,
@@ -26660,6 +27001,7 @@
     "price": 1.3799,
     "prior_close": 1.25,
     "prior_date": "2026-11-06",
+    "prior_day_volume_multiple": 0.44,
     "prior_range_pos_pct": 83.1,
     "rule_continuation": "fail",
     "rule_float": "",
@@ -26678,12 +27020,17 @@
    },
    {
     "as_of_et": "2026-11-09T09:15:00-05:00",
+    "catalyst_forced_none": true,
+    "catalyst_quality": 0,
+    "catalyst_status": "ok",
+    "catalyst_summary": "No company-specific news in the last 48 hours; only Form 4 insider filings appear in recent SEC filings.",
+    "catalyst_type": "none",
     "continuation_detail": "11-04 +0.0% 1.2x; 11-05 -9.7% 0.6x; 11-06 +0.0% 0.1x",
     "data_cutoff_et": "2026-11-09T08:59:00-05:00",
     "date": "2026-11-09",
     "dq_offering": "pass",
-    "dq_promo_or_no_catalyst": "",
-    "dq_reasons": "",
+    "dq_promo_or_no_catalyst": "fail",
+    "dq_reasons": "no verifiable catalyst and no prior-day volume surge (0.1x)",
     "dq_reverse_split": "pass",
     "edgar_shares_asof": "2025-12-31",
     "edgar_shares_out": 2882802,
@@ -26695,6 +27042,8 @@
     "halt_status": "halt status unknown (historical run: the feed only holds current halts)",
     "last_bar_et": "08:48",
     "name": "Wearable Devices Ltd. Ordinary Share",
+    "news_dropped_roundup": 0,
+    "news_used": 0,
     "pm_bars": 1,
     "pm_dollar_volume": 2183.07,
     "pm_high": 1.43,
@@ -26703,6 +27052,7 @@
     "price": 1.43,
     "prior_close": 1.3,
     "prior_date": "2026-11-06",
+    "prior_day_volume_multiple": 0.09,
     "prior_range_pos_pct": 8.3,
     "rule_continuation": "fail",
     "rule_float": "",
@@ -26721,12 +27071,17 @@
    },
    {
     "as_of_et": "2026-11-09T09:15:00-05:00",
+    "catalyst_forced_none": false,
+    "catalyst_quality": 0,
+    "catalyst_status": "no_news",
+    "catalyst_summary": "",
+    "catalyst_type": "none",
     "continuation_detail": "11-04 -1.9% 0.8x; 11-05 -1.9% 1.6x; 11-06 -1.0% 0.7x",
     "data_cutoff_et": "2026-11-09T08:59:00-05:00",
     "date": "2026-11-09",
     "dq_offering": "pass",
-    "dq_promo_or_no_catalyst": "",
-    "dq_reasons": "",
+    "dq_promo_or_no_catalyst": "fail",
+    "dq_reasons": "no verifiable catalyst and no prior-day volume surge (0.7x)",
     "dq_reverse_split": "pass",
     "edgar_shares_asof": "2025-12-31",
     "edgar_shares_out": 15529854,
@@ -26738,6 +27093,8 @@
     "halt_status": "halt status unknown (historical run: the feed only holds current halts)",
     "last_bar_et": "04:06",
     "name": "Beamr Imaging Ltd. Ordinary Share",
+    "news_dropped_roundup": 1,
+    "news_used": 0,
     "pm_bars": 1,
     "pm_dollar_volume": 143.64,
     "pm_high": 1.14,
@@ -26746,6 +27103,7 @@
     "price": 1.14,
     "prior_close": 1.03,
     "prior_date": "2026-11-06",
+    "prior_day_volume_multiple": 0.68,
     "prior_range_pos_pct": 16.7,
     "rule_continuation": "fail",
     "rule_float": "",
@@ -26774,6 +27132,10 @@
    "rules": {
     "dq_offering": {
      "pass": 7
+    },
+    "dq_promo_or_no_catalyst": {
+     "fail": 5,
+     "pass": 2
     },
     "dq_reverse_split": {
      "fail": 2,

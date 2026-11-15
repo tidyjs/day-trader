@@ -182,7 +182,7 @@ GitHub Actions on a private repo. Cron is UTC only, so schedule two entries (one
 
 **M1 Scanner.** Universe, prior close, gap %, T212 filter, and the candidate log for those rules. Acceptance: reproducible on a saved day, no look-ahead.
 **M2 Filters and flags.** All of 4.1-4.3 with unit tests using fixture data. Yahoo (and SIP quotes) only for names that pass every cheaper rule; a pass/fail column per rule in `candidates.csv`. Status: built 2026-11-15 (`docs/m2.md`); halt warning waits on approval of a halt-data source.
-**M3 Classifier.** Contract in section 6, with validation and retry.
+**M3 Classifier.** Contract in section 6, with validation and retry. Status: built 2026-11-15 (`docs/m3.md`); test set 14/14 including 5 wrong-company cases.
 **M4 Ranking and levels.** Deterministic, unit-tested, including sizing edge cases (stop too wide, position cap).
 **M5 Email.** All four email types, tested with a dry-run mode.
 **M6 Replay.** Both modes, unit-tested with synthetic bars including the stop-and-target-in-one-bar case.
