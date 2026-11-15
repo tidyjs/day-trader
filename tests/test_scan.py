@@ -373,3 +373,14 @@ def test_catalyst_rule_on_rows():
     assert r["dq_promo_or_no_catalyst"] == "unknown" and "classifier unavailable" in r["warnings"]
     # dilution language with no filing -> warning
     assert "dilution language in news" in row(_cat(dilution_language=True))["warnings"]
+
+
+def test_dollar_volume_is_python_version_independent():
+    # Naive float summation differs between Python 3.9 and 3.12 for inputs like these;
+    # math.fsum is exact, so the rounded value must equal the exact decimal result.
+    from decimal import Decimal
+    vals = [(37, 1.0399), (100, 1.0601), (12, 1.0599), (500, 1.0333), (3, 1.0777)] * 7
+    bars_ = [dict(bar(f"08:{i:02d}", c, v=v, vw=c)) for i, (v, c) in enumerate(vals)]
+    st = scan.premarket_stats(bars_, *[__import__("datetime").datetime.fromisoformat(x) for x in ("2026-11-13T04:00:00-05:00", "2026-11-13T08:59:00-05:00")])
+    exact = sum(Decimal(v) * Decimal(repr(c)) for v, c in vals)
+    assert st["pm_dollar_volume"] == round(float(exact), 2)

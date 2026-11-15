@@ -4,3 +4,6 @@ __pycache__/
 data/t212_instruments.*
 .pytest_cache/
 data/cache/
+.pythons/
+.uv-cache/
+.venv-py39/

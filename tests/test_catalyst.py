@@ -107,12 +107,9 @@ def test_two_failures_mean_unavailable(first, second):
 
 def test_api_error_means_unavailable():
     import anthropic
-    try:  # anthropic 1.x is built on httpx2; 0.x (all that installs on Python 3.9) on httpx
-        import httpx2 as httpx
-    except ImportError:
-        import httpx
+    import httpx2  # the SDK's HTTP layer since anthropic 1.x
 
-    err = anthropic.APIConnectionError(request=httpx.Request("POST", "https://x"))
+    err = anthropic.APIConnectionError(request=httpx2.Request("POST", "https://x"))
     rec = C.classify(FakeClient(err, err), "ABCD", "Abcd Corp", [item("Abcd")], [], CFG)
     assert rec["status"] == "unavailable" and "APIConnectionError" in rec["attempts"][0]["error"]
 

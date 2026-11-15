@@ -28,6 +28,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import math
 import sys
 from datetime import date, datetime, timedelta
 from pathlib import Path
@@ -101,7 +102,9 @@ def premarket_stats(bars: List[dict], start: datetime, cutoff: datetime) -> Opti
         "price": use[-1]["c"],
         "pm_high": max(b["h"] for b in use),
         "pm_volume": sum(b["v"] for b in use),
-        "pm_dollar_volume": round(sum(b["v"] * b.get("vw", b["c"]) for b in use), 2),
+        # math.fsum is correctly rounded on every Python version; plain sum() of
+        # floats changed in 3.12 and broke byte-identical replays across versions.
+        "pm_dollar_volume": round(math.fsum(b["v"] * b.get("vw", b["c"]) for b in use), 2),
         "pm_trades": sum(b.get("n", 0) for b in use),
         "pm_bars": len(use),
         "last_bar_et": parse_ts(use[-1]["t"]).astimezone(ET).strftime("%H:%M"),
@@ -459,6 +462,21 @@ def load_scan_inputs(path: Path) -> tuple:
     return inp, j["outputs"]
 
 
+def rescore(path: Path, cfg: Dict[str, Any]) -> Dict[str, Any]:
+    """Recompute and save a scan's outputs from its saved inputs. No network."""
+    path = path.resolve()
+    j = json.loads(path.read_text())
+    inp, _ = load_scan_inputs(path)
+    out = evaluate(inp, cfg)
+    rel = str(path.relative_to(ROOT))
+    for r in out["candidates"]:
+        r["scan_file"] = rel
+    j["outputs"] = out
+    path.write_text(json.dumps(j, indent=1, sort_keys=True))
+    upsert_candidates(ROOT / cfg["paths"]["candidates"], out["candidates"], inp["day"], inp["as_of_et"])
+    return out
+
+
 def replay(path: Path, cfg: Dict[str, Any]) -> bool:
     inp, saved = load_scan_inputs(path)
     got = evaluate(inp, cfg)
@@ -513,10 +531,15 @@ def main(argv: Optional[List[str]] = None) -> int:
     ap.add_argument("--date", type=date.fromisoformat)
     ap.add_argument("--as-of", help="HH:MM ET, default the configured scan time")
     ap.add_argument("--replay", type=Path)
+    ap.add_argument("--rescore", type=Path, help="recompute outputs from a saved scan's inputs (no network)")
     ap.add_argument("--no-t212-refresh", action="store_true")
     a = ap.parse_args(argv)
     if a.replay:
         return 0 if replay(a.replay, load_config()) else 1
+    if a.rescore:
+        out = rescore(a.rescore, load_config())
+        print(f"{a.rescore.name}: rescored ({out['summary']['candidates']} candidates, {out['summary']['eligible']} eligible)")
+        return 0
     run(a.date, a.as_of, refresh_t212=not a.no_t212_refresh)
     return 0
 

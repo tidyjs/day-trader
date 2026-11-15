@@ -23,8 +23,8 @@ _FRAC = re.compile(r"(\.\d{6})\d+")
 
 
 def parse_ts(s: str) -> datetime:
-    """RFC 3339 timestamp. Alpaca quotes carry nanoseconds, which Python 3.9's
-    fromisoformat rejects, so fractions are cut to microseconds."""
+    """RFC 3339 timestamp. Alpaca quotes carry nanoseconds; datetime holds
+    microseconds, so fractions are cut to 6 digits."""
     return datetime.fromisoformat(_FRAC.sub(r"\1", s.replace("Z", "+00:00")))
 
 
