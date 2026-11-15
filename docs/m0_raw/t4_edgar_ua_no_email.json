@@ -1,0 +1,41 @@
+{
+  "summary": {
+    "user_agent_accepted": false,
+    "company_tickers_status": 403,
+    "tickers_in_map": 0,
+    "lookback_days": 30,
+    "tested": 7,
+    "mapped": 0,
+    "with_shares_outstanding": 0
+  },
+  "rows": [
+    {
+      "ticker": "AAPL",
+      "note": "not in company_tickers.json"
+    },
+    {
+      "ticker": "SNDL",
+      "note": "not in company_tickers.json"
+    },
+    {
+      "ticker": "PLUG",
+      "note": "not in company_tickers.json"
+    },
+    {
+      "ticker": "NKLA",
+      "note": "not in company_tickers.json"
+    },
+    {
+      "ticker": "GNS",
+      "note": "not in company_tickers.json"
+    },
+    {
+      "ticker": "SIRI",
+      "note": "not in company_tickers.json"
+    },
+    {
+      "ticker": "ABCDXYZ",
+      "note": "not in company_tickers.json"
+    }
+  ]
+}

@@ -1,0 +1,354 @@
+{
+  "summary": {
+    "symbols": [
+      "AMIX",
+      "ANPA",
+      "BBCI",
+      "BIRD",
+      "BOF",
+      "CABR",
+      "CALC",
+      "CANG",
+      "CDXS",
+      "CLRB"
+    ],
+    "first_call": {
+      "status": 200,
+      "latency_ms": 1030,
+      "headers": {
+        "x-ratelimit-limit": "200",
+        "x-ratelimit-remaining": "199",
+        "x-ratelimit-reset": "1794772215"
+      },
+      "items": 3,
+      "fields": [
+        "author",
+        "content",
+        "created_at",
+        "headline",
+        "id",
+        "images",
+        "source",
+        "summary",
+        "symbols",
+        "updated_at",
+        "url"
+      ],
+      "body_if_error": null
+    },
+    "burst_calls": 40,
+    "observed_X-RateLimit-Limit": [
+      "200"
+    ],
+    "documented_free_limit_per_min": 200,
+    "any_429": false
+  },
+  "sample": [
+    {
+      "t": "2026-11-15T14:03:30Z",
+      "symbols": [
+        "CABR"
+      ],
+      "headline": "Caring Brands, Inc. Appoints Dr. Glynn Wilson as Chairman",
+      "source": "fiscal.ai"
+    },
+    {
+      "t": "2026-11-14T14:04:15Z",
+      "symbols": [
+        "BOF"
+      ],
+      "headline": "BranchOut Food Announces Third Quarter 2026 Earnings Call",
+      "source": "fiscal.ai"
+    },
+    {
+      "t": "2026-11-14T09:01:58Z",
+      "symbols": [
+        "BIRD"
+      ],
+      "headline": "Blackbird CEO Sumit Rai Discusses Strategic Focus on elevate.io",
+      "source": "fiscal.ai"
+    }
+  ],
+  "trace": [
+    {
+      "i": 0,
+      "status": 200,
+      "x-ratelimit-limit": "200",
+      "x-ratelimit-remaining": "198",
+      "x-ratelimit-reset": "1794772216"
+    },
+    {
+      "i": 1,
+      "status": 200,
+      "x-ratelimit-limit": "200",
+      "x-ratelimit-remaining": "198",
+      "x-ratelimit-reset": "1794772216"
+    },
+    {
+      "i": 2,
+      "status": 200,
+      "x-ratelimit-limit": "200",
+      "x-ratelimit-remaining": "197",
+      "x-ratelimit-reset": "1794772217"
+    },
+    {
+      "i": 3,
+      "status": 200,
+      "x-ratelimit-limit": "200",
+      "x-ratelimit-remaining": "198",
+      "x-ratelimit-reset": "1794772217"
+    },
+    {
+      "i": 4,
+      "status": 200,
+      "x-ratelimit-limit": "200",
+      "x-ratelimit-remaining": "197",
+      "x-ratelimit-reset": "1794772217"
+    },
+    {
+      "i": 5,
+      "status": 200,
+      "x-ratelimit-limit": "200",
+      "x-ratelimit-remaining": "197",
+      "x-ratelimit-reset": "1794772218"
+    },
+    {
+      "i": 6,
+      "status": 200,
+      "x-ratelimit-limit": "200",
+      "x-ratelimit-remaining": "196",
+      "x-ratelimit-reset": "1794772218"
+    },
+    {
+      "i": 7,
+      "status": 200,
+      "x-ratelimit-limit": "200",
+      "x-ratelimit-remaining": "197",
+      "x-ratelimit-reset": "1794772218"
+    },
+    {
+      "i": 8,
+      "status": 200,
+      "x-ratelimit-limit": "200",
+      "x-ratelimit-remaining": "196",
+      "x-ratelimit-reset": "1794772219"
+    },
+    {
+      "i": 9,
+      "status": 200,
+      "x-ratelimit-limit": "200",
+      "x-ratelimit-remaining": "197",
+      "x-ratelimit-reset": "1794772218"
+    },
+    {
+      "i": 10,
+      "status": 200,
+      "x-ratelimit-limit": "200",
+      "x-ratelimit-remaining": "197",
+      "x-ratelimit-reset": "1794772219"
+    },
+    {
+      "i": 11,
+      "status": 200,
+      "x-ratelimit-limit": "200",
+      "x-ratelimit-remaining": "196",
+      "x-ratelimit-reset": "1794772219"
+    },
+    {
+      "i": 12,
+      "status": 200,
+      "x-ratelimit-limit": "200",
+      "x-ratelimit-remaining": "197",
+      "x-ratelimit-reset": "1794772219"
+    },
+    {
+      "i": 13,
+      "status": 200,
+      "x-ratelimit-limit": "200",
+      "x-ratelimit-remaining": "196",
+      "x-ratelimit-reset": "1794772220"
+    },
+    {
+      "i": 14,
+      "status": 200,
+      "x-ratelimit-limit": "200",
+      "x-ratelimit-remaining": "197",
+      "x-ratelimit-reset": "1794772220"
+    },
+    {
+      "i": 15,
+      "status": 200,
+      "x-ratelimit-limit": "200",
+      "x-ratelimit-remaining": "196",
+      "x-ratelimit-reset": "1794772221"
+    },
+    {
+      "i": 16,
+      "status": 200,
+      "x-ratelimit-limit": "200",
+      "x-ratelimit-remaining": "196",
+      "x-ratelimit-reset": "1794772221"
+    },
+    {
+      "i": 17,
+      "status": 200,
+      "x-ratelimit-limit": "200",
+      "x-ratelimit-remaining": "195",
+      "x-ratelimit-reset": "1794772221"
+    },
+    {
+      "i": 18,
+      "status": 200,
+      "x-ratelimit-limit": "200",
+      "x-ratelimit-remaining": "196",
+      "x-ratelimit-reset": "1794772221"
+    },
+    {
+      "i": 19,
+      "status": 200,
+      "x-ratelimit-limit": "200",
+      "x-ratelimit-remaining": "195",
+      "x-ratelimit-reset": "1794772222"
+    },
+    {
+      "i": 20,
+      "status": 200,
+      "x-ratelimit-limit": "200",
+      "x-ratelimit-remaining": "196",
+      "x-ratelimit-reset": "1794772222"
+    },
+    {
+      "i": 21,
+      "status": 200,
+      "x-ratelimit-limit": "200",
+      "x-ratelimit-remaining": "196",
+      "x-ratelimit-reset": "1794772222"
+    },
+    {
+      "i": 22,
+      "status": 200,
+      "x-ratelimit-limit": "200",
+      "x-ratelimit-remaining": "197",
+      "x-ratelimit-reset": "1794772222"
+    },
+    {
+      "i": 23,
+      "status": 200,
+      "x-ratelimit-limit": "200",
+      "x-ratelimit-remaining": "196",
+      "x-ratelimit-reset": "1794772223"
+    },
+    {
+      "i": 24,
+      "status": 200,
+      "x-ratelimit-limit": "200",
+      "x-ratelimit-remaining": "196",
+      "x-ratelimit-reset": "1794772223"
+    },
+    {
+      "i": 25,
+      "status": 200,
+      "x-ratelimit-limit": "200",
+      "x-ratelimit-remaining": "195",
+      "x-ratelimit-reset": "1794772224"
+    },
+    {
+      "i": 26,
+      "status": 200,
+      "x-ratelimit-limit": "200",
+      "x-ratelimit-remaining": "196",
+      "x-ratelimit-reset": "1794772224"
+    },
+    {
+      "i": 27,
+      "status": 200,
+      "x-ratelimit-limit": "200",
+      "x-ratelimit-remaining": "195",
+      "x-ratelimit-reset": "1794772224"
+    },
+    {
+      "i": 28,
+      "status": 200,
+      "x-ratelimit-limit": "200",
+      "x-ratelimit-remaining": "196",
+      "x-ratelimit-reset": "1794772224"
+    },
+    {
+      "i": 29,
+      "status": 200,
+      "x-ratelimit-limit": "200",
+      "x-ratelimit-remaining": "195",
+      "x-ratelimit-reset": "1794772225"
+    },
+    {
+      "i": 30,
+      "status": 200,
+      "x-ratelimit-limit": "200",
+      "x-ratelimit-remaining": "195",
+      "x-ratelimit-reset": "1794772225"
+    },
+    {
+      "i": 31,
+      "status": 200,
+      "x-ratelimit-limit": "200",
+      "x-ratelimit-remaining": "194",
+      "x-ratelimit-reset": "1794772225"
+    },
+    {
+      "i": 32,
+      "status": 200,
+      "x-ratelimit-limit": "200",
+      "x-ratelimit-remaining": "195",
+      "x-ratelimit-reset": "1794772225"
+    },
+    {
+      "i": 33,
+      "status": 200,
+      "x-ratelimit-limit": "200",
+      "x-ratelimit-remaining": "194",
+      "x-ratelimit-reset": "1794772226"
+    },
+    {
+      "i": 34,
+      "status": 200,
+      "x-ratelimit-limit": "200",
+      "x-ratelimit-remaining": "195",
+      "x-ratelimit-reset": "1794772226"
+    },
+    {
+      "i": 35,
+      "status": 200,
+      "x-ratelimit-limit": "200",
+      "x-ratelimit-remaining": "194",
+      "x-ratelimit-reset": "1794772227"
+    },
+    {
+      "i": 36,
+      "status": 200,
+      "x-ratelimit-limit": "200",
+      "x-ratelimit-remaining": "194",
+      "x-ratelimit-reset": "1794772227"
+    },
+    {
+      "i": 37,
+      "status": 200,
+      "x-ratelimit-limit": "200",
+      "x-ratelimit-remaining": "193",
+      "x-ratelimit-reset": "1794772227"
+    },
+    {
+      "i": 38,
+      "status": 200,
+      "x-ratelimit-limit": "200",
+      "x-ratelimit-remaining": "194",
+      "x-ratelimit-reset": "1794772227"
+    },
+    {
+      "i": 39,
+      "status": 200,
+      "x-ratelimit-limit": "200",
+      "x-ratelimit-remaining": "193",
+      "x-ratelimit-reset": "1794772228"
+    }
+  ]
+}

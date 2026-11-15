@@ -1,0 +1,5676 @@
+{
+  "summary": {
+    "mode": "historical",
+    "day": "2026-11-10",
+    "prev_day": "2026-11-09",
+    "sub2_candidates": 707,
+    "with_any_iex_print_by": {
+      "04:30": 0,
+      "08:00": 0,
+      "09:15": 22
+    },
+    "pct_with_any_iex_print_by": {
+      "04:30": 0.0,
+      "08:00": 0.0,
+      "09:15": 3.1
+    }
+  },
+  "rows": [
+    {
+      "symbol": "AAME",
+      "prev_close": 1.13,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "AARD",
+      "prev_close": 1.35,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ABAT",
+      "prev_close": 1.42,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "ABLV",
+      "prev_close": 2.38,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ABVC",
+      "prev_close": 1.02,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ACON",
+      "prev_close": 1.75,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ACRV",
+      "prev_close": 1.58,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ACXP",
+      "prev_close": 1.06,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "ADCT",
+      "prev_close": 1.67,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "ADGM",
+      "prev_close": 1.92,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ADVB",
+      "prev_close": 2.05,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "AETR",
+      "prev_close": 1.85,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "AGIG",
+      "prev_close": 0.832,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "AGRZ",
+      "prev_close": 2.19,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "AHG",
+      "prev_close": 1.28,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "AHMA",
+      "prev_close": 1.115,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "AIAI",
+      "prev_close": 1.13,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "AIFF",
+      "prev_close": 0.9486,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "AISP",
+      "prev_close": 1.73,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "AIV",
+      "prev_close": 1.53,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "ALLO",
+      "prev_close": 1.06,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "ALLR",
+      "prev_close": 0.9431,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ALPS",
+      "prev_close": 1.65,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ALT",
+      "prev_close": 2.12,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ALXO",
+      "prev_close": 1.285,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "ALZN",
+      "prev_close": 1.42,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "AMBO",
+      "prev_close": 1.48,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "AMCI",
+      "prev_close": 1.05,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "AMIX",
+      "prev_close": 1.7,
+      "iex_bars_before_0915": 35,
+      "iex_shares_before_0915": 9704,
+      "iex_trades_before_0915": 106,
+      "first_iex_bar_et": "08:03"
+    },
+    {
+      "symbol": "AMOD",
+      "prev_close": 0.98,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "AMPG",
+      "prev_close": 2.4,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "AMS",
+      "prev_close": 1.22,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "AMTX",
+      "prev_close": 1.73,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ANNA",
+      "prev_close": 2.04,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ANPA",
+      "prev_close": 1.2,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ANTA",
+      "prev_close": 1.61,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ANVS",
+      "prev_close": 0.9013,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "APVO",
+      "prev_close": 1.13,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "APWC",
+      "prev_close": 1.11,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "AQB",
+      "prev_close": 0.96,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "AQMS",
+      "prev_close": 1.5,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "AREC",
+      "prev_close": 1.17,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "ARTL",
+      "prev_close": 2.07,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ASPI",
+      "prev_close": 2.14,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "ASTI",
+      "prev_close": 1.53,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ATCX",
+      "prev_close": 2.01,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ATER",
+      "prev_close": 0.8797,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ATLX",
+      "prev_close": 1.69,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ATNM",
+      "prev_close": 1.54,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ATOS",
+      "prev_close": 2.13,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ATPC",
+      "prev_close": 1.36,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ATTT",
+      "prev_close": 2.14,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "AURE",
+      "prev_close": 1.06,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "AUST",
+      "prev_close": 0.8566,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "AVAT",
+      "prev_close": 0.9193,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "AVD",
+      "prev_close": 0.8153,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "AVXL",
+      "prev_close": 1.22,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "AWRE",
+      "prev_close": 0.94,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "AXG",
+      "prev_close": 1.36,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "AXNX",
+      "prev_close": 1.13,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "AYTU",
+      "prev_close": 1.79,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "BBCI",
+      "prev_close": 1.35,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "BBOT",
+      "prev_close": 2.3,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "BCDA",
+      "prev_close": 0.9026,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "BCG",
+      "prev_close": 1.1,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "BCHT",
+      "prev_close": 1.14,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "BDAI",
+      "prev_close": 1.86,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "BDTX",
+      "prev_close": 1.86,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "BEEP",
+      "prev_close": 2.37,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "BFRI",
+      "prev_close": 0.8875,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "BGIN",
+      "prev_close": 1.77,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "BGLC",
+      "prev_close": 0.8923,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "BGMS",
+      "prev_close": 0.8268,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "BHR",
+      "prev_close": 1.61,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "BHST",
+      "prev_close": 1.75,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "BIAF",
+      "prev_close": 2.26,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "BIRD",
+      "prev_close": 1.35,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "BIVI",
+      "prev_close": 1.3,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "BIYA",
+      "prev_close": 1.125,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "BKYI",
+      "prev_close": 2.39,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "BLDP",
+      "prev_close": 1.57,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "BLIV",
+      "prev_close": 2.37,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "BLND",
+      "prev_close": 0.9855,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "BMR",
+      "prev_close": 1.06,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "BMRA",
+      "prev_close": 1.55,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "BNGO",
+      "prev_close": 1.16,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "BNKK",
+      "prev_close": 1.05,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "BOF",
+      "prev_close": 1.69,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "BON",
+      "prev_close": 1.1099,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "BOXL",
+      "prev_close": 1.94,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "BRAI",
+      "prev_close": 2.01,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "BRIA",
+      "prev_close": 1.47,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "BRLS",
+      "prev_close": 1,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "BRLT",
+      "prev_close": 1.36,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "BRN",
+      "prev_close": 0.855,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "BRTX",
+      "prev_close": 1.6,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "BSEM",
+      "prev_close": 1.12,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "BSIN",
+      "prev_close": 1.33,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "BTBD",
+      "prev_close": 1.635,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "BTCS",
+      "prev_close": 0.9622,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "BTMD",
+      "prev_close": 1.11,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "BTOC",
+      "prev_close": 1.8501,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "BTQ",
+      "prev_close": 1.88,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "BXBL",
+      "prev_close": 1.87,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "BYAH",
+      "prev_close": 2.1802,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CABA",
+      "prev_close": 1.5,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "CABR",
+      "prev_close": 1.01,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CALC",
+      "prev_close": 1.515,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CANF",
+      "prev_close": 1.68,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CANG",
+      "prev_close": 1.11,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "CAPS",
+      "prev_close": 2.1001,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CAST",
+      "prev_close": 1.27,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CATO",
+      "prev_close": 2.3,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CATX",
+      "prev_close": 0.8556,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CBAT",
+      "prev_close": 1.06,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CBUS",
+      "prev_close": 1.15,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CDIO",
+      "prev_close": 1.82,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CDLX",
+      "prev_close": 1.82,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CDT",
+      "prev_close": 0.8401,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CDTG",
+      "prev_close": 0.9901,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CDXS",
+      "prev_close": 1.11,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "CERS",
+      "prev_close": 2.07,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CETY",
+      "prev_close": 0.9473,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CGEN",
+      "prev_close": 2.14,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "CHGA",
+      "prev_close": 0.8145,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CHMI",
+      "prev_close": 2.35,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CHR",
+      "prev_close": 1.355,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CHRS",
+      "prev_close": 0.8176,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "CIG",
+      "prev_close": 1.9,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CIIT",
+      "prev_close": 2.34,
+      "iex_bars_before_0915": 9,
+      "iex_shares_before_0915": 1507,
+      "iex_trades_before_0915": 17,
+      "first_iex_bar_et": "08:00"
+    },
+    {
+      "symbol": "CISS",
+      "prev_close": 1.75,
+      "iex_bars_before_0915": 22,
+      "iex_shares_before_0915": 7830,
+      "iex_trades_before_0915": 58,
+      "first_iex_bar_et": "08:04"
+    },
+    {
+      "symbol": "CLIR",
+      "prev_close": 2.3932,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CLNE",
+      "prev_close": 1.93,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "CLPS",
+      "prev_close": 0.86,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CLRB",
+      "prev_close": 1.28,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CLVT",
+      "prev_close": 2.37,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "CLWT",
+      "prev_close": 1.19,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CMCM",
+      "prev_close": 2.32,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CMPX",
+      "prev_close": 0.8369,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CMTL",
+      "prev_close": 1.12,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CNCK",
+      "prev_close": 1.26,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CNDT",
+      "prev_close": 1.385,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CNET",
+      "prev_close": 0.9234,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CNF",
+      "prev_close": 2.05,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CNTN",
+      "prev_close": 1.93,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CNVS",
+      "prev_close": 1.68,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CNXU",
+      "prev_close": 2.33,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "COCP",
+      "prev_close": 1.105,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "COPR",
+      "prev_close": 1.15,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CRDF",
+      "prev_close": 0.8007,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CRDL",
+      "prev_close": 1.03,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CREX",
+      "prev_close": 2.16,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CRMN",
+      "prev_close": 1.31,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CRMT",
+      "prev_close": 1.14,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CRVO",
+      "prev_close": 1.43,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CSAI",
+      "prev_close": 1.94,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CSTE",
+      "prev_close": 1.53,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CTMX",
+      "prev_close": 1.98,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "CTRM",
+      "prev_close": 1.325,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CTW",
+      "prev_close": 1.62,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CUPR",
+      "prev_close": 1.85,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CURR",
+      "prev_close": 1.9,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CURV",
+      "prev_close": 2.32,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "CVKD",
+      "prev_close": 1.37,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CVM",
+      "prev_close": 1.35,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CXAI",
+      "prev_close": 1.38,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "CYPH",
+      "prev_close": 2.36,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "DAIC",
+      "prev_close": 1.06,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "DAVA",
+      "prev_close": 1.69,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "DAVI",
+      "prev_close": 1.75,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "DCOY",
+      "prev_close": 1.1,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "DCX",
+      "prev_close": 1.12,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "DDD",
+      "prev_close": 1.92,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "DDL",
+      "prev_close": 1.76,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "DETX",
+      "prev_close": 1.2366,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "DFLI",
+      "prev_close": 1.94,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "DFNS",
+      "prev_close": 1.95,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "DGNX",
+      "prev_close": 1.15,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "DGXX",
+      "prev_close": 2.24,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "DH",
+      "prev_close": 1.12,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "DKI",
+      "prev_close": 1.54,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "DLPN",
+      "prev_close": 0.985,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "DLXY",
+      "prev_close": 1.67,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "DNN",
+      "prev_close": 2.34,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "DOMH",
+      "prev_close": 1.15,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "DOUG",
+      "prev_close": 1.6,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "DPU",
+      "prev_close": 1.38,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "DRIO",
+      "prev_close": 2.06,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "DRK",
+      "prev_close": 1.7,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "DSX",
+      "prev_close": 2.34,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "DTCX",
+      "prev_close": 1.02,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "DTI",
+      "prev_close": 1.58,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "DWSN",
+      "prev_close": 1.6,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "DWTX",
+      "prev_close": 1.2,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "DXST",
+      "prev_close": 0.9465,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "EBON",
+      "prev_close": 1.68,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ECC",
+      "prev_close": 2.3,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "EDTK",
+      "prev_close": 1.07,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "EDUC",
+      "prev_close": 0.9018,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "EGHT",
+      "prev_close": 2.17,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "EHGO",
+      "prev_close": 1.6,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ELAB",
+      "prev_close": 1.58,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ELPW",
+      "prev_close": 1.18,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "ELTX",
+      "prev_close": 1.645,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "ELUT",
+      "prev_close": 0.8359,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "EMAT",
+      "prev_close": 2.18,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "EMPD",
+      "prev_close": 2.03,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ENGN",
+      "prev_close": 1.77,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ENLV",
+      "prev_close": 1.37,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ENVB",
+      "prev_close": 1.44,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "EOSE",
+      "prev_close": 1.88,
+      "iex_bars_before_0915": 6,
+      "iex_shares_before_0915": 1000,
+      "iex_trades_before_0915": 10,
+      "first_iex_bar_et": "08:17"
+    },
+    {
+      "symbol": "EQ",
+      "prev_close": 1.5,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ERNA",
+      "prev_close": 2.05,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ESYN",
+      "prev_close": 1.445,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ETS",
+      "prev_close": 1.55,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "EVEX",
+      "prev_close": 1.95,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "EVGO",
+      "prev_close": 1.84,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "EXFY",
+      "prev_close": 1.85,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "EXYN",
+      "prev_close": 2.3,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "EZGO",
+      "prev_close": 1.83,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "FABC",
+      "prev_close": 1.7,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "FATE",
+      "prev_close": 1.94,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "FBDT",
+      "prev_close": 0.97,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "FBGL",
+      "prev_close": 2.275,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "FBIO",
+      "prev_close": 1.99,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "FBLG",
+      "prev_close": 0.9577,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "FEAM",
+      "prev_close": 1.94,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "FEMY",
+      "prev_close": 1.42,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "FENG",
+      "prev_close": 1.4,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "FFR",
+      "prev_close": 0.908,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "FGL",
+      "prev_close": 1.39,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "FHTX",
+      "prev_close": 2.04,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "FJET",
+      "prev_close": 1.09,
+      "iex_bars_before_0915": 1,
+      "iex_shares_before_0915": 100,
+      "iex_trades_before_0915": 1,
+      "first_iex_bar_et": "09:00"
+    },
+    {
+      "symbol": "FKWL",
+      "prev_close": 2.14,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "FLYE",
+      "prev_close": 2.16,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "FLYX",
+      "prev_close": 1.16,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "FMST",
+      "prev_close": 0.8311,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "FOFO",
+      "prev_close": 1.82,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "FOXX",
+      "prev_close": 1.6,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "FRGT",
+      "prev_close": 1,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "FRMI",
+      "prev_close": 1.66,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "FTCI",
+      "prev_close": 1.59,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "FTEK",
+      "prev_close": 1.41,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "FUFU",
+      "prev_close": 0.955,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "GAIA",
+      "prev_close": 1.28,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "GANX",
+      "prev_close": 1.09,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "GCL",
+      "prev_close": 1.05,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "GCTS",
+      "prev_close": 1.38,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "GDHG",
+      "prev_close": 1.05,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "GDTC",
+      "prev_close": 0.859,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "GEG",
+      "prev_close": 2.15,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "GENK",
+      "prev_close": 1.42,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "GERN",
+      "prev_close": 0.9965,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "GEVO",
+      "prev_close": 1.47,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "GHG",
+      "prev_close": 0.985,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "GIGM",
+      "prev_close": 1.37,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "GITS",
+      "prev_close": 1.53,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "GLAS",
+      "prev_close": 1.92,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "GLDG",
+      "prev_close": 0.8099,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "GLE",
+      "prev_close": 2.26,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "GLND",
+      "prev_close": 2.32,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "GMM",
+      "prev_close": 1.02,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "GNLN",
+      "prev_close": 1.16,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "GNLX",
+      "prev_close": 2.07,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "GNPX",
+      "prev_close": 2.06,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "GNSS",
+      "prev_close": 1.405,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "GOTU",
+      "prev_close": 2.38,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "GOW",
+      "prev_close": 2.36,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "GPRO",
+      "prev_close": 0.8804,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "GRAN",
+      "prev_close": 1.0863,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "GRCE",
+      "prev_close": 1.865,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "GRI",
+      "prev_close": 1.71,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "GRO",
+      "prev_close": 1.9,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "GROV",
+      "prev_close": 1.1,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "GRSD",
+      "prev_close": 0.9493,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "GRWG",
+      "prev_close": 1.57,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "GTIM",
+      "prev_close": 1.25,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "GUTS",
+      "prev_close": 0.8971,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "GVH",
+      "prev_close": 0.92,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "GWAV",
+      "prev_close": 2.045,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "HAO",
+      "prev_close": 2.08,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "HCAT",
+      "prev_close": 1.51,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "HCWB",
+      "prev_close": 0.954,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "HFFG",
+      "prev_close": 1.49,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "HGBL",
+      "prev_close": 1.175,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "HIHO",
+      "prev_close": 0.8578,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "HIND",
+      "prev_close": 1.59,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "HIVE",
+      "prev_close": 1.81,
+      "iex_bars_before_0915": 3,
+      "iex_shares_before_0915": 2449,
+      "iex_trades_before_0915": 25,
+      "first_iex_bar_et": "08:32"
+    },
+    {
+      "symbol": "HKD",
+      "prev_close": 1.41,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "HKPD",
+      "prev_close": 1.525,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "HMR",
+      "prev_close": 1.33,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "HOST",
+      "prev_close": 1.84,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "HOUR",
+      "prev_close": 1.49,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "HOVR",
+      "prev_close": 1.4,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "HOWL",
+      "prev_close": 1.01,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "HSDT",
+      "prev_close": 1.92,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "HTCO",
+      "prev_close": 1.56,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "HTCR",
+      "prev_close": 1.49,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "HTLM",
+      "prev_close": 1.08,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "HTOO",
+      "prev_close": 1.19,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "HTT",
+      "prev_close": 1.72,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "HTZ",
+      "prev_close": 1.63,
+      "iex_bars_before_0915": 5,
+      "iex_shares_before_0915": 3100,
+      "iex_trades_before_0915": 13,
+      "first_iex_bar_et": "08:40"
+    },
+    {
+      "symbol": "HURA",
+      "prev_close": 1.66,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "HUYA",
+      "prev_close": 2.28,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "HYFT",
+      "prev_close": 1.08,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "IAUX",
+      "prev_close": 1.49,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "ICCM",
+      "prev_close": 0.8224,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ICON",
+      "prev_close": 0.94,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ICU",
+      "prev_close": 1.96,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "IDAI",
+      "prev_close": 2.29,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "IDN",
+      "prev_close": 2.11,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "IFBD",
+      "prev_close": 1.68,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "IFRX",
+      "prev_close": 1.31,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "IH",
+      "prev_close": 1.27,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "IHRT",
+      "prev_close": 1.77,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "IKT",
+      "prev_close": 1.68,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "IMNN",
+      "prev_close": 0.8829,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "INAB",
+      "prev_close": 0.9401,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "INBS",
+      "prev_close": 2.29,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "INDI",
+      "prev_close": 2.2,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "INMB",
+      "prev_close": 1.13,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "INO",
+      "prev_close": 1.51,
+      "iex_bars_before_0915": 6,
+      "iex_shares_before_0915": 805,
+      "iex_trades_before_0915": 10,
+      "first_iex_bar_et": "08:02"
+    },
+    {
+      "symbol": "INTJ",
+      "prev_close": 2.3,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "IOTR",
+      "prev_close": 1.98,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "IPDN",
+      "prev_close": 1.14,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "IPHA",
+      "prev_close": 1.51,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "IPM",
+      "prev_close": 1.69,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "IPSC",
+      "prev_close": 1.81,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "IPST",
+      "prev_close": 2.2,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "IPW",
+      "prev_close": 1.43,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "IPWR",
+      "prev_close": 2.34,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ISPR",
+      "prev_close": 1.67,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ITOC",
+      "prev_close": 1.85,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ITRG",
+      "prev_close": 2.36,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "IVF",
+      "prev_close": 2.35,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "IXHL",
+      "prev_close": 2.19,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "IZEA",
+      "prev_close": 2.24,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "JAGU",
+      "prev_close": 0.8999,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "JELD",
+      "prev_close": 1.15,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "JTAI",
+      "prev_close": 0.9401,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "JUNS",
+      "prev_close": 2.2,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "JWEL",
+      "prev_close": 1.75,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "JYD",
+      "prev_close": 1.46,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "JZXN",
+      "prev_close": 1.09,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "KBSX",
+      "prev_close": 1.44,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "KDK",
+      "prev_close": 1.45,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "KEEL",
+      "prev_close": 1.96,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "KIDZ",
+      "prev_close": 1.23,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "KITT",
+      "prev_close": 1.35,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "KLC",
+      "prev_close": 2.33,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "KLRS",
+      "prev_close": 2.3,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "KLTR",
+      "prev_close": 1.43,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "KLXE",
+      "prev_close": 1.11,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "KMRK",
+      "prev_close": 1.51,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "KOS",
+      "prev_close": 2.07,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "KPRX",
+      "prev_close": 1.51,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "KTCC",
+      "prev_close": 1.34,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "KULR",
+      "prev_close": 1.63,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "LAC",
+      "prev_close": 2.02,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "LAES",
+      "prev_close": 1.45,
+      "iex_bars_before_0915": 2,
+      "iex_shares_before_0915": 600,
+      "iex_trades_before_0915": 6,
+      "first_iex_bar_et": "08:40"
+    },
+    {
+      "symbol": "LBGJ",
+      "prev_close": 1.7,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "LCFY",
+      "prev_close": 0.95,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "LCTX",
+      "prev_close": 1.08,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "LFMD",
+      "prev_close": 2.095,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "LGCL",
+      "prev_close": 1.37,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "LGVN",
+      "prev_close": 2.01,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "LHAI",
+      "prev_close": 0.8634,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "LIDR",
+      "prev_close": 0.8983,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "LITS",
+      "prev_close": 0.9495,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "LOCL",
+      "prev_close": 0.8024,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "LODE",
+      "prev_close": 1.92,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "LPA",
+      "prev_close": 2.35,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "LPCN",
+      "prev_close": 1.72,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "LSTA",
+      "prev_close": 1.12,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "LUCY",
+      "prev_close": 0.8352,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "LXRX",
+      "prev_close": 1.82,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "LZMH",
+      "prev_close": 0.8616,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "MAIA",
+      "prev_close": 1.09,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "MASK",
+      "prev_close": 2.05,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "MATH",
+      "prev_close": 1.03,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "MBAI",
+      "prev_close": 2.285,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "MBOT",
+      "prev_close": 1.1,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "MCHX",
+      "prev_close": 1.3,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "MCRB",
+      "prev_close": 1.7,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "MDAI",
+      "prev_close": 1.53,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "MDBH",
+      "prev_close": 1.5,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "MDCX",
+      "prev_close": 1.885,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "MDIA",
+      "prev_close": 1,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "MEDS",
+      "prev_close": 0.9845,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "MENS",
+      "prev_close": 1.85,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "MGIH",
+      "prev_close": 1.23,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "MGLD",
+      "prev_close": 1.98,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "MGNX",
+      "prev_close": 2.34,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "MKZR",
+      "prev_close": 0.96,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "MMLP",
+      "prev_close": 2.08,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "MNDO",
+      "prev_close": 0.87,
+      "iex_bars_before_0915": 7,
+      "iex_shares_before_0915": 61716,
+      "iex_trades_before_0915": 21,
+      "first_iex_bar_et": "08:29"
+    },
+    {
+      "symbol": "MNDR",
+      "prev_close": 0.9929,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "MNOV",
+      "prev_close": 1.47,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "MNTS",
+      "prev_close": 2,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "MOB",
+      "prev_close": 2.25,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "MODD",
+      "prev_close": 1.85,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "MOGU",
+      "prev_close": 1.7,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "MPU",
+      "prev_close": 1.21,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "MRKR",
+      "prev_close": 0.9904,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "MRLN",
+      "prev_close": 0.993,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "MRT",
+      "prev_close": 2.17,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "MSC",
+      "prev_close": 0.9107,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "MSS",
+      "prev_close": 0.996,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "MTNB",
+      "prev_close": 1.24,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "MTVA",
+      "prev_close": 1.61,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "MVIS",
+      "prev_close": 1.24,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "MWG",
+      "prev_close": 1.5458,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "MWYN",
+      "prev_close": 1.39,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "MXCT",
+      "prev_close": 1.3,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "MYO",
+      "prev_close": 1.4,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "MYSE",
+      "prev_close": 1.27,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "NA",
+      "prev_close": 1.38,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "NAGE",
+      "prev_close": 2.28,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "NAII",
+      "prev_close": 1.145,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "NAMM",
+      "prev_close": 0.821,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "NAUT",
+      "prev_close": 2.38,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "NCMI",
+      "prev_close": 1.66,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "NCPL",
+      "prev_close": 1.82,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "NCRA",
+      "prev_close": 1.47,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "NEXM",
+      "prev_close": 1.29,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "NEXR",
+      "prev_close": 2.12,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "NFGC",
+      "prev_close": 1.81,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "NGEN",
+      "prev_close": 1.395,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "NIKI",
+      "prev_close": 1.75,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "NKTX",
+      "prev_close": 1.59,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "NMG",
+      "prev_close": 0.8645,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "NMTC",
+      "prev_close": 0.8852,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "NNVC",
+      "prev_close": 1.33,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "NOMA",
+      "prev_close": 1.0986,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "NPT",
+      "prev_close": 1.61,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "NPWR",
+      "prev_close": 0.8381,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "NRSN",
+      "prev_close": 1.86,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "NRXP",
+      "prev_close": 2.38,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "NTIP",
+      "prev_close": 1.57,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "NTRP",
+      "prev_close": 1.15,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "NUAI",
+      "prev_close": 2.2,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "NVX",
+      "prev_close": 2.1801,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "NXB",
+      "prev_close": 1.3999,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "NXDR",
+      "prev_close": 2.02,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "NXH",
+      "prev_close": 1.51,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "NXL",
+      "prev_close": 1.5,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "NYXH",
+      "prev_close": 0.894,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "OBAI",
+      "prev_close": 1.71,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "OCCI",
+      "prev_close": 1.51,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "OCG",
+      "prev_close": 1.61,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "OCGN",
+      "prev_close": 0.9721,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "ODYS",
+      "prev_close": 1.75,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "OGI",
+      "prev_close": 0.876,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "OIO",
+      "prev_close": 1.8,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "OKYO",
+      "prev_close": 1.28,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ONEG",
+      "prev_close": 1.25,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ONEN",
+      "prev_close": 1.45,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "OPAD",
+      "prev_close": 2.15,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "OPAL",
+      "prev_close": 1.42,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "OPEN",
+      "prev_close": 1.41,
+      "iex_bars_before_0915": 6,
+      "iex_shares_before_0915": 6396,
+      "iex_trades_before_0915": 36,
+      "first_iex_bar_et": "08:32"
+    },
+    {
+      "symbol": "OPK",
+      "prev_close": 1.71,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "OPTU",
+      "prev_close": 0.8001,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "ORGO",
+      "prev_close": 0.9071,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ORIO",
+      "prev_close": 1.08,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ORKT",
+      "prev_close": 1,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "OSTX",
+      "prev_close": 0.9201,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "OXBR",
+      "prev_close": 0.8951,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "OXSQ",
+      "prev_close": 0.8233,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "PAAI",
+      "prev_close": 0.8877,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "PACB",
+      "prev_close": 2.36,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "PALI",
+      "prev_close": 1.19,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "PASW",
+      "prev_close": 1.35,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "PAVM",
+      "prev_close": 1.63,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "PCSA",
+      "prev_close": 1.95,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "PCT",
+      "prev_close": 2.06,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "PDSB",
+      "prev_close": 1.08,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "PEPG",
+      "prev_close": 2.39,
+      "iex_bars_before_0915": 58,
+      "iex_shares_before_0915": 175926,
+      "iex_trades_before_0915": 1337,
+      "first_iex_bar_et": "08:00"
+    },
+    {
+      "symbol": "PETS",
+      "prev_close": 1.25,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "PETZ",
+      "prev_close": 1.14,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "PEW",
+      "prev_close": 1.87,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "PHIO",
+      "prev_close": 0.8399,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "PHUN",
+      "prev_close": 1.79,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "PLBY",
+      "prev_close": 1.22,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "PLG",
+      "prev_close": 1.15,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "PLSM",
+      "prev_close": 1.57,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "PLUG",
+      "prev_close": 1.5,
+      "iex_bars_before_0915": 16,
+      "iex_shares_before_0915": 11447,
+      "iex_trades_before_0915": 36,
+      "first_iex_bar_et": "08:10"
+    },
+    {
+      "symbol": "PLUR",
+      "prev_close": 1.18,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "PLUT",
+      "prev_close": 1.12,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "PLYX",
+      "prev_close": 1.94,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "PMA",
+      "prev_close": 1.31,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "PMVP",
+      "prev_close": 1.25,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "PN",
+      "prev_close": 2.34,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "PNBK",
+      "prev_close": 0.8775,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "PODC",
+      "prev_close": 2.06,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "POM",
+      "prev_close": 1.55,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "POWW",
+      "prev_close": 2.28,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "PPCB",
+      "prev_close": 1.76,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "PPSI",
+      "prev_close": 2.26,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "PRFX",
+      "prev_close": 0.8113,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "PROK",
+      "prev_close": 1.15,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "PRPL",
+      "prev_close": 1.81,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "PRQR",
+      "prev_close": 1.38,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "PSEC",
+      "prev_close": 1.51,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "PSHG",
+      "prev_close": 1.99,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "PULM",
+      "prev_close": 1.355,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "PUSA",
+      "prev_close": 1.55,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "PYXS",
+      "prev_close": 1.7,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "PZG",
+      "prev_close": 1.06,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "QNC",
+      "prev_close": 0.8789,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "QNTM",
+      "prev_close": 2.23,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "QRHC",
+      "prev_close": 1.15,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "QSI",
+      "prev_close": 1.37,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "QTEX",
+      "prev_close": 1.06,
+      "iex_bars_before_0915": 5,
+      "iex_shares_before_0915": 900,
+      "iex_trades_before_0915": 8,
+      "first_iex_bar_et": "08:15"
+    },
+    {
+      "symbol": "QTI",
+      "prev_close": 2.29,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "RAVE",
+      "prev_close": 2.16,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "RBBN",
+      "prev_close": 1.44,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "RC",
+      "prev_close": 1.04,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "RCON",
+      "prev_close": 0.877,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "RDGT",
+      "prev_close": 1.13,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "RDI",
+      "prev_close": 1.8,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "RDZN",
+      "prev_close": 1.17,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "REBN",
+      "prev_close": 1.19,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "RECT",
+      "prev_close": 1.27,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "REED",
+      "prev_close": 1.25,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "REI",
+      "prev_close": 1.14,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "RENT",
+      "prev_close": 2.26,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "RENX",
+      "prev_close": 1.06,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "RFL",
+      "prev_close": 1.08,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "RGNT",
+      "prev_close": 1.27,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "RLX",
+      "prev_close": 1.59,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "RMCF",
+      "prev_close": 0.8183,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "RMCO",
+      "prev_close": 2.19,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "RNAZ",
+      "prev_close": 1.54,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "RNXT",
+      "prev_close": 1.18,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "RR",
+      "prev_close": 0.9467,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "RSSS",
+      "prev_close": 1.82,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "RUBI",
+      "prev_close": 1.84,
+      "iex_bars_before_0915": 39,
+      "iex_shares_before_0915": 9467,
+      "iex_trades_before_0915": 149,
+      "first_iex_bar_et": "08:00"
+    },
+    {
+      "symbol": "RYDE",
+      "prev_close": 0.889,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "RZAI",
+      "prev_close": 2.31,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "RZLV",
+      "prev_close": 1.42,
+      "iex_bars_before_0915": 5,
+      "iex_shares_before_0915": 1200,
+      "iex_trades_before_0915": 12,
+      "first_iex_bar_et": "08:34"
+    },
+    {
+      "symbol": "SABR",
+      "prev_close": 1.8,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "SACH",
+      "prev_close": 0.8208,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SAGT",
+      "prev_close": 1.04,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SCLX",
+      "prev_close": 1.74,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SCWO",
+      "prev_close": 2.38,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SDEV",
+      "prev_close": 0.89,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SEAT",
+      "prev_close": 1.51,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "SEER",
+      "prev_close": 1.68,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SEGG",
+      "prev_close": 1.2,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SER",
+      "prev_close": 1.43,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SERA",
+      "prev_close": 2.19,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SES",
+      "prev_close": 0.91,
+      "iex_bars_before_0915": 3,
+      "iex_shares_before_0915": 700,
+      "iex_trades_before_0915": 3,
+      "first_iex_bar_et": "08:42"
+    },
+    {
+      "symbol": "SEV",
+      "prev_close": 2.28,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SFHG",
+      "prev_close": 1.95,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SHIM",
+      "prev_close": 2.33,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SID",
+      "prev_close": 0.8177,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SIDU",
+      "prev_close": 1.15,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SIEB",
+      "prev_close": 1.81,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SILO",
+      "prev_close": 1.63,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "SINT",
+      "prev_close": 1.54,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SJ",
+      "prev_close": 0.92,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SKYQ",
+      "prev_close": 1.7,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SLBT",
+      "prev_close": 0.9784,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SLDP",
+      "prev_close": 1.93,
+      "iex_bars_before_0915": 3,
+      "iex_shares_before_0915": 301,
+      "iex_trades_before_0915": 4,
+      "first_iex_bar_et": "08:15"
+    },
+    {
+      "symbol": "SLI",
+      "prev_close": 1.6,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SLSN",
+      "prev_close": 0.9006,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SMJF",
+      "prev_close": 1.4,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SMRT",
+      "prev_close": 1.66,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SMSI",
+      "prev_close": 2.28,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SNAL",
+      "prev_close": 2.07,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SNDL",
+      "prev_close": 1.4,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SNES",
+      "prev_close": 1.14,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SNOA",
+      "prev_close": 1.13,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SNTG",
+      "prev_close": 1.56,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SNWV",
+      "prev_close": 1.85,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SOC",
+      "prev_close": 0.8801,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "SONM",
+      "prev_close": 2.22,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "SOWG",
+      "prev_close": 2.18,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SPHL",
+      "prev_close": 2.38,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SPRO",
+      "prev_close": 1.07,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SPRU",
+      "prev_close": 1.51,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SPWH",
+      "prev_close": 1.14,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SQFT",
+      "prev_close": 0.824,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SRG",
+      "prev_close": 1.66,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SRXH",
+      "prev_close": 0.87,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SSII",
+      "prev_close": 1.87,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SSM",
+      "prev_close": 0.923,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SST",
+      "prev_close": 1.73,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "STG",
+      "prev_close": 2.13,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "STIM",
+      "prev_close": 2.18,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "STKE",
+      "prev_close": 1.16,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "STKS",
+      "prev_close": 1.01,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "STXS",
+      "prev_close": 1.14,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "SUGP",
+      "prev_close": 1.57,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SUIG",
+      "prev_close": 0.957,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SUNE",
+      "prev_close": 2.03,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SWAG",
+      "prev_close": 1.32,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SWRD",
+      "prev_close": 2.39,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SY",
+      "prev_close": 1.99,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SYNX",
+      "prev_close": 0.9023,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "SYPR",
+      "prev_close": 1.25,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "TBLA",
+      "prev_close": 2.15,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "TCRT",
+      "prev_close": 1.67,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "TDIC",
+      "prev_close": 1.51,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "TDUP",
+      "prev_close": 1.365,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "TE",
+      "prev_close": 2.29,
+      "iex_bars_before_0915": 3,
+      "iex_shares_before_0915": 750,
+      "iex_trades_before_0915": 8,
+      "first_iex_bar_et": "08:07"
+    },
+    {
+      "symbol": "TELA",
+      "prev_close": 0.8646,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "TENX",
+      "prev_close": 1.78,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "TGEN",
+      "prev_close": 1.77,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "THCH",
+      "prev_close": 1.215,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "THH",
+      "prev_close": 1.38,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "THM",
+      "prev_close": 1.59,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "THRY",
+      "prev_close": 1.28,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "TII",
+      "prev_close": 2.03,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "TLF",
+      "prev_close": 2.12,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "TLPH",
+      "prev_close": 1.09,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "TMCR",
+      "prev_close": 2.005,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "TMQ",
+      "prev_close": 2.31,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "TNON",
+      "prev_close": 1.75,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "TPET",
+      "prev_close": 1.6,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "TREO",
+      "prev_close": 1.97,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "TRNR",
+      "prev_close": 1.23,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "TRON",
+      "prev_close": 1.45,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "TROO",
+      "prev_close": 2.07,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "TRSG",
+      "prev_close": 1.2328,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "TRX",
+      "prev_close": 1.01,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "TSQ",
+      "prev_close": 1.75,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "TTEC",
+      "prev_close": 1.395,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "TULP",
+      "prev_close": 2.31,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "TUYA",
+      "prev_close": 1.62,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "TV",
+      "prev_close": 2.36,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "TVRD",
+      "prev_close": 1.41,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "TWAV",
+      "prev_close": 1.27,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "TXMD",
+      "prev_close": 1.69,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "UK",
+      "prev_close": 1.615,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "UPC",
+      "prev_close": 1.6,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "URG",
+      "prev_close": 0.8075,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "USEA",
+      "prev_close": 2.31,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "UTSI",
+      "prev_close": 2.02,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "UWMC",
+      "prev_close": 1.48,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "UXIN",
+      "prev_close": 0.8267,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "UZX",
+      "prev_close": 1.04,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "VAI",
+      "prev_close": 2.22,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "VANI",
+      "prev_close": 1.125,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "VENU",
+      "prev_close": 1.18,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "VERU",
+      "prev_close": 2.19,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "VGAS",
+      "prev_close": 0.9976,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "VIP",
+      "prev_close": 1.02,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "VIVO",
+      "prev_close": 1.89,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "VLN",
+      "prev_close": 1.56,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "VRRM",
+      "prev_close": 2.13,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "VRXA",
+      "prev_close": 1.01,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "VS",
+      "prev_close": 0.8402,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "VUZI",
+      "prev_close": 2.14,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "VWAV",
+      "prev_close": 1.35,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "VYGR",
+      "prev_close": 1.99,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "WAFU",
+      "prev_close": 1.37,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "WATR",
+      "prev_close": 1.565,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "WDH",
+      "prev_close": 1,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "WETH",
+      "prev_close": 0.8216,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "WFF",
+      "prev_close": 1.08,
+      "iex_bars_before_0915": 25,
+      "iex_shares_before_0915": 6470,
+      "iex_trades_before_0915": 77,
+      "first_iex_bar_et": "08:00"
+    },
+    {
+      "symbol": "WIT",
+      "prev_close": 2.14,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "WLDS",
+      "prev_close": 1.6,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "WNW",
+      "prev_close": 2.05,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "WOK",
+      "prev_close": 1.25,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "WORX",
+      "prev_close": 1.39,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "WRAP",
+      "prev_close": 1.25,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "WRN",
+      "prev_close": 1.58,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "WSHP",
+      "prev_close": 2.26,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "WTF",
+      "prev_close": 2.015,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "WVVI",
+      "prev_close": 1.72,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "WXM",
+      "prev_close": 2.25,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "XAIR",
+      "prev_close": 2.285,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "XBIO",
+      "prev_close": 1.7975,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "XBIT",
+      "prev_close": 1.91,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "XCUR",
+      "prev_close": 0.8903,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "XHLD",
+      "prev_close": 0.87,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "XLAB",
+      "prev_close": 1.12,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "XOS",
+      "prev_close": 2.38,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "XRTX",
+      "prev_close": 0.845,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "XRX",
+      "prev_close": 1.04,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "XTIA",
+      "prev_close": 0.938,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "XTND",
+      "prev_close": 1.15,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "XXII",
+      "prev_close": 1.63,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "YDDL",
+      "prev_close": 1.05,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "YDKG",
+      "prev_close": 1.04,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "YHC",
+      "prev_close": 1.75,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "YIBO",
+      "prev_close": 1.11,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "YJ",
+      "prev_close": 1.21,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "YMAT",
+      "prev_close": 1.18,
+      "iex_bars_before_0915": 6,
+      "iex_shares_before_0915": 2111,
+      "iex_trades_before_0915": 23,
+      "first_iex_bar_et": "08:00"
+    },
+    {
+      "symbol": "YSG",
+      "prev_close": 1.96,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "YSXT",
+      "prev_close": 1.3788,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "YTRA",
+      "prev_close": 0.84,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "YXT",
+      "prev_close": 1.27,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "YYAI",
+      "prev_close": 0.9453,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ZCMD",
+      "prev_close": 1,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ZDAI",
+      "prev_close": 1.25,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ZDGE",
+      "prev_close": 2.29,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ZEPP",
+      "prev_close": 2.35,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ZJK",
+      "prev_close": 1.27,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ZKH",
+      "prev_close": 1.34,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ZKIN",
+      "prev_close": 1.52,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ZNB",
+      "prev_close": 1.08,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ZNTL",
+      "prev_close": 1.74,
+      "iex_bars_before_0915": 2,
+      "iex_shares_before_0915": 1200,
+      "iex_trades_before_0915": 2,
+      "first_iex_bar_et": "09:06"
+    },
+    {
+      "symbol": "ZURA",
+      "prev_close": 1.24,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": "09:30"
+    },
+    {
+      "symbol": "ZVIA",
+      "prev_close": 1.28,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    },
+    {
+      "symbol": "ZYBT",
+      "prev_close": 1.49,
+      "iex_bars_before_0915": 0,
+      "iex_shares_before_0915": 0,
+      "iex_trades_before_0915": 0,
+      "first_iex_bar_et": null
+    }
+  ]
+}

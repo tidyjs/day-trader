@@ -1,0 +1,143 @@
+{
+  "summary": {
+    "tested": 12,
+    "yahoo_float_present": 11,
+    "edgar_so_present": 10,
+    "float_gt_so": 0,
+    "errors": 0
+  },
+  "rows": [
+    {
+      "ticker": "CRMN",
+      "yahoo_float": 328340,
+      "yahoo_shares_out": 15947094,
+      "yahoo_implied_so": 17942094,
+      "edgar_shares_out": null,
+      "edgar_asof": null,
+      "float_pct_of_so": null,
+      "passes_lt_50M": true,
+      "flags": "-"
+    },
+    {
+      "ticker": "YMAT",
+      "yahoo_float": 1489933,
+      "yahoo_shares_out": 3301474,
+      "yahoo_implied_so": 4520910,
+      "edgar_shares_out": 13953333,
+      "edgar_asof": "2026-04-30",
+      "float_pct_of_so": 10.7,
+      "passes_lt_50M": true,
+      "flags": "-"
+    },
+    {
+      "ticker": "MRLN",
+      "yahoo_float": 46411337,
+      "yahoo_shares_out": 102418930,
+      "yahoo_implied_so": 102418930,
+      "edgar_shares_out": 101067784,
+      "edgar_asof": "2026-08-11",
+      "float_pct_of_so": 45.9,
+      "passes_lt_50M": true,
+      "flags": "near_50M_cap"
+    },
+    {
+      "ticker": "AMIX",
+      "yahoo_float": 1934016,
+      "yahoo_shares_out": 2045193,
+      "yahoo_implied_so": 2045193,
+      "edgar_shares_out": 2045193,
+      "edgar_asof": "2026-11-06",
+      "float_pct_of_so": 94.6,
+      "passes_lt_50M": true,
+      "flags": "-"
+    },
+    {
+      "ticker": "MNDO",
+      "yahoo_float": 15389419,
+      "yahoo_shares_out": 19544211,
+      "yahoo_implied_so": 19544211,
+      "edgar_shares_out": 20372828,
+      "edgar_asof": "2025-12-31",
+      "float_pct_of_so": 75.5,
+      "passes_lt_50M": true,
+      "flags": "-"
+    },
+    {
+      "ticker": "WFF",
+      "yahoo_float": 545724,
+      "yahoo_shares_out": 2514797,
+      "yahoo_implied_so": 2514797,
+      "edgar_shares_out": 5038018,
+      "edgar_asof": "2025-12-31",
+      "float_pct_of_so": 10.8,
+      "passes_lt_50M": true,
+      "flags": "-"
+    },
+    {
+      "ticker": "STAK",
+      "yahoo_float": 10010321,
+      "yahoo_shares_out": 10010349,
+      "yahoo_implied_so": 19210349,
+      "edgar_shares_out": 19210349,
+      "edgar_asof": "2026-06-30",
+      "float_pct_of_so": 52.1,
+      "passes_lt_50M": true,
+      "flags": "-"
+    },
+    {
+      "ticker": "NCPL",
+      "yahoo_float": 4387760,
+      "yahoo_shares_out": 8018428,
+      "yahoo_implied_so": 8018428,
+      "edgar_shares_out": 7847899,
+      "edgar_asof": "2026-03-19",
+      "float_pct_of_so": 55.9,
+      "passes_lt_50M": true,
+      "flags": "-"
+    },
+    {
+      "ticker": "GEVO",
+      "yahoo_float": 228348694,
+      "yahoo_shares_out": 247376240,
+      "yahoo_implied_so": 247376240,
+      "edgar_shares_out": 247376240,
+      "edgar_asof": "2026-11-06",
+      "float_pct_of_so": 92.3,
+      "passes_lt_50M": false,
+      "flags": "-"
+    },
+    {
+      "ticker": "TTEC",
+      "yahoo_float": 20434705,
+      "yahoo_shares_out": 49383048,
+      "yahoo_implied_so": 49383048,
+      "edgar_shares_out": 49383048,
+      "edgar_asof": "2026-10-30",
+      "float_pct_of_so": 41.4,
+      "passes_lt_50M": true,
+      "flags": "-"
+    },
+    {
+      "ticker": "SLSN",
+      "yahoo_float": 18332202,
+      "yahoo_shares_out": 70647045,
+      "yahoo_implied_so": 70647045,
+      "edgar_shares_out": 70647045,
+      "edgar_asof": "2026-11-12",
+      "float_pct_of_so": 25.9,
+      "passes_lt_50M": true,
+      "flags": "-"
+    },
+    {
+      "ticker": "CANG",
+      "yahoo_float": null,
+      "yahoo_shares_out": 39321967,
+      "yahoo_implied_so": 41021967,
+      "edgar_shares_out": null,
+      "edgar_asof": null,
+      "float_pct_of_so": null,
+      "passes_lt_50M": null,
+      "flags": "float_missing"
+    }
+  ]
+}

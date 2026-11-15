@@ -1,0 +1,333 @@
+{
+  "summary": {
+    "day": "2026-11-13",
+    "symbols_source": "t6 gappers",
+    "symbols": 30,
+    "symbols_with_sip_bar_before_0500": 18,
+    "sip_bars_by_hour_et": {
+      "04:00": 269,
+      "05:00": 212,
+      "06:00": 194,
+      "07:00": 298,
+      "08:00": 276,
+      "09:00": 194
+    },
+    "median_iex_share_of_sip_pct": 0.0,
+    "recent_sip_end_now": {
+      "ok": false,
+      "status": 403,
+      "body": "{\"message\":\"subscription does not permit querying recent SIP data\"}\n"
+    },
+    "recent_sip_end_now_minus_16min": {
+      "ok": true,
+      "bars": 0
+    },
+    "rate_limit_headers": {
+      "X-Ratelimit-Limit": "200",
+      "X-Ratelimit-Remaining": "199",
+      "X-Ratelimit-Reset": "1794772173"
+    }
+  },
+  "rows": [
+    {
+      "symbol": "AMIX",
+      "sip_first_et": "04:00",
+      "sip_bars": 35,
+      "sip_shares": 13023,
+      "sip_dollar_vol": 17446,
+      "iex_bars": 0,
+      "iex_shares": 0,
+      "iex_share_of_sip_pct": 0.0
+    },
+    {
+      "symbol": "ANPA",
+      "sip_first_et": "09:30",
+      "sip_bars": 1,
+      "sip_shares": 3710,
+      "sip_dollar_vol": 4266,
+      "iex_bars": 0,
+      "iex_shares": 0,
+      "iex_share_of_sip_pct": 0.0
+    },
+    {
+      "symbol": "BBCI",
+      "sip_first_et": "04:00",
+      "sip_bars": 80,
+      "sip_shares": 184313,
+      "sip_dollar_vol": 247442,
+      "iex_bars": 0,
+      "iex_shares": 0,
+      "iex_share_of_sip_pct": 0.0
+    },
+    {
+      "symbol": "BIRD",
+      "sip_first_et": "04:16",
+      "sip_bars": 47,
+      "sip_shares": 77265,
+      "sip_dollar_vol": 95993,
+      "iex_bars": 0,
+      "iex_shares": 0,
+      "iex_share_of_sip_pct": 0.0
+    },
+    {
+      "symbol": "BOF",
+      "sip_first_et": "07:00",
+      "sip_bars": 12,
+      "sip_shares": 7810,
+      "sip_dollar_vol": 14999,
+      "iex_bars": 0,
+      "iex_shares": 0,
+      "iex_share_of_sip_pct": 0.0
+    },
+    {
+      "symbol": "CABR",
+      "sip_first_et": null,
+      "sip_bars": 0,
+      "sip_shares": 0,
+      "sip_dollar_vol": 0,
+      "iex_bars": 0,
+      "iex_shares": 0,
+      "iex_share_of_sip_pct": 0.0
+    },
+    {
+      "symbol": "CALC",
+      "sip_first_et": "04:00",
+      "sip_bars": 2,
+      "sip_shares": 1732,
+      "sip_dollar_vol": 2275,
+      "iex_bars": 0,
+      "iex_shares": 0,
+      "iex_share_of_sip_pct": 0.0
+    },
+    {
+      "symbol": "CANG",
+      "sip_first_et": "04:27",
+      "sip_bars": 16,
+      "sip_shares": 64483,
+      "sip_dollar_vol": 99960,
+      "iex_bars": 1,
+      "iex_shares": 100,
+      "iex_share_of_sip_pct": 0.2
+    },
+    {
+      "symbol": "CDXS",
+      "sip_first_et": "04:00",
+      "sip_bars": 39,
+      "sip_shares": 124628,
+      "sip_dollar_vol": 138877,
+      "iex_bars": 1,
+      "iex_shares": 3185,
+      "iex_share_of_sip_pct": 2.6
+    },
+    {
+      "symbol": "CLRB",
+      "sip_first_et": "04:00",
+      "sip_bars": 3,
+      "sip_shares": 2367,
+      "sip_dollar_vol": 2766,
+      "iex_bars": 0,
+      "iex_shares": 0,
+      "iex_share_of_sip_pct": 0.0
+    },
+    {
+      "symbol": "CRMN",
+      "sip_first_et": "04:00",
+      "sip_bars": 331,
+      "sip_shares": 22349330,
+      "sip_dollar_vol": 28781316,
+      "iex_bars": 9,
+      "iex_shares": 1709,
+      "iex_share_of_sip_pct": 0.0
+    },
+    {
+      "symbol": "CVRX",
+      "sip_first_et": "04:27",
+      "sip_bars": 4,
+      "sip_shares": 19683,
+      "sip_dollar_vol": 12477,
+      "iex_bars": 0,
+      "iex_shares": 0,
+      "iex_share_of_sip_pct": 0.0
+    },
+    {
+      "symbol": "DLPN",
+      "sip_first_et": "04:52",
+      "sip_bars": 3,
+      "sip_shares": 440,
+      "sip_dollar_vol": 428,
+      "iex_bars": 0,
+      "iex_shares": 0,
+      "iex_share_of_sip_pct": 0.0
+    },
+    {
+      "symbol": "DPU",
+      "sip_first_et": "04:00",
+      "sip_bars": 146,
+      "sip_shares": 178219,
+      "sip_dollar_vol": 172807,
+      "iex_bars": 0,
+      "iex_shares": 0,
+      "iex_share_of_sip_pct": 0.0
+    },
+    {
+      "symbol": "GEVO",
+      "sip_first_et": "04:15",
+      "sip_bars": 34,
+      "sip_shares": 202726,
+      "sip_dollar_vol": 377638,
+      "iex_bars": 1,
+      "iex_shares": 4101,
+      "iex_share_of_sip_pct": 2.0
+    },
+    {
+      "symbol": "GITS",
+      "sip_first_et": "04:00",
+      "sip_bars": 2,
+      "sip_shares": 896,
+      "sip_dollar_vol": 1274,
+      "iex_bars": 0,
+      "iex_shares": 0,
+      "iex_share_of_sip_pct": 0.0
+    },
+    {
+      "symbol": "HTCR",
+      "sip_first_et": "09:05",
+      "sip_bars": 3,
+      "sip_shares": 1910,
+      "sip_dollar_vol": 2814,
+      "iex_bars": 0,
+      "iex_shares": 0,
+      "iex_share_of_sip_pct": 0.0
+    },
+    {
+      "symbol": "HTOO",
+      "sip_first_et": null,
+      "sip_bars": 0,
+      "sip_shares": 0,
+      "sip_dollar_vol": 0,
+      "iex_bars": 0,
+      "iex_shares": 0,
+      "iex_share_of_sip_pct": 0.0
+    },
+    {
+      "symbol": "IFRX",
+      "sip_first_et": "05:51",
+      "sip_bars": 4,
+      "sip_shares": 2311,
+      "sip_dollar_vol": 2916,
+      "iex_bars": 0,
+      "iex_shares": 0,
+      "iex_share_of_sip_pct": 0.0
+    },
+    {
+      "symbol": "KLTR",
+      "sip_first_et": "07:57",
+      "sip_bars": 2,
+      "sip_shares": 2389,
+      "sip_dollar_vol": 3375,
+      "iex_bars": 0,
+      "iex_shares": 0,
+      "iex_share_of_sip_pct": 0.0
+    },
+    {
+      "symbol": "LFMD",
+      "sip_first_et": "04:00",
+      "sip_bars": 59,
+      "sip_shares": 112389,
+      "sip_dollar_vol": 210517,
+      "iex_bars": 1,
+      "iex_shares": 625,
+      "iex_share_of_sip_pct": 0.6
+    },
+    {
+      "symbol": "MNDO",
+      "sip_first_et": "04:15",
+      "sip_bars": 10,
+      "sip_shares": 62019,
+      "sip_dollar_vol": 78157,
+      "iex_bars": 0,
+      "iex_shares": 0,
+      "iex_share_of_sip_pct": 0.0
+    },
+    {
+      "symbol": "MRLN",
+      "sip_first_et": "04:00",
+      "sip_bars": 331,
+      "sip_shares": 13200320,
+      "sip_dollar_vol": 17783554,
+      "iex_bars": 23,
+      "iex_shares": 16767,
+      "iex_share_of_sip_pct": 0.1
+    },
+    {
+      "symbol": "MSC",
+      "sip_first_et": "09:30",
+      "sip_bars": 1,
+      "sip_shares": 757,
+      "sip_dollar_vol": 772,
+      "iex_bars": 1,
+      "iex_shares": 200,
+      "iex_share_of_sip_pct": 26.4
+    },
+    {
+      "symbol": "NCPL",
+      "sip_first_et": "04:00",
+      "sip_bars": 28,
+      "sip_shares": 33364,
+      "sip_dollar_vol": 58305,
+      "iex_bars": 1,
+      "iex_shares": 100,
+      "iex_share_of_sip_pct": 0.3
+    },
+    {
+      "symbol": "NXTS",
+      "sip_first_et": null,
+      "sip_bars": 0,
+      "sip_shares": 0,
+      "sip_dollar_vol": 0,
+      "iex_bars": 0,
+      "iex_shares": 0,
+      "iex_share_of_sip_pct": 0.0
+    },
+    {
+      "symbol": "SCLX",
+      "sip_first_et": "09:30",
+      "sip_bars": 1,
+      "sip_shares": 534,
+      "sip_dollar_vol": 828,
+      "iex_bars": 0,
+      "iex_shares": 0,
+      "iex_share_of_sip_pct": 0.0
+    },
+    {
+      "symbol": "SKYE",
+      "sip_first_et": "08:08",
+      "sip_bars": 4,
+      "sip_shares": 1609,
+      "sip_dollar_vol": 1761,
+      "iex_bars": 0,
+      "iex_shares": 0,
+      "iex_share_of_sip_pct": 0.0
+    },
+    {
+      "symbol": "SLSN",
+      "sip_first_et": "04:00",
+      "sip_bars": 244,
+      "sip_shares": 636896,
+      "sip_dollar_vol": 751584,
+      "iex_bars": 0,
+      "iex_shares": 0,
+      "iex_share_of_sip_pct": 0.0
+    },
+    {
+      "symbol": "SNOA",
+      "sip_first_et": "09:30",
+      "sip_bars": 1,
+      "sip_shares": 1255,
+      "sip_dollar_vol": 1503,
+      "iex_bars": 0,
+      "iex_shares": 0,
+      "iex_share_of_sip_pct": 0.0
+    }
+  ]
+}

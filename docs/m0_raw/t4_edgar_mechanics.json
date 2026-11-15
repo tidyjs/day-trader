@@ -1,0 +1,272 @@
+{
+  "summary": {
+    "user_agent_accepted": true,
+    "company_tickers_status": 200,
+    "tickers_in_map": 10404,
+    "lookback_days": 30,
+    "tested": 7,
+    "mapped": 5,
+    "with_shares_outstanding": 5
+  },
+  "rows": [
+    {
+      "ticker": "AAPL",
+      "cik": "0000320193",
+      "shares_out": 14532182000,
+      "shares_out_asof": "2026-10-23",
+      "public_float_usd": 3647099000000,
+      "public_float_asof": "2026-03-27",
+      "filings_last_n_days": 14,
+      "offering_forms": "424B2",
+      "8k_items": "8.01,9.01;2.02,9.01",
+      "_recent": [
+        {
+          "form": "4",
+          "date": "2026-11-12",
+          "items": "",
+          "offering_form": false
+        },
+        {
+          "form": "25-NSE",
+          "date": "2026-11-09",
+          "items": "",
+          "offering_form": false
+        },
+        {
+          "form": "8-K",
+          "date": "2026-11-09",
+          "items": "8.01,9.01",
+          "offering_form": false
+        },
+        {
+          "form": "424B2",
+          "date": "2026-11-06",
+          "items": "",
+          "offering_form": true
+        },
+        {
+          "form": "FWP",
+          "date": "2026-11-06",
+          "items": "",
+          "offering_form": false
+        },
+        {
+          "form": "4",
+          "date": "2026-11-05",
+          "items": "",
+          "offering_form": false
+        },
+        {
+          "form": "424B2",
+          "date": "2026-11-05",
+          "items": "",
+          "offering_form": true
+        },
+        {
+          "form": "10-K",
+          "date": "2026-11-03",
+          "items": "",
+          "offering_form": false
+        },
+        {
+          "form": "8-K",
+          "date": "2026-11-02",
+          "items": "2.02,9.01",
+          "offering_form": false
+        },
+        {
+          "form": "4",
+          "date": "2026-10-29",
+          "items": "",
+          "offering_form": false
+        },
+        {
+          "form": "4",
+          "date": "2026-10-22",
+          "items": "",
+          "offering_form": false
+        },
+        {
+          "form": "4",
+          "date": "2026-10-19",
+          "items": "",
+          "offering_form": false
+        },
+        {
+          "form": "4",
+          "date": "2026-10-19",
+          "items": "",
+          "offering_form": false
+        },
+        {
+          "form": "144",
+          "date": "2026-10-16",
+          "items": "",
+          "offering_form": false
+        }
+      ]
+    },
+    {
+      "ticker": "SNDL",
+      "cik": "0001766600",
+      "shares_out": 263359123,
+      "shares_out_asof": "2025-12-31",
+      "public_float_usd": null,
+      "public_float_asof": null,
+      "filings_last_n_days": 5,
+      "offering_forms": "-",
+      "8k_items": "-",
+      "_recent": [
+        {
+          "form": "SC TO-C",
+          "date": "2026-10-28",
+          "items": "",
+          "offering_form": false
+        },
+        {
+          "form": "SC TO-C",
+          "date": "2026-10-27",
+          "items": "",
+          "offering_form": false
+        },
+        {
+          "form": "6-K",
+          "date": "2026-10-27",
+          "items": "",
+          "offering_form": false
+        },
+        {
+          "form": "6-K",
+          "date": "2026-10-27",
+          "items": "",
+          "offering_form": false
+        },
+        {
+          "form": "SC TO-C",
+          "date": "2026-10-16",
+          "items": "",
+          "offering_form": false
+        }
+      ]
+    },
+    {
+      "ticker": "PLUG",
+      "cik": "0001093691",
+      "shares_out": 1398871823,
+      "shares_out_asof": "2026-11-04",
+      "public_float_usd": 1463243116,
+      "public_float_asof": "2025-06-30",
+      "filings_last_n_days": 3,
+      "offering_forms": "-",
+      "8k_items": "2.02,9.01",
+      "_recent": [
+        {
+          "form": "10-Q",
+          "date": "2026-11-09",
+          "items": "",
+          "offering_form": false
+        },
+        {
+          "form": "8-K",
+          "date": "2026-11-09",
+          "items": "2.02,9.01",
+          "offering_form": false
+        },
+        {
+          "form": "4",
+          "date": "2026-10-19",
+          "items": "",
+          "offering_form": false
+        }
+      ]
+    },
+    {
+      "ticker": "NKLA",
+      "note": "not in company_tickers.json"
+    },
+    {
+      "ticker": "GNS",
+      "cik": "0001847806",
+      "shares_out": 159839164,
+      "shares_out_asof": "2025-12-31",
+      "public_float_usd": null,
+      "public_float_asof": null,
+      "filings_last_n_days": 3,
+      "offering_forms": "-",
+      "8k_items": "-",
+      "_recent": [
+        {
+          "form": "6-K",
+          "date": "2026-11-12",
+          "items": "",
+          "offering_form": false
+        },
+        {
+          "form": "6-K",
+          "date": "2026-11-10",
+          "items": "",
+          "offering_form": false
+        },
+        {
+          "form": "6-K",
+          "date": "2026-10-21",
+          "items": "",
+          "offering_form": false
+        }
+      ]
+    },
+    {
+      "ticker": "SIRI",
+      "cik": "0000908937",
+      "shares_out": 336486715,
+      "shares_out_asof": "2026-10-27",
+      "public_float_usd": 7407294638,
+      "public_float_asof": "2025-06-30",
+      "filings_last_n_days": 6,
+      "offering_forms": "-",
+      "8k_items": "5.02;5.02,9.01;2.02,7.01,9.01",
+      "_recent": [
+        {
+          "form": "8-K",
+          "date": "2026-11-13",
+          "items": "5.02",
+          "offering_form": false
+        },
+        {
+          "form": "SCHEDULE 13D/A",
+          "date": "2026-11-09",
+          "items": "",
+          "offering_form": false
+        },
+        {
+          "form": "8-K",
+          "date": "2026-11-09",
+          "items": "5.02,9.01",
+          "offering_form": false
+        },
+        {
+          "form": "4",
+          "date": "2026-11-03",
+          "items": "",
+          "offering_form": false
+        },
+        {
+          "form": "10-Q",
+          "date": "2026-10-29",
+          "items": "",
+          "offering_form": false
+        },
+        {
+          "form": "8-K",
+          "date": "2026-10-29",
+          "items": "2.02,7.01,9.01",
+          "offering_form": false
+        }
+      ]
+    },
+    {
+      "ticker": "ABCDXYZ",
+      "note": "not in company_tickers.json"
+    }
+  ]
+}

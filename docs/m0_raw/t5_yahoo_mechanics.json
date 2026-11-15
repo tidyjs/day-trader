@@ -1,0 +1,66 @@
+{
+  "summary": {
+    "tested": 5,
+    "yahoo_float_present": 5,
+    "edgar_so_present": 5,
+    "float_gt_so": 0,
+    "errors": 0
+  },
+  "rows": [
+    {
+      "ticker": "AAPL",
+      "yahoo_float": 14507041325,
+      "yahoo_shares_out": 14532182000,
+      "yahoo_implied_so": 14532182000,
+      "edgar_shares_out": 14532182000,
+      "edgar_asof": "2026-10-23",
+      "float_pct_of_so": 99.8,
+      "passes_lt_50M": false,
+      "flags": "-"
+    },
+    {
+      "ticker": "SNDL",
+      "yahoo_float": 208983041,
+      "yahoo_shares_out": 243761544,
+      "yahoo_implied_so": 243761544,
+      "edgar_shares_out": 263359123,
+      "edgar_asof": "2025-12-31",
+      "float_pct_of_so": 79.4,
+      "passes_lt_50M": false,
+      "flags": "-"
+    },
+    {
+      "ticker": "PLUG",
+      "yahoo_float": 1335321076,
+      "yahoo_shares_out": 1398871823,
+      "yahoo_implied_so": 1398871823,
+      "edgar_shares_out": 1398871823,
+      "edgar_asof": "2026-11-04",
+      "float_pct_of_so": 95.5,
+      "passes_lt_50M": false,
+      "flags": "-"
+    },
+    {
+      "ticker": "GNS",
+      "yahoo_float": 146505287,
+      "yahoo_shares_out": 191947508,
+      "yahoo_implied_so": 191947508,
+      "edgar_shares_out": 159839164,
+      "edgar_asof": "2025-12-31",
+      "float_pct_of_so": 91.7,
+      "passes_lt_50M": false,
+      "flags": "-"
+    },
+    {
+      "ticker": "SIRI",
+      "yahoo_float": 309890805,
+      "yahoo_shares_out": 336486715,
+      "yahoo_implied_so": 336486715,
+      "edgar_shares_out": 336486715,
+      "edgar_asof": "2026-10-27",
+      "float_pct_of_so": 92.1,
+      "passes_lt_50M": false,
+      "flags": "-"
+    }
+  ]
+}

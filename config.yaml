@@ -1,0 +1,44 @@
+# All thresholds are assumptions to be tested (SPEC section 3). Do not tune
+# them off a handful of trades (SPEC 4.4a): changes wait for the phase 1 review.
+
+timezone: America/New_York
+
+account:
+  equity_usd: 50
+  risk_per_trade: 0.05
+  daily_loss_cap: 0.10
+  max_consecutive_losses: 2
+  max_open_positions: 1
+  max_shortlist: 5
+
+schedule:
+  premarket_start: "04:00"
+  scan_time: "09:15"          # ET; email goes out at this time
+  sip_delay_minutes: 16       # free plan refuses SIP newer than 15 min
+
+universe:
+  exchanges: [NYSE, NASDAQ, AMEX, ARCA, BATS]
+  # Alpaca has no clean "common stock" flag. Names containing these words are
+  # dropped unless they also say "common" or "ordinary".
+  exclude_name_words: [warrant, unit, " right", etf, etn, fund, trust, preferred, "depositary share", notes]
+
+scan:
+  price_min: 1.00
+  price_max: 2.00
+  gap_min_pct: 10.0
+  # Prior closes below this are not fetched. 0.25 allows a gap of up to +300%
+  # into $1.00. The upper bound is exact: price_max / (1 + gap_min).
+  prior_close_floor: 0.25
+  # Stored for M2 (spec 4.1 and the fake-print caveat); not rules in M1.
+  min_pm_dollar_volume: 100000
+  min_pm_trades: 50
+
+t212:
+  base_url_env: T212_BASE_URL
+  default_base_url: https://live.trading212.com
+  max_age_days: 1             # older lists get the "T212 list is N days old" warning
+
+paths:
+  scans: data/scans
+  candidates: data/candidates.csv
+  t212: data/t212

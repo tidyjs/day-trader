@@ -1,0 +1,5 @@
+.venv/
+.env
+__pycache__/
+data/t212_instruments.*
+.pytest_cache/
