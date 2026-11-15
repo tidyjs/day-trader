@@ -3,6 +3,2566 @@
   "as_of_et": "2026-11-12T09:15:00-05:00",
   "data_cutoff_et": "2026-11-12T08:59:00-05:00",
   "day": "2026-11-12",
+  "edgar": {
+   "CRMN": {
+    "cik": 2031009,
+    "docs_capped": 0,
+    "errors": [],
+    "filings": [
+     {
+      "accepted": "2026-11-12T13:45:19.000Z",
+      "accession": "0001213900-26-118491",
+      "desc": "REPORT OF FOREIGN PRIVATE ISSUER",
+      "doc": "ea0311820-6k_skyline.htm",
+      "filed": "2026-11-12",
+      "form": "6-K",
+      "items": "",
+      "text": {
+       "chars": 1377,
+       "cover": "6-K 1 ea0311820-6k_skyline.htm REPORT OF FOREIGN PRIVATE ISSUER UNITED STATES SECURITIES AND EXCHANGE COMMISSION Washington, D.C. 20549 FORM 6-K REPORT OF FOREIGN PRIVATE ISSUER PURSUANT TO RULE 13a-16 OR 15d-16 UNDER THE SECURITIES EXCHANGE ACT OF 1934 For the month of November 2026 Commission File Number: 001-42461 SKYLINE BUILDERS GROUP HOLDING LIMITED (Registrant\u2019s Name) Office A, 15/F, Tower A, Capital Tower, No. 38 Wai Yip Street, Kowloon Bay, Hong Kong (Address of Principal Executive Offices) Indicate by check mark whether the registrant files or will file annual reports under cover Form 20-F or Form 40-F. Form 20-F \u2612 Form 40-F \u2610 Information contained in this report On November 12, 2026, Skyline Builders Group Holding Limited (the \u201cCompany\u201d) announced that its Nasdaq ticker symbol will change from \u201cKAZR\u201d to \u201cCRMN\u201d, effective at the opening of trading on November 12, 2026. No action is required from existing shareholders and the Company\u2019s CUSIP number will remain unchanged. 1 EXHIBIT INDEX Exhibit No. Description 99.1 Press Release 2 SIGNATURES Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned, thereunto duly authorized. Skyline Builders Group Holding Limited Date: November 12, 2026 By: /s/ Paul Mann Name: Paul Mann Title: Executive Chairman 3",
+       "hits": []
+      },
+      "url": "https://www.sec.gov/Archives/edgar/data/2031009/000121390026118491/ea0311820-6k_skyline.htm"
+     },
+     {
+      "accepted": "2026-11-02T14:15:01.000Z",
+      "accession": "0001213900-26-114713",
+      "desc": "REPORT OF FOREIGN PRIVATE ISSUER",
+      "doc": "ea0310448-6k_skyline.htm",
+      "filed": "2026-11-02",
+      "form": "6-K",
+      "items": "",
+      "text": {
+       "chars": 7097,
+       "cover": "6-K 1 ea0310448-6k_skyline.htm REPORT OF FOREIGN PRIVATE ISSUER UNITED STATES SECURITIES AND EXCHANGE COMMISSION Washington, D.C. 20549 FORM 6-K REPORT OF FOREIGN PRIVATE ISSUER PURSUANT TO RULE 13a-16 OR 15d-16 UNDER THE SECURITIES EXCHANGE ACT OF 1934 For the month of November 2026 Commission File Number: 001-42461 SKYLINE BUILDERS GROUP HOLDING LIMITED (Registrant\u2019s Name) Office A, 15/F, Tower A, Capital Tower, No. 38 Wai Yip Street, Kowloon Bay, Hong Kong (Address of Principal Executive Offices) Indicate by check mark whether the registrant files or will file annual reports under cover Form 20-F or Form 40-F. Form 20-F \u2612 Form 40-F \u2610 Information contained in this report On November 1, 2026, Skyline Builders Group Holding Limited, a Cayman Islands exempted company with limited liability (the \u201cCompany\u201d), entered into a binding term sheet (the \u201cTerm Sheet\u201d) with Cove Kaz Capital Group LLC (\u201cCKCG\u201d), a Delaware limited liability company, Kaz Resources LLC, a Delaware limited liability company (\u201cKRLLC\u201d) and an investor (the \u201cInvestor\u201d). The Term Sheet sets forth the terms of CKGC\u2019s proposed pursuit of a direct listing of its Class A common stock on the Nasdaq Stock Market or New York Stock Exchange (the \u201cDirect Listing\u201d), as well as a private placement by the Investor of 4,000,000 shares of Class A common stock or equivalent units at $8.00 per share or unit for an aggregate purchase price of $32 million, and a reorganization of CKCG into a Delaware corporation to be known as \u201cKaz Resources Inc.\u201d, to be completed prior to the proposed Direct Listing. The Term Sheet also provides for certain amendments to the previously announced convertible loan agreement, dated June 1, 2026 (the \u201cSkyline Loan\u201d), pursuant to which the Company disbursed a $45.0 million loan to CKCG. The amendments provide for maturity 15 business days after termination of the Term Sheet, expand the definition of \u201cCompany Units\u201d to address CKCG\u2019s Class A/Class B unit structure, and expand \u201cConversion Equity\u201d to include Class A common stock following CKCG\u2019s corporate conversion. The Term Sheet also contemplates that the Company will receive an aggregate of 63,994,955 shares of CKCG Class A common stock through a series of private transactions, including (i) the distribution of CKCG shares held by Kaz Resources in exchange for the redemption of 100% of the Company\u2019s equity in Kaz Resources, and (ii) an issuance by CKCG of shares in exchange for cancellation of all amounts due under the Skyline Loan and termination of the related note. These 63,994,955 shares of Class A common stock will represent approximately 26% of the equity CKCG as of a time immediately prior to the Direct Listing , before giving effect to a contemplated employee stock option plan of up to 10% of CKCG\u2019s fully diluted capitalization. The shares of CKCG received by the Company will be \u201crestricted securities\u201d within the meaning of Rule 144 under the Securities Act of 1933, as amended, and the parties have agreed to register the subsequent distribution by Skyline of these shares to its shareholders on a pro rata basis in the Direct Listing registration statement. The contemplated transactions remain subject to receipt of requisite regulatory approvals, and the parties have agreed to cooperate in obtaining approvals and preparing necessary transaction documents. The proposed financing described in the Term Sheet also remains subject to its due diligence and definitive documentation conditions. There can be no assurance that the transactions described in the Term Sheet will be completed. The Term Sheet may be terminated by written consent of all parties thereto. On November 1, 2026, concurrently with the execution of the Term Sheet, the Company and CKCG also entered into a termination agreement (the \u201cTermination Agreement\u201d) to terminate that certain transaction agreement dated April 30, 2026, by and among the Company, CKCG, KRLLC and SKBL Merger Sub Inc. (the \u201cTransaction Agreement\u201d). The Termination Agreement became effective immediately upon its execution. As a result, the Transaction Agreement is of no further force or effect, except for certain provisions that survive its termination in accordance with their terms, and all liability under the Transaction Agreement on the part of any party thereto or any of their respective representatives shall cease. The Termination Agreement also provides for mutual releases and covenants not to sue concerning specified claims relating to the Transaction Agreement and the abandoned transactions, subject to stated exceptions. The Company also agreed to change its ticker symbol and release the \u201cKAZR\u201d symbol as promptly as possible, and in any event within 15 days following the date of the Term Sheet. Upon effectiveness of that change, CKCG will have the right to reserve the \u201cKAZR\u201d symbol. The foregoing summaries of the Term Sheet and the Termination Agreement do not purport to be complete and, as to the Termination Agreement, are subject to, and ",
+       "hits": [
+        "et (the \u201cTerm Sheet\u201d) with Cove Kaz Capital Group LLC (\u201cCKCG\u201d), a Delaware limited liability company, Kaz Resources LLC, a Delaware limited liability company (\u201cKRLLC\u201d) and an investor (the \u201cInvestor\u201d). The Term Sheet sets forth the terms of CKGC\u2019s proposed pursuit of a direct listing of its Class A common stock on the Nasdaq Stock Market or New York Stock Exchange (the \u201cDirect Listing\u201d), as well as a private placement by the Investor of 4,000,000 shares of Class A common stock or equivalent units at $8.00 per share or unit for an aggregate purchase price of $32 million, and a reorganization of CKCG into a Delaware corporation to be known as \u201cKaz Resources Inc.\u201d, to be completed prior to the proposed Direct Listing. The Term Sheet also provides for certain amendments to t",
+        "ursuant to which the Company disbursed a $45.0 million loan to CKCG. The amendments provide for maturity 15 business days after termination of the Term Sheet, expand the definition of \u201cCompany Units\u201d to address CKCG\u2019s Class A/Class B unit structure, and expand \u201cConversion Equity\u201d to include Class A common stock following CKCG\u2019s corporate conversion. The Term Sheet also contemplates that the Company will receive an aggregate of 63,994,955 shares of CKCG Class A common stock through a series of private transactions, including (i) the distribution of CKCG shares held by Kaz Resources in exchange for the redemption of 100% of the Company\u2019s equity in Kaz Resources, and (ii) an issuance by CKCG of shares in exchange for cancellation of all amounts due under the Skyline Loan and termination of the related note. These 63,994,955 shares of Class A common stock will represent approximately 26% of the equity CKCG as of a time immediately prior to the Direct Listing , before giving effect to a contemplated employee stock option plan of up to 10% of CKCG\u2019s fully diluted capitalization. The shares of CKCG received by the Company will be \u201crestricted securities"
+       ]
+      },
+      "url": "https://www.sec.gov/Archives/edgar/data/2031009/000121390026114713/ea0310448-6k_skyline.htm"
+     },
+     {
+      "accepted": "2026-09-09T10:02:55.000Z",
+      "accession": "0001213900-26-098187",
+      "desc": "",
+      "doc": "xslF345X06/ownership.xml",
+      "filed": "2026-09-09",
+      "form": "3",
+      "items": "",
+      "url": "https://www.sec.gov/Archives/edgar/data/2031009/000121390026098187/xslF345X06/ownership.xml"
+     },
+     {
+      "accepted": "2026-08-21T11:02:27.000Z",
+      "accession": "0001213900-26-092307",
+      "desc": "AMENDMENT NO. 1 TO FORM 20-F",
+      "doc": "ea0302498-20fa1_skyline.htm",
+      "filed": "2026-08-21",
+      "form": "20-F/A",
+      "items": "",
+      "url": "https://www.sec.gov/Archives/edgar/data/2031009/000121390026092307/ea0302498-20fa1_skyline.htm"
+     },
+     {
+      "accepted": "2026-08-17T21:28:57.000Z",
+      "accession": "0001213900-26-090838",
+      "desc": "ANNUAL REPORT",
+      "doc": "ea0299805-20f_skyline.htm",
+      "filed": "2026-08-17",
+      "form": "20-F",
+      "items": "",
+      "url": "https://www.sec.gov/Archives/edgar/data/2031009/000121390026090838/ea0299805-20f_skyline.htm"
+     },
+     {
+      "accepted": "2026-08-17T20:06:01.000Z",
+      "accession": "0001213900-26-090751",
+      "desc": "FORM 425",
+      "doc": "ea0302371-425_skyline.htm",
+      "filed": "2026-08-17",
+      "form": "425",
+      "items": "",
+      "url": "https://www.sec.gov/Archives/edgar/data/2031009/000121390026090751/ea0302371-425_skyline.htm"
+     },
+     {
+      "accepted": "2026-08-17T20:05:02.000Z",
+      "accession": "0001213900-26-090743",
+      "desc": "REPORT OF FOREIGN PRIVATE ISSUER",
+      "doc": "ea0301516-6k_skyline.htm",
+      "filed": "2026-08-17",
+      "form": "6-K",
+      "items": "",
+      "url": "https://www.sec.gov/Archives/edgar/data/2031009/000121390026090743/ea0301516-6k_skyline.htm"
+     },
+     {
+      "accepted": "2026-08-14T20:00:07.000Z",
+      "accession": "0001214659-26-010351",
+      "desc": "",
+      "doc": "xslSCHEDULE_13G_X02/primary_doc.xml",
+      "filed": "2026-08-14",
+      "form": "SCHEDULE 13G/A",
+      "items": "",
+      "url": "https://www.sec.gov/Archives/edgar/data/2031009/000121465926010351/xslSCHEDULE_13G_X02/primary_doc.xml"
+     }
+    ],
+    "shares_points": []
+   },
+   "GITS": {
+    "cik": 1911545,
+    "docs_capped": 0,
+    "errors": [],
+    "filings": [
+     {
+      "accepted": "2026-10-27T20:00:11.000Z",
+      "accession": "9999999997-26-001683",
+      "desc": "",
+      "doc": "filename1.pdf",
+      "filed": "2026-10-27",
+      "form": "SEC STAFF ACTION",
+      "items": "",
+      "url": "https://www.sec.gov/Archives/edgar/data/1911545/999999999726001683/filename1.pdf"
+     },
+     {
+      "accepted": "2026-10-21T20:15:38.000Z",
+      "accession": "0001493152-26-047901",
+      "desc": "8-K",
+      "doc": "form8-k.htm",
+      "filed": "2026-10-21",
+      "form": "8-K",
+      "items": "5.02,9.01",
+      "text": {
+       "chars": 8295,
+       "cover": "false 0001911545 0001911545 2026-10-15 2026-10-15 iso4217:USD xbrli:shares iso4217:USD xbrli:shares UNITED STATES SECURITIES AND EXCHANGE COMMISSION WASHINGTON, D.C. 20549 FORM 8-K CURRENT REPORT Pursuant to Section 13 or 15(d) of the Securities Exchange Act of 1934 Date of Report (Date of earliest event reported): October 15, 2026 GLOBAL INTERACTIVE TECHNOLOGIES, INC. (Exact name of registrant as specified in its charter) Delaware 001-41763 88-1368281 (State or other jurisdiction of incorporation or organization) (Commission File Number) (I.R.S. Employer Identification No.) 3000 El Camino Real Building 4 Suite 200 Palo Alto , CA 94306 (Address of principal executive offices) (Zip Code) Registrant\u2019s telephone number, including area code: +82-2 - 2564-8588 Check the appropriate box below if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the registrant under any of the following provisions: \u2610 Written communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425) \u2610 Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12) \u2610 Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b)) \u2610 Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c)) Securities registered pursuant to Section 12(b) of the Act: Title of each class Trading Symbol(s) Name of each exchange on which registered Common Stock, par value $0.001 per share GITS The Nasdaq Stock Market LLC Indicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (\u00a7230.405 of this chapter) or Rule 12b-2 of the Securities Exchange Act of 1934 (\u00a7240.12b-2 of this chapter). Emerging growth company \u2612 If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. \u2610 Item 5.02 Departure of Directors or Certain Officers; Election of Directors; Appointment of Certain Officers; Compensatory Arrangement of Certain Officers. On October 15, 2026, the Board of Directors (the \u201cBoard\u201d) of Global Interactive Technologies, Inc. (the \u201cCompany\u201d) appointed Amy Shi as the Executive Chair of the Board, effective October 15, 2026 (the \u201cEffective Date\u201d). Ms. Shi, age 45, was elected as a director of the Company in December 2024. Ms. Shi brings over 20 years of experience in business development and relationship management across the banking, investment management, international trade, media, and technology industries. Since December 2024, she has served as Managing Member and CEO of PixelArc LLC, a Hollywood-based TV and film IP management and production company. Prior to that, she worked as an independent management consultant in Seoul and had made significant contributions to the Company as an independent consultant from October 2021 to April 2023. From May 2019 to August 2020, Ms. Shi served as Vice President at HSBC, and from August 2012 to May 2019 as Assistant Vice President at JPMorgan Chase. In the technology sector, she held a Partner Relations role at Apple Inc. from 2016 to 2017 and earlier worked at China Telecom as Account Executive from 2002 to 2005. She also has prior experience in operations and management consulting at Bestview International and Phoenix Design. Fluent in English, Mandarin, and Korean, Ms. Shi holds dual bachelor\u2019s degrees in Computer Science and Marketing and a Master\u2019s degree from The Ohio State University. There are no arrangements or understandings between Ms. Shi and any other person pursuant to which Ms. Shi was appointed as Executive Chair of the Board, and no family relationships exist between Ms. Shi and any director or executive officer of the Company. Ms. Shi has no direct or indirect material interest in any transaction required to be disclosed pursuant to Item 404(a) of Regulation S-K except as previously disclosed in the Company\u2019s filings with the Securities and Exchange Commission. Compensation Arrangement with Ms. Shi In connection with her appointment as Executive Chair of the Board, Ms. Shi entered into an Executive Chair Service Agreement (the \u201cECS Agreement\u201d) which provides that Ms. Shi will serve as Executive Chair of the Board for an initial term of one year, automatically renewing for successive one-year periods unless Ms. Shi or the Company gives 60 days\u2019 written notice of nonrenewal. Pursuant to the ECS Agreement, while serving as Executive Chair of the Board, Ms. Shi will receive an annual cash compensation of $10,000 per month ($120,000 annually) and an annual equity compensation component with a reference amount of $250,000. Ms. Shi\u2019s cash compensation will be reviewed by the Company six months after the Effective Date and her cash compensation will increase to $20,000 per month ($240,000 annually) on the first",
+       "hits": [
+        " 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b)) \u2610 Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c)) Securities registered pursuant to Section 12(b) of the Act: Title of each class Trading Symbol(s) Name of each exchange on which registered Common Stock, par value $0.001 per share GITS The Nasdaq Stock Market LLC Indicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (\u00a7230.405 of this chapter) or Rule 12b-2 of the Securities Exchange Act of 1934 (\u00a7240.12b-2 of this chapter)."
+       ]
+      },
+      "url": "https://www.sec.gov/Archives/edgar/data/1911545/000149315226047901/form8-k.htm"
+     },
+     {
+      "accepted": "2026-09-10T20:10:40.000Z",
+      "accession": "0001493152-26-042159",
+      "desc": "8-K",
+      "doc": "form8-k.htm",
+      "filed": "2026-09-10",
+      "form": "8-K",
+      "items": "3.01",
+      "url": "https://www.sec.gov/Archives/edgar/data/1911545/000149315226042159/form8-k.htm"
+     },
+     {
+      "accepted": "2026-09-09T20:10:40.000Z",
+      "accession": "0001493152-26-041960",
+      "desc": "10-Q",
+      "doc": "form10-q.htm",
+      "filed": "2026-09-09",
+      "form": "10-Q",
+      "items": "",
+      "url": "https://www.sec.gov/Archives/edgar/data/1911545/000149315226041960/form10-q.htm"
+     },
+     {
+      "accepted": "2026-08-21T20:15:36.000Z",
+      "accession": "0001493152-26-039677",
+      "desc": "8-K",
+      "doc": "form8-k.htm",
+      "filed": "2026-08-21",
+      "form": "8-K",
+      "items": "3.01,7.01,9.01",
+      "url": "https://www.sec.gov/Archives/edgar/data/1911545/000149315226039677/form8-k.htm"
+     },
+     {
+      "accepted": "2026-08-17T20:10:27.000Z",
+      "accession": "0001493152-26-038744",
+      "desc": "NT 10-Q",
+      "doc": "formnt10-q.htm",
+      "filed": "2026-08-17",
+      "form": "NT 10-Q",
+      "items": "",
+      "url": "https://www.sec.gov/Archives/edgar/data/1911545/000149315226038744/formnt10-q.htm"
+     },
+     {
+      "accepted": "2026-08-14T14:15:06.000Z",
+      "accession": "0001172661-26-003584",
+      "desc": "",
+      "doc": "xslSCHEDULE_13G_X02/primary_doc.xml",
+      "filed": "2026-08-14",
+      "form": "SCHEDULE 13G",
+      "items": "",
+      "url": "https://www.sec.gov/Archives/edgar/data/1911545/000117266126003584/xslSCHEDULE_13G_X02/primary_doc.xml"
+     }
+    ],
+    "shares_points": [
+     {
+      "end": "2024-11-19",
+      "filed": "2024-11-20",
+      "form": "10-Q",
+      "val": 52808589
+     },
+     {
+      "end": "2025-04-29",
+      "filed": "2025-04-30",
+      "form": "10-K",
+      "val": 2640429
+     },
+     {
+      "end": "2025-03-31",
+      "filed": "2025-05-20",
+      "form": "10-Q",
+      "val": 2940402
+     },
+     {
+      "end": "2025-08-14",
+      "filed": "2025-08-15",
+      "form": "10-Q",
+      "val": 3548825
+     },
+     {
+      "end": "2025-11-12",
+      "filed": "2025-11-12",
+      "form": "10-Q",
+      "val": 3674208
+     },
+     {
+      "end": "2026-05-22",
+      "filed": "2026-05-26",
+      "form": "10-K",
+      "val": 3674208
+     },
+     {
+      "end": "2026-06-19",
+      "filed": "2026-06-22",
+      "form": "10-Q",
+      "val": 3674208
+     },
+     {
+      "end": "2026-09-09",
+      "filed": "2026-09-09",
+      "form": "10-Q",
+      "val": 4203104
+     }
+    ]
+   },
+   "ICMB": {
+    "cik": 1578348,
+    "docs_capped": 0,
+    "errors": [],
+    "filings": [
+     {
+      "accepted": "2026-11-12T13:40:11.000Z",
+      "accession": "0001193125-26-457115",
+      "desc": "425",
+      "doc": "d173515d425.htm",
+      "filed": "2026-11-12",
+      "form": "425",
+      "items": "",
+      "url": "https://www.sec.gov/Archives/edgar/data/1578348/000119312526457115/d173515d425.htm"
+     },
+     {
+      "accepted": "2026-11-12T13:37:20.000Z",
+      "accession": "0001193125-26-457105",
+      "desc": "8-K",
+      "doc": "d173515d8k.htm",
+      "filed": "2026-11-12",
+      "form": "8-K",
+      "items": "1.01,7.01,9.01",
+      "text": {
+       "chars": 27206,
+       "cover": "8-K false 0001578348 0001578348 2026-11-11 2026-11-11 UNITED STATES SECURITIES AND EXCHANGE COMMISSION Washington, DC 20549 FORM 8-K CURRENT REPORT Pursuant to Section 13 or 15(d) of the Securities Exchange Act of 1934 Date of report (Date of earliest event reported): November 12, 2026 ( November 11, 2026 ) INVESTCORP CREDIT MANAGEMENT BDC, INC. (Exact name of Registrant as Specified in Its Charter) Maryland 814-01054 46-2883380 (State or Other Jurisdiction of Incorporation) (Commission File Number) (IRS Employer Identification No.) 280 Park Avenue 39th Floor New York , NY 10017 (Address of principal executive office and zip code) Registrant\u2019s telephone number, including area code: (212) 257-5199 Not Applicable (Former name or former address, if changed since last report.) Check the appropriate box below if the Form 8-K filing is intended to simultaneously satisfy the filing obligation of the registrant under any of the following provisions (see General Instruction A.2. below): \u2612 Written communications pursuant to Rule 425 under the Securities Act (17 CFR 230.425) \u2610 Soliciting material pursuant to Rule 14a-12 under the Exchange Act (17 CFR 240.14a-12) \u2610 Pre-commencement communications pursuant to Rule 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b)) \u2610 Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c)) Securities registered pursuant to Section 12(b) of the Act: Title of each class Trading Symbol(s) Name of each exchange on which registered Common Stock, $0.001 par value per share ICMB The Nasdaq Global Select Market Indicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (\u00a7230.405 of this chapter) or Rule 12b-2 of the Securities Exchange Act of 1934 (\u00a7240.12b-2 of this chapter). Emerging growth company \u2610 If an emerging growth company, indicate by check mark if the registrant has elected not to use the extended transition period for complying with any new or revised financial accounting standards provided pursuant to Section 13(a) of the Exchange Act. \u2610 Item 1.01. Entry into a Material Definitive Agreement. Agreement and Plan of Merger On November 11, 2026, Investcorp Credit Management BDC, Inc., a Maryland corporation (\u201c ICMB \u201d), entered into an Agreement and Plan of Merger (the \u201c Merger Agreement \u201d) with BCP Investment Corporation, a Delaware corporation (\u201c BCIC \u201d), and Aria Acquisition Sub, Inc., a Maryland corporation and a direct wholly-owned subsidiary of BCIC (\u201c Acquisition Sub \u201d). The Merger Agreement provides that (i) Acquisition Sub will merge with and into ICMB (the \u201c First Merger \u201d), with ICMB continuing as the surviving corporation and as a wholly-owned subsidiary of BCIC (the \u201c Surviving Corporation \u201d), and (ii) immediately after the effectiveness of the First Merger, the Surviving Corporation will merge with and into BCIC (the \u201c Second Merger \u201d and, together with the First Merger, the \u201c Mergers \u201d), with BCIC continuing as the surviving corporation. The parties to the Merger Agreement intend for the Mergers, taken together, to be treated as a \u201creorganization\u201d within the meaning of Section 368(a) of the Internal Revenue Code of 1986, as amended. The board of directors of ICMB, on the recommendation of the special committee of the board of directors of ICMB, and the board of directors of BCIC and the governing body of Acquisition Sub have approved and/or adopted the Merger Agreement and the transactions contemplated thereby, and have declared the Merger Agreement and the transactions contemplated thereby advisable and in the best interests of ICMB, BCIC, Acquisition Sub, and their respective stockholders. Merger Consideration At the date and time when the First Merger becomes effective (the \u201c Effective Time \u201d), each share of common stock, par value $0.001 per share, of ICMB (\u201c ICMB Common Stock \u201d) issued and outstanding immediately prior to the Effective Time (excluding shares held by subsidiaries of ICMB or held, directly or indirectly, by BCIC or Acquisition Sub (\u201c Canceled Shares \u201d)) shall be converted into the right to receive a portion of the Aggregate Merger Consideration (as defined below). The \u201c Aggregate Merger Consideration \u201d means the sum of (A) a number of shares of common stock, par value $0.01 per share, of BCIC (\u201c BCIC Common Stock \u201d) equal to the number of shares of ICMB Common Stock issued and outstanding as of the second business day immediately preceding the business day on which the closing is expected to occur (the \u201c Determination Date \u201d) (excluding any Canceled Shares), multiplied by the Exchange Ratio (as defined below); provided , that in no event will the aggregate number of shares of BCIC Common Stock to be issued pursuant to the Merger Agreement (the \u201c Aggregate Share Consideration \u201d) exceed 19.99% of the number of shares of BCIC Common Stock outstanding as of November 11, 2026, and (B) if the Aggregate Share Consideration Value (as defined be",
+       "hits": [
+        " 14d-2(b) under the Exchange Act (17 CFR 240.14d-2(b)) \u2610 Pre-commencement communications pursuant to Rule 13e-4(c) under the Exchange Act (17 CFR 240.13e-4(c)) Securities registered pursuant to Section 12(b) of the Act: Title of each class Trading Symbol(s) Name of each exchange on which registered Common Stock, $0.001 par value per share ICMB The Nasdaq Global Select Market Indicate by check mark whether the registrant is an emerging growth company as defined in Rule 405 of the Securities Act of 1933 (\u00a7230.405 of this chapter) or Rule 12b-2 of the Securities Exchange Act of 1934 (\u00a7240.12b-2 of this chapt",
+        "ve declared the Merger Agreement and the transactions contemplated thereby advisable and in the best interests of ICMB, BCIC, Acquisition Sub, and their respective stockholders. Merger Consideration At the date and time when the First Merger becomes effective (the \u201c Effective Time \u201d), each share of common stock, par value $0.001 per share, of ICMB (\u201c ICMB Common Stock \u201d) issued and outstanding immediately prior to the Effective Time (excluding shares held by subsidiaries of ICMB or held, directly or indirectly, by BCIC or Acquisition Sub (\u201c Canceled Shares \u201d)) shall be converted into the right to receive a portion of the Aggregate Merger Consideration (as defined below). The \u201c Aggregate Merger Consideration \u201d means the sum of (A) a number of shares of common stock, par value $0.01 per share, of BCIC (\u201c BCIC Common Stock \u201d) equal to the number of shares of ICMB Common Stock issued and outstanding as of the second business day immediately preceding the business day on which the closing is expected to occur (the \u201c Determination Date \u201d) (excluding any Canceled Shares), multiplied by the Exchange Ratio (as defined below); provided , that in no event will the aggregate number of shares of BCIC Common Stock to be issued pursuant to the Merger Agreement (the \u201c Aggregate Share Consideration \u201d) exceed 19.99% of the number of shares of BCIC Common Stock outstanding as of November 11, 2026, and (B) if the Aggregate Share Consideration Value (as defined below) is less than ninety percent (90%) of the ICMB Closing Net Asset Value (as defined below), an amount in cash, without interest, to be paid by BCIC equal to (a) ninety percent (90%) of the ICMB ",
+        " Net Asset Value ,\u201d and the total net asset value of ICMB as of the Determination Date, the \u201c ICMB Closing Net Asset Value \u201d). Based on such calculations, the parties will calculate the \u201c BCIC Per Share NAV ,\u201d which will equal the BCIC Closing Net Asset Value divided by the number of shares of BCIC Common Stock issued and outstanding as of the Determination Date, and the \u201c ICMB Per Share NAV ,\u201d which will equal ninety percent (90%) of the quotient of the ICMB Closing Net Asset Value divided by the number of shares of ICMB Common Stock issued and outstanding as of the Determination Date (excluding any Canceled Shares). The \u201c Exchange Ratio \u201d will be equal to the quotient (rounded to four decimal places) of (i) the ICMB Per Share NAV divided by (ii) the BCIC Per Share NAV. The \u201c Aggregate Share Consideration Value \u201d shall refer to (a) the BCIC Per Share NAV multiplied by (b) the Aggregate Share Consideration. Each share of ICMB Common Stock issued and outstanding immediately prior to the Effective Time (excluding any Canceled Shares) shall be converted into the right to receive (i) a number of shares of BCIC Common Stock equal to (a) the Aggregate Share Consideration divided by (b) the number of shares of ICMB Common Stock issued and outstanding as of the Determination Date (excluding any Canceled Shares), and (ii) an amount in cash, without interest, equal to (a) the BCIC Aggregate Cash Consideration divided by (b) the number of shares of ICMB Common Stock issued and outstanding as of the Determination Date (excluding any Canceled Shares), subject to the holdback described below. A portion of the Aggregate Merger Consideration, having an aggregate value of $500,000 (the \u201c Holdback Amount \u201d), will be held-back from payment to ICMB stockholders in conn",
+        "ed by a nationally recognized financial institution (the \u201c Holdback Fund \u201d). The Holdback Amount will be satisfied (i) first, from the BCIC Aggregate Cash Consideration, and (ii) second, solely to the extent the BCIC Aggregate Cash Consideration is less than the Holdback Amount, from shares of BCIC Common Stock (valued in accordance with the average of the volume-weighted average price per share of BCIC Common Stock on NASDAQ (as reported by Bloomberg L.P. or, if not reported therein, in another authoritative source mutually selected by BCIC and ICMB) on each of the five (5) consecutive trading days ending with the third (3rd) complete trading day immediately prior to the effective date of the First Merger), with the portion of the BCIC Aggregate Cash Consideration and, if applicable, the Aggregate Share Consideration, payable in respect of each share of ICMB Common Stock issued and outstanding immediately prior to the Effective Time to be reduced pro rata accordingly. The Holdback Fund shall be held solely to satisfy any taxes, interest, penalties, and related costs and expenses of ICMB, BCIC or their respective subsidiaries arising out of certain tax matters perta",
+        "ng to ICMB with respect to periods prior to the First Merger (collectively, \u201c Specified Tax Liabilities \u201d). On or promptly after October 15, 2027, the balance of the Holdback Amount, net of amounts retained by BCIC to satisfy Specified Tax Liabilities, shall be released to holders of shares of ICMB Common Stock issued and outstanding immediately prior to the Effective Time. Representations, Warranties and Covenants The Merger Agreement contains customary representations and warranties of ICMB, BCIC and Acquisition Sub. Additionally, the Merger Agreement contains customary pre-closing covenants, including ",
+        "to acquire ICMB, and ICMB is restricted in its ability to respond to such proposals. In addition, ICMB must (i) call and hold a meeting of ICMB stockholders solely for the purpose of seeking the adoption of the Merger Agreement by the holders of at least a majority of the outstanding shares of ICMB Common Stock entitled to vote thereon (such approval, the \u201c ICMB Stockholder Approval \u201d and such meeting, the \u201c ICMB Stockholders Meeting \u201d), (ii) include, in the proxy statement for the ICMB Stockholders Meeting (the \u201c Proxy Statement \u201d), the recommendation of the board of directors of ICMB that the stockholde",
+        "ergers. Specifically, pursuant to the Key Stockholder Agreements, and subject to the terms and conditions thereof, each Key Stockholder has agreed, among other things, until the earlier of the consummation of the First Merger and the termination of the Merger Agreement, to vote their shares of ICMB Common Stock (i) in favor of the approval and adoption of the Merger Agreement and the transactions contemplated thereby, including the First Merger, and (ii) against any action or agreement reasonably likely to hinder consummation of such transactions, including any competing proposal. The Key Stockholders beneficially own, collectively, approximately 41% of the outstanding shares of ICMB Common Stock as of the date of the Merger Agreement. General The foregoing summary descriptions of the Merger Agreement and the Key Stockholder Agreements are subject to and qualified in their entirety by reference to the Merger Agreement and the Form of Key Stockholder Agreement, copies of which are attached h",
+        "; (3) unexpected costs, charges or expenses resulting from the proposed transaction; (4) uncertainty of the expected financial performance of the combined company following completion of the proposed transaction; (5) uncertainty with respect to the trading levels of shares of the combined company\u2019s common stock on NASDAQ; (6) failure to realize the anticipated benefits of the proposed transaction, including as a result of delay in completing the proposed transaction or integrating the businesses of ICMB and BCIC; (7) the ability of the combined company to implement its business strategy; (8) difficulties "
+       ]
+      },
+      "url": "https://www.sec.gov/Archives/edgar/data/1578348/000119312526457105/d173515d8k.htm"
+     },
+     {
+      "accepted": "2026-11-12T11:07:32.000Z",
+      "accession": "0001193125-26-456667",
+      "desc": "10-Q",
+      "doc": "icmb-20260930.htm",
+      "filed": "2026-11-12",
+      "form": "10-Q",
+      "items": "",
+      "url": "https://www.sec.gov/Archives/edgar/data/1578348/000119312526456667/icmb-20260930.htm"
+     },
+     {
+      "accepted": "2026-08-14T21:24:00.000Z",
+      "accession": "0001193125-26-352658",
+      "desc": "10-Q",
+      "doc": "icmb-20260630.htm",
+      "filed": "2026-08-14",
+      "form": "10-Q",
+      "items": "",
+      "url": "https://www.sec.gov/Archives/edgar/data/1578348/000119312526352658/icmb-20260630.htm"
+     }
+    ],
+    "shares_points": [
+     {
+      "end": "2025-03-25",
+      "filed": "2025-03-26",
+      "form": "10-KT",
+      "val": 14414033
+     },
+     {
+      "end": "2025-05-13",
+      "filed": "2025-05-14",
+      "form": "10-Q",
+      "val": 14414033
+     },
+     {
+      "end": "2025-08-12",
+      "filed": "2025-08-13",
+      "form": "10-Q",
+      "val": 14431202
+     },
+     {
+      "end": "2025-11-12",
+      "filed": "2025-11-12",
+      "form": "10-Q",
+      "val": 14419762
+     },
+     {
+      "end": "2026-03-30",
+      "filed": "2026-03-31",
+      "form": "10-K",
+      "val": 14432472
+     },
+     {
+      "end": "2026-05-12",
+      "filed": "2026-05-13",
+      "form": "10-Q",
+      "val": 14432472
+     },
+     {
+      "end": "2026-08-14",
+      "filed": "2026-08-14",
+      "form": "10-Q",
+      "val": 14432472
+     },
+     {
+      "end": "2026-11-12",
+      "filed": "2026-11-12",
+      "form": "10-Q",
+      "val": 14432472
+     }
+    ]
+   },
+   "MSC": {
+    "cik": 1713334,
+    "docs_capped": 0,
+    "errors": [],
+    "filings": [
+     {
+      "accepted": "2026-11-09T23:09:20.000Z",
+      "accession": "0001193125-26-453966",
+      "desc": "4",
+      "doc": "xslF345X06/ownership.xml",
+      "filed": "2026-11-09",
+      "form": "4",
+      "items": "",
+      "url": "https://www.sec.gov/Archives/edgar/data/1713334/000119312526453966/xslF345X06/ownership.xml"
+     },
+     {
+      "accepted": "2026-11-09T11:30:03.000Z",
+      "accession": "0001193125-26-452558",
+      "desc": "4",
+      "doc": "xslF345X06/ownership.xml",
+      "filed": "2026-11-09",
+      "form": "4",
+      "items": "",
+      "url": "https://www.sec.gov/Archives/edgar/data/1713334/000119312526452558/xslF345X06/ownership.xml"
+     },
+     {
+      "accepted": "2026-11-05T11:03:39.000Z",
+      "accession": "0001193125-26-448365",
+      "desc": "FORM 6-K",
+      "doc": "d171437d6k.htm",
+      "filed": "2026-11-05",
+      "form": "6-K",
+      "items": "",
+      "text": {
+       "chars": 1210,
+       "cover": "6-K 1 d171437d6k.htm FORM 6-K Form 6-K Table of Contents FORM 6-K SECURITIES AND EXCHANGE COMMISSION Washington, D.C. 20549 REPORT OF FOREIGN ISSUER PURSUANT TO RULE 13a\u201316 OR 15d\u201316 OF THE SECURITIES EXCHANGE ACT OF 1934 For the month of November 2026 Commission File Number: 001-38699 STUDIO CITY INTERNATIONAL HOLDINGS LIMITED 71 Robinson Road #04-03 Singapore 068895 and 38 th Floor, The Centrium 60 Wyndham Street Central Hong Kong (Address of principal executive offices) Indicate by check mark whether the registrant files or will file annual reports under cover Form 20\u2013F or Form 40\u2013 F. Form 20-F \u2612 Form 40-F \u2610 Table of Contents STUDIO CITY INTERNATIONAL HOLDINGS LIMITED Form 6\u2013K TABLE OF CONTENTS Signature 3 Exhibit 99.1 2 Table of Contents SIGNATURE Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned, thereunto duly authorized. STUDIO CITY INTERNATIONAL HOLDINGS LIMITED By: /s/ Geoffrey Davis Name: Geoffrey Davis, CFA Title: Chief Financial Officer Date: November 5, 2026 3 Table of Contents EXHIBIT INDEX Exhibit No. Description Exhibit 99.1 Unaudited Results for Third Quarter of 2026 4",
+       "hits": []
+      },
+      "url": "https://www.sec.gov/Archives/edgar/data/1713334/000119312526448365/d171437d6k.htm"
+     },
+     {
+      "accepted": "2026-11-04T01:12:39.000Z",
+      "accession": "0001193125-26-445868",
+      "desc": "4",
+      "doc": "xslF345X06/ownership.xml",
+      "filed": "2026-11-03",
+      "form": "4",
+      "items": "",
+      "url": "https://www.sec.gov/Archives/edgar/data/1713334/000119312526445868/xslF345X06/ownership.xml"
+     },
+     {
+      "accepted": "2026-10-30T10:04:17.000Z",
+      "accession": "0001193125-26-439801",
+      "desc": "FORM 6-K",
+      "doc": "d182135d6k.htm",
+      "filed": "2026-10-30",
+      "form": "6-K",
+      "items": "",
+      "text": {
+       "chars": 1090,
+       "cover": "6-K 1 d182135d6k.htm FORM 6-K Form 6-K Table of Contents FORM 6-K SECURITIES AND EXCHANGE COMMISSION Washington, D.C. 20549 REPORT OF FOREIGN ISSUER PURSUANT TO RULE 13a\u201316 OR 15d\u201316 OF THE SECURITIES EXCHANGE ACT OF 1934 For the month of October 2026 Commission File Number: 001-38699 STUDIO CITY INTERNATIONAL HOLDINGS LIMITED 71 Robinson Road #04-03 Singapore 068895 and 38 th Floor, The Centrium 60 Wyndham Street Central Hong Kong (Address of principal executive offices) Indicate by check mark whether the registrant files or will file annual reports under cover Form 20\u2013F or Form 40\u2013 F. Form 20-F \u2612 Form 40-F \u2610 Table of Contents STUDIO CITY INTERNATIONAL HOLDINGS LIMITED Form 6\u2013K TABLE OF CONTENTS Signature 3 Exhibit 99.1 Announcement 2 Table of Contents SIGNATURE Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned, thereunto duly authorized. STUDIO CITY INTERNATIONAL HOLDINGS LIMITED By: /s/ Tim Y. Sung Name: Tim Y. Sung Title: Company Secretary Date: October 30, 2026 3",
+       "hits": []
+      },
+      "url": "https://www.sec.gov/Archives/edgar/data/1713334/000119312526439801/d182135d6k.htm"
+     },
+     {
+      "accepted": "2026-10-29T21:46:29.000Z",
+      "accession": "0001193125-26-438200",
+      "desc": "4",
+      "doc": "xslF345X06/ownership.xml",
+      "filed": "2026-10-29",
+      "form": "4",
+      "items": "",
+      "url": "https://www.sec.gov/Archives/edgar/data/1713334/000119312526438200/xslF345X06/ownership.xml"
+     },
+     {
+      "accepted": "2026-10-28T10:04:12.000Z",
+      "accession": "0001193125-26-435002",
+      "desc": "FORM 6-K",
+      "doc": "d103831d6k.htm",
+      "filed": "2026-10-28",
+      "form": "6-K",
+      "items": "",
+      "text": {
+       "chars": 1183,
+       "cover": "6-K 1 d103831d6k.htm FORM 6-K Form 6-K Table of Contents FORM 6-K SECURITIES AND EXCHANGE COMMISSION Washington, D.C. 20549 REPORT OF FOREIGN ISSUER PURSUANT TO RULE 13a\u201316 OR 15d\u201316 OF THE SECURITIES EXCHANGE ACT OF 1934 For the month of October 2026 Commission File Number: 001-38699 STUDIO CITY INTERNATIONAL HOLDINGS LIMITED 71 Robinson Road #04-03 Singapore 068895 and 38 th Floor, The Centrium 60 Wyndham Street Central Hong Kong (Address of principal executive offices) Indicate by check mark whether the registrant files or will file annual reports under cover Form 20\u2013F or Form 40\u2013 F. Form 20-F \u2612 Form 40-F \u2610 Table of Contents STUDIO CITY INTERNATIONAL HOLDINGS LIMITED Form 6\u2013K TABLE OF CONTENTS Signature 3 Exhibit 99.1 Table of Contents SIGNATURE Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned, thereunto duly authorized. STUDIO CITY INTERNATIONAL HOLDINGS LIMITED By: /s/ Geoffrey Davis Name: Geoffrey Davis, CFA Title: Chief Financial Officer Date: October 28, 2026 3 Table of Contents EXHIBIT INDEX Exhibit No. Description Exhibit 99.1 Earnings Release Date",
+       "hits": []
+      },
+      "url": "https://www.sec.gov/Archives/edgar/data/1713334/000119312526435002/d103831d6k.htm"
+     },
+     {
+      "accepted": "2026-10-27T23:45:15.000Z",
+      "accession": "0001193125-26-434678",
+      "desc": "4/A",
+      "doc": "xslF345X06/ownership.xml",
+      "filed": "2026-10-27",
+      "form": "4/A",
+      "items": "",
+      "url": "https://www.sec.gov/Archives/edgar/data/1713334/000119312526434678/xslF345X06/ownership.xml"
+     },
+     {
+      "accepted": "2026-10-26T21:33:03.000Z",
+      "accession": "0001193125-26-432206",
+      "desc": "4",
+      "doc": "xslF345X06/ownership.xml",
+      "filed": "2026-10-26",
+      "form": "4",
+      "items": "",
+      "url": "https://www.sec.gov/Archives/edgar/data/1713334/000119312526432206/xslF345X06/ownership.xml"
+     },
+     {
+      "accepted": "2026-10-21T21:40:32.000Z",
+      "accession": "0001193125-26-428009",
+      "desc": "4",
+      "doc": "xslF345X06/ownership.xml",
+      "filed": "2026-10-21",
+      "form": "4",
+      "items": "",
+      "url": "https://www.sec.gov/Archives/edgar/data/1713334/000119312526428009/xslF345X06/ownership.xml"
+     },
+     {
+      "accepted": "2026-10-14T22:04:12.000Z",
+      "accession": "0001193125-26-421896",
+      "desc": "4",
+      "doc": "xslF345X06/ownership.xml",
+      "filed": "2026-10-14",
+      "form": "4",
+      "items": "",
+      "url": "https://www.sec.gov/Archives/edgar/data/1713334/000119312526421896/xslF345X06/ownership.xml"
+     },
+     {
+      "accepted": "2026-10-08T22:19:53.000Z",
+      "accession": "0001193125-26-418147",
+      "desc": "4",
+      "doc": "xslF345X06/ownership.xml",
+      "filed": "2026-10-08",
+      "form": "4",
+      "items": "",
+      "url": "https://www.sec.gov/Archives/edgar/data/1713334/000119312526418147/xslF345X06/ownership.xml"
+     },
+     {
+      "accepted": "2026-10-05T22:14:28.000Z",
+      "accession": "0001193125-26-414524",
+      "desc": "4",
+      "doc": "xslF345X06/ownership.xml",
+      "filed": "2026-10-05",
+      "form": "4",
+      "items": "",
+      "url": "https://www.sec.gov/Archives/edgar/data/1713334/000119312526414524/xslF345X06/ownership.xml"
+     },
+     {
+      "accepted": "2026-09-30T22:41:14.000Z",
+      "accession": "0001193125-26-409383",
+      "desc": "4",
+      "doc": "xslF345X06/ownership.xml",
+      "filed": "2026-09-30",
+      "form": "4",
+      "items": "",
+      "url": "https://www.sec.gov/Archives/edgar/data/1713334/000119312526409383/xslF345X06/ownership.xml"
+     },
+     {
+      "accepted": "2026-09-28T20:05:03.000Z",
+      "accession": "0001193125-26-405313",
+      "desc": "4",
+      "doc": "xslF345X06/ownership.xml",
+      "filed": "2026-09-28",
+      "form": "4",
+      "items": "",
+      "url": "https://www.sec.gov/Archives/edgar/data/1713334/000119312526405313/xslF345X06/ownership.xml"
+     },
+     {
+      "accepted": "2026-09-25T10:01:47.000Z",
+      "accession": "0001193125-26-401498",
+      "desc": "4",
+      "doc": "xslF345X06/ownership.xml",
+      "filed": "2026-09-25",
+      "form": "4",
+      "items": "",
+      "url": "https://www.sec.gov/Archives/edgar/data/1713334/000119312526401498/xslF345X06/ownership.xml"
+     },
+     {
+      "accepted": "2026-09-23T10:03:38.000Z",
+      "accession": "0001193125-26-398437",
+      "desc": "FORM 6-K",
+      "doc": "d82968d6k.htm",
+      "filed": "2026-09-23",
+      "form": "6-K",
+      "items": "",
+      "text": {
+       "chars": 1093,
+       "cover": "6-K 1 d82968d6k.htm FORM 6-K Form 6-K Table of Contents FORM 6-K SECURITIES AND EXCHANGE COMMISSION Washington, D.C. 20549 REPORT OF FOREIGN ISSUER PURSUANT TO RULE 13a\u201316 OR 15d\u201316 OF THE SECURITIES EXCHANGE ACT OF 1934 For the month of September 2026 Commission File Number: 001-38699 STUDIO CITY INTERNATIONAL HOLDINGS LIMITED 71 Robinson Road #04-03 Singapore 068895 and 38 th Floor, The Centrium 60 Wyndham Street Central Hong Kong (Address of principal executive offices) Indicate by check mark whether the registrant files or will file annual reports under cover Form 20\u2013F or Form 40\u2013 F. Form 20-F \u2612 Form 40-F \u2610 Table of Contents STUDIO CITY INTERNATIONAL HOLDINGS LIMITED Form 6\u2013K TABLE OF CONTENTS Signature 3 Exhibit 99.1 Announcement 2 Table of Contents SIGNATURE Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant has duly caused this report to be signed on its behalf by the undersigned, thereunto duly authorized. STUDIO CITY INTERNATIONAL HOLDINGS LIMITED By: /s/ Tim Y. Sung Name: Tim Y. Sung Title: Company Secretary Date: September 23, 2026 3",
+       "hits": []
+      },
+      "url": "https://www.sec.gov/Archives/edgar/data/1713334/000119312526398437/d82968d6k.htm"
+     },
+     {
+      "accepted": "2026-09-04T20:32:05.000Z",
+      "accession": "0001193125-26-383729",
+      "desc": "FORM 6-K",
+      "doc": "d179796d6k.htm",
+      "filed": "2026-09-04",
+      "form": "6-K",
+      "items": "",
+      "url": "https://www.sec.gov/Archives/edgar/data/1713334/000119312526383729/d179796d6k.htm"
+     },
+     {
+      "accepted": "2026-08-28T10:08:36.000Z",
+      "accession": "0001193125-26-372012",
+      "desc": "FORM 6-K",
+      "doc": "d469129d6k.htm",
+      "filed": "2026-08-28",
+      "form": "6-K",
+      "items": "",
+      "url": "https://www.sec.gov/Archives/edgar/data/1713334/000119312526372012/d469129d6k.htm"
+     },
+     {
+      "accepted": "2026-08-14T10:05:15.000Z",
+      "accession": "0001193125-26-350205",
+      "desc": "FORM 6-K",
+      "doc": "d136315d6k.htm",
+      "filed": "2026-08-14",
+      "form": "6-K",
+      "items": "",
+      "url": "https://www.sec.gov/Archives/edgar/data/1713334/000119312526350205/d136315d6k.htm"
+     }
+    ],
+    "shares_points": []
+   },
+   "YXT": {
+    "cik": 1872090,
+    "docs_capped": 0,
+    "errors": [],
+    "filings": [
+     {
+      "accepted": "2026-08-17T20:00:46.000Z",
+      "accession": "0001104659-26-097832",
+      "desc": "FORM 6-K",
+      "doc": "tm2623300d1_6k.htm",
+      "filed": "2026-08-17",
+      "form": "6-K",
+      "items": "",
+      "url": "https://www.sec.gov/Archives/edgar/data/1872090/000110465926097832/tm2623300d1_6k.htm"
+     },
+     {
+      "accepted": "2026-08-17T15:58:02.000Z",
+      "accession": "0001104659-26-097706",
+      "desc": "424B5",
+      "doc": "tm2623315d1_424b5.htm",
+      "filed": "2026-08-17",
+      "form": "424B5",
+      "items": "",
+      "url": "https://www.sec.gov/Archives/edgar/data/1872090/000110465926097706/tm2623315d1_424b5.htm"
+     }
+    ],
+    "shares_points": [
+     {
+      "end": "2025-12-31",
+      "filed": "2026-04-29",
+      "form": "20-F",
+      "val": 178456987
+     }
+    ]
+   }
+  },
+  "halts": {
+   "error": null,
+   "fetched_at": "2026-11-15T15:41:24.225317-05:00",
+   "items": [
+    {
+     "HaltDate": "11/13/2026",
+     "HaltTime": "19:50:00.000",
+     "IssueName": "Treasure Global Inc Cmn",
+     "IssueSymbol": "TGL",
+     "Market": "NASDAQ",
+     "PauseThresholdPrice": "",
+     "ReasonCode": "T1",
+     "ResumptionDate": "",
+     "ResumptionQuoteTime": "",
+     "ResumptionTradeTime": ""
+    },
+    {
+     "HaltDate": "11/13/2026",
+     "HaltTime": "19:50:00.000",
+     "IssueName": "SANGRIX INC. Cl A Ord Sh",
+     "IssueSymbol": "SGRX",
+     "Market": "NASDAQ",
+     "PauseThresholdPrice": "",
+     "ReasonCode": "T1",
+     "ResumptionDate": "",
+     "ResumptionQuoteTime": "",
+     "ResumptionTradeTime": ""
+    },
+    {
+     "HaltDate": "11/13/2026",
+     "HaltTime": "19:50:00.000",
+     "IssueName": "Intercont Cayman Cl A Ord Shs",
+     "IssueSymbol": "NCT",
+     "Market": "NASDAQ",
+     "PauseThresholdPrice": "",
+     "ReasonCode": "T1",
+     "ResumptionDate": "",
+     "ResumptionQuoteTime": "",
+     "ResumptionTradeTime": ""
+    },
+    {
+     "HaltDate": "11/13/2026",
+     "HaltTime": "19:50:00.000",
+     "IssueName": "Angel Oak High Yield Opportunities ETF",
+     "IssueSymbol": "AOHY",
+     "Market": "NASDAQ",
+     "PauseThresholdPrice": "",
+     "ReasonCode": "T1",
+     "ResumptionDate": "",
+     "ResumptionQuoteTime": "",
+     "ResumptionTradeTime": ""
+    },
+    {
+     "HaltDate": "11/13/2026",
+     "HaltTime": "19:50:00.000",
+     "IssueName": "Yimutian Inc. ADS",
+     "IssueSymbol": "YMT",
+     "Market": "NASDAQ",
+     "PauseThresholdPrice": "",
+     "ReasonCode": "T1",
+     "ResumptionDate": "",
+     "ResumptionQuoteTime": "",
+     "ResumptionTradeTime": ""
+    },
+    {
+     "HaltDate": "11/13/2026",
+     "HaltTime": "19:50:00.000",
+     "IssueName": "Angel Oak Income ETF",
+     "IssueSymbol": "CARY",
+     "Market": "NASDAQ",
+     "PauseThresholdPrice": "",
+     "ReasonCode": "T1",
+     "ResumptionDate": "",
+     "ResumptionQuoteTime": "",
+     "ResumptionTradeTime": ""
+    },
+    {
+     "HaltDate": "11/13/2026",
+     "HaltTime": "19:50:00.000",
+     "IssueName": "DEFSEC Technologies Inc. Cm",
+     "IssueSymbol": "DFSC",
+     "Market": "NASDAQ",
+     "PauseThresholdPrice": "",
+     "ReasonCode": "T1",
+     "ResumptionDate": "",
+     "ResumptionQuoteTime": "",
+     "ResumptionTradeTime": ""
+    },
+    {
+     "HaltDate": "11/13/2026",
+     "HaltTime": "19:50:00.000",
+     "IssueName": "KALA BIO, Inc. Cmn",
+     "IssueSymbol": "KALA",
+     "Market": "NASDAQ",
+     "PauseThresholdPrice": "",
+     "ReasonCode": "T1",
+     "ResumptionDate": "",
+     "ResumptionQuoteTime": "",
+     "ResumptionTradeTime": ""
+    },
+    {
+     "HaltDate": "11/13/2026",
+     "HaltTime": "19:50:00.000",
+     "IssueName": "DEFSEC Technologies Inc Wt",
+     "IssueSymbol": "DFSCW",
+     "Market": "NASDAQ",
+     "PauseThresholdPrice": "",
+     "ReasonCode": "T1",
+     "ResumptionDate": "",
+     "ResumptionQuoteTime": "",
+     "ResumptionTradeTime": ""
+    },
+    {
+     "HaltDate": "11/13/2026",
+     "HaltTime": "19:50:00.000",
+     "IssueName": "Angel Oak Mortgage-Backed Securities ETF",
+     "IssueSymbol": "MBS",
+     "Market": "NASDAQ",
+     "PauseThresholdPrice": "",
+     "ReasonCode": "T1",
+     "ResumptionDate": "",
+     "ResumptionQuoteTime": "",
+     "ResumptionTradeTime": ""
+    },
+    {
+     "HaltDate": "11/10/2026",
+     "HaltTime": "11:52:36.275",
+     "IssueName": "IT Tech Packaging, Inc. Common Stock",
+     "IssueSymbol": "ITP",
+     "Market": "AMEX",
+     "PauseThresholdPrice": "",
+     "ReasonCode": "H11",
+     "ResumptionDate": "",
+     "ResumptionQuoteTime": "",
+     "ResumptionTradeTime": ""
+    },
+    {
+     "HaltDate": "11/10/2026",
+     "HaltTime": "11:38:25.709",
+     "IssueName": "Toppoint Holdings Inc. Common Stock",
+     "IssueSymbol": "TOPP",
+     "Market": "AMEX",
+     "PauseThresholdPrice": "",
+     "ReasonCode": "H11",
+     "ResumptionDate": "",
+     "ResumptionQuoteTime": "",
+     "ResumptionTradeTime": ""
+    },
+    {
+     "HaltDate": "11/10/2026",
+     "HaltTime": "09:28:04.138",
+     "IssueName": "Genius Group Limited Ordinary Shares",
+     "IssueSymbol": "GNS",
+     "Market": "AMEX",
+     "PauseThresholdPrice": "",
+     "ReasonCode": "H11",
+     "ResumptionDate": "",
+     "ResumptionQuoteTime": "",
+     "ResumptionTradeTime": ""
+    },
+    {
+     "HaltDate": "10/14/2026",
+     "HaltTime": "19:50:00.000",
+     "IssueName": "TJGC Grp Ltd Ord A",
+     "IssueSymbol": "TJGC",
+     "Market": "NASDAQ",
+     "PauseThresholdPrice": "",
+     "ReasonCode": "T12",
+     "ResumptionDate": "",
+     "ResumptionQuoteTime": "",
+     "ResumptionTradeTime": ""
+    },
+    {
+     "HaltDate": "06/11/2026",
+     "HaltTime": "19:50:00.000",
+     "IssueName": "Happy City Holdings Limited",
+     "IssueSymbol": "HCHL",
+     "Market": "NASDAQ",
+     "PauseThresholdPrice": "",
+     "ReasonCode": "T12",
+     "ResumptionDate": "",
+     "ResumptionQuoteTime": "",
+     "ResumptionTradeTime": ""
+    },
+    {
+     "HaltDate": "12/04/2025",
+     "HaltTime": "19:50:00",
+     "IssueName": "Magnitude International Ltd OS",
+     "IssueSymbol": "MAGH",
+     "Market": "NASDAQ",
+     "PauseThresholdPrice": "",
+     "ReasonCode": "T12",
+     "ResumptionDate": "",
+     "ResumptionQuoteTime": "",
+     "ResumptionTradeTime": ""
+    },
+    {
+     "HaltDate": "10/22/2025",
+     "HaltTime": "19:50:00",
+     "IssueName": "Robot Consulting ADS",
+     "IssueSymbol": "LAWR",
+     "Market": "NASDAQ",
+     "PauseThresholdPrice": "",
+     "ReasonCode": "T12",
+     "ResumptionDate": "",
+     "ResumptionQuoteTime": "",
+     "ResumptionTradeTime": ""
+    },
+    {
+     "HaltDate": "10/16/2025",
+     "HaltTime": "19:50:00",
+     "IssueName": "Premium Catering Hold Ltd OS",
+     "IssueSymbol": "PC",
+     "Market": "NASDAQ",
+     "PauseThresholdPrice": "",
+     "ReasonCode": "T12",
+     "ResumptionDate": "",
+     "ResumptionQuoteTime": "",
+     "ResumptionTradeTime": ""
+    },
+    {
+     "HaltDate": "10/03/2025",
+     "HaltTime": "19:50:00",
+     "IssueName": "Etoiles Capital Group Cl A OS",
+     "IssueSymbol": "EFTY",
+     "Market": "NASDAQ",
+     "PauseThresholdPrice": "",
+     "ReasonCode": "T12",
+     "ResumptionDate": "",
+     "ResumptionQuoteTime": "",
+     "ResumptionTradeTime": ""
+    },
+    {
+     "HaltDate": "10/01/2025",
+     "HaltTime": "11:28:10.000",
+     "IssueName": "CN Healthy Food Tech Warrant",
+     "IssueSymbol": "UCFIW",
+     "Market": "NASDAQ",
+     "PauseThresholdPrice": "",
+     "ReasonCode": "T12",
+     "ResumptionDate": "",
+     "ResumptionQuoteTime": "",
+     "ResumptionTradeTime": ""
+    },
+    {
+     "HaltDate": "10/01/2025",
+     "HaltTime": "11:28:10.000",
+     "IssueName": "CN Healthy Food Tech Group CS",
+     "IssueSymbol": "UCFI",
+     "Market": "NASDAQ",
+     "PauseThresholdPrice": "",
+     "ReasonCode": "T12",
+     "ResumptionDate": "",
+     "ResumptionQuoteTime": "",
+     "ResumptionTradeTime": ""
+    },
+    {
+     "HaltDate": "09/12/2025",
+     "HaltTime": "12:24:23",
+     "IssueName": "Ostin Tech Grp Co Ord Cl A Ord",
+     "IssueSymbol": "OST",
+     "Market": "NASDAQ",
+     "PauseThresholdPrice": "",
+     "ReasonCode": "T12",
+     "ResumptionDate": "",
+     "ResumptionQuoteTime": "",
+     "ResumptionTradeTime": ""
+    },
+    {
+     "HaltDate": "02/22/2019",
+     "HaltTime": "16:02:01",
+     "IssueName": "Sinovac Biotech, Ltd Ord Shrs",
+     "IssueSymbol": "SVA",
+     "Market": "NASDAQ",
+     "PauseThresholdPrice": "",
+     "ReasonCode": "T12",
+     "ResumptionDate": "",
+     "ResumptionQuoteTime": "",
+     "ResumptionTradeTime": ""
+    }
+   ],
+   "markets": [
+    "AMEX",
+    "NASDAQ"
+   ],
+   "ok": true
+  },
+  "history": {
+   "CRMN": [
+    {
+     "c": 2.88,
+     "h": 2.88,
+     "l": 2.61,
+     "n": 1873,
+     "o": 2.68,
+     "t": "2026-09-28T04:00:00Z",
+     "v": 217096,
+     "vw": 2.734291
+    },
+    {
+     "c": 3.02,
+     "h": 3.02,
+     "l": 2.8037,
+     "n": 1998,
+     "o": 2.88,
+     "t": "2026-09-29T04:00:00Z",
+     "v": 263809,
+     "vw": 2.961816
+    },
+    {
+     "c": 2.86,
+     "h": 3.11,
+     "l": 2.79,
+     "n": 3382,
+     "o": 3.05,
+     "t": "2026-09-30T04:00:00Z",
+     "v": 354071,
+     "vw": 2.977578
+    },
+    {
+     "c": 2.43,
+     "h": 2.99,
+     "l": 2.39,
+     "n": 1590,
+     "o": 2.81,
+     "t": "2026-10-01T04:00:00Z",
+     "v": 269741,
+     "vw": 2.571244
+    },
+    {
+     "c": 2.55,
+     "h": 2.6416,
+     "l": 2.38,
+     "n": 1261,
+     "o": 2.54,
+     "t": "2026-10-02T04:00:00Z",
+     "v": 178302,
+     "vw": 2.490842
+    },
+    {
+     "c": 2.4,
+     "h": 2.56,
+     "l": 2.4,
+     "n": 610,
+     "o": 2.54,
+     "t": "2026-10-05T04:00:00Z",
+     "v": 83199,
+     "vw": 2.491625
+    },
+    {
+     "c": 2.3,
+     "h": 2.5299,
+     "l": 2.26,
+     "n": 564,
+     "o": 2.41,
+     "t": "2026-10-06T04:00:00Z",
+     "v": 184031,
+     "vw": 2.378358
+    },
+    {
+     "c": 2.29,
+     "h": 2.39,
+     "l": 2.26,
+     "n": 444,
+     "o": 2.39,
+     "t": "2026-10-07T04:00:00Z",
+     "v": 63249,
+     "vw": 2.305606
+    },
+    {
+     "c": 2.15,
+     "h": 2.3478,
+     "l": 2.114,
+     "n": 1319,
+     "o": 2.29,
+     "t": "2026-10-08T04:00:00Z",
+     "v": 162362,
+     "vw": 2.191918
+    },
+    {
+     "c": 2.16,
+     "h": 2.3,
+     "l": 2.1,
+     "n": 452,
+     "o": 2.11,
+     "t": "2026-10-09T04:00:00Z",
+     "v": 84608,
+     "vw": 2.141293
+    },
+    {
+     "c": 2.14,
+     "h": 2.21,
+     "l": 2.0774,
+     "n": 369,
+     "o": 2.21,
+     "t": "2026-10-12T04:00:00Z",
+     "v": 54789,
+     "vw": 2.125371
+    },
+    {
+     "c": 2.06,
+     "h": 2.16,
+     "l": 2.06,
+     "n": 655,
+     "o": 2.09,
+     "t": "2026-10-13T04:00:00Z",
+     "v": 247172,
+     "vw": 2.085572
+    },
+    {
+     "c": 1.95,
+     "h": 2.1464,
+     "l": 1.9,
+     "n": 608,
+     "o": 2.04,
+     "t": "2026-10-14T04:00:00Z",
+     "v": 147876,
+     "vw": 1.977037
+    },
+    {
+     "c": 2.02,
+     "h": 2.1462,
+     "l": 1.93,
+     "n": 690,
+     "o": 1.95,
+     "t": "2026-10-15T04:00:00Z",
+     "v": 136887,
+     "vw": 2.028246
+    },
+    {
+     "c": 1.96,
+     "h": 2.09,
+     "l": 1.9,
+     "n": 1009,
+     "o": 2.05,
+     "t": "2026-10-16T04:00:00Z",
+     "v": 143770,
+     "vw": 1.993467
+    },
+    {
+     "c": 1.9,
+     "h": 2,
+     "l": 1.9,
+     "n": 354,
+     "o": 2,
+     "t": "2026-10-19T04:00:00Z",
+     "v": 58833,
+     "vw": 1.922125
+    },
+    {
+     "c": 1.76,
+     "h": 1.94,
+     "l": 1.75,
+     "n": 1075,
+     "o": 1.94,
+     "t": "2026-10-20T04:00:00Z",
+     "v": 184276,
+     "vw": 1.821016
+    },
+    {
+     "c": 1.75,
+     "h": 1.8299,
+     "l": 1.6771,
+     "n": 833,
+     "o": 1.77,
+     "t": "2026-10-21T04:00:00Z",
+     "v": 159604,
+     "vw": 1.74892
+    },
+    {
+     "c": 1.66,
+     "h": 1.78,
+     "l": 1.57,
+     "n": 673,
+     "o": 1.78,
+     "t": "2026-10-22T04:00:00Z",
+     "v": 106124,
+     "vw": 1.669148
+    },
+    {
+     "c": 1.65,
+     "h": 1.73,
+     "l": 1.6,
+     "n": 496,
+     "o": 1.7,
+     "t": "2026-10-23T04:00:00Z",
+     "v": 98055,
+     "vw": 1.638649
+    },
+    {
+     "c": 1.5,
+     "h": 1.63,
+     "l": 1.43,
+     "n": 505,
+     "o": 1.62,
+     "t": "2026-10-26T04:00:00Z",
+     "v": 116603,
+     "vw": 1.55972
+    },
+    {
+     "c": 1.605,
+     "h": 1.7399,
+     "l": 1.5,
+     "n": 598,
+     "o": 1.5,
+     "t": "2026-10-27T04:00:00Z",
+     "v": 85251,
+     "vw": 1.587712
+    },
+    {
+     "c": 1.56,
+     "h": 1.655,
+     "l": 1.5,
+     "n": 384,
+     "o": 1.56,
+     "t": "2026-10-28T04:00:00Z",
+     "v": 73734,
+     "vw": 1.581348
+    },
+    {
+     "c": 1.61,
+     "h": 1.69,
+     "l": 1.51,
+     "n": 253,
+     "o": 1.51,
+     "t": "2026-10-29T04:00:00Z",
+     "v": 27275,
+     "vw": 1.638064
+    },
+    {
+     "c": 1.63,
+     "h": 1.77,
+     "l": 1.59,
+     "n": 295,
+     "o": 1.59,
+     "t": "2026-10-30T04:00:00Z",
+     "v": 49556,
+     "vw": 1.662987
+    },
+    {
+     "c": 1.27,
+     "h": 1.665,
+     "l": 0.9202,
+     "n": 5840,
+     "o": 1.63,
+     "t": "2026-11-02T05:00:00Z",
+     "v": 1402020,
+     "vw": 1.186943
+    },
+    {
+     "c": 1.08,
+     "h": 1.28,
+     "l": 1.07,
+     "n": 662,
+     "o": 1.28,
+     "t": "2026-11-03T05:00:00Z",
+     "v": 142879,
+     "vw": 1.169489
+    },
+    {
+     "c": 1.135,
+     "h": 1.2764,
+     "l": 1.1,
+     "n": 622,
+     "o": 1.14,
+     "t": "2026-11-04T05:00:00Z",
+     "v": 124210,
+     "vw": 1.163063
+    },
+    {
+     "c": 1.26,
+     "h": 1.35,
+     "l": 1.2,
+     "n": 1654,
+     "o": 1.2,
+     "t": "2026-11-05T05:00:00Z",
+     "v": 371146,
+     "vw": 1.291799
+    },
+    {
+     "c": 1.29,
+     "h": 1.33,
+     "l": 1.2001,
+     "n": 828,
+     "o": 1.26,
+     "t": "2026-11-06T05:00:00Z",
+     "v": 135930,
+     "vw": 1.263247
+    },
+    {
+     "c": 1.31,
+     "h": 1.4399,
+     "l": 1.29,
+     "n": 351,
+     "o": 1.3,
+     "t": "2026-11-09T05:00:00Z",
+     "v": 72918,
+     "vw": 1.345181
+    },
+    {
+     "c": 1.25,
+     "h": 1.53,
+     "l": 1.1,
+     "n": 1032,
+     "o": 1.35,
+     "t": "2026-11-10T05:00:00Z",
+     "v": 236712,
+     "vw": 1.270967
+    },
+    {
+     "c": 1.16,
+     "h": 1.39,
+     "l": 1.11,
+     "n": 891,
+     "o": 1.29,
+     "t": "2026-11-11T05:00:00Z",
+     "v": 164944,
+     "vw": 1.177964
+    }
+   ],
+   "GITS": [
+    {
+     "c": 2.06,
+     "h": 2.07,
+     "l": 1.97,
+     "n": 145,
+     "o": 1.97,
+     "t": "2026-09-28T04:00:00Z",
+     "v": 10412,
+     "vw": 2.010153
+    },
+    {
+     "c": 1.7498,
+     "h": 2.15,
+     "l": 1.47,
+     "n": 800,
+     "o": 2.04,
+     "t": "2026-09-29T04:00:00Z",
+     "v": 129473,
+     "vw": 1.973752
+    },
+    {
+     "c": 1.94,
+     "h": 2,
+     "l": 1.86,
+     "n": 341,
+     "o": 1.975,
+     "t": "2026-09-30T04:00:00Z",
+     "v": 23585,
+     "vw": 1.951768
+    },
+    {
+     "c": 1.86,
+     "h": 2.0799,
+     "l": 1.86,
+     "n": 248,
+     "o": 1.885,
+     "t": "2026-10-01T04:00:00Z",
+     "v": 18929,
+     "vw": 1.983302
+    },
+    {
+     "c": 1.81,
+     "h": 2.0473,
+     "l": 1.76,
+     "n": 241,
+     "o": 1.995,
+     "t": "2026-10-02T04:00:00Z",
+     "v": 42540,
+     "vw": 1.898535
+    },
+    {
+     "c": 1.71,
+     "h": 1.8795,
+     "l": 1.7,
+     "n": 197,
+     "o": 1.8,
+     "t": "2026-10-05T04:00:00Z",
+     "v": 17650,
+     "vw": 1.742758
+    },
+    {
+     "c": 1.74,
+     "h": 1.8,
+     "l": 1.69,
+     "n": 175,
+     "o": 1.75,
+     "t": "2026-10-06T04:00:00Z",
+     "v": 15470,
+     "vw": 1.753771
+    },
+    {
+     "c": 1.69,
+     "h": 1.9,
+     "l": 1.69,
+     "n": 219,
+     "o": 1.79,
+     "t": "2026-10-07T04:00:00Z",
+     "v": 21159,
+     "vw": 1.798666
+    },
+    {
+     "c": 1.6,
+     "h": 1.72,
+     "l": 1.6,
+     "n": 200,
+     "o": 1.69,
+     "t": "2026-10-08T04:00:00Z",
+     "v": 17525,
+     "vw": 1.619991
+    },
+    {
+     "c": 1.51,
+     "h": 1.84,
+     "l": 1.51,
+     "n": 358,
+     "o": 1.7,
+     "t": "2026-10-09T04:00:00Z",
+     "v": 35424,
+     "vw": 1.673228
+    },
+    {
+     "c": 1.51,
+     "h": 1.61,
+     "l": 1.4489,
+     "n": 300,
+     "o": 1.6,
+     "t": "2026-10-12T04:00:00Z",
+     "v": 25123,
+     "vw": 1.522007
+    },
+    {
+     "c": 1.49,
+     "h": 1.632,
+     "l": 1.49,
+     "n": 189,
+     "o": 1.57,
+     "t": "2026-10-13T04:00:00Z",
+     "v": 15028,
+     "vw": 1.53557
+    },
+    {
+     "c": 1.48,
+     "h": 1.6388,
+     "l": 1.48,
+     "n": 298,
+     "o": 1.5392,
+     "t": "2026-10-14T04:00:00Z",
+     "v": 29889,
+     "vw": 1.562318
+    },
+    {
+     "c": 1.38,
+     "h": 1.58,
+     "l": 1.35,
+     "n": 349,
+     "o": 1.58,
+     "t": "2026-10-15T04:00:00Z",
+     "v": 39343,
+     "vw": 1.450823
+    },
+    {
+     "c": 1.41,
+     "h": 1.46,
+     "l": 1.36,
+     "n": 209,
+     "o": 1.4,
+     "t": "2026-10-16T04:00:00Z",
+     "v": 16284,
+     "vw": 1.428435
+    },
+    {
+     "c": 1.46,
+     "h": 1.5,
+     "l": 1.37,
+     "n": 198,
+     "o": 1.38,
+     "t": "2026-10-19T04:00:00Z",
+     "v": 22235,
+     "vw": 1.409015
+    },
+    {
+     "c": 1.41,
+     "h": 1.51,
+     "l": 1.4,
+     "n": 239,
+     "o": 1.5,
+     "t": "2026-10-20T04:00:00Z",
+     "v": 18640,
+     "vw": 1.423839
+    },
+    {
+     "c": 1.35,
+     "h": 1.45,
+     "l": 1.35,
+     "n": 116,
+     "o": 1.45,
+     "t": "2026-10-21T04:00:00Z",
+     "v": 10580,
+     "vw": 1.407326
+    },
+    {
+     "c": 1.33,
+     "h": 1.46,
+     "l": 1.33,
+     "n": 246,
+     "o": 1.35,
+     "t": "2026-10-22T04:00:00Z",
+     "v": 16112,
+     "vw": 1.40823
+    },
+    {
+     "c": 1.24,
+     "h": 1.39,
+     "l": 1.24,
+     "n": 146,
+     "o": 1.35,
+     "t": "2026-10-23T04:00:00Z",
+     "v": 12826,
+     "vw": 1.311145
+    },
+    {
+     "c": 1.26,
+     "h": 1.33,
+     "l": 1.2,
+     "n": 342,
+     "o": 1.302,
+     "t": "2026-10-26T04:00:00Z",
+     "v": 24141,
+     "vw": 1.275597
+    },
+    {
+     "c": 1.21,
+     "h": 1.2623,
+     "l": 1.1777,
+     "n": 153,
+     "o": 1.26,
+     "t": "2026-10-27T04:00:00Z",
+     "v": 8236,
+     "vw": 1.210198
+    },
+    {
+     "c": 1.34,
+     "h": 1.44,
+     "l": 1.3,
+     "n": 545,
+     "o": 1.36,
+     "t": "2026-10-28T04:00:00Z",
+     "v": 60884,
+     "vw": 1.39213
+    },
+    {
+     "c": 1.42,
+     "h": 1.4382,
+     "l": 1.35,
+     "n": 228,
+     "o": 1.36,
+     "t": "2026-10-29T04:00:00Z",
+     "v": 16192,
+     "vw": 1.388336
+    },
+    {
+     "c": 1.6,
+     "h": 1.85,
+     "l": 1.5,
+     "n": 933,
+     "o": 1.5,
+     "t": "2026-10-30T04:00:00Z",
+     "v": 108148,
+     "vw": 1.68045
+    },
+    {
+     "c": 1.56,
+     "h": 1.9,
+     "l": 1.5,
+     "n": 795,
+     "o": 1.73,
+     "t": "2026-11-02T05:00:00Z",
+     "v": 79551,
+     "vw": 1.778857
+    },
+    {
+     "c": 1.595,
+     "h": 1.68,
+     "l": 1.49,
+     "n": 219,
+     "o": 1.66,
+     "t": "2026-11-03T05:00:00Z",
+     "v": 22546,
+     "vw": 1.567539
+    },
+    {
+     "c": 1.59,
+     "h": 1.665,
+     "l": 1.55,
+     "n": 223,
+     "o": 1.665,
+     "t": "2026-11-04T05:00:00Z",
+     "v": 13776,
+     "vw": 1.582811
+    },
+    {
+     "c": 1.54,
+     "h": 1.6399,
+     "l": 1.52,
+     "n": 172,
+     "o": 1.61,
+     "t": "2026-11-05T05:00:00Z",
+     "v": 18081,
+     "vw": 1.607159
+    },
+    {
+     "c": 1.55,
+     "h": 1.59,
+     "l": 1.47,
+     "n": 175,
+     "o": 1.56,
+     "t": "2026-11-06T05:00:00Z",
+     "v": 13433,
+     "vw": 1.517935
+    },
+    {
+     "c": 1.53,
+     "h": 1.65,
+     "l": 1.53,
+     "n": 198,
+     "o": 1.5884,
+     "t": "2026-11-09T05:00:00Z",
+     "v": 22364,
+     "vw": 1.586293
+    },
+    {
+     "c": 1.46,
+     "h": 1.58,
+     "l": 1.31,
+     "n": 240,
+     "o": 1.58,
+     "t": "2026-11-10T05:00:00Z",
+     "v": 31822,
+     "vw": 1.395419
+    },
+    {
+     "c": 1.36,
+     "h": 1.6116,
+     "l": 1.35,
+     "n": 290,
+     "o": 1.56,
+     "t": "2026-11-11T05:00:00Z",
+     "v": 16448,
+     "vw": 1.45534
+    }
+   ],
+   "ICMB": [
+    {
+     "c": 0.855,
+     "h": 0.8734,
+     "l": 0.851,
+     "n": 132,
+     "o": 0.86,
+     "t": "2026-09-28T04:00:00Z",
+     "v": 14681,
+     "vw": 0.863266
+    },
+    {
+     "c": 0.8501,
+     "h": 0.8781,
+     "l": 0.8501,
+     "n": 166,
+     "o": 0.8781,
+     "t": "2026-09-29T04:00:00Z",
+     "v": 24700,
+     "vw": 0.855786
+    },
+    {
+     "c": 0.8298,
+     "h": 0.8697,
+     "l": 0.82,
+     "n": 274,
+     "o": 0.851,
+     "t": "2026-09-30T04:00:00Z",
+     "v": 88300,
+     "vw": 0.834448
+    },
+    {
+     "c": 0.83,
+     "h": 0.8632,
+     "l": 0.83,
+     "n": 114,
+     "o": 0.8369,
+     "t": "2026-10-01T04:00:00Z",
+     "v": 7104,
+     "vw": 0.840171
+    },
+    {
+     "c": 0.79,
+     "h": 0.845,
+     "l": 0.78,
+     "n": 294,
+     "o": 0.83,
+     "t": "2026-10-02T04:00:00Z",
+     "v": 30523,
+     "vw": 0.817364
+    },
+    {
+     "c": 0.708,
+     "h": 0.7801,
+     "l": 0.686,
+     "n": 467,
+     "o": 0.77,
+     "t": "2026-10-05T04:00:00Z",
+     "v": 71384,
+     "vw": 0.73359
+    },
+    {
+     "c": 0.7228,
+     "h": 0.7708,
+     "l": 0.67,
+     "n": 701,
+     "o": 0.7,
+     "t": "2026-10-06T04:00:00Z",
+     "v": 153920,
+     "vw": 0.697046
+    },
+    {
+     "c": 0.6738,
+     "h": 0.7676,
+     "l": 0.65,
+     "n": 401,
+     "o": 0.71,
+     "t": "2026-10-07T04:00:00Z",
+     "v": 99467,
+     "vw": 0.70172
+    },
+    {
+     "c": 0.68,
+     "h": 0.771,
+     "l": 0.66,
+     "n": 555,
+     "o": 0.69,
+     "t": "2026-10-08T04:00:00Z",
+     "v": 28577,
+     "vw": 0.685689
+    },
+    {
+     "c": 0.7,
+     "h": 0.75,
+     "l": 0.6708,
+     "n": 395,
+     "o": 0.7,
+     "t": "2026-10-09T04:00:00Z",
+     "v": 19583,
+     "vw": 0.68714
+    },
+    {
+     "c": 0.69,
+     "h": 0.75,
+     "l": 0.681,
+     "n": 164,
+     "o": 0.714,
+     "t": "2026-10-12T04:00:00Z",
+     "v": 14596,
+     "vw": 0.703455
+    },
+    {
+     "c": 0.69,
+     "h": 0.75,
+     "l": 0.6811,
+     "n": 448,
+     "o": 0.7,
+     "t": "2026-10-13T04:00:00Z",
+     "v": 18391,
+     "vw": 0.70178
+    },
+    {
+     "c": 0.68,
+     "h": 0.6946,
+     "l": 0.68,
+     "n": 148,
+     "o": 0.69,
+     "t": "2026-10-14T04:00:00Z",
+     "v": 17877,
+     "vw": 0.682794
+    },
+    {
+     "c": 0.685,
+     "h": 0.7025,
+     "l": 0.68,
+     "n": 114,
+     "o": 0.68,
+     "t": "2026-10-15T04:00:00Z",
+     "v": 8315,
+     "vw": 0.688214
+    },
+    {
+     "c": 0.6812,
+     "h": 0.7,
+     "l": 0.6625,
+     "n": 96,
+     "o": 0.7,
+     "t": "2026-10-16T04:00:00Z",
+     "v": 8664,
+     "vw": 0.681537
+    },
+    {
+     "c": 0.618,
+     "h": 0.67,
+     "l": 0.618,
+     "n": 222,
+     "o": 0.67,
+     "t": "2026-10-19T04:00:00Z",
+     "v": 48042,
+     "vw": 0.657029
+    },
+    {
+     "c": 0.625,
+     "h": 0.65,
+     "l": 0.6156,
+     "n": 196,
+     "o": 0.62,
+     "t": "2026-10-20T04:00:00Z",
+     "v": 41068,
+     "vw": 0.626054
+    },
+    {
+     "c": 0.6399,
+     "h": 0.64,
+     "l": 0.6291,
+     "n": 120,
+     "o": 0.63,
+     "t": "2026-10-21T04:00:00Z",
+     "v": 14890,
+     "vw": 0.632647
+    },
+    {
+     "c": 0.6502,
+     "h": 0.68,
+     "l": 0.6399,
+     "n": 156,
+     "o": 0.64,
+     "t": "2026-10-22T04:00:00Z",
+     "v": 41268,
+     "vw": 0.651267
+    },
+    {
+     "c": 0.7,
+     "h": 0.7,
+     "l": 0.63,
+     "n": 1852,
+     "o": 0.66,
+     "t": "2026-10-23T04:00:00Z",
+     "v": 406258,
+     "vw": 0.690976
+    },
+    {
+     "c": 0.7305,
+     "h": 0.86,
+     "l": 0.7152,
+     "n": 3221,
+     "o": 0.76,
+     "t": "2026-10-26T04:00:00Z",
+     "v": 908267,
+     "vw": 0.774844
+    },
+    {
+     "c": 0.7484,
+     "h": 0.82,
+     "l": 0.74,
+     "n": 1011,
+     "o": 0.81,
+     "t": "2026-10-27T04:00:00Z",
+     "v": 170745,
+     "vw": 0.77733
+    },
+    {
+     "c": 0.75,
+     "h": 0.815,
+     "l": 0.75,
+     "n": 1407,
+     "o": 0.8,
+     "t": "2026-10-28T04:00:00Z",
+     "v": 208687,
+     "vw": 0.774239
+    },
+    {
+     "c": 0.7505,
+     "h": 0.815,
+     "l": 0.73,
+     "n": 708,
+     "o": 0.7821,
+     "t": "2026-10-29T04:00:00Z",
+     "v": 125177,
+     "vw": 0.764709
+    },
+    {
+     "c": 0.715,
+     "h": 0.79,
+     "l": 0.7053,
+     "n": 612,
+     "o": 0.77,
+     "t": "2026-10-30T04:00:00Z",
+     "v": 142731,
+     "vw": 0.746042
+    },
+    {
+     "c": 0.665,
+     "h": 0.76,
+     "l": 0.64,
+     "n": 785,
+     "o": 0.73,
+     "t": "2026-11-02T05:00:00Z",
+     "v": 204571,
+     "vw": 0.688298
+    },
+    {
+     "c": 0.6505,
+     "h": 0.6801,
+     "l": 0.65,
+     "n": 460,
+     "o": 0.665,
+     "t": "2026-11-03T05:00:00Z",
+     "v": 125284,
+     "vw": 0.661684
+    },
+    {
+     "c": 0.6592,
+     "h": 0.68,
+     "l": 0.65,
+     "n": 439,
+     "o": 0.68,
+     "t": "2026-11-04T05:00:00Z",
+     "v": 45234,
+     "vw": 0.659926
+    },
+    {
+     "c": 0.6104,
+     "h": 0.677,
+     "l": 0.5901,
+     "n": 352,
+     "o": 0.677,
+     "t": "2026-11-05T05:00:00Z",
+     "v": 31933,
+     "vw": 0.629142
+    },
+    {
+     "c": 0.6107,
+     "h": 0.6397,
+     "l": 0.61,
+     "n": 223,
+     "o": 0.6187,
+     "t": "2026-11-06T05:00:00Z",
+     "v": 33632,
+     "vw": 0.625012
+    },
+    {
+     "c": 0.6061,
+     "h": 0.6399,
+     "l": 0.6001,
+     "n": 196,
+     "o": 0.61,
+     "t": "2026-11-09T05:00:00Z",
+     "v": 84796,
+     "vw": 0.618541
+    },
+    {
+     "c": 0.6025,
+     "h": 0.6116,
+     "l": 0.6001,
+     "n": 188,
+     "o": 0.605,
+     "t": "2026-11-10T05:00:00Z",
+     "v": 23272,
+     "vw": 0.603167
+    },
+    {
+     "c": 0.6181,
+     "h": 0.6181,
+     "l": 0.6,
+     "n": 23652,
+     "o": 0.6,
+     "t": "2026-11-11T05:00:00Z",
+     "v": 7238574,
+     "vw": 0.60475
+    }
+   ],
+   "MSC": [
+    {
+     "c": 0.835,
+     "h": 0.9496,
+     "l": 0.7883,
+     "n": 1486,
+     "o": 0.901,
+     "t": "2026-09-28T04:00:00Z",
+     "v": 699208,
+     "vw": 0.813532
+    },
+    {
+     "c": 0.85,
+     "h": 0.9122,
+     "l": 0.82,
+     "n": 231,
+     "o": 0.82,
+     "t": "2026-09-29T04:00:00Z",
+     "v": 185657,
+     "vw": 0.848756
+    },
+    {
+     "c": 0.924,
+     "h": 0.924,
+     "l": 0.8499,
+     "n": 173,
+     "o": 0.864,
+     "t": "2026-09-30T04:00:00Z",
+     "v": 179534,
+     "vw": 0.879627
+    },
+    {
+     "c": 0.9652,
+     "h": 0.9941,
+     "l": 0.8503,
+     "n": 434,
+     "o": 0.8503,
+     "t": "2026-10-01T04:00:00Z",
+     "v": 202540,
+     "vw": 0.928459
+    },
+    {
+     "c": 1.05,
+     "h": 1.05,
+     "l": 0.91,
+     "n": 194,
+     "o": 0.94,
+     "t": "2026-10-02T04:00:00Z",
+     "v": 115699,
+     "vw": 0.943733
+    },
+    {
+     "c": 0.9928,
+     "h": 1.05,
+     "l": 0.97,
+     "n": 149,
+     "o": 1.05,
+     "t": "2026-10-05T04:00:00Z",
+     "v": 74636,
+     "vw": 1.007528
+    },
+    {
+     "c": 0.9808,
+     "h": 1.01,
+     "l": 0.97,
+     "n": 80,
+     "o": 1.01,
+     "t": "2026-10-06T04:00:00Z",
+     "v": 8343,
+     "vw": 0.990825
+    },
+    {
+     "c": 0.96,
+     "h": 1.04,
+     "l": 0.9071,
+     "n": 313,
+     "o": 1.0099,
+     "t": "2026-10-07T04:00:00Z",
+     "v": 103333,
+     "vw": 0.982426
+    },
+    {
+     "c": 0.9802,
+     "h": 0.99,
+     "l": 0.91,
+     "n": 236,
+     "o": 0.9501,
+     "t": "2026-10-08T04:00:00Z",
+     "v": 86158,
+     "vw": 0.983418
+    },
+    {
+     "c": 0.9952,
+     "h": 1.05,
+     "l": 0.9554,
+     "n": 304,
+     "o": 1.05,
+     "t": "2026-10-09T04:00:00Z",
+     "v": 90801,
+     "vw": 0.981357
+    },
+    {
+     "c": 0.9543,
+     "h": 0.97,
+     "l": 0.93,
+     "n": 239,
+     "o": 0.96,
+     "t": "2026-10-12T04:00:00Z",
+     "v": 159234,
+     "vw": 0.955506
+    },
+    {
+     "c": 0.945,
+     "h": 0.97,
+     "l": 0.9323,
+     "n": 322,
+     "o": 0.9699,
+     "t": "2026-10-13T04:00:00Z",
+     "v": 131802,
+     "vw": 0.961372
+    },
+    {
+     "c": 0.9648,
+     "h": 0.9659,
+     "l": 0.9202,
+     "n": 92,
+     "o": 0.9202,
+     "t": "2026-10-14T04:00:00Z",
+     "v": 26702,
+     "vw": 0.957389
+    },
+    {
+     "c": 0.9953,
+     "h": 1.01,
+     "l": 0.9602,
+     "n": 49,
+     "o": 0.9999,
+     "t": "2026-10-15T04:00:00Z",
+     "v": 12578,
+     "vw": 0.992053
+    },
+    {
+     "c": 0.9765,
+     "h": 1.09,
+     "l": 0.9765,
+     "n": 198,
+     "o": 1,
+     "t": "2026-10-16T04:00:00Z",
+     "v": 29870,
+     "vw": 1.025545
+    },
+    {
+     "c": 0.9318,
+     "h": 0.96,
+     "l": 0.904,
+     "n": 132,
+     "o": 0.95,
+     "t": "2026-10-19T04:00:00Z",
+     "v": 10420,
+     "vw": 0.943941
+    },
+    {
+     "c": 0.8374,
+     "h": 0.8989,
+     "l": 0.81,
+     "n": 306,
+     "o": 0.8989,
+     "t": "2026-10-20T04:00:00Z",
+     "v": 44769,
+     "vw": 0.836298
+    },
+    {
+     "c": 0.8516,
+     "h": 0.8699,
+     "l": 0.82,
+     "n": 163,
+     "o": 0.851,
+     "t": "2026-10-21T04:00:00Z",
+     "v": 58912,
+     "vw": 0.834354
+    },
+    {
+     "c": 0.798,
+     "h": 0.8998,
+     "l": 0.76,
+     "n": 671,
+     "o": 0.866,
+     "t": "2026-10-22T04:00:00Z",
+     "v": 485979,
+     "vw": 0.818003
+    },
+    {
+     "c": 0.7948,
+     "h": 0.8199,
+     "l": 0.7898,
+     "n": 283,
+     "o": 0.8,
+     "t": "2026-10-23T04:00:00Z",
+     "v": 106799,
+     "vw": 0.7992
+    },
+    {
+     "c": 0.772,
+     "h": 0.84,
+     "l": 0.7712,
+     "n": 266,
+     "o": 0.84,
+     "t": "2026-10-26T04:00:00Z",
+     "v": 60334,
+     "vw": 0.799856
+    },
+    {
+     "c": 0.7942,
+     "h": 0.8399,
+     "l": 0.7805,
+     "n": 217,
+     "o": 0.814,
+     "t": "2026-10-27T04:00:00Z",
+     "v": 56527,
+     "vw": 0.802128
+    },
+    {
+     "c": 0.7901,
+     "h": 0.85,
+     "l": 0.7901,
+     "n": 102,
+     "o": 0.828,
+     "t": "2026-10-28T04:00:00Z",
+     "v": 10810,
+     "vw": 0.804933
+    },
+    {
+     "c": 0.7851,
+     "h": 0.8399,
+     "l": 0.78,
+     "n": 93,
+     "o": 0.78,
+     "t": "2026-10-29T04:00:00Z",
+     "v": 4110,
+     "vw": 0.807175
+    },
+    {
+     "c": 0.7843,
+     "h": 0.858,
+     "l": 0.77,
+     "n": 136,
+     "o": 0.7901,
+     "t": "2026-10-30T04:00:00Z",
+     "v": 22338,
+     "vw": 0.801287
+    },
+    {
+     "c": 0.985,
+     "h": 1.01,
+     "l": 0.82,
+     "n": 633,
+     "o": 0.82,
+     "t": "2026-11-02T05:00:00Z",
+     "v": 106174,
+     "vw": 0.883615
+    },
+    {
+     "c": 1.07,
+     "h": 1.08,
+     "l": 0.9734,
+     "n": 183,
+     "o": 0.99,
+     "t": "2026-11-03T05:00:00Z",
+     "v": 23977,
+     "vw": 1.033867
+    },
+    {
+     "c": 0.89,
+     "h": 1.08,
+     "l": 0.8691,
+     "n": 212,
+     "o": 1.06,
+     "t": "2026-11-04T05:00:00Z",
+     "v": 28236,
+     "vw": 0.972661
+    },
+    {
+     "c": 1.06,
+     "h": 1.12,
+     "l": 0.8632,
+     "n": 238,
+     "o": 0.9,
+     "t": "2026-11-05T05:00:00Z",
+     "v": 56780,
+     "vw": 0.996693
+    },
+    {
+     "c": 0.98,
+     "h": 1.3099,
+     "l": 0.8965,
+     "n": 686,
+     "o": 1.08,
+     "t": "2026-11-06T05:00:00Z",
+     "v": 121338,
+     "vw": 1.043395
+    },
+    {
+     "c": 0.9107,
+     "h": 0.9963,
+     "l": 0.8604,
+     "n": 153,
+     "o": 0.9568,
+     "t": "2026-11-09T05:00:00Z",
+     "v": 29440,
+     "vw": 0.906605
+    },
+    {
+     "c": 0.9505,
+     "h": 0.9957,
+     "l": 0.9,
+     "n": 317,
+     "o": 0.9295,
+     "t": "2026-11-10T05:00:00Z",
+     "v": 79392,
+     "vw": 0.927377
+    },
+    {
+     "c": 1,
+     "h": 1,
+     "l": 0.92,
+     "n": 115,
+     "o": 0.92,
+     "t": "2026-11-11T05:00:00Z",
+     "v": 4531,
+     "vw": 0.990363
+    }
+   ],
+   "YXT": [
+    {
+     "c": 2.46,
+     "h": 2.48,
+     "l": 2.36,
+     "n": 171,
+     "o": 2.4,
+     "t": "2026-09-28T04:00:00Z",
+     "v": 8904,
+     "vw": 2.423292
+    },
+    {
+     "c": 2.4,
+     "h": 2.54,
+     "l": 2.34,
+     "n": 215,
+     "o": 2.34,
+     "t": "2026-09-29T04:00:00Z",
+     "v": 21982,
+     "vw": 2.459444
+    },
+    {
+     "c": 2.26,
+     "h": 2.3601,
+     "l": 2.26,
+     "n": 140,
+     "o": 2.36,
+     "t": "2026-09-30T04:00:00Z",
+     "v": 24660,
+     "vw": 2.341088
+    },
+    {
+     "c": 2.23,
+     "h": 2.27,
+     "l": 2.13,
+     "n": 158,
+     "o": 2.27,
+     "t": "2026-10-01T04:00:00Z",
+     "v": 6712,
+     "vw": 2.160878
+    },
+    {
+     "c": 2.14,
+     "h": 2.29,
+     "l": 2.13,
+     "n": 161,
+     "o": 2.16,
+     "t": "2026-10-02T04:00:00Z",
+     "v": 7126,
+     "vw": 2.186998
+    },
+    {
+     "c": 2.265,
+     "h": 2.45,
+     "l": 2.22,
+     "n": 300,
+     "o": 2.22,
+     "t": "2026-10-05T04:00:00Z",
+     "v": 43941,
+     "vw": 2.288228
+    },
+    {
+     "c": 2.24,
+     "h": 2.5,
+     "l": 2.23,
+     "n": 219,
+     "o": 2.23,
+     "t": "2026-10-06T04:00:00Z",
+     "v": 27579,
+     "vw": 2.399841
+    },
+    {
+     "c": 2.31,
+     "h": 2.32,
+     "l": 1.88,
+     "n": 2781,
+     "o": 2.26,
+     "t": "2026-10-07T04:00:00Z",
+     "v": 256089,
+     "vw": 2.100672
+    },
+    {
+     "c": 2.08,
+     "h": 2.23,
+     "l": 1.96,
+     "n": 399,
+     "o": 2.19,
+     "t": "2026-10-08T04:00:00Z",
+     "v": 43192,
+     "vw": 2.044929
+    },
+    {
+     "c": 2.08,
+     "h": 2.1278,
+     "l": 2.01,
+     "n": 153,
+     "o": 2.05,
+     "t": "2026-10-09T04:00:00Z",
+     "v": 12333,
+     "vw": 2.052744
+    },
+    {
+     "c": 2.04,
+     "h": 2.1899,
+     "l": 2,
+     "n": 197,
+     "o": 2.1,
+     "t": "2026-10-12T04:00:00Z",
+     "v": 19065,
+     "vw": 2.054116
+    },
+    {
+     "c": 1.93,
+     "h": 2.06,
+     "l": 1.85,
+     "n": 256,
+     "o": 2.06,
+     "t": "2026-10-13T04:00:00Z",
+     "v": 31498,
+     "vw": 1.940656
+    },
+    {
+     "c": 1.7,
+     "h": 1.87,
+     "l": 1.66,
+     "n": 291,
+     "o": 1.87,
+     "t": "2026-10-14T04:00:00Z",
+     "v": 20834,
+     "vw": 1.746495
+    },
+    {
+     "c": 1.55,
+     "h": 1.71,
+     "l": 1.5301,
+     "n": 348,
+     "o": 1.61,
+     "t": "2026-10-15T04:00:00Z",
+     "v": 29328,
+     "vw": 1.64106
+    },
+    {
+     "c": 1.25,
+     "h": 2.055,
+     "l": 1.0001,
+     "n": 4903,
+     "o": 1.54,
+     "t": "2026-10-16T04:00:00Z",
+     "v": 785936,
+     "vw": 1.54493
+    },
+    {
+     "c": 1.33,
+     "h": 1.42,
+     "l": 1.15,
+     "n": 796,
+     "o": 1.23,
+     "t": "2026-10-19T04:00:00Z",
+     "v": 89153,
+     "vw": 1.291864
+    },
+    {
+     "c": 1.22,
+     "h": 1.4,
+     "l": 1.22,
+     "n": 165,
+     "o": 1.2477,
+     "t": "2026-10-20T04:00:00Z",
+     "v": 23691,
+     "vw": 1.261814
+    },
+    {
+     "c": 1.19,
+     "h": 1.225,
+     "l": 1.12,
+     "n": 197,
+     "o": 1.16,
+     "t": "2026-10-21T04:00:00Z",
+     "v": 20489,
+     "vw": 1.165331
+    },
+    {
+     "c": 1.28,
+     "h": 1.32,
+     "l": 1.1501,
+     "n": 206,
+     "o": 1.17,
+     "t": "2026-10-22T04:00:00Z",
+     "v": 30544,
+     "vw": 1.21459
+    },
+    {
+     "c": 1.23,
+     "h": 1.28,
+     "l": 1.2,
+     "n": 109,
+     "o": 1.26,
+     "t": "2026-10-23T04:00:00Z",
+     "v": 10388,
+     "vw": 1.237634
+    },
+    {
+     "c": 1.27,
+     "h": 1.28,
+     "l": 1.2,
+     "n": 166,
+     "o": 1.2,
+     "t": "2026-10-26T04:00:00Z",
+     "v": 29241,
+     "vw": 1.245483
+    },
+    {
+     "c": 1.37,
+     "h": 1.4099,
+     "l": 1.23,
+     "n": 352,
+     "o": 1.23,
+     "t": "2026-10-27T04:00:00Z",
+     "v": 65374,
+     "vw": 1.323392
+    },
+    {
+     "c": 1.46,
+     "h": 1.49,
+     "l": 1.34,
+     "n": 266,
+     "o": 1.34,
+     "t": "2026-10-28T04:00:00Z",
+     "v": 34730,
+     "vw": 1.426186
+    },
+    {
+     "c": 1.4,
+     "h": 1.485,
+     "l": 1.4,
+     "n": 192,
+     "o": 1.46,
+     "t": "2026-10-29T04:00:00Z",
+     "v": 22563,
+     "vw": 1.43356
+    },
+    {
+     "c": 1.45,
+     "h": 1.5,
+     "l": 1.4,
+     "n": 184,
+     "o": 1.4,
+     "t": "2026-10-30T04:00:00Z",
+     "v": 13429,
+     "vw": 1.458345
+    },
+    {
+     "c": 1.45,
+     "h": 1.4931,
+     "l": 1.43,
+     "n": 95,
+     "o": 1.4931,
+     "t": "2026-11-02T05:00:00Z",
+     "v": 8923,
+     "vw": 1.442701
+    },
+    {
+     "c": 1.45,
+     "h": 1.4735,
+     "l": 1.42,
+     "n": 101,
+     "o": 1.43,
+     "t": "2026-11-03T05:00:00Z",
+     "v": 16358,
+     "vw": 1.438552
+    },
+    {
+     "c": 1.47,
+     "h": 1.5,
+     "l": 1.45,
+     "n": 78,
+     "o": 1.48,
+     "t": "2026-11-04T05:00:00Z",
+     "v": 4417,
+     "vw": 1.474084
+    },
+    {
+     "c": 1.4,
+     "h": 1.46,
+     "l": 1.4,
+     "n": 90,
+     "o": 1.46,
+     "t": "2026-11-05T05:00:00Z",
+     "v": 15210,
+     "vw": 1.424788
+    },
+    {
+     "c": 1.36,
+     "h": 1.445,
+     "l": 1.35,
+     "n": 64,
+     "o": 1.41,
+     "t": "2026-11-06T05:00:00Z",
+     "v": 2605,
+     "vw": 1.398927
+    },
+    {
+     "c": 1.27,
+     "h": 1.375,
+     "l": 1.25,
+     "n": 170,
+     "o": 1.35,
+     "t": "2026-11-09T05:00:00Z",
+     "v": 26410,
+     "vw": 1.349615
+    },
+    {
+     "c": 1.26,
+     "h": 1.332,
+     "l": 1.25,
+     "n": 195,
+     "o": 1.28,
+     "t": "2026-11-10T05:00:00Z",
+     "v": 18173,
+     "vw": 1.262924
+    },
+    {
+     "c": 1.23,
+     "h": 1.27,
+     "l": 1.2,
+     "n": 107,
+     "o": 1.27,
+     "t": "2026-11-11T05:00:00Z",
+     "v": 5585,
+     "vw": 1.246324
+    }
+   ]
+  },
   "premarket_bars": {
    "AAME": [
     {
@@ -18480,7 +21040,1011 @@
    "ZYN": 8.73
   },
   "prior_day": "2026-11-11",
-  "schema": 1,
+  "quotes": {
+   "ICMB": [
+    {
+     "ap": 1.03,
+     "bp": 1.02,
+     "t": "2026-11-12T13:58:41.953131959Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.02,
+     "t": "2026-11-12T13:58:41.975101061Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.02,
+     "t": "2026-11-12T13:58:41.975398621Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.02,
+     "t": "2026-11-12T13:58:41.975405592Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.02,
+     "t": "2026-11-12T13:58:42.056309912Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.02,
+     "t": "2026-11-12T13:58:42.056316797Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.02,
+     "t": "2026-11-12T13:58:42.056653564Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.02,
+     "t": "2026-11-12T13:58:42.056667201Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.02,
+     "t": "2026-11-12T13:58:42.064820457Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.02,
+     "t": "2026-11-12T13:58:42.06653345Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.02,
+     "t": "2026-11-12T13:58:42.066917328Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.02,
+     "t": "2026-11-12T13:58:42.067260444Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.02,
+     "t": "2026-11-12T13:58:42.158778407Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.02,
+     "t": "2026-11-12T13:58:42.282908597Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.02,
+     "t": "2026-11-12T13:58:42.492860573Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.02,
+     "t": "2026-11-12T13:58:42.492893118Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.02,
+     "t": "2026-11-12T13:58:42.492906474Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.02,
+     "t": "2026-11-12T13:58:42.492913318Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.02,
+     "t": "2026-11-12T13:58:42.492997495Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.02,
+     "t": "2026-11-12T13:58:42.506080592Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.02,
+     "t": "2026-11-12T13:58:42.506087172Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.02,
+     "t": "2026-11-12T13:58:43.205651796Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.02,
+     "t": "2026-11-12T13:58:43.205695458Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.02,
+     "t": "2026-11-12T13:58:43.738594909Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:43.79564283Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:43.795756047Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:43.795964765Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:43.796869566Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:43.797034445Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:43.798106828Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.02,
+     "t": "2026-11-12T13:58:43.79811362Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.02,
+     "t": "2026-11-12T13:58:43.798787561Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.02,
+     "t": "2026-11-12T13:58:43.800024142Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.02,
+     "t": "2026-11-12T13:58:43.800213292Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.02,
+     "t": "2026-11-12T13:58:43.806076975Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.02,
+     "t": "2026-11-12T13:58:44.117517796Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.02,
+     "t": "2026-11-12T13:58:44.118844689Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.02,
+     "t": "2026-11-12T13:58:44.298423507Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:44.298451995Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:44.298473041Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:44.300349169Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:44.30063859Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:44.301289393Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:44.301296645Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:44.301313977Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.02,
+     "t": "2026-11-12T13:58:44.302225341Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.02,
+     "t": "2026-11-12T13:58:44.302605125Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.02,
+     "t": "2026-11-12T13:58:44.453792342Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.02,
+     "t": "2026-11-12T13:58:44.953348428Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:44.953643957Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:44.953679205Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:44.953732131Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:44.953789452Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:44.953796412Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:44.953803246Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:44.953818035Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:44.953824617Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:44.953831302Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:44.953838233Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:44.953848751Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:44.954341618Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:44.954893534Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:44.954900097Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:44.959803616Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:44.959810438Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:44.964224586Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:44.964554606Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:44.965597131Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:44.981207165Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:44.981609464Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:44.982114152Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:44.982121264Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:45.379886661Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:45.402647688Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:45.891618685Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:46.19731162Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:46.225694288Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:46.319635372Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:46.347936254Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:46.389100947Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:46.628237716Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:47.282279467Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:47.282340497Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:47.282614545Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:47.362527484Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:47.416160939Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:47.416288225Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:47.416483613Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:47.416701772Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:47.566870503Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:48.120957487Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:48.283356577Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:49.079310858Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:49.079375743Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:49.079430047Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:49.079444181Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:49.079645069Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:49.079668661Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:49.079701372Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:49.161203373Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:49.30121213Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:49.301219491Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:49.301226531Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:49.30123332Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:49.301266304Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:49.301277239Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:49.301286668Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:49.301293593Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:49.359699419Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:49.402096106Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:49.402143973Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:49.402151203Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:49.524325666Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:49.524358826Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:49.524366584Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:49.524375789Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:49.531936879Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:49.531995375Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:49.728096084Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:49.7281457Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:50.199940342Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:50.484803665Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:50.697017023Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:50.697038727Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:50.697063915Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:50.697071292Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:50.697104196Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:50.697596082Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:50.697650865Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:50.698315968Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:50.698660006Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:50.699764236Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:50.700336782Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:50.700396372Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:50.742792013Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:50.743368602Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:51.491312901Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:51.491366102Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:51.49140751Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:51.491414313Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:51.491921616Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:51.492945287Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:51.507336957Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:51.507627439Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:51.508027841Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:51.509113612Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:51.509718631Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:51.721496784Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:51.801291737Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:51.895135163Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:51.896757108Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:51.913186345Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:52.554979754Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:52.564554159Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:52.564605678Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:52.56463385Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:52.564640908Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:52.709347278Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:52.774373356Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:53.526515264Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:53.70804274Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:53.748983403Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:54.022986768Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:54.023003581Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:54.023050037Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:54.023095336Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:54.023117468Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:54.023124344Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:54.023136888Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:54.023176878Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:54.023236184Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:54.102241362Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:54.102285644Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:54.102309731Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:54.102877672Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:54.260011987Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:54.260995703Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:54.356300486Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:54.385115962Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:54.385130154Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:54.385169689Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:54.53284307Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:55.088428631Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:55.379781949Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:55.379831329Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:55.865632922Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:56.144204247Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:56.319401643Z"
+    },
+    {
+     "ap": 1.03,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:56.416863175Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:56.417028391Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:56.417191878Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:56.417246932Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:56.417351051Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:56.562957443Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:56.962766613Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:57.322301104Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:58.211816924Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:58.610382391Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:59.706723016Z"
+    },
+    {
+     "ap": 1.04,
+     "bp": 1.03,
+     "t": "2026-11-12T13:58:59.706730044Z"
+    }
+   ]
+  },
+  "schema": 3,
   "t212": {
    "as_of": "2026-11-15",
    "path": "data/t212/2026-11-15.json",
@@ -18488,7 +22052,7 @@
    "sha256": "64644a9658ccf657d19718f70937e08e85245bd243d614253255a92226c66ce5"
   },
   "universe": {
-   "fetched_at": "2026-11-15T15:08:45.255376-05:00",
+   "fetched_at": "2026-11-15T15:41:24.225317-05:00",
    "source": "alpaca /v2/assets, common-stock heuristic",
    "symbols": {
     "A": "Agilent Technologies Inc.",
@@ -23959,18 +27523,37 @@
     "ZYME": "Zymeworks Inc. Common Stock",
     "ZYN": "PTL LTD Class A Ordinary Shares"
    }
+  },
+  "yahoo": {
+   "ICMB": {
+    "fetched_at": "2026-11-15T15:41:24.225317-05:00",
+    "floatShares": null,
+    "impliedSharesOutstanding": 14432472,
+    "sharesOutstanding": 14432472
+   }
   }
  },
  "outputs": {
   "candidates": [
    {
     "as_of_et": "2026-11-12T09:15:00-05:00",
+    "continuation_detail": "11-09 +1.6% 0.4x; 11-10 -4.6% 1.2x; 11-11 -7.2% 0.9x",
     "data_cutoff_et": "2026-11-12T08:59:00-05:00",
     "date": "2026-11-12",
+    "dq_offering": "pass",
+    "dq_promo_or_no_catalyst": "",
+    "dq_reasons": "",
+    "dq_reverse_split": "pass",
+    "edgar_shares_asof": null,
+    "edgar_shares_out": null,
+    "eligible": false,
+    "evidence": "",
+    "float_shares": null,
+    "float_source": "",
     "gap_pct": 47.41,
+    "halt_status": "halt status unknown (historical run: the feed only holds current halts)",
     "last_bar_et": "08:58",
     "name": "Skyline Builders Group Holding Limited Class A Ordinary Shares",
-    "passes_m1": true,
     "pm_bars": 297,
     "pm_dollar_volume": 110337600.69,
     "pm_high": 10.84,
@@ -23979,22 +27562,41 @@
     "price": 1.71,
     "prior_close": 1.16,
     "prior_date": "2026-11-11",
-    "rule_gap": true,
-    "rule_price": true,
-    "rule_t212": true,
+    "prior_range_pos_pct": 17.9,
+    "rule_continuation": "fail",
+    "rule_float": "",
+    "rule_gap": "pass",
+    "rule_pm_dollar_volume": "pass",
+    "rule_pm_trades": "pass",
+    "rule_price": "pass",
+    "rule_prior_range": "fail",
+    "rule_t212": "pass",
     "scan_file": "data/scans/2026-11-12.json",
+    "spread_pct": null,
     "symbol": "CRMN",
     "t212_list": "data/t212/2026-11-15.json",
-    "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names)"
+    "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); EDGAR shares outstanding missing",
+    "yahoo_shares_out": null
    },
    {
     "as_of_et": "2026-11-12T09:15:00-05:00",
+    "continuation_detail": "11-11 +2.6% 55.3x vol",
     "data_cutoff_et": "2026-11-12T08:59:00-05:00",
     "date": "2026-11-12",
+    "dq_offering": "pass",
+    "dq_promo_or_no_catalyst": "",
+    "dq_reasons": "",
+    "dq_reverse_split": "pass",
+    "edgar_shares_asof": "2026-08-14",
+    "edgar_shares_out": 14432472,
+    "eligible": true,
+    "evidence": "",
+    "float_shares": 14432472,
+    "float_source": "edgar shares outstanding (ceiling)",
     "gap_pct": 68.26,
+    "halt_status": "halt status unknown (historical run: the feed only holds current halts)",
     "last_bar_et": "08:58",
     "name": "Investcorp Credit Management BDC, Inc. Common Stock",
-    "passes_m1": true,
     "pm_bars": 299,
     "pm_dollar_volume": 31516830.45,
     "pm_high": 1.16,
@@ -24003,22 +27605,41 @@
     "price": 1.04,
     "prior_close": 0.6181,
     "prior_date": "2026-11-11",
-    "rule_gap": true,
-    "rule_price": true,
-    "rule_t212": true,
+    "prior_range_pos_pct": 100.0,
+    "rule_continuation": "pass",
+    "rule_float": "pass",
+    "rule_gap": "pass",
+    "rule_pm_dollar_volume": "pass",
+    "rule_pm_trades": "pass",
+    "rule_price": "pass",
+    "rule_prior_range": "pass",
+    "rule_t212": "pass",
     "scan_file": "data/scans/2026-11-12.json",
+    "spread_pct": 0.97,
     "symbol": "ICMB",
     "t212_list": "data/t212/2026-11-15.json",
-    "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names)"
+    "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); float missing (Yahoo); historical run: float is today's Yahoo value",
+    "yahoo_shares_out": 14432472
    },
    {
     "as_of_et": "2026-11-12T09:15:00-05:00",
+    "continuation_detail": "11-09 -1.3% 0.8x; 11-10 -4.6% 1.1x; 11-11 -6.8% 0.6x",
     "data_cutoff_et": "2026-11-12T08:59:00-05:00",
     "date": "2026-11-12",
+    "dq_offering": "pass",
+    "dq_promo_or_no_catalyst": "",
+    "dq_reasons": "",
+    "dq_reverse_split": "pass",
+    "edgar_shares_asof": "2026-09-09",
+    "edgar_shares_out": 4203104,
+    "eligible": false,
+    "evidence": "",
+    "float_shares": null,
+    "float_source": "",
     "gap_pct": 12.43,
+    "halt_status": "halt status unknown (historical run: the feed only holds current halts)",
     "last_bar_et": "07:24",
     "name": "Global Interactive Technologies, Inc. Common Stock",
-    "passes_m1": true,
     "pm_bars": 3,
     "pm_dollar_volume": 1088.03,
     "pm_high": 1.55,
@@ -24027,22 +27648,41 @@
     "price": 1.5291,
     "prior_close": 1.36,
     "prior_date": "2026-11-11",
-    "rule_gap": true,
-    "rule_price": true,
-    "rule_t212": true,
+    "prior_range_pos_pct": 3.8,
+    "rule_continuation": "fail",
+    "rule_float": "",
+    "rule_gap": "pass",
+    "rule_pm_dollar_volume": "fail",
+    "rule_pm_trades": "fail",
+    "rule_price": "pass",
+    "rule_prior_range": "fail",
+    "rule_t212": "pass",
     "scan_file": "data/scans/2026-11-12.json",
+    "spread_pct": null,
     "symbol": "GITS",
     "t212_list": "data/t212/2026-11-15.json",
-    "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names)"
+    "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); 8-K 2026-09-10 item 3.01 (listing deficiency); 8-K 2026-08-21 item 3.01 (listing deficiency)",
+    "yahoo_shares_out": null
    },
    {
     "as_of_et": "2026-11-12T09:15:00-05:00",
+    "continuation_detail": "11-09 -6.6% 0.4x; 11-10 -0.8% 0.3x; 11-11 -2.4% 0.1x",
     "data_cutoff_et": "2026-11-12T08:59:00-05:00",
     "date": "2026-11-12",
+    "dq_offering": "pass",
+    "dq_promo_or_no_catalyst": "",
+    "dq_reasons": "",
+    "dq_reverse_split": "pass",
+    "edgar_shares_asof": "2025-12-31",
+    "edgar_shares_out": 178456987,
+    "eligible": false,
+    "evidence": "",
+    "float_shares": null,
+    "float_source": "",
     "gap_pct": 12.2,
+    "halt_status": "halt status unknown (historical run: the feed only holds current halts)",
     "last_bar_et": "04:59",
     "name": "YXT.COM GROUP HOLDING LIMITED American Depository Shares",
-    "passes_m1": true,
     "pm_bars": 1,
     "pm_dollar_volume": 151.8,
     "pm_high": 1.38,
@@ -24051,22 +27691,41 @@
     "price": 1.38,
     "prior_close": 1.23,
     "prior_date": "2026-11-11",
-    "rule_gap": true,
-    "rule_price": true,
-    "rule_t212": true,
+    "prior_range_pos_pct": 42.9,
+    "rule_continuation": "fail",
+    "rule_float": "",
+    "rule_gap": "pass",
+    "rule_pm_dollar_volume": "fail",
+    "rule_pm_trades": "fail",
+    "rule_price": "pass",
+    "rule_prior_range": "fail",
+    "rule_t212": "pass",
     "scan_file": "data/scans/2026-11-12.json",
+    "spread_pct": null,
     "symbol": "YXT",
     "t212_list": "data/t212/2026-11-15.json",
-    "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names)"
+    "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); EDGAR shares outstanding stale (as of 2025-12-31)",
+    "yahoo_shares_out": null
    },
    {
     "as_of_et": "2026-11-12T09:15:00-05:00",
+    "continuation_detail": "11-09 -7.1% 0.4x; 11-10 +4.4% 1.0x; 11-11 +5.2% 0.1x",
     "data_cutoff_et": "2026-11-12T08:59:00-05:00",
     "date": "2026-11-12",
+    "dq_offering": "pass",
+    "dq_promo_or_no_catalyst": "",
+    "dq_reasons": "",
+    "dq_reverse_split": "pass",
+    "edgar_shares_asof": null,
+    "edgar_shares_out": null,
+    "eligible": false,
+    "evidence": "",
+    "float_shares": null,
+    "float_source": "",
     "gap_pct": 10.0,
+    "halt_status": "halt status unknown (historical run: the feed only holds current halts)",
     "last_bar_et": "07:55",
     "name": "Studio City International Holdings Limited American depositary shares, each representing four Class A ordinary shares",
-    "passes_m1": true,
     "pm_bars": 1,
     "pm_dollar_volume": 124.3,
     "pm_high": 1.1,
@@ -24075,23 +27734,67 @@
     "price": 1.1,
     "prior_close": 1,
     "prior_date": "2026-11-11",
-    "rule_gap": true,
-    "rule_price": true,
-    "rule_t212": true,
+    "prior_range_pos_pct": 100.0,
+    "rule_continuation": "fail",
+    "rule_float": "",
+    "rule_gap": "pass",
+    "rule_pm_dollar_volume": "fail",
+    "rule_pm_trades": "fail",
+    "rule_price": "pass",
+    "rule_prior_range": "pass",
+    "rule_t212": "pass",
     "scan_file": "data/scans/2026-11-12.json",
+    "spread_pct": null,
     "symbol": "MSC",
     "t212_list": "data/t212/2026-11-15.json",
-    "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names)"
+    "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); EDGAR shares outstanding missing",
+    "yahoo_shares_out": null
    }
   ],
   "summary": {
    "candidates": 5,
    "checked_in_band": 785,
-   "passes_m1": 5,
+   "eligible": 1,
    "prior_close_band": [
     0.25,
     1.8182
    ],
+   "rules": {
+    "dq_offering": {
+     "pass": 5
+    },
+    "dq_reverse_split": {
+     "pass": 5
+    },
+    "rule_continuation": {
+     "fail": 4,
+     "pass": 1
+    },
+    "rule_float": {
+     "pass": 1
+    },
+    "rule_gap": {
+     "pass": 5
+    },
+    "rule_pm_dollar_volume": {
+     "fail": 3,
+     "pass": 2
+    },
+    "rule_pm_trades": {
+     "fail": 3,
+     "pass": 2
+    },
+    "rule_price": {
+     "pass": 5
+    },
+    "rule_prior_range": {
+     "fail": 3,
+     "pass": 2
+    },
+    "rule_t212": {
+     "pass": 5
+    }
+   },
    "universe": 5467,
    "warnings": [
     "historical run: T212 list is from 2026-11-15 (later than scan day)",

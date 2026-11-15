@@ -1,6 +1,7 @@
 """Time helpers. All scheduling logic is in America/New_York (SPEC 3)."""
 from __future__ import annotations
 
+import re
 from datetime import date, datetime, time, timedelta, timezone
 
 from zoneinfo import ZoneInfo
@@ -18,8 +19,13 @@ def to_utc_z(dt: datetime) -> str:
     return dt.astimezone(UTC).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
+_FRAC = re.compile(r"(\.\d{6})\d+")
+
+
 def parse_ts(s: str) -> datetime:
-    return datetime.fromisoformat(s.replace("Z", "+00:00"))
+    """RFC 3339 timestamp. Alpaca quotes carry nanoseconds, which Python 3.9's
+    fromisoformat rejects, so fractions are cut to microseconds."""
+    return datetime.fromisoformat(_FRAC.sub(r"\1", s.replace("Z", "+00:00")))
 
 
 def data_cutoff(as_of: datetime, delay_minutes: int) -> datetime:

@@ -105,6 +105,23 @@ class Alpaca:
                     break
         return out
 
+    def quotes(self, symbols: List[str], start: datetime, end: datetime, feed: str = "sip", max_pages: int = 5) -> Dict[str, List[dict]]:
+        """Historical quotes, one symbol at a time so a busy name can't starve
+        the others. Capped at max_pages per symbol (pages run oldest first)."""
+        out: Dict[str, List[dict]] = {}
+        for sym in sorted(symbols):
+            token, pages = None, 0
+            while pages < max_pages:
+                params = {"symbols": sym, "start": to_utc_z(start), "end": to_utc_z(end), "feed": feed, "limit": 10000}
+                if token:
+                    params["page_token"] = token
+                j = self._get(f"{DATA_URL}/v2/stocks/quotes", params)
+                out.setdefault(sym, []).extend((j.get("quotes") or {}).get(sym, []))
+                token, pages = j.get("next_page_token"), pages + 1
+                if not token:
+                    break
+        return out
+
     def snapshots(self, symbols: List[str], feed: str = "iex") -> Dict[str, dict]:
         out: Dict[str, dict] = {}
         for syms in _chunks(sorted(symbols), 200):

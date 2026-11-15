@@ -80,17 +80,17 @@ def test_unsorted_bars_are_handled():
 # ------------------------------------------------------------ T212 rule and log
 
 
-def test_non_t212_names_are_logged_but_fail_m1():
+def test_non_t212_names_are_logged_with_t212_fail():
     inp = make_inputs({"GAPR": 1.0, "NOPE": 1.0}, {"GAPR": [bar("08:30", 1.2)], "NOPE": [bar("08:30", 1.3)]}, t212=("GAPR",))
     c = cands(inp)
-    assert c["GAPR"]["rule_t212"] and c["GAPR"]["passes_m1"]
-    assert not c["NOPE"]["rule_t212"] and not c["NOPE"]["passes_m1"]
-    assert scan.evaluate(inp, CFG)["summary"]["passes_m1"] == 1
+    assert c["GAPR"]["rule_t212"] == "pass"
+    assert c["NOPE"]["rule_t212"] == "fail" and not c["NOPE"]["eligible"]
+    assert scan.evaluate(inp, CFG)["summary"]["rules"]["rule_t212"] == {"pass": 1, "fail": 1}
 
 
 def test_t212_match_ignores_punctuation():
     inp = make_inputs({"ABCD": 1.0}, {"ABCD": [bar("08:30", 1.2)]}, t212=("AB.CD",))
-    assert cands(inp)["ABCD"]["rule_t212"]
+    assert cands(inp)["ABCD"]["rule_t212"] == "pass"
 
 
 def test_sorted_by_premarket_dollar_volume():
@@ -174,6 +174,14 @@ def test_save_and_replay_roundtrip(tmp_path, monkeypatch):
     scan.save(cfg, inp, out, p)
     assert scan.replay(p, CFG)
 
+    # an old-schema file is refused rather than silently mis-scored
+    j = json.loads(p.read_text())
+    j["inputs"]["schema"] = 1
+    old = tmp_path / "data/scans/old.json"
+    old.write_text(json.dumps(j))
+    with pytest.raises(RuntimeError, match="schema 1"):
+        scan.replay(old, CFG)
+
     # changing the committed T212 file must be detected
     t212mod.save(["AAA", "BBB"], __import__("datetime").date(2026, 11, 13), tmp_path / "data/t212")
     with pytest.raises(RuntimeError, match="hash mismatch"):
@@ -192,3 +200,142 @@ def test_candidates_csv_upsert_is_idempotent(tmp_path):
     assert len(got) == 3
     assert [r["date"] for r in got] == ["2026-11-12", "2026-11-13", "2026-11-13"]
     assert set(got[0]) == set(scan.CSV_COLUMNS)
+
+
+# ------------------------------------------------------------ M2: rules on rows and gating
+
+from tests.fixtures import daily, filing, flat_history  # noqa: E402
+
+
+def _hist_pass():
+    h = flat_history(25, v=1_000_000)
+    h[-1] = daily("2026-11-12", 1.0, v=5_000_000, h=1.0, l=0.8)  # 5x volume, closed at the high
+    return h
+
+
+def _liquid(c=1.2):
+    return [bar("08:30", c, v=200_000, n=500)]
+
+
+def _edgar_clean(cik=1):
+    return {"cik": cik, "filings": [], "shares_points": [{"val": 20e6, "end": "2026-09-30", "filed": "2026-10-15"}], "errors": [], "docs_capped": 0}
+
+
+def test_full_row_eligible_with_all_rules():
+    inp = make_inputs({"GAPR": 1.0}, {"GAPR": _liquid()}, history={"GAPR": _hist_pass()}, edgar={"GAPR": _edgar_clean()},
+                      quotes={"GAPR": [{"t": "2026-11-13T13:58:00Z", "bp": 1.19, "ap": 1.21}]},
+                      yahoo={"GAPR": {"fetched_at": "2026-11-13T09:15:00-05:00", "floatShares": 12e6, "sharesOutstanding": 20e6}})
+    r = cands(inp)["GAPR"]
+    for c in scan.MUST_PASS + ["rule_float"] + scan.DISQUALIFIERS:
+        assert r[c] == "pass", c
+    assert r["dq_promo_or_no_catalyst"] == ""  # M3
+    assert r["eligible"] and r["spread_pct"] == pytest.approx(1.67, abs=0.01)
+    assert r["warnings"] == ""
+
+
+def test_failing_cheap_rule_skips_yahoo_and_spread():
+    # Low premarket dollar volume: Yahoo data present in inputs must still be ignored.
+    inp = make_inputs({"GAPR": 1.0}, {"GAPR": [bar("08:30", 1.2, v=100, n=1)]}, history={"GAPR": _hist_pass()},
+                      edgar={"GAPR": _edgar_clean()}, yahoo={"GAPR": {"fetched_at": "x", "floatShares": 1}})
+    r = cands(inp)["GAPR"]
+    assert r["rule_pm_dollar_volume"] == "fail" and r["rule_pm_trades"] == "fail"
+    assert r["rule_float"] == "" and r["float_shares"] is None and r["spread_pct"] is None
+    assert not r["eligible"]
+
+
+def test_disqualified_name_is_logged_with_reason():
+    ed = _edgar_clean()
+    ed["filings"] = [filing("424B5", "2026-11-12", cover="2,000,000 Shares of Common Stock")]
+    inp = make_inputs({"GAPR": 1.0}, {"GAPR": _liquid()}, history={"GAPR": _hist_pass()}, edgar={"GAPR": ed})
+    r = cands(inp)["GAPR"]
+    assert r["dq_offering"] == "fail" and "424B5" in r["dq_reasons"] and not r["eligible"] and r["rule_float"] == ""
+
+
+def test_possible_offering_and_unknowns_stay_eligible_with_warnings():
+    ed = _edgar_clean()
+    ed["filings"] = [filing("424B2", "2026-11-12", cover="Notes due 2031")]
+    ed["shares_points"] = [{"val": 20e6, "end": "2026-03-31", "filed": "2026-05-01"}]  # > 120 days old
+    inp = make_inputs({"GAPR": 1.0}, {"GAPR": _liquid()}, history={"GAPR": _hist_pass()}, edgar={"GAPR": ed},
+                      yahoo={"GAPR": {"fetched_at": "2026-11-13T09:15:00-05:00", "floatShares": None, "sharesOutstanding": 60e6}})
+    r = cands(inp)["GAPR"]
+    assert r["eligible"] and r["rule_float"] == "pass" and r["float_source"].startswith("edgar")
+    for w in ("possible offering", "stale", "float missing", "differ", "spread unknown"):
+        assert w in r["warnings"], w
+
+
+def test_no_cik_is_unknown_not_disqualified():
+    inp = make_inputs({"GAPR": 1.0}, {"GAPR": _liquid()}, history={"GAPR": _hist_pass()}, edgar={"GAPR": {"cik": None}})
+    r = cands(inp)["GAPR"]
+    assert r["dq_offering"] == "unknown" and r["dq_reverse_split"] == "unknown"
+    assert "no CIK" in r["warnings"] and r["rule_float"] == "unknown"
+
+
+def test_unknown_continuation_is_not_eligible():
+    inp = make_inputs({"GAPR": 1.0}, {"GAPR": _liquid()}, history={"GAPR": []}, edgar={"GAPR": _edgar_clean()})
+    r = cands(inp)["GAPR"]
+    assert r["rule_continuation"] == "unknown" and not r["eligible"] and "continuation unknown" in r["warnings"]
+
+
+class _FakeAlpaca:
+    def __init__(self):
+        self.quote_syms = None
+
+    def bars(self, syms, timeframe, start, end, feed="sip", batch=200):
+        return {s: _hist_pass() for s in syms}
+
+    def quotes(self, syms, start, end, feed="sip"):
+        self.quote_syms = sorted(syms)
+        return {s: [{"t": "2026-11-13T13:58:00Z", "bp": 1.19, "ap": 1.21}] for s in syms}
+
+
+def test_gather_calls_yahoo_and_quotes_only_for_survivors(monkeypatch):
+    from src.data import edgar as edgarmod
+    from src.data import yahoo as yahoomod
+
+    from src.data import halts as haltsmod
+
+    called = {}
+    monkeypatch.setattr(haltsmod, "fetch", lambda now: {"fetched_at": now.isoformat(), "ok": True, "items": [], "error": None, "markets": []})
+    monkeypatch.setattr(edgarmod, "gather", lambda ed, syms, *a, **k: {s: _edgar_clean() for s in syms})
+    monkeypatch.setattr(yahoomod, "gather", lambda syms, now: called.setdefault("yahoo", sorted(syms)) and {s: {"fetched_at": now.isoformat(), "floatShares": 5e6} for s in syms})
+    bars = {"GOOD": _liquid(), "THIN": [bar("08:30", 1.2, v=100, n=1)], "NOTT": _liquid()}
+    inp = make_inputs({"GOOD": 1.0, "THIN": 1.0, "NOTT": 1.0}, bars, t212=("GOOD", "THIN"))
+    alp = _FakeAlpaca()
+    now = __import__("datetime").datetime.fromisoformat(inp["as_of_et"])
+    out = scan.gather_filter_inputs(alp, None, CFG, inp, now, __import__("datetime").datetime.fromisoformat(inp["data_cutoff_et"]), now)
+    assert called["yahoo"] == ["GOOD"] and alp.quote_syms == ["GOOD"]
+    assert sorted(out["edgar"]) == ["GOOD", "NOTT", "THIN"]  # EDGAR for every candidate
+    res = {r["symbol"]: r for r in scan.evaluate(out, CFG)["candidates"]}
+    assert res["GOOD"]["eligible"] and not res["THIN"]["eligible"] and not res["NOTT"]["eligible"]
+
+
+def test_halt_feed_failure_is_a_warning_on_every_row():
+    bad = {"fetched_at": "2026-11-13T09:15:00-05:00", "ok": False, "items": [], "error": "Timeout", "markets": []}
+    inp = make_inputs({"GAPR": 1.0}, {"GAPR": _liquid()}, history={"GAPR": _hist_pass()}, edgar={"GAPR": _edgar_clean()}, halts=bad)
+    r = cands(inp)["GAPR"]
+    assert r["halt_status"].startswith("halt status unknown") and "Timeout" in r["warnings"]
+    assert r["dq_offering"] == "pass"  # a warning, never a disqualifier
+
+
+def test_evidence_has_sentence_and_url():
+    ed = _edgar_clean()
+    f = filing("424B5", "2026-11-12", cover="Prospectus Supplement. We are offering 2,000,000 shares of our common stock at $1.00 per share. Other text.")
+    f["url"] = "https://www.sec.gov/Archives/edgar/data/1/000000000026000001/d.htm"
+    ed["filings"] = [f]
+    inp = make_inputs({"GAPR": 1.0}, {"GAPR": _liquid()}, history={"GAPR": _hist_pass()}, edgar={"GAPR": ed})
+    ev = cands(inp)["GAPR"]["evidence"]
+    assert "[offering:disqualify]" in ev and "2,000,000 shares of our common stock" in ev and f["url"] in ev
+
+
+def test_funnel_counts_only_this_rule():
+    from src import funnel
+    base = {c: "pass" for c in funnel.RULES}
+    rows = [
+        dict(base, symbol="A", date="2026-11-13", rule_gap="fail"),
+        dict(base, symbol="B", date="2026-11-13", rule_gap="fail", rule_t212="fail"),
+        dict(base, symbol="C", date="2026-11-13", rule_float="", dq_offering="unknown"),
+    ]
+    f = {x["rule"]: x for x in funnel.funnel(rows)}
+    assert (f["rule_gap"]["fail"], f["rule_gap"]["fail_only_this"]) == (2, 1)
+    assert (f["rule_t212"]["fail"], f["rule_t212"]["fail_only_this"]) == (1, 0)
+    assert f["rule_float"]["not_checked"] == 1 and f["dq_offering"]["unknown"] == 1

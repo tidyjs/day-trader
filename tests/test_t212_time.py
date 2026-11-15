@@ -89,3 +89,10 @@ def test_bar_complete_before():
     cut = datetime(2026, 11, 13, 8, 59, tzinfo=ET)
     assert bar_complete_before("2026-11-13T13:58:00Z", cut)       # 08:58 bar closes 08:59
     assert not bar_complete_before("2026-11-13T13:59:00Z", cut)   # 08:59 bar closes 09:00
+
+
+def test_parse_ts_handles_nanoseconds_and_z():
+    from src.timeutil import parse_ts
+    a = parse_ts("2026-11-12T13:57:01.673084685Z")
+    assert a.microsecond == 673084 and a.utcoffset().total_seconds() == 0
+    assert parse_ts("2026-11-12T13:57:00Z").second == 0

@@ -1,4 +1,9 @@
-"""M1 scanner: universe, prior close, gap %, T212 filter, candidate log.
+"""Scanner: universe, prior close, gap %, T212 filter (M1) and the SPEC 4.1-4.3
+filters and flags (M2), with a per-rule candidate log.
+
+Rule order follows cost. Every name that passes price and gap gets the Alpaca
+and EDGAR rules; SIP quotes (spread) and Yahoo (float) are fetched only for
+names that pass every cheaper must-pass rule and are not disqualified.
 
 The scan is split in three so any day can be reproduced:
 
@@ -28,18 +33,29 @@ from datetime import date, datetime, timedelta
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
+from src import rules as R
 from src.config import ROOT, load_config, load_env
+from src.data import halts
 from src.data import t212 as t212mod
 from src.timeutil import ET, at_et, bar_complete_before, data_cutoff, parse_ts
 
-SCHEMA = 1
+SCHEMA = 3
+
+# Must-pass rules (SPEC 4.1), in cost order. Float is checked last (Yahoo).
+MUST_PASS = ["rule_price", "rule_gap", "rule_t212", "rule_pm_dollar_volume", "rule_pm_trades", "rule_continuation", "rule_prior_range"]
+DISQUALIFIERS = ["dq_offering", "dq_reverse_split"]
 
 CSV_COLUMNS = [
     "date", "as_of_et", "data_cutoff_et", "symbol", "name",
     "prior_date", "prior_close", "price", "gap_pct",
     "pm_high", "pm_volume", "pm_dollar_volume", "pm_trades", "pm_bars", "last_bar_et",
-    "rule_price", "rule_gap", "rule_t212",
-    "passes_m1", "warnings", "t212_list", "scan_file",
+    # per-rule status: pass / fail / unknown / "" (not checked)
+    *MUST_PASS, "rule_float",
+    *DISQUALIFIERS, "dq_promo_or_no_catalyst",
+    # what each rule tested
+    "continuation_detail", "prior_range_pos_pct", "float_shares", "float_source",
+    "edgar_shares_out", "edgar_shares_asof", "yahoo_shares_out", "spread_pct",
+    "halt_status", "dq_reasons", "evidence", "eligible", "warnings", "t212_list", "scan_file",
 ]
 
 
@@ -127,11 +143,8 @@ def evaluate(inp: Dict[str, Any], cfg: Dict[str, Any]) -> Dict[str, Any]:
             continue
         with_bars += 1
         gap = round(100 * (st["price"] / pc - 1), 2)
-        rule_price = s["price_min"] <= st["price"] <= s["price_max"]
-        rule_gap = gap >= s["gap_min_pct"]
-        if not (rule_price and rule_gap):
+        if not (s["price_min"] <= st["price"] <= s["price_max"] and gap >= s["gap_min_pct"]):
             continue  # the candidate log starts at the basic price + gap filters
-        rule_t212 = t212.contains(sym)
         cands.append(
             {
                 "date": inp["day"],
@@ -143,15 +156,16 @@ def evaluate(inp: Dict[str, Any], cfg: Dict[str, Any]) -> Dict[str, Any]:
                 "prior_close": pc,
                 "gap_pct": gap,
                 **st,
-                "rule_price": rule_price,
-                "rule_gap": rule_gap,
-                "rule_t212": rule_t212,
-                "passes_m1": rule_price and rule_gap and rule_t212,
-                "warnings": "; ".join(warns),
+                "rule_price": R.PASS,
+                "rule_gap": R.PASS,
+                "rule_t212": R.PASS if t212.contains(sym) else R.FAIL,
                 "t212_list": inp["t212"]["path"],
             }
         )
+    for r in cands:
+        apply_filters(r, inp, cfg, warns)
     cands.sort(key=lambda r: (-r["pm_dollar_volume"], r["symbol"]))
+    status = lambda col: {k: sum(1 for r in cands if r[col] == k) for k in (R.PASS, R.FAIL, R.UNKNOWN) if any(r[col] == k for r in cands)}
     return {
         "summary": {
             "universe": len(inp["universe"]["symbols"]),
@@ -160,11 +174,107 @@ def evaluate(inp: Dict[str, Any], cfg: Dict[str, Any]) -> Dict[str, Any]:
             "checked_in_band": checked,
             "with_premarket_bars": with_bars,
             "candidates": len(cands),
-            "passes_m1": sum(r["passes_m1"] for r in cands),
+            "rules": {c: status(c) for c in MUST_PASS + ["rule_float"] + DISQUALIFIERS},
+            "eligible": sum(1 for r in cands if r["eligible"]),
             "warnings": warns,
         },
         "candidates": cands,
     }
+
+
+def passes_cheap(r: dict) -> bool:
+    """Every must-pass rule except float passes, and nothing disqualifies.
+    Only these names get SIP quotes and a Yahoo call."""
+    return all(r[c] == R.PASS for c in MUST_PASS) and all(r[c] != R.FAIL for c in DISQUALIFIERS)
+
+
+def apply_filters(r: dict, inp: Dict[str, Any], cfg: Dict[str, Any], scan_warns: List[str]) -> None:
+    """Fill the M2 rule columns for one candidate row, in place."""
+    f, wc, ec = cfg["filters"], cfg["warnings"], cfg["edgar"]
+    sym = r["symbol"]
+    day = date.fromisoformat(inp["day"])
+    prior = date.fromisoformat(inp["prior_day"])
+    warns: List[str] = []
+
+    # 4.1, cheapest first: premarket liquidity from the bars already in hand
+    r["rule_pm_dollar_volume"] = R.threshold(r["pm_dollar_volume"], f["min_pm_dollar_volume"])
+    r["rule_pm_trades"] = R.threshold(r["pm_trades"], f["min_pm_trades"])
+
+    # 4.1 history rules (Alpaca daily bars)
+    daily = inp.get("history", {}).get(sym)
+    if daily is None:
+        r["rule_continuation"], r["continuation_detail"] = R.UNKNOWN, "history not fetched"
+        r["rule_prior_range"], r["prior_range_pos_pct"] = R.UNKNOWN, None
+    else:
+        r["rule_continuation"], r["continuation_detail"] = R.continuation(daily, prior, f["continuation"])
+        pbar = next((b for b in daily if parse_ts(b["t"]).astimezone(ET).date() == prior), None)
+        r["rule_prior_range"], r["prior_range_pos_pct"] = R.prior_range(pbar, f["prior_range_top_pct"])
+    if r["rule_continuation"] == R.UNKNOWN:
+        warns.append(f"continuation unknown: {r['continuation_detail']}")
+
+    # 4.2 / 4.3 from EDGAR
+    # 4.3 halt at scan time (warning only; unknown is a warning, never silent)
+    r["halt_status"] = halts.status(inp.get("halts"), sym, day, datetime.fromisoformat(inp["as_of_et"])) or "not halted"
+    if r["halt_status"] != "not halted":
+        warns.append(r["halt_status"])
+
+    ed = inp.get("edgar", {}).get(sym)
+    dq_reasons: List[str] = []
+    evidence: List[dict] = []
+    so = None
+    if not ed or ed.get("cik") is None:
+        r["dq_offering"] = r["dq_reverse_split"] = R.UNKNOWN
+        warns.append("EDGAR: no CIK for this ticker, filings not checked" if ed else "EDGAR not fetched")
+    else:
+        fl = ed.get("filings", [])
+        r["dq_offering"], dq, maybe, ev1 = R.offering(fl, day, ec["offering_lookback_days"])
+        r["dq_reverse_split"], rs, rs_warn, ev2 = R.reverse_split(fl, day, ec["reverse_split_lookback_days"])
+        evidence += ev1 + ev2
+        dq_reasons += dq + rs
+        warns += [f"possible offering: {m}" for m in maybe] + rs_warn
+        warns += R.deficiency(fl, day, ec["deficiency_lookback_days"])
+        if ed.get("errors"):
+            r["dq_offering"] = R.UNKNOWN if r["dq_offering"] == R.PASS else r["dq_offering"]
+            warns += [f"EDGAR error: {e}" for e in ed["errors"]]
+        if ed.get("docs_capped"):
+            warns.append(f"EDGAR: {ed['docs_capped']} older filings not read (cap)")
+        so = R.edgar_shares(ed.get("shares_points", []), day)
+        if not so:
+            warns.append("EDGAR shares outstanding missing")
+        elif (day - date.fromisoformat(so["end"])).days > wc["shares_stale_days"]:
+            warns.append(f"EDGAR shares outstanding stale (as of {so['end']})")
+    r["edgar_shares_out"] = so["val"] if so else None
+    r["edgar_shares_asof"] = so["end"] if so else None
+    r["dq_promo_or_no_catalyst"] = R.NOT_CHECKED  # needs the classifier (M3)
+
+    # Only names that survive everything cheaper get quotes and Yahoo.
+    if passes_cheap(r):
+        sp = R.spread_pct(inp.get("quotes", {}).get(sym, []), datetime.fromisoformat(inp["data_cutoff_et"]), wc["spread_max_quotes"])
+        r["spread_pct"] = sp
+        if sp is None:
+            warns.append("spread unknown (no SIP quotes before cutoff)")
+        elif sp > wc["spread_warn_pct"]:
+            warns.append(f"spread {sp:.1f}%")
+        y = inp.get("yahoo", {}).get(sym)
+        r["rule_float"], r["float_shares"], r["float_source"], fw = R.float_rule(y, so, f)
+        warns += fw
+        if y and y.get("error"):
+            warns.append(f"Yahoo error: {y['error']}")
+        r["yahoo_shares_out"] = (y or {}).get("sharesOutstanding")
+        mm = R.shares_mismatch(y, so, wc["shares_mismatch_pct"])
+        if mm:
+            warns.append(mm)
+        if y and date.fromisoformat(y["fetched_at"][:10]) > day:
+            warns.append("historical run: float is today's Yahoo value")
+    else:
+        r["rule_float"], r["float_shares"], r["float_source"] = R.NOT_CHECKED, None, ""
+        r["spread_pct"] = r["yahoo_shares_out"] = None
+
+    r["dq_reasons"] = "; ".join(dq_reasons)
+    # Audit trail: every offering / reverse-split match with its sentence and URL.
+    r["evidence"] = " || ".join(f"[{e['rule']}:{e['result']}] {e['filing']} | \"{e['sentence']}\" | {e['url']}" for e in evidence)
+    r["eligible"] = passes_cheap(r) and r["rule_float"] in (R.PASS, R.UNKNOWN)
+    r["warnings"] = "; ".join(scan_warns + warns)
 
 
 # --------------------------------------------------------------------- gather
@@ -180,7 +290,7 @@ def trading_days(alp, day: date) -> tuple:
     return day in days, prior[-1]
 
 
-def gather_inputs(alp, cfg: Dict[str, Any], day: date, as_of: datetime, t212: "t212mod.T212List", now: datetime) -> Dict[str, Any]:
+def gather_inputs(alp, edgar, cfg: Dict[str, Any], day: date, as_of: datetime, t212: "t212mod.T212List", now: datetime) -> Dict[str, Any]:
     cutoff = data_cutoff(as_of, cfg["schedule"]["sip_delay_minutes"])
     is_td, prior = trading_days(alp, day)
     if not is_td:
@@ -200,7 +310,7 @@ def gather_inputs(alp, cfg: Dict[str, Any], day: date, as_of: datetime, t212: "t
     # closes after it. Drop such bars so saved inputs never pass the cutoff.
     pm = {s: [b for b in bs if bar_complete_before(b["t"], cutoff)] for s, bs in pm.items()}
     pm = {s: bs for s, bs in pm.items() if bs}
-    return {
+    inp = {
         "schema": SCHEMA,
         "day": day.isoformat(),
         "as_of_et": as_of.astimezone(ET).isoformat(),
@@ -216,7 +326,43 @@ def gather_inputs(alp, cfg: Dict[str, Any], day: date, as_of: datetime, t212: "t
             "refresh_error": t212.refresh_error,
             "symbols": t212.symbols,
         },
+        "history": {},
+        "edgar": {},
+        "quotes": {},
+        "yahoo": {},
     }
+    return gather_filter_inputs(alp, edgar, cfg, inp, as_of, cutoff, now)
+
+
+def gather_filter_inputs(alp, edgar, cfg: Dict[str, Any], inp: Dict[str, Any], as_of: datetime, cutoff: datetime, now: datetime) -> Dict[str, Any]:
+    """M2 inputs, fetched in cost order (SPEC 4.1-4.3)."""
+    from src.data import edgar as edgarmod
+    from src.data import yahoo as yahoomod
+
+    day, prior = date.fromisoformat(inp["day"]), date.fromisoformat(inp["prior_day"])
+    # The halts feed keeps no history, so its contents are saved at every scan.
+    inp["halts"] = halts.fetch(now)
+    syms = [r["symbol"] for r in evaluate(inp, cfg)["candidates"]]
+    if not syms:
+        return inp
+    # Alpaca daily history up to and including the prior session only.
+    days = cfg["filters"]["continuation"]["history_calendar_days"]
+    hist = alp.bars(syms, "1Day", at_et(prior - timedelta(days=days), "00:00"), at_et(prior, "23:59"), feed="sip")
+    inp["history"] = {s: hist.get(s, []) for s in syms}
+    # EDGAR is official and allows 10 req/s; checked for every candidate.
+    inp["edgar"] = edgarmod.gather(edgar, syms, day, as_of, cfg["edgar"], ROOT / cfg["paths"]["cache"], now.date())
+    # Quotes and Yahoo only for names that pass every cheaper rule.
+    survivors = [r["symbol"] for r in evaluate(inp, cfg)["candidates"] if passes_cheap(r)]
+    if survivors:
+        w = cfg["warnings"]["spread_window_minutes"]
+        q = alp.quotes(survivors, cutoff - timedelta(minutes=w), cutoff, feed="sip")
+        keep = cfg["warnings"]["spread_max_quotes"]
+        inp["quotes"] = {
+            s: [{"t": x["t"], "bp": x["bp"], "ap": x["ap"]} for x in sorted(q.get(s, []), key=lambda x: x["t"]) if parse_ts(x["t"]) < cutoff][-keep:]
+            for s in survivors
+        }
+        inp["yahoo"] = yahoomod.gather(survivors, now)
+    return inp
 
 
 def trim_inputs(inp: Dict[str, Any], out: Dict[str, Any]) -> Dict[str, Any]:
@@ -278,6 +424,8 @@ def upsert_candidates(path: Path, rows: List[dict], day: str, as_of: str) -> Non
 def load_scan_inputs(path: Path) -> tuple:
     j = json.loads(path.read_text())
     inp = j["inputs"]
+    if inp.get("schema") != SCHEMA:
+        raise RuntimeError(f"{path.name} is schema {inp.get('schema')}, this code is schema {SCHEMA}: re-run the scan for that day")
     if "symbols" not in inp["t212"]:
         lst = t212mod.load_file(ROOT / inp["t212"]["path"], ROOT)
         if lst.sha256 != inp["t212"]["sha256"]:
@@ -292,7 +440,7 @@ def replay(path: Path, cfg: Dict[str, Any]) -> bool:
     strip = lambda o: [{k: v for k, v in r.items() if k != "scan_file"} for r in o["candidates"]]
     same = strip(got) == strip(saved) and got["summary"] == saved["summary"]
     print(f"{path.name}: {'identical' if same else 'DIFFERENT'} "
-          f"({got['summary']['candidates']} candidates, {got['summary']['passes_m1']} pass M1)")
+          f"({got['summary']['candidates']} candidates, {got['summary']['eligible']} eligible)")
     return same
 
 
@@ -314,16 +462,22 @@ def run(day: Optional[date], as_of_hhmm: Optional[str], refresh_t212: bool = Tru
             raise SystemExit(f"as-of {as_of} is in the future")
     base = os.environ.get(cfg["t212"]["base_url_env"]) or cfg["t212"]["default_base_url"]
     t212 = t212mod.get_list(now.date(), ROOT / cfg["paths"]["t212"], ROOT, base, refresh=refresh_t212)
-    alp = Alpaca()
-    inp = gather_inputs(alp, cfg, day, as_of, t212, now)
+    from src.data.edgar import Edgar
+
+    alp, ed = Alpaca(), Edgar()
+    inp = gather_inputs(alp, ed, cfg, day, as_of, t212, now)
     out = evaluate(inp, cfg)
     path = scan_path(cfg, day, as_of)
     save(cfg, inp, out, path)
     print(json.dumps(out["summary"], indent=1))
+    short = {R.PASS: "+", R.FAIL: "x", R.UNKNOWN: "?", R.NOT_CHECKED: "."}
+    cols = MUST_PASS[2:] + ["rule_float"] + DISQUALIFIERS
+    print("  rules: " + " ".join(c.replace("rule_", "").replace("dq_", "dq:") for c in cols) + "   (+ pass, x fail, ? unknown, . not checked)")
     for r in out["candidates"]:
-        print(f"  {r['symbol']:6} {r['price']:>7} gap {r['gap_pct']:>6}%  pm$ {r['pm_dollar_volume']:>12,.0f}  "
-              f"trades {r['pm_trades']:>6}  T212 {'yes' if r['rule_t212'] else 'no '}")
-    print(f"saved {path.relative_to(ROOT)} ({alp.calls} Alpaca calls)")
+        flags = "".join(short[r[c]] for c in cols)
+        print(f"  {r['symbol']:6} {r['price']:>7} gap {r['gap_pct']:>6}%  pm$ {r['pm_dollar_volume']:>12,.0f}  {flags}  "
+              f"{'ELIGIBLE' if r['eligible'] else ''}  {r['dq_reasons'][:70]}")
+    print(f"saved {path.relative_to(ROOT)} ({alp.calls} Alpaca, {ed.calls} EDGAR calls)")
     return out
 
 

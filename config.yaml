@@ -29,9 +29,36 @@ scan:
   # Prior closes below this are not fetched. 0.25 allows a gap of up to +300%
   # into $1.00. The upper bound is exact: price_max / (1 + gap_min).
   prior_close_floor: 0.25
-  # Stored for M2 (spec 4.1 and the fake-print caveat); not rules in M1.
+
+filters:                      # SPEC 4.1 must-pass rules
   min_pm_dollar_volume: 100000
-  min_pm_trades: 50
+  min_pm_trades: 50           # fake-print guard (SPEC 5 caveat)
+  continuation:
+    sessions: 3               # look at the last 3 sessions
+    close_up_pct: 20          # ...for a close up >= 20%
+    volume_multiple: 3        # ...or volume >= 3x the average
+    avg_volume_sessions: 20   # average over the 20 sessions before that window
+    min_avg_sessions: 5       # fewer than this -> volume part unknown
+    history_calendar_days: 45
+  prior_range_top_pct: 25     # prior close in the top 25% of its range
+  float_max: 50000000
+  float_margin_pct: 15        # never hard-fail within 15% over the cap
+
+warnings:                     # SPEC 4.3
+  spread_warn_pct: 3
+  spread_window_minutes: 2    # quotes in the last N minutes before the data cutoff
+  spread_max_quotes: 200
+  shares_stale_days: 120
+  shares_mismatch_pct: 25
+
+edgar:
+  offering_lookback_days: 5
+  reverse_split_lookback_days: 60
+  deficiency_lookback_days: 90
+  max_docs_per_name: 8
+  doc_max_bytes: 1500000
+  cover_chars: 5000
+  excerpt_chars: 300
 
 t212:
   base_url_env: T212_BASE_URL
@@ -39,6 +66,7 @@ t212:
   max_age_days: 1             # older lists get the "T212 list is N days old" warning
 
 paths:
+  cache: data/cache           # git-ignored (EDGAR ticker map)
   scans: data/scans
   candidates: data/candidates.csv
   t212: data/t212

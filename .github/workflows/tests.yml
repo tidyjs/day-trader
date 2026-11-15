@@ -1,0 +1,28 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          # Pinned: the version the project runs on today (see .python-version).
+          - python: "3.9"
+            required: true
+          # Upgrade check only: shows whether a move to 3.12 would pass.
+          # Non-blocking until the project is upgraded on purpose.
+          - python: "3.12"
+            required: false
+    continue-on-error: ${{ !matrix.required }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: pip install -r requirements.txt
+      - run: python -m pytest -q
