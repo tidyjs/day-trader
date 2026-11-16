@@ -66,11 +66,11 @@ def test_scan_exception_sends_failure_alert(tmp_path, monkeypatch):
 
 def test_calendar_failure_is_a_failure_alert(monkeypatch):
     sent = []
-    monkeypatch.setattr(run.alerts, "send", lambda kind, subject, body, now: sent.append(subject))
+    monkeypatch.setattr(run.alerts, "send", lambda kind, subject, body, now: sent.append(body))
     def cal(d):
         raise TimeoutError("calendar down")
     assert run.main(["--now", "2026-11-16T09:15"], scan_fn=lambda: None, trading_day_fn=cal) == 1
-    assert "calendar check" in sent[0]
+    assert "trading-calendar check failed" in sent[0] and "No shortlist today" in sent[0]
 
 
 def _out(eligible=True):
@@ -81,7 +81,9 @@ def _out(eligible=True):
            "tier": "A" if eligible else "", "shortlist_rank": 1 if eligible else None, "score": 61.5}
     tb = dict(row, symbol="TIRB", eligible=False, tier="B", shortlist_rank=2 if eligible else 1, score=40.0, rule_continuation="fail")
     thin = dict(row, symbol="THIN", eligible=False, tier="", shortlist_rank=None, rule_pm_dollar_volume="fail")
-    rows = [row, tb, thin] if eligible else [dict(row, rule_continuation="fail"), dict(tb, shortlist_rank=None, tier="", rule_prior_range="fail"), thin]
+    # "nothing passes": no tier, and not liquid enough for Watch either
+    rows = [row, tb, thin] if eligible else [dict(row, rule_continuation="fail", rule_pm_dollar_volume="fail"),
+                                             dict(tb, shortlist_rank=None, tier="", rule_prior_range="fail", rule_pm_dollar_volume="fail"), thin]
     return {"summary": {"candidates": 3, "eligible": int(eligible), "tiers": {"A": int(eligible), "B": int(eligible)}, "warnings": []}, "candidates": rows}
 
 
@@ -90,13 +92,13 @@ def test_successful_scan_exits_zero_and_writes_summary(tmp_path, monkeypatch, ca
     monkeypatch.setattr(alerts, "folder", lambda: tmp_path)
     assert run.main(["--now", "2026-11-16T09:15"], scan_fn=_out, trading_day_fn=lambda d: True) == 0
     assert "3 candidates, 1 eligible" in capsys.readouterr().out
-    files = list(tmp_path.glob("2026/11/2026-11-16_0915_scan_summary.md"))
+    files = list(tmp_path.glob("2026/11/2026-11-16_0915_shortlist.md"))
     assert files
     t = files[0].read_text()
-    assert "# Scan summary: 1 Tier A, 1 Tier B" in t and "| 1 | ABCD | 61.5 | 1.25 | 22.5 | 1,234,567 |" in t
-    assert t.index("## Tier A") < t.index("## Tier B") and "| 2 | TIRB | 40.0 |" in t
-    assert "Do not trade from it" in t and "spread 3.4%<br>float missing" in t
-    assert "rule_pm_dollar_volume: THIN" in t and "Levels use data up to about 08:59 ET. Re-check the live premarket high at the open." in t
+    assert t.startswith("# Shortlist 2026-11-16: 1 Tier A, 1 Tier B, 0 Watch")
+    assert t.index("## Tier A") < t.index("## Tier B") and "### 1. ABCD" in t and "### 2. TIRB" in t
+    assert "  - spread 3.4%" in t and "Levels use data up to about 08:59 ET. Re-check the live premarket high at the open." in t
+    assert "rule_pm_dollar_volume: THIN" in t
     assert (tmp_path / "LATEST.md").exists()
 
 
@@ -104,15 +106,15 @@ def test_summary_when_nothing_passes(tmp_path, monkeypatch):
     from src import alerts
     monkeypatch.setattr(alerts, "folder", lambda: tmp_path)
     assert run.main(["--now", "2026-11-16T09:41"], scan_fn=lambda: _out(eligible=False), trading_day_fn=lambda d: True) == 0
-    t = next(tmp_path.glob("2026/11/*_scan_summary.md")).read_text()
-    assert "Scan summary: no names passed" in t and "No name passed Tier A or Tier B today." in t and "Late start" in t
-    assert "rule_continuation: ABCD" in t
+    t = next(tmp_path.glob("2026/11/*_no_trade.md")).read_text()
+    assert t.startswith("# No names today (2026-11-16)") and "No name reached Tier A, Tier B or Watch today." in t and "Late start" in t
+    assert "rule_pm_dollar_volume: ABCD, TIRB, THIN" in t
 
 
 def test_summary_write_failure_is_a_failure_alert(monkeypatch):
     sent = []
     def send(kind, subject, body, now):
-        if kind == "scan_summary":
+        if kind in ("shortlist", "no_trade"):
             raise OSError("disk full")
         sent.append(kind)
     monkeypatch.setattr(run.alerts, "send", send)
@@ -139,7 +141,9 @@ def test_mode_test_message_writes_only_a_test_message(tmp_path, monkeypatch):
                     scan_fn=lambda: pytest.fail("must not scan"), trading_day_fn=lambda d: pytest.fail("no calendar call"))
     files = list(tmp_path.glob("2026/11/*.md"))
     assert code == 0 and [f.name for f in files] == ["2026-11-16_0220_test.md"]
-    assert "No scan ran" in files[0].read_text() and (tmp_path / "LATEST.md").exists()
+    t = files[0].read_text()
+    assert t.startswith("# TEST: notification check 2026-11-16 02:20 ET") and "**This is a TEST.**" in t and "No scan ran" in t
+    assert (tmp_path / "LATEST.md").exists()
 
 
 @pytest.mark.parametrize("now,is_td,expect", [
@@ -163,18 +167,18 @@ def test_mode_past_day_writes_rerun_summary(tmp_path, monkeypatch):
     code = run.main(["--mode", "past_day", "--now", "2026-11-16T02:20"], trading_day_fn=lambda d: True,
                     prior_day_fn=lambda d: date(2026, 11, 13), past_scan_fn=past_scan)
     assert code == 0 and seen == [date(2026, 11, 13)]
-    t = next(tmp_path.glob("2026/11/2026-11-16_0220_scan_summary.md")).read_text()
-    assert t.startswith("# Manual re-run for 2026-11-13: 1 Tier A, 1 Tier B") and "mode: past_day" in t
+    t = next(tmp_path.glob("2026/11/2026-11-16_0220_shortlist.md")).read_text()
+    assert t.startswith("# Manual re-run: Shortlist 2026-11-16: 1 Tier A") and "Manual re-run** of the 2026-11-13 scan" in t
 
 
 def test_mode_past_day_failure_is_a_failure_alert(monkeypatch):
     sent = []
-    monkeypatch.setattr(run.alerts, "send", lambda kind, subject, body, now: sent.append((kind, subject)))
+    monkeypatch.setattr(run.alerts, "send", lambda kind, subject, body, now: sent.append((kind, body)))
     def boom(d):
         raise ConnectionError("Alpaca down")
     code = run.main(["--mode", "past_day", "--now", "2026-11-16T02:20"], trading_day_fn=lambda d: True,
                     prior_day_fn=lambda d: date(2026, 11, 13), past_scan_fn=boom)
-    assert code == 1 and sent[0][0] == "scanner_failed" and "past_day" in sent[0][1]
+    assert code == 1 and sent[0][0] == "scanner_failed" and "past_day" in sent[0][1] and "ConnectionError: Alpaca down" in sent[0][1]
 
 
 def test_scheduled_runs_default_to_normal_mode():

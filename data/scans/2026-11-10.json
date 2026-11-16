@@ -39065,6 +39065,7 @@
     "catalyst_status": "ok",
     "catalyst_summary": "Autonomix Medical to be issued U.S. patent 12,793,841 covering physiological signal circuitry for medical devices.",
     "catalyst_type": "other",
+    "catalyst_votes": "3/3 runs agree",
     "continuation_detail": "11-09 +11.8% 6.4x vol",
     "data_cutoff_et": "2026-11-10T08:59:00-05:00",
     "date": "2026-11-10",
@@ -39129,6 +39130,7 @@
     "tier": "B",
     "trigger": 1.91,
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); possible reverse split: 8-K 2026-11-03 mentions one, no effective date found; possible reverse split: DEF 14A 2026-09-14 mentions one, no effective date found; Yahoo vs EDGAR shares outstanding differ 111% (2.0M vs 1.0M); historical run: float is today's Yahoo value",
+    "watch_reason": "",
     "yahoo_shares_out": 2045193
    },
    {
@@ -39139,6 +39141,7 @@
     "catalyst_status": "no_news",
     "catalyst_summary": "",
     "catalyst_type": "none",
+    "catalyst_votes": "",
     "continuation_detail": "11-05 -3.3% 0.9x; 11-06 -0.7% 1.6x; 11-09 +0.7% 1.8x",
     "data_cutoff_et": "2026-11-10T08:59:00-05:00",
     "date": "2026-11-10",
@@ -39186,6 +39189,7 @@
     "t212_list": "data/t212/2026-11-15.json",
     "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); EDGAR shares outstanding stale (as of 2025-12-31)",
+    "watch_reason": "no_catalyst",
     "yahoo_shares_out": null
    },
    {
@@ -39196,6 +39200,7 @@
     "catalyst_status": "no_news",
     "catalyst_summary": "",
     "catalyst_type": "none",
+    "catalyst_votes": "",
     "continuation_detail": "11-05 -13.6% 0.0x; 11-06 +2.6% 0.0x; 11-09 -7.7% 0.1x",
     "data_cutoff_et": "2026-11-10T08:59:00-05:00",
     "date": "2026-11-10",
@@ -39243,6 +39248,7 @@
     "t212_list": "data/t212/2026-11-15.json",
     "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); EDGAR shares outstanding stale (as of 2025-12-31)",
+    "watch_reason": "no_catalyst",
     "yahoo_shares_out": null
    },
    {
@@ -39253,6 +39259,7 @@
     "catalyst_status": "ok",
     "catalyst_summary": "TTEC reported Q3 2026 sales of $492.2M beating estimates and affirmed FY2026 guidance.",
     "catalyst_type": "earnings",
+    "catalyst_votes": "3/3 runs agree",
     "continuation_detail": "11-05 -3.3% 0.5x; 11-06 -6.8% 0.5x; 11-09 +1.1% 0.7x",
     "data_cutoff_et": "2026-11-10T08:59:00-05:00",
     "date": "2026-11-10",
@@ -39317,6 +39324,7 @@
     "tier": "B",
     "trigger": 1.71,
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); historical run: float is today's Yahoo value",
+    "watch_reason": "",
     "yahoo_shares_out": 49383048
    },
    {
@@ -39327,6 +39335,7 @@
     "catalyst_status": "ok",
     "catalyst_summary": "Kaltura reported Q3 2026 sales of $47.3M beating estimates, adjusted EPS $0.02, and raised FY2026 guidance.",
     "catalyst_type": "earnings",
+    "catalyst_votes": "3/3 runs agree",
     "continuation_detail": "11-05 -3.9% 1.0x; 11-06 +2.7% 0.8x; 11-09 -5.9% 1.9x",
     "data_cutoff_et": "2026-11-10T08:59:00-05:00",
     "date": "2026-11-10",
@@ -39391,6 +39400,7 @@
     "tier": "B",
     "trigger": 1.72,
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); spread unknown (no SIP quotes before cutoff); above 50M float (92.2M, yahoo); historical run: float is today's Yahoo value",
+    "watch_reason": "",
     "yahoo_shares_out": 154082280
    },
    {
@@ -39401,6 +39411,7 @@
     "catalyst_status": "ok",
     "catalyst_summary": "Zentalis reported Q3 2026 results with EPS of $(0.34) beating estimates and $228.9M cash; Wedbush upgraded to Outperform.",
     "catalyst_type": "earnings",
+    "catalyst_votes": "3/3 runs agree",
     "continuation_detail": "11-05 -2.8% 1.3x; 11-06 +0.6% 1.0x; 11-09 +1.2% 1.0x",
     "data_cutoff_et": "2026-11-10T08:59:00-05:00",
     "date": "2026-11-10",
@@ -39465,6 +39476,7 @@
     "tier": "B",
     "trigger": 1.99,
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); spread unknown (no SIP quotes before cutoff); above 50M float (78.4M, yahoo); historical run: float is today's Yahoo value",
+    "watch_reason": "",
     "yahoo_shares_out": 98265863
    },
    {
@@ -39475,6 +39487,7 @@
     "catalyst_status": "no_news",
     "catalyst_summary": "",
     "catalyst_type": "none",
+    "catalyst_votes": "",
     "continuation_detail": "11-05 +16.6% 1.6x; 11-06 -7.7% 0.9x; 11-09 -7.1% 0.2x",
     "data_cutoff_et": "2026-11-10T08:59:00-05:00",
     "date": "2026-11-10",
@@ -39522,6 +39535,7 @@
     "t212_list": "data/t212/2026-11-15.json",
     "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); EDGAR shares outstanding missing",
+    "watch_reason": "",
     "yahoo_shares_out": null
    },
    {
@@ -39532,6 +39546,7 @@
     "catalyst_status": "no_news",
     "catalyst_summary": "",
     "catalyst_type": "none",
+    "catalyst_votes": "",
     "continuation_detail": "11-05 -4.8% 0.2x; 11-06 -2.9% 0.0x; 11-09 -6.6% 0.4x",
     "data_cutoff_et": "2026-11-10T08:59:00-05:00",
     "date": "2026-11-10",
@@ -39579,6 +39594,7 @@
     "t212_list": "data/t212/2026-11-15.json",
     "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); EDGAR shares outstanding stale (as of 2025-12-31)",
+    "watch_reason": "",
     "yahoo_shares_out": null
    },
    {
@@ -39589,6 +39605,7 @@
     "catalyst_status": "no_news",
     "catalyst_summary": "",
     "catalyst_type": "none",
+    "catalyst_votes": "",
     "continuation_detail": "11-05 -13.0% 1.2x; 11-06 -7.1% 1.5x; 11-09 -9.2% 1.1x",
     "data_cutoff_et": "2026-11-10T08:59:00-05:00",
     "date": "2026-11-10",
@@ -39636,6 +39653,7 @@
     "t212_list": "data/t212/2026-11-15.json",
     "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); EDGAR: 1 older filings not read (cap); EDGAR shares outstanding stale (as of 2025-12-31)",
+    "watch_reason": "",
     "yahoo_shares_out": null
    }
   ],
@@ -39691,7 +39709,8 @@
    },
    "tiers": {
     "A": 0,
-    "B": 4
+    "B": 4,
+    "watch": 2
    },
    "universe": 5467,
    "warnings": [

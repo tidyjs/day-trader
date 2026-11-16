@@ -32721,6 +32721,7 @@
     "catalyst_status": "ok",
     "catalyst_summary": "J-Star Holding to host a Japanese carbon fiber manufacturer for a site review; no concrete deal disclosed.",
     "catalyst_type": "other",
+    "catalyst_votes": "3/3 runs agree",
     "continuation_detail": "11-04 +2.4% 0.0x; 11-05 -13.5% 0.0x; 11-06 -3.7% 0.0x",
     "data_cutoff_et": "2026-11-09T08:59:00-05:00",
     "date": "2026-11-09",
@@ -32768,6 +32769,7 @@
     "t212_list": "data/t212/2026-11-15.json",
     "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); possible reverse split: 6-K 2026-10-30 mentions one, no effective date found; possible reverse split: 6-K 2026-10-23 mentions one, no effective date found; EDGAR shares outstanding stale (as of 2026-04-30)",
+    "watch_reason": "",
     "yahoo_shares_out": null
    },
    {
@@ -32778,6 +32780,7 @@
     "catalyst_status": "ok",
     "catalyst_summary": "Netcapital received Nasdaq extension through Feb. 9, 2027 to regain compliance with periodic filing rule.",
     "catalyst_type": "other",
+    "catalyst_votes": "3/3 runs agree",
     "continuation_detail": "11-04 -9.6% 0.1x; 11-05 -7.8% 0.1x; 11-06 -3.1% 0.0x",
     "data_cutoff_et": "2026-11-09T08:59:00-05:00",
     "date": "2026-11-09",
@@ -32825,6 +32828,7 @@
     "t212_list": "data/t212/2026-11-15.json",
     "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); 8-K 2026-11-09 item 3.01 (listing deficiency); 8-K 2026-10-14 item 3.01 (listing deficiency); 8-K 2026-09-25 item 3.01 (listing deficiency); 8-K 2026-08-28 item 3.01 (listing deficiency); EDGAR shares outstanding stale (as of 2026-03-19)",
+    "watch_reason": "",
     "yahoo_shares_out": null
    },
    {
@@ -32835,6 +32839,7 @@
     "catalyst_status": "ok",
     "catalyst_summary": "No news items for EZGO in the last 48 hours; only a generic 6-K foreign issuer report filed.",
     "catalyst_type": "none",
+    "catalyst_votes": "3/3 runs agree",
     "continuation_detail": "11-05 +192.1% 1.3x vol",
     "data_cutoff_et": "2026-11-09T08:59:00-05:00",
     "date": "2026-11-09",
@@ -32882,6 +32887,7 @@
     "t212_list": "data/t212/2026-11-15.json",
     "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); reverse split completed 2026-11-05 (4 days ago, per 6-K 2026-11-05); EDGAR shares outstanding stale (as of 2025-01-17)",
+    "watch_reason": "",
     "yahoo_shares_out": null
    },
    {
@@ -32892,6 +32898,7 @@
     "catalyst_status": "ok",
     "catalyst_summary": "No company-specific news in the last 48 hours; only a Schedule 13G filing appears.",
     "catalyst_type": "none",
+    "catalyst_votes": "3/3 runs agree",
     "continuation_detail": "11-04 +8.4% 0.4x; 11-05 -8.4% 0.0x; 11-06 -9.2% 0.0x",
     "data_cutoff_et": "2026-11-09T08:59:00-05:00",
     "date": "2026-11-09",
@@ -32939,6 +32946,7 @@
     "t212_list": "data/t212/2026-11-15.json",
     "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); 8-K 2026-10-05 item 3.01 (listing deficiency); 8-K 2026-09-23 item 3.01 (listing deficiency); 8-K 2026-09-04 item 3.01 (listing deficiency)",
+    "watch_reason": "",
     "yahoo_shares_out": null
    },
    {
@@ -32949,6 +32957,7 @@
     "catalyst_status": "no_news",
     "catalyst_summary": "",
     "catalyst_type": "none",
+    "catalyst_votes": "",
     "continuation_detail": "11-04 -6.1% 0.5x; 11-05 -6.5% 0.8x; 11-06 +8.7% 0.4x",
     "data_cutoff_et": "2026-11-09T08:59:00-05:00",
     "date": "2026-11-09",
@@ -32996,6 +33005,7 @@
     "t212_list": "data/t212/2026-11-15.json",
     "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts)",
+    "watch_reason": "",
     "yahoo_shares_out": null
    },
    {
@@ -33006,6 +33016,7 @@
     "catalyst_status": "ok",
     "catalyst_summary": "No news items in the last 48 hours; only Form 4 insider transaction filings listed.",
     "catalyst_type": "none",
+    "catalyst_votes": "3/3 runs agree",
     "continuation_detail": "11-04 +0.0% 1.2x; 11-05 -9.7% 0.6x; 11-06 +0.0% 0.1x",
     "data_cutoff_et": "2026-11-09T08:59:00-05:00",
     "date": "2026-11-09",
@@ -33053,6 +33064,7 @@
     "t212_list": "data/t212/2026-11-15.json",
     "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); EDGAR shares outstanding stale (as of 2025-12-31)",
+    "watch_reason": "",
     "yahoo_shares_out": null
    },
    {
@@ -33063,6 +33075,7 @@
     "catalyst_status": "no_news",
     "catalyst_summary": "",
     "catalyst_type": "none",
+    "catalyst_votes": "",
     "continuation_detail": "11-04 -1.9% 0.8x; 11-05 -1.9% 1.6x; 11-06 -1.0% 0.7x",
     "data_cutoff_et": "2026-11-09T08:59:00-05:00",
     "date": "2026-11-09",
@@ -33110,6 +33123,7 @@
     "t212_list": "data/t212/2026-11-15.json",
     "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); EDGAR shares outstanding stale (as of 2025-12-31)",
+    "watch_reason": "",
     "yahoo_shares_out": null
    }
   ],
@@ -33163,7 +33177,8 @@
    },
    "tiers": {
     "A": 0,
-    "B": 0
+    "B": 0,
+    "watch": 0
    },
    "universe": 5467,
    "warnings": [

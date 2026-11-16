@@ -56,9 +56,9 @@ CSV_COLUMNS = [
     # what each rule tested
     "continuation_detail", "prior_range_pos_pct", "float_shares", "float_source",
     "edgar_shares_out", "edgar_shares_asof", "yahoo_shares_out", "spread_pct",
-    "catalyst_status", "catalyst_type", "catalyst_quality", "catalyst_summary", "catalyst_forced_none", "catalyst_acquisition_target",
+    "catalyst_status", "catalyst_type", "catalyst_quality", "catalyst_summary", "catalyst_forced_none", "catalyst_acquisition_target", "catalyst_votes",
     "news_used", "news_dropped_roundup", "prior_day_volume_multiple",
-    "exchange", "halt_status", "dq_reasons", "evidence", "tier", "eligible",
+    "exchange", "halt_status", "dq_reasons", "evidence", "tier", "watch_reason", "eligible",
     # M4: score, provisional levels and sizing per risk profile (Tier A and B only)
     "shortlist_rank", "score", "score_parts", "pm_high_used", "trigger", "stop", "stop_basis", "stop_pct", "risk_per_share",
     "target_1_5r", "levels_status",
@@ -198,7 +198,8 @@ def evaluate(inp: Dict[str, Any], cfg: Dict[str, Any]) -> Dict[str, Any]:
             "candidates": len(cands),
             "rules": {c: status(c) for c in MUST_PASS + ["rule_float"] + DISQUALIFIERS},
             "eligible": sum(1 for r in cands if r["eligible"]),
-            "tiers": {"A": sum(1 for r in cands if r["tier"] == "A"), "B": sum(1 for r in cands if r["tier"] == "B")},
+            "tiers": {"A": sum(1 for r in cands if r["tier"] == "A"), "B": sum(1 for r in cands if r["tier"] == "B"),
+                      "watch": sum(1 for r in cands if r["watch_reason"])},
             "warnings": warns,
         },
         "candidates": cands,
@@ -217,6 +218,26 @@ def tier_b_ok(r: dict) -> bool:
 def tier_a_ok(r: dict) -> bool:
     """Every must-pass rule except float passes, and nothing disqualifies."""
     return tier_b_ok(r) and all(r[c] == R.PASS for c in MUST_PASS)
+
+
+# Watch (pre-declared 2026-11-16, SPEC 4.4c): never change after seeing outcomes.
+def watch_reason(r: dict) -> str:
+    """"no_catalyst" | "promo" | "other" for a Watch name, "" if not on Watch.
+
+    Watch = on T212, passes price and gap, premarket dollar volume >= the
+    minimum, in no tier. Excluded (not-shown list only): an offering
+    disqualifier, or a reverse split whose verdict is pending (dq fail).
+    A "possible" split is only a warning, so it does not exclude.
+    """
+    if r.get("tier"):
+        return ""
+    if not all(r.get(c) == R.PASS for c in ("rule_price", "rule_gap", "rule_t212", "rule_pm_dollar_volume")):
+        return ""
+    if r.get("dq_offering") == R.FAIL or r.get("dq_reverse_split") == R.FAIL:
+        return ""
+    if r.get("dq_promo_or_no_catalyst") == R.FAIL:
+        return "promo" if "promo/pump" in (r.get("dq_reasons") or "") else "no_catalyst"
+    return "other"
 
 
 def passes_cheap(r: dict) -> bool:
@@ -302,6 +323,10 @@ def apply_filters(r: dict, inp: Dict[str, Any], cfg: Dict[str, Any], scan_warns:
     r["catalyst_quality"] = out.get("quality")
     r["catalyst_summary"] = out.get("one_line_summary", "")
     r["catalyst_forced_none"] = (cat or {}).get("forced_none", False)
+    v = (cat or {}).get("votes") or {}
+    r["catalyst_votes"] = (f"{v.get('types', {}).get(out.get('catalyst_type'), 0)}/{v['valid_runs']} runs agree"
+                           if v.get("valid_runs", 0) > 1 and out.get("catalyst_type") not in (None, "unclear") else
+                           (f"runs disagree: {v.get('types')}" if out.get("catalyst_type") == "unclear" else ""))
     r["news_used"] = (cat or {}).get("items_used")
     r["news_dropped_roundup"] = (cat or {}).get("items_dropped_roundup")
     # Pre-declared 2026-11-16 (SPEC 4.3): a warning only, never a disqualifier.
@@ -341,6 +366,7 @@ def apply_filters(r: dict, inp: Dict[str, Any], cfg: Dict[str, Any], scan_warns:
     r["evidence"] = " || ".join(f"[{e['rule']}:{e['result']}] {e['filing']} | \"{e['sentence']}\" | {e['url']}" for e in evidence)
     r["eligible"] = tier_a_ok(r) and r["rule_float"] in (R.PASS, R.UNKNOWN)   # Tier A
     r["tier"] = "A" if r["eligible"] else ("B" if tier_b_ok(r) else "")
+    r["watch_reason"] = watch_reason(r)
     r["warnings"] = "; ".join(scan_warns + warns)
 
 

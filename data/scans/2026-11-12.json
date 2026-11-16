@@ -34326,6 +34326,7 @@
     "catalyst_status": "ok",
     "catalyst_summary": "Skyline Builders announces Nasdaq ticker change from KAZR to CRMN effective November 12, 2026.",
     "catalyst_type": "other",
+    "catalyst_votes": "3/3 runs agree",
     "continuation_detail": "11-09 +1.6% 0.4x; 11-10 -4.6% 1.2x; 11-11 -7.2% 0.9x",
     "data_cutoff_et": "2026-11-12T08:59:00-05:00",
     "date": "2026-11-12",
@@ -34390,6 +34391,7 @@
     "tier": "B",
     "trigger": 2.91,
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); EDGAR shares outstanding missing; historical run: float is today's Yahoo value",
+    "watch_reason": "",
     "yahoo_shares_out": 15947094
    },
    {
@@ -34400,6 +34402,7 @@
     "catalyst_status": "ok",
     "catalyst_summary": "ICMB agreed to merge into BCP Investment, subject to ICMB stockholder approval; shares jumped after hours.",
     "catalyst_type": "merger",
+    "catalyst_votes": "3/3 runs agree",
     "continuation_detail": "11-11 +2.6% 55.3x vol",
     "data_cutoff_et": "2026-11-12T08:59:00-05:00",
     "date": "2026-11-12",
@@ -34464,6 +34467,7 @@
     "tier": "A",
     "trigger": 1.11,
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); merger target: price likely pinned to deal terms; float missing (Yahoo); historical run: float is today's Yahoo value",
+    "watch_reason": "",
     "yahoo_shares_out": 14432472
    },
    {
@@ -34474,6 +34478,7 @@
     "catalyst_status": "no_news",
     "catalyst_summary": "",
     "catalyst_type": "none",
+    "catalyst_votes": "",
     "continuation_detail": "11-09 -1.3% 0.8x; 11-10 -4.6% 1.1x; 11-11 -6.8% 0.6x",
     "data_cutoff_et": "2026-11-12T08:59:00-05:00",
     "date": "2026-11-12",
@@ -34521,6 +34526,7 @@
     "t212_list": "data/t212/2026-11-15.json",
     "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); 8-K 2026-09-10 item 3.01 (listing deficiency); 8-K 2026-08-21 item 3.01 (listing deficiency)",
+    "watch_reason": "",
     "yahoo_shares_out": null
    },
    {
@@ -34531,6 +34537,7 @@
     "catalyst_status": "no_news",
     "catalyst_summary": "",
     "catalyst_type": "none",
+    "catalyst_votes": "",
     "continuation_detail": "11-09 -6.6% 0.4x; 11-10 -0.8% 0.3x; 11-11 -2.4% 0.1x",
     "data_cutoff_et": "2026-11-12T08:59:00-05:00",
     "date": "2026-11-12",
@@ -34578,6 +34585,7 @@
     "t212_list": "data/t212/2026-11-15.json",
     "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); EDGAR shares outstanding stale (as of 2025-12-31)",
+    "watch_reason": "",
     "yahoo_shares_out": null
    },
    {
@@ -34588,6 +34596,7 @@
     "catalyst_status": "ok",
     "catalyst_summary": "No news about Studio City; the only item concerns Millennium Silver Corp, a different company.",
     "catalyst_type": "none",
+    "catalyst_votes": "3/3 runs agree",
     "continuation_detail": "11-09 -7.1% 0.4x; 11-10 +4.4% 1.0x; 11-11 +5.2% 0.1x",
     "data_cutoff_et": "2026-11-12T08:59:00-05:00",
     "date": "2026-11-12",
@@ -34635,6 +34644,7 @@
     "t212_list": "data/t212/2026-11-15.json",
     "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (NYSE: feed coverage not confirmed); EDGAR shares outstanding missing",
+    "watch_reason": "",
     "yahoo_shares_out": null
    }
   ],
@@ -34689,7 +34699,8 @@
    },
    "tiers": {
     "A": 1,
-    "B": 1
+    "B": 1,
+    "watch": 0
    },
    "universe": 5467,
    "warnings": [

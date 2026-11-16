@@ -8,8 +8,8 @@ workflow, so it can be read on GitHub (web or mobile app):
   messages/LATEST.md                           newest message in full, then
                                                links to the 30 before it
 
-Kinds: scanner_failed and scan_summary (now; scan_summary is interim), and
-shortlist, no_trade, recap (M5).
+Kinds: shortlist, no_trade ("No names today"), scanner_failed, test, and
+recap (M6).
 
 GitHub does not notify you about commits to your own repo. A failure also
 makes the workflow run fail (non-zero exit), which GitHub does notify.
@@ -23,8 +23,8 @@ from typing import List, Optional
 
 from src.config import ROOT
 
-TITLES = {"scanner_failed": "Scanner failed", "shortlist": "Morning shortlist", "no_trade": "No trade today",
-          "recap": "Post-close recap", "scan_summary": "Scan summary (interim, until M5)", "test": "Test message"}
+TITLES = {"scanner_failed": "Scanner failed", "shortlist": "Morning shortlist", "no_trade": "No names today",
+          "recap": "Post-close recap", "test": "Test message"}
 KEEP_IN_LATEST = 30
 
 

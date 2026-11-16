@@ -243,8 +243,8 @@ def classify_offering(f: dict) -> Tuple[str, str, str]:
                 if atm:
                     return "disqualify", f"{label} supplement to an active ATM / sales-agreement prospectus ({b_label})", atm
                 if b_issue:
-                    return "possible", f"{label} supplement to a primary offering prospectus ({b_label}); no new offering terms", b_issue
-            return "possible", f"{label} prospectus supplement updating an existing registration; no new offering terms", upd
+                    return "possible", f"{label} supplement to a primary offering prospectus ({b_label}), no new offering terms", b_issue
+            return "possible", f"{label} prospectus supplement updating an existing registration, no new offering terms", upd
         if resale and not strong:
             return "resale", f"{label} resale registration, supply overhang", resale
         if issuance:

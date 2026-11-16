@@ -74,6 +74,17 @@ All numbers below live in `config.yaml` and are assumptions to be tested, not kn
 - Messages list Tier A first, then Tier B, clearly labelled, up to `max_shortlist` (5) names in total. Within a tier, names are ordered by the 4.4 score.
 - M6 reports Tier A and Tier B results separately.
 
+### 4.4c Watch (pre-declared 2026-11-16)
+
+**Pre-declared on 2026-11-16, before any trade results existed. Never changed after seeing outcomes.**
+
+- **Watch:** on T212, passes price and gap, premarket dollar volume at least $100k, and in no tier.
+- **Excluded from Watch** (shown only in the not-shown list): any name with an offering disqualifier, or a reverse split whose verdict is **pending** (not "possible").
+- Names whose only disqualifier is "no verifiable catalyst" or promo/pump **may** appear in Watch, with the reason shown prominently.
+- Ordered by premarket dollar volume, after Tier A and Tier B, within the 5-name total.
+- `candidates.csv` column `watch_reason`: `no_catalyst`, `promo`, or `other` (blank when not on Watch).
+- M6 logs Watch names separately by `watch_reason` and reports each tier and each Watch reason on its own.
+
 ### 4.4a Candidate log (every name, every rule)
 
 Every name that passes the basic price and gap filters is logged, whether or not it reaches the email, with a pass/fail flag for each rule in 4.1-4.3 and the value it was tested on. Only names that pass every 4.1 rule and no 4.2 disqualifier go in the email. The log grows the sample much faster than the shortlist, and later shows which filters actually add value. With a sample this small, **do not tune filters off a few trades**: any threshold change waits for the phase 1 review and is judged on the full log.
@@ -207,8 +218,8 @@ GitHub Actions on a private repo. Cron is UTC only, so schedule two entries (one
 **M2 Filters and flags.** All of 4.1-4.3 with unit tests using fixture data. Yahoo (and SIP quotes) only for names that pass every cheaper rule; a pass/fail column per rule in `candidates.csv`. Status: built 2026-11-15 (`docs/m2.md`); halt warning waits on approval of a halt-data source.
 **M3 Classifier.** Contract in section 6, with validation and retry. Status: built 2026-11-15 (`docs/m3.md`); test set 14/14 including 5 wrong-company cases.
 **M4 Ranking and levels.** Deterministic, unit-tested, including sizing edge cases (stop too wide, position cap). Status: built 2026-11-16 (`docs/m4.md`), waiting on review before M5.
-**M5 Email.** All four email types, tested with a dry-run mode.
-**M6 Replay.** Both modes, unit-tested with synthetic bars including the stop-and-target-in-one-bar case.
+**M5 Email.** All four email types, tested with a dry-run mode. Status: shortlist, "No names today" and failure messages built 2026-11-16 (`docs/m5.md`); delivered as files plus a GitHub Issue each; waiting on format review before M6.
+**M6 Replay.** Both modes, unit-tested with synthetic bars including the stop-and-target-in-one-bar case. Results reported separately for Tier A, Tier B, and each Watch reason (no_catalyst, promo, other), for each risk profile; can run retroactively on saved scan inputs and historical minute bars.
 **M7 Scheduling.** DST-safe gating, failure alert verified by forcing an error. Status: `src/run.py` and `.github/workflows/scan.yml` built 2026-11-16 (`docs/m7.md`); gating tested on both sides of DST; forced-error alert verified with the `record` sender. Email delivery waits on M5 (provider choice); the workflow is not pushed until the repo is confirmed private.
 
 ## 11. Phase 1 review (after at least 30 simulated trades; expect 4-8 weeks)

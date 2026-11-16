@@ -84,11 +84,31 @@ MARKET_CLOSE = time(16, 0)
 MODES = ("normal", "test_message", "past_day")
 
 
+def send_failure(now: datetime, what: str, details: str) -> None:
+    """Every "Scanner failed" message goes through the M5 failure format."""
+    from src import shortlist
+
+    kind, subject, body = shortlist.failure(f"{now:%Y-%m-%d}", what, details)
+    alerts.send(kind, subject, body, now)
+
+
+def send_shortlist(out: dict, now: datetime, late: bool = False, rerun_of: Optional[str] = None) -> None:
+    from src import shortlist
+
+    kind, subject, body = shortlist.build(out, load_config(), late=late, halts_note=halts_coverage_note(), rerun_of=rerun_of)
+    alerts.send(kind, subject, body, now)
+
+
 def run_test_message(now: datetime) -> int:
-    """Manual mode: write one labelled test message. No scan, no API calls."""
-    alerts.send("test", f"Test message {now:%Y-%m-%d %H:%M} ET",
-                "This is a **test message** from a manual workflow run (`mode: test_message`).\n\n"
-                "It only checks that messages are written to `messages/` and committed back. No scan ran, nothing to act on.", now)
+    """Manual mode: write one clearly labelled test message. The workflow opens it
+    as a GitHub Issue labelled `test`, to check email and mobile notifications.
+    No scan, no API calls."""
+    alerts.send("test", f"TEST: notification check {now:%Y-%m-%d %H:%M} ET",
+                "> **This is a TEST.** Nothing to act on. No scan ran.\n\n"
+                "It was opened from a manual workflow run (`mode: test_message`) to check that:\n\n"
+                "1. the message file is written to `messages/` and committed back, and\n"
+                "2. this GitHub Issue reaches you by **email** and on **GitHub Mobile**.\n\n"
+                "If you got this by email and as a phone notification, delivery works. You can close this issue.", now)
     return 0
 
 
@@ -103,18 +123,16 @@ def run_past_day(now: datetime, trading_day_fn, prior_day_fn, past_scan_fn: Opti
     """Manual mode: re-run the scan for the most recent completed trading day, as of
     its own 09:15 ET cutoff, and write its summary marked as a manual re-run.
     Overwrites that day's saved scan file (re-fetched data)."""
-    from src import scan, summary
+    from src import scan
 
     try:
         day = past_trading_day(now, trading_day_fn, prior_day_fn)
         print(f"[run] manual past_day: re-running the scan for {day} as of 09:15 ET")
         out = (past_scan_fn or (lambda d: scan.run(d, "09:15")))(day)
-        subject, body = summary.subject_and_body(out, halts_note=halts_coverage_note(), rerun_of=day.isoformat())
-        alerts.send("scan_summary", subject, body, now)
+        send_shortlist(out, now, rerun_of=day.isoformat())
         return 0
     except Exception as e:
-        alerts.send("scanner_failed", f"Scanner failed {now:%Y-%m-%d}: manual past_day re-run",
-                    alerts.failure_body(e, "Manual past_day re-run failed."), now)
+        send_failure(now, "The manual past_day re-run failed.", alerts.failure_body(e, "Manual past_day re-run failed."))
         return 1
 
 
@@ -125,7 +143,7 @@ def main(argv=None, scan_fn: Optional[Callable] = None, trading_day_fn: Optional
     ap.add_argument("--force-error", action="store_true", help="raise inside the scan to verify the failure alert")
     ap.add_argument("--mode", choices=MODES, default="normal",
                     help="normal: time-gated morning scan; test_message: write a test message only; "
-                         "past_day: re-run the last completed trading day's scan and write its summary")
+                         "past_day: re-run the last completed trading day's scan and write its shortlist")
     a = ap.parse_args(argv)
     load_env()
     cfg = load_config()
@@ -150,7 +168,8 @@ def main(argv=None, scan_fn: Optional[Callable] = None, trading_day_fn: Optional
             trading_day_fn = lambda d: scan.trading_days(Alpaca(), d)[0]  # noqa: E731
         is_td = trading_day_fn(now.date())
     except Exception as e:  # can't even tell whether to scan: that is a failure too
-        alerts.send("scanner_failed", f"Scanner failed {now:%Y-%m-%d}: calendar check", alerts.failure_body(e, "Trading-calendar check failed."), now)
+        send_failure(now, "The trading-calendar check failed, so the scanner could not tell whether to scan.",
+                     alerts.failure_body(e, "Trading-calendar check failed."))
         return 1
     exists = scan.scan_path(cfg, now.date(), datetime.combine(now.date(), SCAN_START, tzinfo=ET)).exists()
     d = decide(now, is_td, exists)
@@ -161,7 +180,7 @@ def main(argv=None, scan_fn: Optional[Callable] = None, trading_day_fn: Optional
         if alerts.already_sent_today("scanner_failed", now):
             print("[run] failure already alerted today")
             return 1
-        alerts.send("scanner_failed", f"Scanner failed {now:%Y-%m-%d}: no morning scan", d.reason, now)
+        send_failure(now, "The morning scan did not run in time.", d.reason)
         return 1
     try:
         if a.force_error:
@@ -175,12 +194,10 @@ def main(argv=None, scan_fn: Optional[Callable] = None, trading_day_fn: Optional
         note = halts_coverage_note()
         print(f"[run] {note}")
         # Every scan day leaves a message, so silence is never ambiguous (SPEC 8).
-        from src import summary
-        subject, body = summary.subject_and_body(out, late=d.late, halts_note=note)
-        alerts.send("scan_summary", subject, body, now)
+        send_shortlist(out, now, late=d.late)
         return 0
     except Exception as e:
-        alerts.send("scanner_failed", f"Scanner failed {now:%Y-%m-%d}", alerts.failure_body(e, f"Morning scan failed ({d.reason})."), now)
+        send_failure(now, "The morning scan failed.", alerts.failure_body(e, f"Morning scan failed ({d.reason})."))
         return 1
 
 

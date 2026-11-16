@@ -38629,6 +38629,7 @@
     "catalyst_status": "ok",
     "catalyst_summary": "J-Star updates U.S. carbon fiber supply chain efforts; chairman converts $8.2M debt to equity; delegation visit planned.",
     "catalyst_type": "other",
+    "catalyst_votes": "3/3 runs agree",
     "continuation_detail": "11-06 -3.7% 0.0x; 11-09 +12.4% 1.2x; 11-10 -15.3% 0.0x",
     "data_cutoff_et": "2026-11-11T08:59:00-05:00",
     "date": "2026-11-11",
@@ -38676,6 +38677,7 @@
     "t212_list": "data/t212/2026-11-15.json",
     "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); possible reverse split: 6-K 2026-10-30 mentions one, no effective date found; possible reverse split: 6-K 2026-10-23 mentions one, no effective date found; EDGAR shares outstanding stale (as of 2026-04-30); classifier: dilution language in news, no offering filing found",
+    "watch_reason": "",
     "yahoo_shares_out": null
    },
    {
@@ -38686,6 +38688,7 @@
     "catalyst_status": "no_news",
     "catalyst_summary": "",
     "catalyst_type": "none",
+    "catalyst_votes": "",
     "continuation_detail": "11-06 -7.1% 0.1x; 11-09 +6.3% 0.0x; 11-10 -5.9% 0.0x",
     "data_cutoff_et": "2026-11-11T08:59:00-05:00",
     "date": "2026-11-11",
@@ -38733,6 +38736,7 @@
     "t212_list": "data/t212/2026-11-15.json",
     "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); EDGAR shares outstanding stale (as of 2022-12-31)",
+    "watch_reason": "",
     "yahoo_shares_out": null
    },
    {
@@ -38743,6 +38747,7 @@
     "catalyst_status": "ok",
     "catalyst_summary": "Gevo reports record Q3 2026 results: revenue about $83M, net income $23M, EPS $0.12 beating estimates.",
     "catalyst_type": "earnings",
+    "catalyst_votes": "3/3 runs agree",
     "continuation_detail": "11-06 +13.9% 1.0x; 11-09 +5.8% 1.0x; 11-10 -5.4% 2.5x",
     "data_cutoff_et": "2026-11-11T08:59:00-05:00",
     "date": "2026-11-11",
@@ -38807,6 +38812,7 @@
     "tier": "B",
     "trigger": 1.68,
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); above 50M float (228.3M, yahoo); historical run: float is today's Yahoo value",
+    "watch_reason": "",
     "yahoo_shares_out": 247376240
    },
    {
@@ -38817,6 +38823,7 @@
     "catalyst_status": "ok",
     "catalyst_summary": "Braiin named presenting partner of a defence robotics and counter-UAS congress in Queensland; no financial terms disclosed.",
     "catalyst_type": "promo",
+    "catalyst_votes": "3/3 runs agree",
     "continuation_detail": "11-06 +1.4% 0.1x; 11-09 -7.4% 0.1x; 11-10 -11.4% 0.1x",
     "data_cutoff_et": "2026-11-11T08:59:00-05:00",
     "date": "2026-11-11",
@@ -38864,6 +38871,7 @@
     "t212_list": "data/t212/2026-11-15.json",
     "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); EDGAR shares outstanding missing",
+    "watch_reason": "promo",
     "yahoo_shares_out": null
    },
    {
@@ -38874,6 +38882,7 @@
     "catalyst_status": "no_news",
     "catalyst_summary": "",
     "catalyst_type": "none",
+    "catalyst_votes": "",
     "continuation_detail": "11-06 +8.7% 0.2x; 11-09 +11.6% 0.3x; 11-10 +2.7% 0.1x",
     "data_cutoff_et": "2026-11-11T08:59:00-05:00",
     "date": "2026-11-11",
@@ -38921,6 +38930,7 @@
     "t212_list": "data/t212/2026-11-15.json",
     "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (NYSE: feed coverage not confirmed); EDGAR shares outstanding missing",
+    "watch_reason": "no_catalyst",
     "yahoo_shares_out": null
    },
    {
@@ -38931,6 +38941,7 @@
     "catalyst_status": "ok",
     "catalyst_summary": "Sonoma Pharmaceuticals reported Q2 FY2027 results: EPS $(0.01) vs $(0.32) YoY, sales $7.17M, first pre-tax profit.",
     "catalyst_type": "earnings",
+    "catalyst_votes": "3/3 runs agree",
     "continuation_detail": "11-06 +3.7% 1.1x; 11-09 +1.8% 0.7x; 11-10 +0.9% 2.4x",
     "data_cutoff_et": "2026-11-11T08:59:00-05:00",
     "date": "2026-11-11",
@@ -38978,6 +38989,7 @@
     "t212_list": "data/t212/2026-11-15.json",
     "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts)",
+    "watch_reason": "",
     "yahoo_shares_out": null
    },
    {
@@ -38988,6 +39000,7 @@
     "catalyst_status": "ok",
     "catalyst_summary": "Dolphin reported record Q3 2026 revenue of $16.0M, up 8.3% YoY, with adjusted EPS of $0.08 beating estimates.",
     "catalyst_type": "earnings",
+    "catalyst_votes": "3/3 runs agree",
     "continuation_detail": "11-06 +3.5% 0.9x; 11-09 +5.7% 1.9x; 11-10 -6.1% 0.5x",
     "data_cutoff_et": "2026-11-11T08:59:00-05:00",
     "date": "2026-11-11",
@@ -39035,6 +39048,7 @@
     "t212_list": "data/t212/2026-11-15.json",
     "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts)",
+    "watch_reason": "",
     "yahoo_shares_out": null
    },
    {
@@ -39045,6 +39059,7 @@
     "catalyst_status": "ok",
     "catalyst_summary": "Subsidiary Top Kingwin Technology to host Asia-Pacific music creation challenge on DPU Platform, Nov 8-18, 2026.",
     "catalyst_type": "other",
+    "catalyst_votes": "3/3 runs agree",
     "continuation_detail": "11-09 +11.3% 3.8x vol",
     "data_cutoff_et": "2026-11-11T08:59:00-05:00",
     "date": "2026-11-11",
@@ -39092,6 +39107,7 @@
     "t212_list": "data/t212/2026-11-15.json",
     "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); EDGAR shares outstanding missing",
+    "watch_reason": "",
     "yahoo_shares_out": null
    },
    {
@@ -39102,6 +39118,7 @@
     "catalyst_status": "no_news",
     "catalyst_summary": "",
     "catalyst_type": "none",
+    "catalyst_votes": "",
     "continuation_detail": "11-06 +36.0% 5.9x vol",
     "data_cutoff_et": "2026-11-11T08:59:00-05:00",
     "date": "2026-11-11",
@@ -39149,6 +39166,7 @@
     "t212_list": "data/t212/2026-11-15.json",
     "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts)",
+    "watch_reason": "",
     "yahoo_shares_out": null
    },
    {
@@ -39159,6 +39177,7 @@
     "catalyst_status": "no_news",
     "catalyst_summary": "",
     "catalyst_type": "none",
+    "catalyst_votes": "",
     "continuation_detail": "11-06 +0.0% 0.5x; 11-09 +2.4% 0.7x; 11-10 -7.5% 0.8x",
     "data_cutoff_et": "2026-11-11T08:59:00-05:00",
     "date": "2026-11-11",
@@ -39206,6 +39225,7 @@
     "t212_list": "data/t212/2026-11-15.json",
     "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts)",
+    "watch_reason": "",
     "yahoo_shares_out": null
    }
   ],
@@ -39260,7 +39280,8 @@
    },
    "tiers": {
     "A": 0,
-    "B": 1
+    "B": 1,
+    "watch": 2
    },
    "universe": 5467,
    "warnings": [

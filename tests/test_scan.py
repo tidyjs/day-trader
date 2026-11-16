@@ -438,3 +438,36 @@ def test_above_float_cap_warning_and_float_logged_for_tier_b():
     r = cands(inp)["GAPR"]
     assert r["tier"] == "B" and r["rule_float"] == "fail" and r["float_shares"] == 92e6
     assert "above 50M float (92.0M, yahoo)" in r["warnings"]
+
+
+def _rowfor(**over):
+    base = {"tier": "", "rule_price": "pass", "rule_gap": "pass", "rule_t212": "pass", "rule_pm_dollar_volume": "pass",
+            "dq_offering": "pass", "dq_reverse_split": "pass", "dq_promo_or_no_catalyst": "pass", "dq_reasons": ""}
+    base.update(over)
+    return base
+
+
+@pytest.mark.parametrize("over,expect", [
+    ({}, "other"),                                                                   # e.g. fails continuation only
+    ({"tier": "B"}, ""),                                                             # tiered names are not Watch
+    ({"rule_t212": "fail"}, ""),
+    ({"rule_pm_dollar_volume": "fail"}, ""),
+    ({"dq_offering": "fail"}, ""),                                                   # excluded
+    ({"dq_reverse_split": "fail"}, ""),                                              # pending split: excluded
+    ({"dq_reverse_split": "pass"}, "other"),                                         # "possible" split is only a warning
+    ({"dq_promo_or_no_catalyst": "fail", "dq_reasons": "no verifiable catalyst and no prior-day volume surge (0.2x)"}, "no_catalyst"),
+    ({"dq_promo_or_no_catalyst": "fail", "dq_reasons": "classifier: promo/pump (3/3 runs) (x)"}, "promo"),
+    ({"dq_promo_or_no_catalyst": "fail", "dq_offering": "fail", "dq_reasons": "classifier: promo/pump"}, ""),  # offering wins
+])
+def test_watch_reason_rule(over, expect):
+    assert scan.watch_reason(_rowfor(**over)) == expect
+
+
+def test_watch_reason_lands_in_rows_and_summary():
+    flat = flat_history(25)
+    flat[-1] = daily("2026-11-12", 1.0, h=1.0, l=0.8)  # no volume surge
+    none = dict(CAT_OK, output={**CAT_OK["output"], "catalyst_type": "none", "quality": 0}, votes={"valid_runs": 3, "none": 3, "promo": 0, "types": {"none": 3}})
+    inp = make_inputs({"GAPR": 1.0}, {"GAPR": _liquid()}, history={"GAPR": flat}, edgar={"GAPR": _edgar_clean()}, catalyst={"GAPR": none})
+    out = scan.evaluate(inp, CFG)
+    r = out["candidates"][0]
+    assert r["tier"] == "" and r["watch_reason"] == "no_catalyst" and out["summary"]["tiers"]["watch"] == 1

@@ -22,7 +22,8 @@ concurrency:
   cancel-in-progress: false
 
 permissions:
-  contents: write   # commit data/ back to the repo
+  contents: write   # commit data/ and messages/ back to the repo
+  issues: write     # open a GitHub Issue for each new message (built-in token, no secrets)
 
 jobs:
   scan:
@@ -51,6 +52,7 @@ jobs:
       - name: Commit data and messages back (also after a failure, so the alert is kept)
         if: always()
         run: |
+          python -m src.github_issues list > "$RUNNER_TEMP/new_messages.txt"   # before committing
           git config user.name "scan-bot"
           git config user.email "scan-bot@users.noreply.github.com"
           # Add only folders that exist: a quiet "skip" run writes no messages,
@@ -60,3 +62,9 @@ jobs:
           done
           git diff --cached --quiet || git commit -m "data: scan $(TZ=America/New_York date +%F)"
           git pull --rebase && git push
+      - name: Open a GitHub Issue for each new message
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NOTIFY_USER: ${{ vars.NOTIFY_USER }}   # optional repo variable: your GitHub username, for an @mention
+        run: python -m src.github_issues open --list "$RUNNER_TEMP/new_messages.txt"

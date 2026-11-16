@@ -41936,6 +41936,7 @@
     "catalyst_status": "ok",
     "catalyst_summary": "Merlin reports Q3 2026 results with EPS beat and $8.9M USSOCOM C-130J task order; 424B3 filings present.",
     "catalyst_type": "earnings",
+    "catalyst_votes": "3/3 runs agree",
     "continuation_detail": "11-12 -4.5% 6.3x vol",
     "data_cutoff_et": "2026-11-13T08:59:00-05:00",
     "date": "2026-11-13",
@@ -41946,7 +41947,7 @@
     "edgar_shares_asof": "2026-08-11",
     "edgar_shares_out": 101067784,
     "eligible": false,
-    "evidence": "[offering:resale] 424B3 2026-11-13 supplement to resale registration (424B3 2026-05-13), supply overhang | \"We will not receive any proceeds from the sale of the Resale Shares by the Selling Stockholder.\" | https://www.sec.gov/Archives/edgar/data/2028707/000162828026073595/merlinpipeprospectussupple.htm || [offering:possible] 424B3 2026-11-13 supplement to a primary offering prospectus (424B3 2026-04-21); no new offering terms | \"Primary Offering of up to 66,813,783 SHARES OF COMMON STOCK Secondary Offering of up to 157,700,431 SHARES OF COMMON STOCK 736,744 SHARES OF SERIES A PREFERRED STOCK 760,232 SERIES A PREFERRED INVESTOR WARRANTS This prospectus relates to the o\" | https://www.sec.gov/Archives/edgar/data/2028707/000162828026073594/merlinpipeprospectussupple.htm",
+    "evidence": "[offering:resale] 424B3 2026-11-13 supplement to resale registration (424B3 2026-05-13), supply overhang | \"We will not receive any proceeds from the sale of the Resale Shares by the Selling Stockholder.\" | https://www.sec.gov/Archives/edgar/data/2028707/000162828026073595/merlinpipeprospectussupple.htm || [offering:possible] 424B3 2026-11-13 supplement to a primary offering prospectus (424B3 2026-04-21), no new offering terms | \"Primary Offering of up to 66,813,783 SHARES OF COMMON STOCK Secondary Offering of up to 157,700,431 SHARES OF COMMON STOCK 736,744 SHARES OF SERIES A PREFERRED STOCK 760,232 SERIES A PREFERRED INVESTOR WARRANTS This prospectus relates to the o\" | https://www.sec.gov/Archives/edgar/data/2028707/000162828026073594/merlinpipeprospectussupple.htm",
     "exchange": "NASDAQ",
     "float_shares": 46411337,
     "float_source": "yahoo",
@@ -41999,7 +42000,8 @@
     "target_1_5r": 1.42,
     "tier": "B",
     "trigger": 1.39,
-    "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); resale registration, supply overhang: 424B3 2026-11-13 supplement to resale registration (424B3 2026-05-13), supply overhang; possible offering: 424B3 2026-11-13 supplement to a primary offering prospectus (424B3 2026-04-21); no new offering terms; historical run: float is today's Yahoo value",
+    "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); resale registration, supply overhang: 424B3 2026-11-13 supplement to resale registration (424B3 2026-05-13), supply overhang; possible offering: 424B3 2026-11-13 supplement to a primary offering prospectus (424B3 2026-04-21), no new offering terms; historical run: float is today's Yahoo value",
+    "watch_reason": "",
     "yahoo_shares_out": 102418930
    },
    {
@@ -42010,6 +42012,7 @@
     "catalyst_status": "no_news",
     "catalyst_summary": "",
     "catalyst_type": "none",
+    "catalyst_votes": "",
     "continuation_detail": "11-10 +20.2% 2.2x vol",
     "data_cutoff_et": "2026-11-13T08:59:00-05:00",
     "date": "2026-11-13",
@@ -42057,6 +42060,7 @@
     "t212_list": "data/t212/2026-11-15.json",
     "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); EDGAR shares outstanding stale (as of 2026-06-30)",
+    "watch_reason": "no_catalyst",
     "yahoo_shares_out": null
    },
    {
@@ -42067,6 +42071,7 @@
     "catalyst_status": "ok",
     "catalyst_summary": "Sol\u00e9sence reported Q3 2026 results with EPS of $0.05 and sales of $19.98M, up from $14.6M.",
     "catalyst_type": "earnings",
+    "catalyst_votes": "3/3 runs agree",
     "continuation_detail": "11-12 -0.2% 75.6x vol",
     "data_cutoff_et": "2026-11-13T08:59:00-05:00",
     "date": "2026-11-13",
@@ -42131,6 +42136,7 @@
     "tier": "A",
     "trigger": 1.21,
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); 8-K 2026-10-02 item 3.01 (listing deficiency); recent amended filings (possible restatement): 5 in 90 days (10-K/A 2026-11-10, 10-Q/A 2026-11-10); historical run: float is today's Yahoo value",
+    "watch_reason": "",
     "yahoo_shares_out": 70647045
    },
    {
@@ -42141,6 +42147,7 @@
     "catalyst_status": "ok",
     "catalyst_summary": "No news items for Bradbury Capital in the last 48 hours; only routine filing titles listed.",
     "catalyst_type": "none",
+    "catalyst_votes": "3/3 runs agree",
     "continuation_detail": "11-10 -9.6% 0.0x; 11-11 -0.8% 0.1x; 11-12 -5.0% 0.2x",
     "data_cutoff_et": "2026-11-13T08:59:00-05:00",
     "date": "2026-11-13",
@@ -42188,6 +42195,7 @@
     "t212_list": "data/t212/2026-11-15.json",
     "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); possible offering: 6-K 2026-11-09 offering language, no issuance wording; EDGAR shares outstanding missing",
+    "watch_reason": "",
     "yahoo_shares_out": null
    },
    {
@@ -42198,6 +42206,7 @@
     "catalyst_status": "ok",
     "catalyst_summary": "LifeMD reported Q3 2026 results with revenue miss and cut full-year 2026 revenue guidance to $188M-$191M.",
     "catalyst_type": "earnings",
+    "catalyst_votes": "3/3 runs agree",
     "continuation_detail": "11-10 -16.9% 3.0x vol",
     "data_cutoff_et": "2026-11-13T08:59:00-05:00",
     "date": "2026-11-13",
@@ -42245,6 +42254,7 @@
     "t212_list": "data/t212/2026-11-15.json",
     "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts)",
+    "watch_reason": "",
     "yahoo_shares_out": null
    },
    {
@@ -42255,6 +42265,7 @@
     "catalyst_status": "ok",
     "catalyst_summary": "Smartbird signed multi-year colocation deal with Expedient for 3.7+ MW data center capacity; terms undisclosed; Q3 EPS reported.",
     "catalyst_type": "contract",
+    "catalyst_votes": "3/3 runs agree",
     "continuation_detail": "11-10 -6.7% 0.8x; 11-11 +0.0% 1.6x; 11-12 -11.9% 1.4x",
     "data_cutoff_et": "2026-11-13T08:59:00-05:00",
     "date": "2026-11-13",
@@ -42302,6 +42313,7 @@
     "t212_list": "data/t212/2026-11-15.json",
     "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); EDGAR shares outstanding missing",
+    "watch_reason": "",
     "yahoo_shares_out": null
    },
    {
@@ -42312,6 +42324,7 @@
     "catalyst_status": "ok",
     "catalyst_summary": "Codexis reported Q3 2026 results beating EPS and sales estimates and affirmed FY2026 sales guidance of $72-76M.",
     "catalyst_type": "earnings",
+    "catalyst_votes": "3/3 runs agree",
     "continuation_detail": "11-10 -9.9% 0.8x; 11-11 -2.4% 2.0x; 11-12 -1.9% 1.2x",
     "data_cutoff_et": "2026-11-13T08:59:00-05:00",
     "date": "2026-11-13",
@@ -42359,6 +42372,7 @@
     "t212_list": "data/t212/2026-11-15.json",
     "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts)",
+    "watch_reason": "",
     "yahoo_shares_out": null
    },
    {
@@ -42369,6 +42383,7 @@
     "catalyst_status": "ok",
     "catalyst_summary": "BranchOut Food confirms participation in StoneX 15th Annual Discovery 1x1 Investor Conference on December 10, 2026.",
     "catalyst_type": "other",
+    "catalyst_votes": "3/3 runs agree",
     "continuation_detail": "11-10 -1.8% 1.7x; 11-11 -3.6% 0.6x; 11-12 +10.6% 0.2x",
     "data_cutoff_et": "2026-11-13T08:59:00-05:00",
     "date": "2026-11-13",
@@ -42416,6 +42431,7 @@
     "t212_list": "data/t212/2026-11-15.json",
     "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts)",
+    "watch_reason": "",
     "yahoo_shares_out": null
    },
    {
@@ -42426,6 +42442,7 @@
     "catalyst_status": "ok",
     "catalyst_summary": "Xenetic reports Q3 2026 financial results and updates on proposed share exchange with Santersus AG.",
     "catalyst_type": "earnings",
+    "catalyst_votes": "3/3 runs agree",
     "continuation_detail": "11-10 +0.1% 0.2x; 11-11 +3.7% 0.1x; 11-12 -11.0% 0.8x",
     "data_cutoff_et": "2026-11-13T08:59:00-05:00",
     "date": "2026-11-13",
@@ -42473,6 +42490,7 @@
     "t212_list": "data/t212/2026-11-15.json",
     "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts)",
+    "watch_reason": "",
     "yahoo_shares_out": null
    },
    {
@@ -42483,6 +42501,7 @@
     "catalyst_status": "ok",
     "catalyst_summary": "No company-specific news in the last 48 hours; only routine SEC filings listed.",
     "catalyst_type": "none",
+    "catalyst_votes": "3/3 runs agree",
     "continuation_detail": "11-10 +21.6% 61.9x vol",
     "data_cutoff_et": "2026-11-13T08:59:00-05:00",
     "date": "2026-11-13",
@@ -42530,6 +42549,7 @@
     "t212_list": "data/t212/2026-11-15.json",
     "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); 8-K 2026-08-19 item 3.01 (listing deficiency)",
+    "watch_reason": "",
     "yahoo_shares_out": null
    },
    {
@@ -42540,6 +42560,7 @@
     "catalyst_status": "ok",
     "catalyst_summary": "Spruce Power reported Q3 2026 results: EPS $0.28 versus $(0.04) a year ago, sales $29.7M versus $30.7M.",
     "catalyst_type": "earnings",
+    "catalyst_votes": "3/3 runs agree",
     "continuation_detail": "11-10 -4.6% 0.5x; 11-11 +5.6% 0.4x; 11-12 -8.6% 0.5x",
     "data_cutoff_et": "2026-11-13T08:59:00-05:00",
     "date": "2026-11-13",
@@ -42587,6 +42608,7 @@
     "t212_list": "data/t212/2026-11-15.json",
     "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (NYSE: feed coverage not confirmed)",
+    "watch_reason": "",
     "yahoo_shares_out": null
    },
    {
@@ -42597,6 +42619,7 @@
     "catalyst_status": "ok",
     "catalyst_summary": "No news items in last 48 hours; only a 10-Q and an earnings 8-K filed by CalciMedica.",
     "catalyst_type": "none",
+    "catalyst_votes": "3/3 runs agree",
     "continuation_detail": "11-10 -9.6% 0.2x; 11-11 -9.5% 1.1x; 11-12 -1.6% 0.5x",
     "data_cutoff_et": "2026-11-13T08:59:00-05:00",
     "date": "2026-11-13",
@@ -42644,6 +42667,7 @@
     "t212_list": "data/t212/2026-11-15.json",
     "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts)",
+    "watch_reason": "",
     "yahoo_shares_out": null
    }
   ],
@@ -42699,7 +42723,8 @@
    },
    "tiers": {
     "A": 1,
-    "B": 1
+    "B": 1,
+    "watch": 1
    },
    "universe": 5467,
    "warnings": [
