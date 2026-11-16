@@ -117,7 +117,12 @@ def main(argv=None, scan_fn: Optional[Callable] = None, trading_day_fn: Optional
         out = (scan_fn or (lambda: scan.run(now.date(), as_of)))()
         s = out["summary"]
         print(f"[run] scan done: {s['candidates']} candidates, {s['eligible']} eligible{' (LATE START)' if d.late else ''}")
-        print(f"[run] {halts_coverage_note()}")
+        note = halts_coverage_note()
+        print(f"[run] {note}")
+        # Every scan day leaves a message, so silence is never ambiguous (SPEC 8).
+        from src import summary
+        subject, body = summary.subject_and_body(out, late=d.late, halts_note=note)
+        alerts.send("scan_summary", subject, body, now)
         return 0
     except Exception as e:
         alerts.send("scanner_failed", f"Scanner failed {now:%Y-%m-%d}", alerts.failure_body(e, f"Morning scan failed ({d.reason})."), now)
