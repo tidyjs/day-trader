@@ -5,8 +5,8 @@
    "AMIX": {
     "attempts": [
      {
-      "input_tokens": 1300,
-      "output_tokens": 96,
+      "input_tokens": 1406,
+      "output_tokens": 105,
       "stop_reason": "end_turn",
       "valid": true
      }
@@ -17,16 +17,18 @@
     "items_used": 1,
     "model": "claude-haiku-5-5",
     "model_output": {
+     "acquisition_target": false,
      "catalyst_type": "other",
      "dilution_language": false,
-     "one_line_summary": "Autonomix Medical will be issued U.S. Patent 12,793,841 covering physiological signal capturing medical device circuitry.",
+     "one_line_summary": "Autonomix Medical to be issued U.S. Patent 12,793,841 covering physiological signal circuitry for medical devices.",
      "promo_or_pump_flag": false,
      "quality": 2
     },
     "output": {
+     "acquisition_target": false,
      "catalyst_type": "other",
      "dilution_language": false,
-     "one_line_summary": "Autonomix Medical will be issued U.S. Patent 12,793,841 covering physiological signal capturing medical device circuitry.",
+     "one_line_summary": "Autonomix Medical to be issued U.S. Patent 12,793,841 covering physiological signal circuitry for medical devices.",
      "promo_or_pump_flag": false,
      "quality": 2
     },
@@ -40,6 +42,7 @@
     "items_used": 0,
     "model": "claude-haiku-5-5",
     "output": {
+     "acquisition_target": false,
      "catalyst_type": "none",
      "dilution_language": false,
      "one_line_summary": "",
@@ -51,8 +54,8 @@
    "KLTR": {
     "attempts": [
      {
-      "input_tokens": 1708,
-      "output_tokens": 107,
+      "input_tokens": 1814,
+      "output_tokens": 115,
       "stop_reason": "end_turn",
       "valid": true
      }
@@ -63,16 +66,18 @@
     "items_used": 5,
     "model": "claude-haiku-5-5",
     "model_output": {
+     "acquisition_target": false,
      "catalyst_type": "earnings",
      "dilution_language": false,
-     "one_line_summary": "Kaltura reported Q3 2026 sales of $47.3M beating estimates, adj. EPS $0.02, and raised FY2026 sales guidance.",
+     "one_line_summary": "Kaltura reported Q3 2026 sales of $47.3M beating estimates, adj. EPS $0.02, and raised FY2026 guidance.",
      "promo_or_pump_flag": false,
      "quality": 5
     },
     "output": {
+     "acquisition_target": false,
      "catalyst_type": "earnings",
      "dilution_language": false,
-     "one_line_summary": "Kaltura reported Q3 2026 sales of $47.3M beating estimates, adj. EPS $0.02, and raised FY2026 sales guidance.",
+     "one_line_summary": "Kaltura reported Q3 2026 sales of $47.3M beating estimates, adj. EPS $0.02, and raised FY2026 guidance.",
      "promo_or_pump_flag": false,
      "quality": 5
     },
@@ -86,6 +91,7 @@
     "items_used": 0,
     "model": "claude-haiku-5-5",
     "output": {
+     "acquisition_target": false,
      "catalyst_type": "none",
      "dilution_language": false,
      "one_line_summary": "",
@@ -102,6 +108,7 @@
     "items_used": 0,
     "model": "claude-haiku-5-5",
     "output": {
+     "acquisition_target": false,
      "catalyst_type": "none",
      "dilution_language": false,
      "one_line_summary": "",
@@ -113,7 +120,7 @@
    "TTEC": {
     "attempts": [
      {
-      "input_tokens": 1541,
+      "input_tokens": 1647,
       "output_tokens": 104,
       "stop_reason": "end_turn",
       "valid": true
@@ -125,16 +132,18 @@
     "items_used": 3,
     "model": "claude-haiku-5-5",
     "model_output": {
+     "acquisition_target": false,
      "catalyst_type": "earnings",
      "dilution_language": false,
-     "one_line_summary": "TTEC reported Q3 2026 sales of $492.2M beating estimates and affirmed FY2026 adjusted EPS and sales guidance.",
+     "one_line_summary": "TTEC reported Q3 2026 sales of $492.2M beating estimates and affirmed FY2026 guidance.",
      "promo_or_pump_flag": false,
      "quality": 4
     },
     "output": {
+     "acquisition_target": false,
      "catalyst_type": "earnings",
      "dilution_language": false,
-     "one_line_summary": "TTEC reported Q3 2026 sales of $492.2M beating estimates and affirmed FY2026 adjusted EPS and sales guidance.",
+     "one_line_summary": "TTEC reported Q3 2026 sales of $492.2M beating estimates and affirmed FY2026 guidance.",
      "promo_or_pump_flag": false,
      "quality": 4
     },
@@ -148,6 +157,7 @@
     "items_used": 0,
     "model": "claude-haiku-5-5",
     "output": {
+     "acquisition_target": false,
      "catalyst_type": "none",
      "dilution_language": false,
      "one_line_summary": "",
@@ -164,6 +174,7 @@
     "items_used": 0,
     "model": "claude-haiku-5-5",
     "output": {
+     "acquisition_target": false,
      "catalyst_type": "none",
      "dilution_language": false,
      "one_line_summary": "",
@@ -175,8 +186,8 @@
    "ZNTL": {
     "attempts": [
      {
-      "input_tokens": 1547,
-      "output_tokens": 109,
+      "input_tokens": 1653,
+      "output_tokens": 118,
       "stop_reason": "end_turn",
       "valid": true
      }
@@ -187,16 +198,18 @@
     "items_used": 3,
     "model": "claude-haiku-5-5",
     "model_output": {
+     "acquisition_target": false,
      "catalyst_type": "earnings",
      "dilution_language": false,
-     "one_line_summary": "Zentalis reported Q3 2026 results with EPS of $(0.34) beating estimates and $228.9M cash; Wedbush upgraded to Outperform.",
+     "one_line_summary": "Zentalis reported Q3 2026 results with EPS $(0.34) beating estimates and $228.9M cash; Wedbush upgraded to Outperform.",
      "promo_or_pump_flag": false,
      "quality": 4
     },
     "output": {
+     "acquisition_target": false,
      "catalyst_type": "earnings",
      "dilution_language": false,
-     "one_line_summary": "Zentalis reported Q3 2026 results with EPS of $(0.34) beating estimates and $228.9M cash; Wedbush upgraded to Outperform.",
+     "one_line_summary": "Zentalis reported Q3 2026 results with EPS $(0.34) beating estimates and $228.9M cash; Wedbush upgraded to Outperform.",
      "promo_or_pump_flag": false,
      "quality": 4
     },
@@ -37807,10 +37820,11 @@
   "candidates": [
    {
     "as_of_et": "2026-11-10T09:15:00-05:00",
+    "catalyst_acquisition_target": false,
     "catalyst_forced_none": false,
     "catalyst_quality": 2,
     "catalyst_status": "ok",
-    "catalyst_summary": "Autonomix Medical will be issued U.S. Patent 12,793,841 covering physiological signal capturing medical device circuitry.",
+    "catalyst_summary": "Autonomix Medical to be issued U.S. Patent 12,793,841 covering physiological signal circuitry for medical devices.",
     "catalyst_type": "other",
     "continuation_detail": "11-09 +11.8% 6.4x vol",
     "data_cutoff_et": "2026-11-10T08:59:00-05:00",
@@ -37859,6 +37873,7 @@
    },
    {
     "as_of_et": "2026-11-10T09:15:00-05:00",
+    "catalyst_acquisition_target": false,
     "catalyst_forced_none": false,
     "catalyst_quality": 0,
     "catalyst_status": "no_news",
@@ -37911,6 +37926,7 @@
    },
    {
     "as_of_et": "2026-11-10T09:15:00-05:00",
+    "catalyst_acquisition_target": false,
     "catalyst_forced_none": false,
     "catalyst_quality": 0,
     "catalyst_status": "no_news",
@@ -37963,10 +37979,11 @@
    },
    {
     "as_of_et": "2026-11-10T09:15:00-05:00",
+    "catalyst_acquisition_target": false,
     "catalyst_forced_none": false,
     "catalyst_quality": 4,
     "catalyst_status": "ok",
-    "catalyst_summary": "TTEC reported Q3 2026 sales of $492.2M beating estimates and affirmed FY2026 adjusted EPS and sales guidance.",
+    "catalyst_summary": "TTEC reported Q3 2026 sales of $492.2M beating estimates and affirmed FY2026 guidance.",
     "catalyst_type": "earnings",
     "continuation_detail": "11-05 -3.3% 0.5x; 11-06 -6.8% 0.5x; 11-09 +1.1% 0.7x",
     "data_cutoff_et": "2026-11-10T08:59:00-05:00",
@@ -38015,10 +38032,11 @@
    },
    {
     "as_of_et": "2026-11-10T09:15:00-05:00",
+    "catalyst_acquisition_target": false,
     "catalyst_forced_none": false,
     "catalyst_quality": 5,
     "catalyst_status": "ok",
-    "catalyst_summary": "Kaltura reported Q3 2026 sales of $47.3M beating estimates, adj. EPS $0.02, and raised FY2026 sales guidance.",
+    "catalyst_summary": "Kaltura reported Q3 2026 sales of $47.3M beating estimates, adj. EPS $0.02, and raised FY2026 guidance.",
     "catalyst_type": "earnings",
     "continuation_detail": "11-05 -3.9% 1.0x; 11-06 +2.7% 0.8x; 11-09 -5.9% 1.9x",
     "data_cutoff_et": "2026-11-10T08:59:00-05:00",
@@ -38067,10 +38085,11 @@
    },
    {
     "as_of_et": "2026-11-10T09:15:00-05:00",
+    "catalyst_acquisition_target": false,
     "catalyst_forced_none": false,
     "catalyst_quality": 4,
     "catalyst_status": "ok",
-    "catalyst_summary": "Zentalis reported Q3 2026 results with EPS of $(0.34) beating estimates and $228.9M cash; Wedbush upgraded to Outperform.",
+    "catalyst_summary": "Zentalis reported Q3 2026 results with EPS $(0.34) beating estimates and $228.9M cash; Wedbush upgraded to Outperform.",
     "catalyst_type": "earnings",
     "continuation_detail": "11-05 -2.8% 1.3x; 11-06 +0.6% 1.0x; 11-09 +1.2% 1.0x",
     "data_cutoff_et": "2026-11-10T08:59:00-05:00",
@@ -38119,6 +38138,7 @@
    },
    {
     "as_of_et": "2026-11-10T09:15:00-05:00",
+    "catalyst_acquisition_target": false,
     "catalyst_forced_none": false,
     "catalyst_quality": 0,
     "catalyst_status": "no_news",
@@ -38171,6 +38191,7 @@
    },
    {
     "as_of_et": "2026-11-10T09:15:00-05:00",
+    "catalyst_acquisition_target": false,
     "catalyst_forced_none": false,
     "catalyst_quality": 0,
     "catalyst_status": "no_news",
@@ -38223,6 +38244,7 @@
    },
    {
     "as_of_et": "2026-11-10T09:15:00-05:00",
+    "catalyst_acquisition_target": false,
     "catalyst_forced_none": false,
     "catalyst_quality": 0,
     "catalyst_status": "no_news",

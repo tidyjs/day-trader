@@ -208,7 +208,8 @@ from tests.fixtures import daily, filing, flat_history  # noqa: E402
 
 
 CAT_OK = {"status": "ok", "forced_none": False, "items_used": 2, "items_dropped_roundup": 1,
-          "output": {"catalyst_type": "contract", "quality": 4, "promo_or_pump_flag": False, "dilution_language": False, "one_line_summary": "Signed $5M contract"}}
+          "output": {"catalyst_type": "contract", "quality": 4, "promo_or_pump_flag": False, "dilution_language": False,
+                     "acquisition_target": False, "one_line_summary": "Signed $5M contract"}}
 
 
 def _hist_pass():
@@ -396,3 +397,13 @@ def test_nyse_name_never_gets_a_clean_halt_pass():
     r = cands(inp)["GAPR"]
     assert r["exchange"] == "NYSE" and r["halt_status"].startswith("halt status unknown") and "coverage not confirmed" in r["warnings"]
     assert r["eligible"]  # a warning, never a disqualifier
+
+
+def test_merger_target_warning_only_for_target():
+    def row(**out):
+        inp = make_inputs({"GAPR": 1.0}, {"GAPR": _liquid()}, history={"GAPR": _hist_pass()}, edgar={"GAPR": _edgar_clean()}, catalyst={"GAPR": _cat(**out)})
+        return cands(inp)["GAPR"]
+    r = row(catalyst_type="merger", acquisition_target=True)
+    assert "merger target: price likely pinned to deal terms" in r["warnings"] and r["eligible"]  # warning only
+    assert "merger target" not in row(catalyst_type="merger", acquisition_target=False)["warnings"]
+    assert "merger target" not in row(catalyst_type="earnings", acquisition_target=True)["warnings"]

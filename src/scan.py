@@ -56,7 +56,7 @@ CSV_COLUMNS = [
     # what each rule tested
     "continuation_detail", "prior_range_pos_pct", "float_shares", "float_source",
     "edgar_shares_out", "edgar_shares_asof", "yahoo_shares_out", "spread_pct",
-    "catalyst_status", "catalyst_type", "catalyst_quality", "catalyst_summary", "catalyst_forced_none",
+    "catalyst_status", "catalyst_type", "catalyst_quality", "catalyst_summary", "catalyst_forced_none", "catalyst_acquisition_target",
     "news_used", "news_dropped_roundup", "prior_day_volume_multiple",
     "exchange", "halt_status", "dq_reasons", "evidence", "eligible", "warnings", "t212_list", "scan_file",
 ]
@@ -274,6 +274,10 @@ def apply_filters(r: dict, inp: Dict[str, Any], cfg: Dict[str, Any], scan_warns:
     r["catalyst_forced_none"] = (cat or {}).get("forced_none", False)
     r["news_used"] = (cat or {}).get("items_used")
     r["news_dropped_roundup"] = (cat or {}).get("items_dropped_roundup")
+    # Pre-declared 2026-11-16 (SPEC 4.3): a warning only, never a disqualifier.
+    if out.get("catalyst_type") == "merger" and out.get("acquisition_target"):
+        warns.append("merger target: price likely pinned to deal terms")
+    r["catalyst_acquisition_target"] = out.get("acquisition_target")
     if out.get("dilution_language") and r.get("dq_offering") == R.PASS and not any(w.startswith(("possible offering", "resale registration")) for w in warns):
         warns.append("classifier: dilution language in news, no offering filing found")
 

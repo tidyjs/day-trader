@@ -5,8 +5,8 @@
    "CRMN": {
     "attempts": [
      {
-      "input_tokens": 1301,
-      "output_tokens": 95,
+      "input_tokens": 1407,
+      "output_tokens": 104,
       "stop_reason": "end_turn",
       "valid": true
      }
@@ -17,16 +17,18 @@
     "items_used": 1,
     "model": "claude-haiku-5-5",
     "model_output": {
+     "acquisition_target": false,
      "catalyst_type": "other",
      "dilution_language": false,
-     "one_line_summary": "Skyline Builders announces NASDAQ ticker change from KAZR to CRMN effective November 12; no operational catalyst.",
+     "one_line_summary": "Skyline Builders changes NASDAQ ticker from KAZR to CRMN effective November 12; no operational catalyst.",
      "promo_or_pump_flag": false,
      "quality": 1
     },
     "output": {
+     "acquisition_target": false,
      "catalyst_type": "other",
      "dilution_language": false,
-     "one_line_summary": "Skyline Builders announces NASDAQ ticker change from KAZR to CRMN effective November 12; no operational catalyst.",
+     "one_line_summary": "Skyline Builders changes NASDAQ ticker from KAZR to CRMN effective November 12; no operational catalyst.",
      "promo_or_pump_flag": false,
      "quality": 1
     },
@@ -40,6 +42,7 @@
     "items_used": 0,
     "model": "claude-haiku-5-5",
     "output": {
+     "acquisition_target": false,
      "catalyst_type": "none",
      "dilution_language": false,
      "one_line_summary": "",
@@ -51,8 +54,8 @@
    "ICMB": {
     "attempts": [
      {
-      "input_tokens": 1606,
-      "output_tokens": 97,
+      "input_tokens": 1712,
+      "output_tokens": 103,
       "stop_reason": "end_turn",
       "valid": true
      }
@@ -63,16 +66,18 @@
     "items_used": 4,
     "model": "claude-haiku-5-5",
     "model_output": {
+     "acquisition_target": true,
      "catalyst_type": "merger",
      "dilution_language": false,
-     "one_line_summary": "ICMB agreed to merge into BCP Investment subject to ICMB stockholder approval; shares jumped over 53% after hours.",
+     "one_line_summary": "ICMB agreed to merge into BCP Investment, subject to ICMB stockholder approval; shares surged after hours.",
      "promo_or_pump_flag": false,
      "quality": 5
     },
     "output": {
+     "acquisition_target": true,
      "catalyst_type": "merger",
      "dilution_language": false,
-     "one_line_summary": "ICMB agreed to merge into BCP Investment subject to ICMB stockholder approval; shares jumped over 53% after hours.",
+     "one_line_summary": "ICMB agreed to merge into BCP Investment, subject to ICMB stockholder approval; shares surged after hours.",
      "promo_or_pump_flag": false,
      "quality": 5
     },
@@ -81,8 +86,8 @@
    "MSC": {
     "attempts": [
      {
-      "input_tokens": 1342,
-      "output_tokens": 82,
+      "input_tokens": 1448,
+      "output_tokens": 92,
       "stop_reason": "end_turn",
       "valid": true
      }
@@ -93,6 +98,7 @@
     "items_used": 1,
     "model": "claude-haiku-5-5",
     "model_output": {
+     "acquisition_target": false,
      "catalyst_type": "none",
      "dilution_language": false,
      "one_line_summary": "No news about Studio City International; the only item concerns Millennium Silver Corp, a different company.",
@@ -100,6 +106,7 @@
      "quality": 0
     },
     "output": {
+     "acquisition_target": false,
      "catalyst_type": "none",
      "dilution_language": false,
      "one_line_summary": "No news about Studio City International; the only item concerns Millennium Silver Corp, a different company.",
@@ -116,6 +123,7 @@
     "items_used": 0,
     "model": "claude-haiku-5-5",
     "output": {
+     "acquisition_target": false,
      "catalyst_type": "none",
      "dilution_language": false,
      "one_line_summary": "",
@@ -33273,10 +33281,11 @@
   "candidates": [
    {
     "as_of_et": "2026-11-12T09:15:00-05:00",
+    "catalyst_acquisition_target": false,
     "catalyst_forced_none": false,
     "catalyst_quality": 1,
     "catalyst_status": "ok",
-    "catalyst_summary": "Skyline Builders announces NASDAQ ticker change from KAZR to CRMN effective November 12; no operational catalyst.",
+    "catalyst_summary": "Skyline Builders changes NASDAQ ticker from KAZR to CRMN effective November 12; no operational catalyst.",
     "catalyst_type": "other",
     "continuation_detail": "11-09 +1.6% 0.4x; 11-10 -4.6% 1.2x; 11-11 -7.2% 0.9x",
     "data_cutoff_et": "2026-11-12T08:59:00-05:00",
@@ -33325,10 +33334,11 @@
    },
    {
     "as_of_et": "2026-11-12T09:15:00-05:00",
+    "catalyst_acquisition_target": true,
     "catalyst_forced_none": false,
     "catalyst_quality": 5,
     "catalyst_status": "ok",
-    "catalyst_summary": "ICMB agreed to merge into BCP Investment subject to ICMB stockholder approval; shares jumped over 53% after hours.",
+    "catalyst_summary": "ICMB agreed to merge into BCP Investment, subject to ICMB stockholder approval; shares surged after hours.",
     "catalyst_type": "merger",
     "continuation_detail": "11-11 +2.6% 55.3x vol",
     "data_cutoff_et": "2026-11-12T08:59:00-05:00",
@@ -33372,11 +33382,12 @@
     "spread_pct": 0.97,
     "symbol": "ICMB",
     "t212_list": "data/t212/2026-11-15.json",
-    "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); float missing (Yahoo); historical run: float is today's Yahoo value",
+    "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); merger target: price likely pinned to deal terms; float missing (Yahoo); historical run: float is today's Yahoo value",
     "yahoo_shares_out": 14432472
    },
    {
     "as_of_et": "2026-11-12T09:15:00-05:00",
+    "catalyst_acquisition_target": false,
     "catalyst_forced_none": false,
     "catalyst_quality": 0,
     "catalyst_status": "no_news",
@@ -33429,6 +33440,7 @@
    },
    {
     "as_of_et": "2026-11-12T09:15:00-05:00",
+    "catalyst_acquisition_target": false,
     "catalyst_forced_none": false,
     "catalyst_quality": 0,
     "catalyst_status": "no_news",
@@ -33481,6 +33493,7 @@
    },
    {
     "as_of_et": "2026-11-12T09:15:00-05:00",
+    "catalyst_acquisition_target": false,
     "catalyst_forced_none": true,
     "catalyst_quality": 0,
     "catalyst_status": "ok",

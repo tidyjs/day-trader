@@ -352,5 +352,61 @@
    ],
    "quality_max": 1
   }
+ },
+ {
+  "id": "merger_target_icmb",
+  "ticker": "ICMB",
+  "company": "Investcorp Credit Management BDC, Inc. Common Stock",
+  "news": [
+   {
+    "created_at": "2026-11-11T23:03:00Z",
+    "source": "benzinga",
+    "symbols": [
+     "BCIC",
+     "ICMB"
+    ],
+    "headline": "Investcorp Credit Management BDC To Merge Into BCP Investment Subject To Approval By ICMB Stockholders",
+    "summary": ""
+   },
+   {
+    "created_at": "2026-11-12T06:32:00Z",
+    "source": "benzinga",
+    "symbols": [
+     "BCIC",
+     "ICMB"
+    ],
+    "headline": "Investcorp Credit Management (ICMB) Stock Jumps Over 53% After Hours on BCIC Merger Deal",
+    "summary": "Investcorp Credit Management shares surge 53.54% after hours as merger agreement with BCIC promises shareholders a substantial premium."
+   }
+  ],
+  "expect": {
+   "types": [
+    "merger"
+   ],
+   "acquisition_target": true
+  }
+ },
+ {
+  "id": "merger_acquirer_synthetic",
+  "ticker": "ACQR",
+  "company": "Acquirer Holdings Inc. Common Stock",
+  "news": [
+   {
+    "created_at": "2026-11-13T12:00:00Z",
+    "source": "prnewswire",
+    "symbols": [
+     "ACQR",
+     "TGTX"
+    ],
+    "headline": "Acquirer Holdings To Acquire Targetco For $40 Million In Cash",
+    "summary": "Acquirer Holdings signed a definitive agreement to acquire Targetco, expanding its product line; closing expected in Q1 2027."
+   }
+  ],
+  "expect": {
+   "types": [
+    "merger"
+   ],
+   "acquisition_target": false
+  }
  }
 ]

@@ -10,6 +10,7 @@
     "items_used": 0,
     "model": "claude-haiku-5-5",
     "output": {
+     "acquisition_target": false,
      "catalyst_type": "none",
      "dilution_language": false,
      "one_line_summary": "",
@@ -21,8 +22,8 @@
    "BRAI": {
     "attempts": [
      {
-      "input_tokens": 1299,
-      "output_tokens": 98,
+      "input_tokens": 1405,
+      "output_tokens": 105,
       "stop_reason": "end_turn",
       "valid": true
      }
@@ -33,16 +34,18 @@
     "items_used": 1,
     "model": "claude-haiku-5-5",
     "model_output": {
+     "acquisition_target": false,
      "catalyst_type": "promo",
      "dilution_language": false,
-     "one_line_summary": "Braiin named presenting partner for a defence robotics and counter-UAS congress in Queensland; no financial or contract terms disclosed.",
+     "one_line_summary": "Braiin named presenting partner of a defence robotics and counter-UAS congress in Queensland; no financial terms disclosed.",
      "promo_or_pump_flag": true,
      "quality": 1
     },
     "output": {
+     "acquisition_target": false,
      "catalyst_type": "promo",
      "dilution_language": false,
-     "one_line_summary": "Braiin named presenting partner for a defence robotics and counter-UAS congress in Queensland; no financial or contract terms disclosed.",
+     "one_line_summary": "Braiin named presenting partner of a defence robotics and counter-UAS congress in Queensland; no financial terms disclosed.",
      "promo_or_pump_flag": true,
      "quality": 1
     },
@@ -56,6 +59,7 @@
     "items_used": 0,
     "model": "claude-haiku-5-5",
     "output": {
+     "acquisition_target": false,
      "catalyst_type": "none",
      "dilution_language": false,
      "one_line_summary": "",
@@ -72,6 +76,7 @@
     "items_used": 0,
     "model": "claude-haiku-5-5",
     "output": {
+     "acquisition_target": false,
      "catalyst_type": "none",
      "dilution_language": false,
      "one_line_summary": "",
@@ -83,8 +88,8 @@
    "DLPN": {
     "attempts": [
      {
-      "input_tokens": 1841,
-      "output_tokens": 98,
+      "input_tokens": 1947,
+      "output_tokens": 115,
       "stop_reason": "end_turn",
       "valid": true
      }
@@ -95,26 +100,28 @@
     "items_used": 5,
     "model": "claude-haiku-5-5",
     "model_output": {
+     "acquisition_target": false,
      "catalyst_type": "earnings",
      "dilution_language": false,
-     "one_line_summary": "Dolphin Entertainment reported record Q3 2026 revenue of $16.0M, beating estimates, with a return to profitability.",
+     "one_line_summary": "Dolphin Entertainment reported record Q3 2026 revenue of $16.0M, up 8.3%, with adjusted EPS beating estimates.",
      "promo_or_pump_flag": false,
-     "quality": 5
+     "quality": 4
     },
     "output": {
+     "acquisition_target": false,
      "catalyst_type": "earnings",
      "dilution_language": false,
-     "one_line_summary": "Dolphin Entertainment reported record Q3 2026 revenue of $16.0M, beating estimates, with a return to profitability.",
+     "one_line_summary": "Dolphin Entertainment reported record Q3 2026 revenue of $16.0M, up 8.3%, with adjusted EPS beating estimates.",
      "promo_or_pump_flag": false,
-     "quality": 5
+     "quality": 4
     },
     "status": "ok"
    },
    "DPU": {
     "attempts": [
      {
-      "input_tokens": 1320,
-      "output_tokens": 103,
+      "input_tokens": 1426,
+      "output_tokens": 112,
       "stop_reason": "end_turn",
       "valid": true
      }
@@ -125,17 +132,19 @@
     "items_used": 1,
     "model": "claude-haiku-5-5",
     "model_output": {
-     "catalyst_type": "promo",
+     "acquisition_target": false,
+     "catalyst_type": "other",
      "dilution_language": false,
-     "one_line_summary": "Subsidiary Top Kingwin plans an Asia-Pacific music creation challenge on DPU Platform, Nov 8-18, 2026.",
-     "promo_or_pump_flag": true,
+     "one_line_summary": "Subsidiary Top Kingwin Technology to host Asia-Pacific music creation challenge on DPU Platform, November 8-18, 2026.",
+     "promo_or_pump_flag": false,
      "quality": 1
     },
     "output": {
-     "catalyst_type": "promo",
+     "acquisition_target": false,
+     "catalyst_type": "other",
      "dilution_language": false,
-     "one_line_summary": "Subsidiary Top Kingwin plans an Asia-Pacific music creation challenge on DPU Platform, Nov 8-18, 2026.",
-     "promo_or_pump_flag": true,
+     "one_line_summary": "Subsidiary Top Kingwin Technology to host Asia-Pacific music creation challenge on DPU Platform, November 8-18, 2026.",
+     "promo_or_pump_flag": false,
      "quality": 1
     },
     "status": "ok"
@@ -143,8 +152,8 @@
    "GEVO": {
     "attempts": [
      {
-      "input_tokens": 1692,
-      "output_tokens": 103,
+      "input_tokens": 1798,
+      "output_tokens": 109,
       "stop_reason": "end_turn",
       "valid": true
      }
@@ -155,18 +164,20 @@
     "items_used": 4,
     "model": "claude-haiku-5-5",
     "model_output": {
+     "acquisition_target": false,
      "catalyst_type": "earnings",
      "dilution_language": false,
-     "one_line_summary": "Gevo reported record Q3 2026 results: revenue about $83M, up 94%, EPS $0.12 beating estimates, net income $23M.",
+     "one_line_summary": "Gevo reported record Q3 2026 results: revenue up 94% to $83M, net income $23M, EPS $0.12 beat.",
      "promo_or_pump_flag": false,
-     "quality": 5
+     "quality": 4
     },
     "output": {
+     "acquisition_target": false,
      "catalyst_type": "earnings",
      "dilution_language": false,
-     "one_line_summary": "Gevo reported record Q3 2026 results: revenue about $83M, up 94%, EPS $0.12 beating estimates, net income $23M.",
+     "one_line_summary": "Gevo reported record Q3 2026 results: revenue up 94% to $83M, net income $23M, EPS $0.12 beat.",
      "promo_or_pump_flag": false,
-     "quality": 5
+     "quality": 4
     },
     "status": "ok"
    },
@@ -178,6 +189,7 @@
     "items_used": 0,
     "model": "claude-haiku-5-5",
     "output": {
+     "acquisition_target": false,
      "catalyst_type": "none",
      "dilution_language": false,
      "one_line_summary": "",
@@ -189,8 +201,8 @@
    "SNOA": {
     "attempts": [
      {
-      "input_tokens": 1439,
-      "output_tokens": 112,
+      "input_tokens": 1545,
+      "output_tokens": 120,
       "stop_reason": "end_turn",
       "valid": true
      }
@@ -201,16 +213,18 @@
     "items_used": 2,
     "model": "claude-haiku-5-5",
     "model_output": {
+     "acquisition_target": false,
      "catalyst_type": "earnings",
      "dilution_language": false,
-     "one_line_summary": "Sonoma reported fiscal Q2 2027 results: EPS $(0.01) vs $(0.32) YoY, sales $7.174M, first pre-tax net income.",
+     "one_line_summary": "Sonoma reported Q2 FY2027 results: first-ever pre-tax net income, EPS $(0.01), sales $7.174M versus $5.604M.",
      "promo_or_pump_flag": false,
      "quality": 4
     },
     "output": {
+     "acquisition_target": false,
      "catalyst_type": "earnings",
      "dilution_language": false,
-     "one_line_summary": "Sonoma reported fiscal Q2 2027 results: EPS $(0.01) vs $(0.32) YoY, sales $7.174M, first pre-tax net income.",
+     "one_line_summary": "Sonoma reported Q2 FY2027 results: first-ever pre-tax net income, EPS $(0.01), sales $7.174M versus $5.604M.",
      "promo_or_pump_flag": false,
      "quality": 4
     },
@@ -219,8 +233,8 @@
    "YMAT": {
     "attempts": [
      {
-      "input_tokens": 1431,
-      "output_tokens": 105,
+      "input_tokens": 1537,
+      "output_tokens": 111,
       "stop_reason": "end_turn",
       "valid": true
      }
@@ -231,16 +245,18 @@
     "items_used": 2,
     "model": "claude-haiku-5-5",
     "model_output": {
+     "acquisition_target": false,
      "catalyst_type": "other",
      "dilution_language": true,
-     "one_line_summary": "J-Star updates U.S. carbon fiber supply chain efforts; Chairman and CEO converts $8.2M debt to equity, planned Texas site review.",
+     "one_line_summary": "J-Star updates U.S. carbon fiber supply chain efforts; chairman converts $8.2M debt to equity, plus delegation site visit.",
      "promo_or_pump_flag": false,
      "quality": 2
     },
     "output": {
+     "acquisition_target": false,
      "catalyst_type": "other",
      "dilution_language": true,
-     "one_line_summary": "J-Star updates U.S. carbon fiber supply chain efforts; Chairman and CEO converts $8.2M debt to equity, planned Texas site review.",
+     "one_line_summary": "J-Star updates U.S. carbon fiber supply chain efforts; chairman converts $8.2M debt to equity, plus delegation site visit.",
      "promo_or_pump_flag": false,
      "quality": 2
     },
@@ -38115,10 +38131,11 @@
   "candidates": [
    {
     "as_of_et": "2026-11-11T09:15:00-05:00",
+    "catalyst_acquisition_target": false,
     "catalyst_forced_none": false,
     "catalyst_quality": 2,
     "catalyst_status": "ok",
-    "catalyst_summary": "J-Star updates U.S. carbon fiber supply chain efforts; Chairman and CEO converts $8.2M debt to equity, planned Texas site review.",
+    "catalyst_summary": "J-Star updates U.S. carbon fiber supply chain efforts; chairman converts $8.2M debt to equity, plus delegation site visit.",
     "catalyst_type": "other",
     "continuation_detail": "11-06 -3.7% 0.0x; 11-09 +12.4% 1.2x; 11-10 -15.3% 0.0x",
     "data_cutoff_et": "2026-11-11T08:59:00-05:00",
@@ -38167,6 +38184,7 @@
    },
    {
     "as_of_et": "2026-11-11T09:15:00-05:00",
+    "catalyst_acquisition_target": false,
     "catalyst_forced_none": false,
     "catalyst_quality": 0,
     "catalyst_status": "no_news",
@@ -38219,10 +38237,11 @@
    },
    {
     "as_of_et": "2026-11-11T09:15:00-05:00",
+    "catalyst_acquisition_target": false,
     "catalyst_forced_none": false,
-    "catalyst_quality": 5,
+    "catalyst_quality": 4,
     "catalyst_status": "ok",
-    "catalyst_summary": "Gevo reported record Q3 2026 results: revenue about $83M, up 94%, EPS $0.12 beating estimates, net income $23M.",
+    "catalyst_summary": "Gevo reported record Q3 2026 results: revenue up 94% to $83M, net income $23M, EPS $0.12 beat.",
     "catalyst_type": "earnings",
     "continuation_detail": "11-06 +13.9% 1.0x; 11-09 +5.8% 1.0x; 11-10 -5.4% 2.5x",
     "data_cutoff_et": "2026-11-11T08:59:00-05:00",
@@ -38271,17 +38290,18 @@
    },
    {
     "as_of_et": "2026-11-11T09:15:00-05:00",
+    "catalyst_acquisition_target": false,
     "catalyst_forced_none": false,
     "catalyst_quality": 1,
     "catalyst_status": "ok",
-    "catalyst_summary": "Braiin named presenting partner for a defence robotics and counter-UAS congress in Queensland; no financial or contract terms disclosed.",
+    "catalyst_summary": "Braiin named presenting partner of a defence robotics and counter-UAS congress in Queensland; no financial terms disclosed.",
     "catalyst_type": "promo",
     "continuation_detail": "11-06 +1.4% 0.1x; 11-09 -7.4% 0.1x; 11-10 -11.4% 0.1x",
     "data_cutoff_et": "2026-11-11T08:59:00-05:00",
     "date": "2026-11-11",
     "dq_offering": "pass",
     "dq_promo_or_no_catalyst": "fail",
-    "dq_reasons": "classifier: promo/pump (Braiin named presenting partner for a defence robotics and counter-UAS congress )",
+    "dq_reasons": "classifier: promo/pump (Braiin named presenting partner of a defence robotics and counter-UAS congress i)",
     "dq_reverse_split": "pass",
     "edgar_shares_asof": null,
     "edgar_shares_out": null,
@@ -38323,6 +38343,7 @@
    },
    {
     "as_of_et": "2026-11-11T09:15:00-05:00",
+    "catalyst_acquisition_target": false,
     "catalyst_forced_none": false,
     "catalyst_quality": 0,
     "catalyst_status": "no_news",
@@ -38375,10 +38396,11 @@
    },
    {
     "as_of_et": "2026-11-11T09:15:00-05:00",
+    "catalyst_acquisition_target": false,
     "catalyst_forced_none": false,
     "catalyst_quality": 4,
     "catalyst_status": "ok",
-    "catalyst_summary": "Sonoma reported fiscal Q2 2027 results: EPS $(0.01) vs $(0.32) YoY, sales $7.174M, first pre-tax net income.",
+    "catalyst_summary": "Sonoma reported Q2 FY2027 results: first-ever pre-tax net income, EPS $(0.01), sales $7.174M versus $5.604M.",
     "catalyst_type": "earnings",
     "continuation_detail": "11-06 +3.7% 1.1x; 11-09 +1.8% 0.7x; 11-10 +0.9% 2.4x",
     "data_cutoff_et": "2026-11-11T08:59:00-05:00",
@@ -38427,10 +38449,11 @@
    },
    {
     "as_of_et": "2026-11-11T09:15:00-05:00",
+    "catalyst_acquisition_target": false,
     "catalyst_forced_none": false,
-    "catalyst_quality": 5,
+    "catalyst_quality": 4,
     "catalyst_status": "ok",
-    "catalyst_summary": "Dolphin Entertainment reported record Q3 2026 revenue of $16.0M, beating estimates, with a return to profitability.",
+    "catalyst_summary": "Dolphin Entertainment reported record Q3 2026 revenue of $16.0M, up 8.3%, with adjusted EPS beating estimates.",
     "catalyst_type": "earnings",
     "continuation_detail": "11-06 +3.5% 0.9x; 11-09 +5.7% 1.9x; 11-10 -6.1% 0.5x",
     "data_cutoff_et": "2026-11-11T08:59:00-05:00",
@@ -38479,17 +38502,18 @@
    },
    {
     "as_of_et": "2026-11-11T09:15:00-05:00",
+    "catalyst_acquisition_target": false,
     "catalyst_forced_none": false,
     "catalyst_quality": 1,
     "catalyst_status": "ok",
-    "catalyst_summary": "Subsidiary Top Kingwin plans an Asia-Pacific music creation challenge on DPU Platform, Nov 8-18, 2026.",
-    "catalyst_type": "promo",
+    "catalyst_summary": "Subsidiary Top Kingwin Technology to host Asia-Pacific music creation challenge on DPU Platform, November 8-18, 2026.",
+    "catalyst_type": "other",
     "continuation_detail": "11-09 +11.3% 3.8x vol",
     "data_cutoff_et": "2026-11-11T08:59:00-05:00",
     "date": "2026-11-11",
     "dq_offering": "pass",
-    "dq_promo_or_no_catalyst": "fail",
-    "dq_reasons": "classifier: promo/pump (Subsidiary Top Kingwin plans an Asia-Pacific music creation challenge on DPU Pla)",
+    "dq_promo_or_no_catalyst": "pass",
+    "dq_reasons": "",
     "dq_reverse_split": "pass",
     "edgar_shares_asof": null,
     "edgar_shares_out": null,
@@ -38531,6 +38555,7 @@
    },
    {
     "as_of_et": "2026-11-11T09:15:00-05:00",
+    "catalyst_acquisition_target": false,
     "catalyst_forced_none": false,
     "catalyst_quality": 0,
     "catalyst_status": "no_news",
@@ -38583,6 +38608,7 @@
    },
    {
     "as_of_et": "2026-11-11T09:15:00-05:00",
+    "catalyst_acquisition_target": false,
     "catalyst_forced_none": false,
     "catalyst_quality": 0,
     "catalyst_status": "no_news",
@@ -38647,8 +38673,8 @@
      "pass": 10
     },
     "dq_promo_or_no_catalyst": {
-     "fail": 5,
-     "pass": 5
+     "fail": 4,
+     "pass": 6
     },
     "dq_reverse_split": {
      "fail": 1,

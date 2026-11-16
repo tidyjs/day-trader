@@ -32,7 +32,7 @@ class FakeClient:
                                usage=SimpleNamespace(input_tokens=100, output_tokens=20))
 
 
-GOOD = {"catalyst_type": "contract", "quality": 4, "promo_or_pump_flag": False, "dilution_language": False, "one_line_summary": "x"}
+GOOD = {"catalyst_type": "contract", "quality": 4, "promo_or_pump_flag": False, "dilution_language": False, "acquisition_target": False, "one_line_summary": "x"}
 
 
 def item(headline, symbols=("ABCD",), summary=""):
@@ -182,3 +182,10 @@ def test_injected_rating_is_still_validated():
     cl = FakeClient({**GOOD, "quality": 50}, {**GOOD, "quality": 50})
     rec = C.classify(cl, "INJC", "Injectco Inc.", [item(INJECTION, ["INJC"])], [], CFG)
     assert rec["status"] == "unavailable"
+
+
+def test_acquisition_target_is_required_and_cleared_when_forced_none():
+    assert not C.valid({k: v for k, v in GOOD.items() if k != "acquisition_target"})
+    case = next(c for c in CASES if c["id"] == "wrong_co_ymat_greenfire_merger")
+    rec = C.classify(FakeClient({**GOOD, "catalyst_type": "merger", "acquisition_target": True}), case["ticker"], case["company"], case["news"], [], CFG)
+    assert rec["forced_none"] and rec["output"]["acquisition_target"] is False

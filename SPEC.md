@@ -59,6 +59,7 @@ All numbers below live in `config.yaml` and are assumptions to be tested, not kn
 - Resale registration, supply overhang: selling holders may sell registered shares and the company receives no proceeds. A warning, not a disqualifier.
 - Classifier reports dilution language in recent news but no filing was found.
 - T212 list older than 1 day (show its age).
+- Merger target: "merger target: price likely pinned to deal terms" when the classifier's catalyst is a merger and the company is the one being acquired (`acquisition_target`). Warning only. **Pre-declared 2026-11-16**, before any forward scan; judge its effect only on scans from that date on.
 
 ### 4.4a Candidate log (every name, every rule)
 
@@ -129,6 +130,7 @@ Output: strict JSON, no prose.
   "quality": 0,
   "promo_or_pump_flag": false,
   "dilution_language": false,
+  "acquisition_target": false,
   "one_line_summary": ""
 }
 ```
@@ -160,7 +162,7 @@ Run three modes: (a) every shortlisted name independently, to build sample size 
 - **Scanner failed:** separate alert. Silence must never be ambiguous.
 - **Post-close recap:** what each name did and the simulated result.
 
-Provider: Gmail SMTP with an app password, or Resend free tier. Ask the user which.
+**Delivery (changed 2026-11-16 at the user's request): files in the repo, not email.** Every message is a Markdown file under `messages/YYYY/MM/YYYY-MM-DD_HHMM_<kind>.md`, committed back by the workflow; `messages/LATEST.md` shows the newest in full and links the 30 before it. GitHub does not notify on commits to your own repo, so a failure also fails the workflow run, which GitHub does notify. "Email" in this section means one of these message files.
 
 ## 9. Scheduling
 
@@ -187,7 +189,7 @@ GitHub Actions on a private repo. Cron is UTC only, so schedule two entries (one
 **M4 Ranking and levels.** Deterministic, unit-tested, including sizing edge cases (stop too wide, position cap).
 **M5 Email.** All four email types, tested with a dry-run mode.
 **M6 Replay.** Both modes, unit-tested with synthetic bars including the stop-and-target-in-one-bar case.
-**M7 Scheduling.** DST-safe gating, failure alert verified by forcing an error.
+**M7 Scheduling.** DST-safe gating, failure alert verified by forcing an error. Status: `src/run.py` and `.github/workflows/scan.yml` built 2026-11-16 (`docs/m7.md`); gating tested on both sides of DST; forced-error alert verified with the `record` sender. Email delivery waits on M5 (provider choice); the workflow is not pushed until the repo is confirmed private.
 
 ## 11. Phase 1 review (after at least 30 simulated trades; expect 4-8 weeks)
 

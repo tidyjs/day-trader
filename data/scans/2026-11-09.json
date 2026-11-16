@@ -10,6 +10,7 @@
     "items_used": 0,
     "model": "claude-haiku-5-5",
     "output": {
+     "acquisition_target": false,
      "catalyst_type": "none",
      "dilution_language": false,
      "one_line_summary": "",
@@ -26,6 +27,7 @@
     "items_used": 0,
     "model": "claude-haiku-5-5",
     "output": {
+     "acquisition_target": false,
      "catalyst_type": "none",
      "dilution_language": false,
      "one_line_summary": "",
@@ -37,8 +39,8 @@
    "EZGO": {
     "attempts": [
      {
-      "input_tokens": 1205,
-      "output_tokens": 87,
+      "input_tokens": 1311,
+      "output_tokens": 97,
       "stop_reason": "end_turn",
       "valid": true
      }
@@ -49,16 +51,18 @@
     "items_used": 0,
     "model": "claude-haiku-5-5",
     "model_output": {
+     "acquisition_target": false,
      "catalyst_type": "none",
      "dilution_language": false,
-     "one_line_summary": "No news items about EZGO in the last 48 hours; only a generic 6-K foreign issuer report filing.",
+     "one_line_summary": "No news items for EZGO in the last 48 hours; only a generic 6-K foreign issuer report filed.",
      "promo_or_pump_flag": false,
      "quality": 0
     },
     "output": {
+     "acquisition_target": false,
      "catalyst_type": "none",
      "dilution_language": false,
-     "one_line_summary": "No news items about EZGO in the last 48 hours; only a generic 6-K foreign issuer report filing.",
+     "one_line_summary": "No news items for EZGO in the last 48 hours; only a generic 6-K foreign issuer report filed.",
      "promo_or_pump_flag": false,
      "quality": 0
     },
@@ -67,8 +71,8 @@
    "NCPL": {
     "attempts": [
      {
-      "input_tokens": 1386,
-      "output_tokens": 93,
+      "input_tokens": 1492,
+      "output_tokens": 104,
       "stop_reason": "end_turn",
       "valid": true
      }
@@ -79,16 +83,18 @@
     "items_used": 2,
     "model": "claude-haiku-5-5",
     "model_output": {
+     "acquisition_target": false,
      "catalyst_type": "other",
      "dilution_language": false,
-     "one_line_summary": "Netcapital received a Nasdaq exception extending its deadline to regain compliance with periodic filing rules until February 2027.",
+     "one_line_summary": "Netcapital received Nasdaq extension through Feb. 9, 2027 to regain compliance with periodic filing requirements.",
      "promo_or_pump_flag": false,
      "quality": 1
     },
     "output": {
+     "acquisition_target": false,
      "catalyst_type": "other",
      "dilution_language": false,
-     "one_line_summary": "Netcapital received a Nasdaq exception extending its deadline to regain compliance with periodic filing rules until February 2027.",
+     "one_line_summary": "Netcapital received Nasdaq extension through Feb. 9, 2027 to regain compliance with periodic filing requirements.",
      "promo_or_pump_flag": false,
      "quality": 1
     },
@@ -97,8 +103,8 @@
    "WLDS": {
     "attempts": [
      {
-      "input_tokens": 1230,
-      "output_tokens": 86,
+      "input_tokens": 1336,
+      "output_tokens": 95,
       "stop_reason": "end_turn",
       "valid": true
      }
@@ -109,16 +115,18 @@
     "items_used": 0,
     "model": "claude-haiku-5-5",
     "model_output": {
+     "acquisition_target": false,
      "catalyst_type": "none",
      "dilution_language": false,
-     "one_line_summary": "No news items in the last 48 hours; only Form 4 insider filing titles appear, no company catalyst.",
+     "one_line_summary": "No news items in the last 48 hours; only Form 4 insider filings listed for Wearable Devices.",
      "promo_or_pump_flag": false,
      "quality": 0
     },
     "output": {
+     "acquisition_target": false,
      "catalyst_type": "none",
      "dilution_language": false,
-     "one_line_summary": "No news items in the last 48 hours; only Form 4 insider filing titles appear, no company catalyst.",
+     "one_line_summary": "No news items in the last 48 hours; only Form 4 insider filings listed for Wearable Devices.",
      "promo_or_pump_flag": false,
      "quality": 0
     },
@@ -127,8 +135,8 @@
    "WORX": {
     "attempts": [
      {
-      "input_tokens": 1171,
-      "output_tokens": 86,
+      "input_tokens": 1277,
+      "output_tokens": 91,
       "stop_reason": "end_turn",
       "valid": true
      }
@@ -139,16 +147,18 @@
     "items_used": 0,
     "model": "claude-haiku-5-5",
     "model_output": {
+     "acquisition_target": false,
      "catalyst_type": "none",
      "dilution_language": false,
-     "one_line_summary": "No news items for SCWorx in the last 48 hours; only a Schedule 13G filing appears.",
+     "one_line_summary": "No company-specific news in the last 48 hours; only a Schedule 13G filing appears.",
      "promo_or_pump_flag": false,
      "quality": 0
     },
     "output": {
+     "acquisition_target": false,
      "catalyst_type": "none",
      "dilution_language": false,
-     "one_line_summary": "No news items for SCWorx in the last 48 hours; only a Schedule 13G filing appears.",
+     "one_line_summary": "No company-specific news in the last 48 hours; only a Schedule 13G filing appears.",
      "promo_or_pump_flag": false,
      "quality": 0
     },
@@ -157,8 +167,8 @@
    "YMAT": {
     "attempts": [
      {
-      "input_tokens": 1265,
-      "output_tokens": 94,
+      "input_tokens": 1371,
+      "output_tokens": 99,
       "stop_reason": "end_turn",
       "valid": true
      }
@@ -169,16 +179,18 @@
     "items_used": 1,
     "model": "claude-haiku-5-5",
     "model_output": {
+     "acquisition_target": false,
      "catalyst_type": "other",
      "dilution_language": false,
-     "one_line_summary": "J-Star will host a Japanese carbon fiber and composite manufacturer for a site review; no financial terms disclosed.",
+     "one_line_summary": "J-Star to host a Japanese carbon fiber manufacturer for a site review; no financial terms disclosed.",
      "promo_or_pump_flag": false,
      "quality": 1
     },
     "output": {
+     "acquisition_target": false,
      "catalyst_type": "other",
      "dilution_language": false,
-     "one_line_summary": "J-Star will host a Japanese carbon fiber and composite manufacturer for a site review; no financial terms disclosed.",
+     "one_line_summary": "J-Star to host a Japanese carbon fiber manufacturer for a site review; no financial terms disclosed.",
      "promo_or_pump_flag": false,
      "quality": 1
     },
@@ -32311,10 +32323,11 @@
   "candidates": [
    {
     "as_of_et": "2026-11-09T09:15:00-05:00",
+    "catalyst_acquisition_target": false,
     "catalyst_forced_none": false,
     "catalyst_quality": 1,
     "catalyst_status": "ok",
-    "catalyst_summary": "J-Star will host a Japanese carbon fiber and composite manufacturer for a site review; no financial terms disclosed.",
+    "catalyst_summary": "J-Star to host a Japanese carbon fiber manufacturer for a site review; no financial terms disclosed.",
     "catalyst_type": "other",
     "continuation_detail": "11-04 +2.4% 0.0x; 11-05 -13.5% 0.0x; 11-06 -3.7% 0.0x",
     "data_cutoff_et": "2026-11-09T08:59:00-05:00",
@@ -32363,10 +32376,11 @@
    },
    {
     "as_of_et": "2026-11-09T09:15:00-05:00",
+    "catalyst_acquisition_target": false,
     "catalyst_forced_none": false,
     "catalyst_quality": 1,
     "catalyst_status": "ok",
-    "catalyst_summary": "Netcapital received a Nasdaq exception extending its deadline to regain compliance with periodic filing rules until February 2027.",
+    "catalyst_summary": "Netcapital received Nasdaq extension through Feb. 9, 2027 to regain compliance with periodic filing requirements.",
     "catalyst_type": "other",
     "continuation_detail": "11-04 -9.6% 0.1x; 11-05 -7.8% 0.1x; 11-06 -3.1% 0.0x",
     "data_cutoff_et": "2026-11-09T08:59:00-05:00",
@@ -32415,10 +32429,11 @@
    },
    {
     "as_of_et": "2026-11-09T09:15:00-05:00",
+    "catalyst_acquisition_target": false,
     "catalyst_forced_none": true,
     "catalyst_quality": 0,
     "catalyst_status": "ok",
-    "catalyst_summary": "No news items about EZGO in the last 48 hours; only a generic 6-K foreign issuer report filing.",
+    "catalyst_summary": "No news items for EZGO in the last 48 hours; only a generic 6-K foreign issuer report filed.",
     "catalyst_type": "none",
     "continuation_detail": "11-05 +192.1% 1.3x vol",
     "data_cutoff_et": "2026-11-09T08:59:00-05:00",
@@ -32467,10 +32482,11 @@
    },
    {
     "as_of_et": "2026-11-09T09:15:00-05:00",
+    "catalyst_acquisition_target": false,
     "catalyst_forced_none": true,
     "catalyst_quality": 0,
     "catalyst_status": "ok",
-    "catalyst_summary": "No news items for SCWorx in the last 48 hours; only a Schedule 13G filing appears.",
+    "catalyst_summary": "No company-specific news in the last 48 hours; only a Schedule 13G filing appears.",
     "catalyst_type": "none",
     "continuation_detail": "11-04 +8.4% 0.4x; 11-05 -8.4% 0.0x; 11-06 -9.2% 0.0x",
     "data_cutoff_et": "2026-11-09T08:59:00-05:00",
@@ -32519,6 +32535,7 @@
    },
    {
     "as_of_et": "2026-11-09T09:15:00-05:00",
+    "catalyst_acquisition_target": false,
     "catalyst_forced_none": false,
     "catalyst_quality": 0,
     "catalyst_status": "no_news",
@@ -32571,10 +32588,11 @@
    },
    {
     "as_of_et": "2026-11-09T09:15:00-05:00",
+    "catalyst_acquisition_target": false,
     "catalyst_forced_none": true,
     "catalyst_quality": 0,
     "catalyst_status": "ok",
-    "catalyst_summary": "No news items in the last 48 hours; only Form 4 insider filing titles appear, no company catalyst.",
+    "catalyst_summary": "No news items in the last 48 hours; only Form 4 insider filings listed for Wearable Devices.",
     "catalyst_type": "none",
     "continuation_detail": "11-04 +0.0% 1.2x; 11-05 -9.7% 0.6x; 11-06 +0.0% 0.1x",
     "data_cutoff_et": "2026-11-09T08:59:00-05:00",
@@ -32623,6 +32641,7 @@
    },
    {
     "as_of_et": "2026-11-09T09:15:00-05:00",
+    "catalyst_acquisition_target": false,
     "catalyst_forced_none": false,
     "catalyst_quality": 0,
     "catalyst_status": "no_news",

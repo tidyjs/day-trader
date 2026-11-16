@@ -7,3 +7,10 @@ data/cache/
 .pythons/
 .uv-cache/
 .venv-py39/
+.wt/
+# editor swap/backup files and any .env variant (may hold secrets)
+*.swp
+*.swo
+*~
+.env.*
+!.env.example
