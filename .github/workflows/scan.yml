@@ -8,7 +8,13 @@ on:
     - cron: "15 13 * * 1-5"
     - cron: "15 14 * * 1-5"
     - cron: "30 15 * * 1-5"
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "normal = time-gated morning scan; test_message = write one test message; past_day = re-run the last completed trading day"
+        type: choice
+        options: [normal, test_message, past_day]
+        default: normal
 
 # One scan at a time: a delayed off-season run waits, then sees today's scan and exits.
 concurrency:
@@ -38,9 +44,10 @@ jobs:
           T212_API_KEY: ${{ secrets.T212_API_KEY }}
           T212_API_SECRET: ${{ secrets.T212_API_SECRET }}
           T212_BASE_URL: ${{ secrets.T212_BASE_URL }}
+          MODE: ${{ inputs.mode }}   # empty on scheduled runs -> normal
         run: |
           git pull --ff-only   # see a scan or alert committed by an earlier run
-          python -m src.run
+          python -m src.run --mode "${MODE:-normal}"
       - name: Commit data and messages back (also after a failure, so the alert is kept)
         if: always()
         run: |

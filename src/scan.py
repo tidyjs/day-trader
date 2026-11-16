@@ -177,6 +177,7 @@ def evaluate(inp: Dict[str, Any], cfg: Dict[str, Any]) -> Dict[str, Any]:
     cands.sort(key=lambda r: (-r["pm_dollar_volume"], r["symbol"]))
     status = lambda col: {k: sum(1 for r in cands if r[col] == k) for k in (R.PASS, R.FAIL, R.UNKNOWN) if any(r[col] == k for r in cands)}
     return {
+        "day": inp["day"],
         "summary": {
             "universe": len(inp["universe"]["symbols"]),
             "with_prior_close": len(inp["prior_close"]),

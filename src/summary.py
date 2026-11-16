@@ -5,7 +5,7 @@ shortlist and "No trade today" messages once M4 computes levels and sizing.
 from __future__ import annotations
 
 from datetime import datetime
-from typing import Any, Dict, List, Tuple
+from typing import Any, Dict, List, Optional, Tuple
 
 from src.scan import DISQUALIFIERS, MUST_PASS
 
@@ -20,14 +20,19 @@ def _fmt_int(x) -> str:
         return "-"
 
 
-def subject_and_body(out: Dict[str, Any], late: bool = False, halts_note: str = "") -> Tuple[str, str]:
+def subject_and_body(out: Dict[str, Any], late: bool = False, halts_note: str = "", rerun_of: Optional[str] = None) -> Tuple[str, str]:
     s = out["summary"]
     cands: List[dict] = out["candidates"]
     elig = [r for r in cands if r.get("eligible")]
-    day = cands[0]["date"] if cands else ""
+    day = cands[0]["date"] if cands else (rerun_of or out.get("day", ""))
     cutoff = cands[0]["data_cutoff_et"][11:16] if cands else ""
     subject = (f"Scan summary: {len(elig)} name(s) passed all rules" if elig else "Scan summary: no names passed all rules")
+    if rerun_of:
+        subject = f"Manual re-run for {rerun_of}: " + subject[len("Scan summary: "):]
     lines = []
+    if rerun_of:
+        lines += [f"**Manual re-run** (`mode: past_day`) of the {rerun_of} scan, as of 09:15 ET that day, run after the fact. "
+                  "It uses today's asset list, T212 list and float, so it is a check, not the original morning result.", ""]
     if late:
         lines += ["**Late start:** the workflow began after the 09:30 open. The scan still used data up to the normal cutoff.", ""]
     lines += [

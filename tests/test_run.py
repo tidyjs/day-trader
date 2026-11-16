@@ -123,3 +123,60 @@ def test_backstop_alerts_once_per_day(tmp_path, monkeypatch):
     assert run.main(args, scan_fn=lambda: None, trading_day_fn=lambda d: True) == 1
     assert run.main(args, scan_fn=lambda: None, trading_day_fn=lambda d: True) == 1
     assert len(list(tmp_path.glob("*/*/*_scanner_failed*.md"))) == 1
+
+
+# ------------------------------------------------------------ manual modes
+
+
+def test_mode_test_message_writes_only_a_test_message(tmp_path, monkeypatch):
+    from src import alerts
+    monkeypatch.setattr(alerts, "folder", lambda: tmp_path)
+    code = run.main(["--mode", "test_message", "--now", "2026-11-16T02:20"],
+                    scan_fn=lambda: pytest.fail("must not scan"), trading_day_fn=lambda d: pytest.fail("no calendar call"))
+    files = list(tmp_path.glob("2026/11/*.md"))
+    assert code == 0 and [f.name for f in files] == ["2026-11-16_0220_test.md"]
+    assert "No scan ran" in files[0].read_text() and (tmp_path / "LATEST.md").exists()
+
+
+@pytest.mark.parametrize("now,is_td,expect", [
+    ("2026-11-16T02:20", True, "2026-11-13"),   # Monday before the open -> Friday
+    ("2026-11-16T15:59", True, "2026-11-13"),   # Monday, market still open -> Friday
+    ("2026-11-16T16:00", True, "2026-11-16"),   # Monday after the close -> Monday
+    ("2026-11-15T12:00", False, "2026-11-13"),  # Sunday -> Friday
+])
+def test_past_trading_day(now, is_td, expect):
+    d = run.past_trading_day(datetime.fromisoformat(now).replace(tzinfo=ET), lambda d: is_td, lambda d: date(2026, 11, 13))
+    assert d.isoformat() == expect
+
+
+def test_mode_past_day_writes_rerun_summary(tmp_path, monkeypatch):
+    from src import alerts
+    monkeypatch.setattr(alerts, "folder", lambda: tmp_path)
+    seen = []
+    def past_scan(d):
+        seen.append(d)
+        return _out()
+    code = run.main(["--mode", "past_day", "--now", "2026-11-16T02:20"], trading_day_fn=lambda d: True,
+                    prior_day_fn=lambda d: date(2026, 11, 13), past_scan_fn=past_scan)
+    assert code == 0 and seen == [date(2026, 11, 13)]
+    t = next(tmp_path.glob("2026/11/2026-11-16_0220_scan_summary.md")).read_text()
+    assert t.startswith("# Manual re-run for 2026-11-13: 1 name(s) passed all rules") and "mode: past_day" in t
+
+
+def test_mode_past_day_failure_is_a_failure_alert(monkeypatch):
+    sent = []
+    monkeypatch.setattr(run.alerts, "send", lambda kind, subject, body, now: sent.append((kind, subject)))
+    def boom(d):
+        raise ConnectionError("Alpaca down")
+    code = run.main(["--mode", "past_day", "--now", "2026-11-16T02:20"], trading_day_fn=lambda d: True,
+                    prior_day_fn=lambda d: date(2026, 11, 13), past_scan_fn=boom)
+    assert code == 1 and sent[0][0] == "scanner_failed" and "past_day" in sent[0][1]
+
+
+def test_scheduled_runs_default_to_normal_mode():
+    import yaml
+    wf = yaml.safe_load(open(Path(__file__).resolve().parent.parent / ".github/workflows/scan.yml"))
+    on = wf.get("on", wf.get(True))  # YAML 1.1 reads the key `on` as True
+    assert on["workflow_dispatch"]["inputs"]["mode"]["options"] == ["normal", "test_message", "past_day"]
+    step = next(s for s in wf["jobs"]["scan"]["steps"] if s.get("name", "").startswith("Scan"))
+    assert '--mode "${MODE:-normal}"' in step["run"] and step["env"]["MODE"] == "${{ inputs.mode }}"

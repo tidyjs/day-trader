@@ -22,6 +22,8 @@ Usage:
   python -m src.run                         # what the workflow runs
   python -m src.run --now 2026-11-16T09:15  # pretend it's this ET time
   python -m src.run --force-error           # verify the failure alert path
+  python -m src.run --mode test_message     # manual: write one test message only
+  python -m src.run --mode past_day         # manual: re-run the last completed day
 """
 from __future__ import annotations
 
@@ -78,15 +80,68 @@ def halts_coverage_note() -> str:
     return f"halts feed: NYSE not seen yet ({len(weekday_days)} weekday(s) of fetches; markets so far: {rows[-1]['markets'] or 'none'})"
 
 
-def main(argv=None, scan_fn: Optional[Callable] = None, trading_day_fn: Optional[Callable[[date], bool]] = None) -> int:
+MARKET_CLOSE = time(16, 0)
+MODES = ("normal", "test_message", "past_day")
+
+
+def run_test_message(now: datetime) -> int:
+    """Manual mode: write one labelled test message. No scan, no API calls."""
+    alerts.send("test", f"Test message {now:%Y-%m-%d %H:%M} ET",
+                "This is a **test message** from a manual workflow run (`mode: test_message`).\n\n"
+                "It only checks that messages are written to `messages/` and committed back. No scan ran, nothing to act on.", now)
+    return 0
+
+
+def past_trading_day(now: datetime, trading_day_fn: Callable[[date], bool], prior_day_fn: Callable[[date], date]) -> date:
+    """The most recent completed trading day: today once the market has closed, else the one before."""
+    if trading_day_fn(now.date()) and now.timetz().replace(tzinfo=None) >= MARKET_CLOSE:
+        return now.date()
+    return prior_day_fn(now.date())
+
+
+def run_past_day(now: datetime, trading_day_fn, prior_day_fn, past_scan_fn: Optional[Callable[[date], dict]] = None) -> int:
+    """Manual mode: re-run the scan for the most recent completed trading day, as of
+    its own 09:15 ET cutoff, and write its summary marked as a manual re-run.
+    Overwrites that day's saved scan file (re-fetched data)."""
+    from src import scan, summary
+
+    try:
+        day = past_trading_day(now, trading_day_fn, prior_day_fn)
+        print(f"[run] manual past_day: re-running the scan for {day} as of 09:15 ET")
+        out = (past_scan_fn or (lambda d: scan.run(d, "09:15")))(day)
+        subject, body = summary.subject_and_body(out, halts_note=halts_coverage_note(), rerun_of=day.isoformat())
+        alerts.send("scan_summary", subject, body, now)
+        return 0
+    except Exception as e:
+        alerts.send("scanner_failed", f"Scanner failed {now:%Y-%m-%d}: manual past_day re-run",
+                    alerts.failure_body(e, "Manual past_day re-run failed."), now)
+        return 1
+
+
+def main(argv=None, scan_fn: Optional[Callable] = None, trading_day_fn: Optional[Callable[[date], bool]] = None,
+         prior_day_fn: Optional[Callable[[date], date]] = None, past_scan_fn: Optional[Callable[[date], dict]] = None) -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--now", help="pretend time, ET, e.g. 2026-11-16T09:15")
     ap.add_argument("--force-error", action="store_true", help="raise inside the scan to verify the failure alert")
+    ap.add_argument("--mode", choices=MODES, default="normal",
+                    help="normal: time-gated morning scan; test_message: write a test message only; "
+                         "past_day: re-run the last completed trading day's scan and write its summary")
     a = ap.parse_args(argv)
     load_env()
     cfg = load_config()
     now = datetime.fromisoformat(a.now).replace(tzinfo=ET) if a.now else datetime.now(tz=ET)
     from src import scan
+
+    if a.mode == "test_message":
+        return run_test_message(now)
+    if a.mode == "past_day":
+        if trading_day_fn is None or prior_day_fn is None:
+            from src.data.alpaca import Alpaca
+
+            alp = Alpaca()
+            trading_day_fn = trading_day_fn or (lambda d: scan.trading_days(alp, d)[0])
+            prior_day_fn = prior_day_fn or (lambda d: scan.trading_days(alp, d)[1])
+        return run_past_day(now, trading_day_fn, prior_day_fn, past_scan_fn)
 
     try:
         if trading_day_fn is None:
