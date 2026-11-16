@@ -40,7 +40,7 @@ from src.data import halts
 from src.data import t212 as t212mod
 from src.timeutil import ET, at_et, bar_complete_before, data_cutoff, parse_ts
 
-SCHEMA = 5
+SCHEMA = 6
 
 # Must-pass rules (SPEC 4.1), in cost order. Float is checked last (Yahoo).
 MUST_PASS = ["rule_price", "rule_gap", "rule_t212", "rule_pm_dollar_volume", "rule_pm_trades", "rule_continuation", "rule_prior_range"]
@@ -49,7 +49,7 @@ DISQUALIFIERS = ["dq_offering", "dq_reverse_split", "dq_promo_or_no_catalyst"]
 CSV_COLUMNS = [
     "date", "as_of_et", "data_cutoff_et", "symbol", "name",
     "prior_date", "prior_close", "price", "gap_pct",
-    "pm_high", "pm_volume", "pm_dollar_volume", "pm_trades", "pm_bars", "last_bar_et",
+    "pm_high", "pm_high_last60", "pm_volume", "pm_dollar_volume", "pm_trades", "pm_bars", "last_bar_et",
     # per-rule status: pass / fail / unknown / "" (not checked)
     *MUST_PASS, "rule_float",
     *DISQUALIFIERS,
@@ -58,7 +58,13 @@ CSV_COLUMNS = [
     "edgar_shares_out", "edgar_shares_asof", "yahoo_shares_out", "spread_pct",
     "catalyst_status", "catalyst_type", "catalyst_quality", "catalyst_summary", "catalyst_forced_none", "catalyst_acquisition_target",
     "news_used", "news_dropped_roundup", "prior_day_volume_multiple",
-    "exchange", "halt_status", "dq_reasons", "evidence", "eligible", "warnings", "t212_list", "scan_file",
+    "exchange", "halt_status", "dq_reasons", "evidence", "tier", "eligible",
+    # M4: score, provisional levels and sizing per risk profile (Tier A and B only)
+    "shortlist_rank", "score", "score_parts", "pm_high_used", "trigger", "stop", "stop_basis", "stop_pct", "risk_per_share",
+    "target_1_5r", "levels_status",
+    "shares_measure", "position_usd_measure", "risk_usd_measure", "size_note_measure",
+    "shares_challenge", "position_usd_challenge", "risk_usd_challenge", "size_note_challenge",
+    "warnings", "t212_list", "scan_file",
 ]
 
 
@@ -106,6 +112,9 @@ def premarket_stats(bars: List[dict], start: datetime, cutoff: datetime) -> Opti
     return {
         "price": use[-1]["c"],
         "pm_high": max(b["h"] for b in use),
+        # High of the 60 minutes ending at the cutoff (2026-11-16): shown next to the full-session high.
+        "pm_high_last60": max(b["h"] for b in use if parse_ts(b["t"]) >= cutoff - timedelta(minutes=60)) if any(
+            parse_ts(b["t"]) >= cutoff - timedelta(minutes=60) for b in use) else None,
         "pm_volume": sum(b["v"] for b in use),
         # math.fsum is correctly rounded on every Python version; plain sum() of
         # floats changed in 3.12 and broke byte-identical replays across versions.
@@ -174,6 +183,8 @@ def evaluate(inp: Dict[str, Any], cfg: Dict[str, Any]) -> Dict[str, Any]:
         )
     for r in cands:
         apply_filters(r, inp, cfg, warns)
+    from src import rank
+    rank.apply(cands, inp, cfg)
     cands.sort(key=lambda r: (-r["pm_dollar_volume"], r["symbol"]))
     status = lambda col: {k: sum(1 for r in cands if r[col] == k) for k in (R.PASS, R.FAIL, R.UNKNOWN) if any(r[col] == k for r in cands)}
     return {
@@ -187,16 +198,31 @@ def evaluate(inp: Dict[str, Any], cfg: Dict[str, Any]) -> Dict[str, Any]:
             "candidates": len(cands),
             "rules": {c: status(c) for c in MUST_PASS + ["rule_float"] + DISQUALIFIERS},
             "eligible": sum(1 for r in cands if r["eligible"]),
+            "tiers": {"A": sum(1 for r in cands if r["tier"] == "A"), "B": sum(1 for r in cands if r["tier"] == "B")},
             "warnings": warns,
         },
         "candidates": cands,
     }
 
 
+# Tier B (pre-declared 2026-11-16, SPEC 4.4b): the Tier A rules without
+# continuation and prior range. Do not change after seeing outcomes.
+TIER_B_BASE = ["rule_price", "rule_gap", "rule_t212", "rule_pm_dollar_volume", "rule_pm_trades"]
+
+
+def tier_b_ok(r: dict) -> bool:
+    return all(r[c] == R.PASS for c in TIER_B_BASE) and all(r[c] != R.FAIL for c in DISQUALIFIERS)
+
+
+def tier_a_ok(r: dict) -> bool:
+    """Every must-pass rule except float passes, and nothing disqualifies."""
+    return tier_b_ok(r) and all(r[c] == R.PASS for c in MUST_PASS)
+
+
 def passes_cheap(r: dict) -> bool:
-    """Every must-pass rule except float passes, and nothing disqualifies.
-    Only these names get SIP quotes and a Yahoo call."""
-    return all(r[c] == R.PASS for c in MUST_PASS) and all(r[c] != R.FAIL for c in DISQUALIFIERS)
+    """Who gets SIP quotes (spread) and a Yahoo call (float): every Tier B
+    name, so all rules run for Tier B too, not only Tier A survivors."""
+    return tier_b_ok(r)
 
 
 def apply_filters(r: dict, inp: Dict[str, Any], cfg: Dict[str, Any], scan_warns: List[str]) -> None:
@@ -247,6 +273,9 @@ def apply_filters(r: dict, inp: Dict[str, Any], cfg: Dict[str, Any], scan_warns:
         dq_reasons += dq + rs
         warns += maybe + rs_warn
         warns += R.deficiency(fl, day, ec["deficiency_lookback_days"])
+        am = R.amended_filings(fl, day, ec["deficiency_lookback_days"], ec.get("amended_min", 2))
+        if am:
+            warns.append(am)
         if ed.get("errors"):
             r["dq_offering"] = R.UNKNOWN if r["dq_offering"] == R.PASS else r["dq_offering"]
             warns += [f"EDGAR error: {e}" for e in ed["errors"]]
@@ -293,6 +322,8 @@ def apply_filters(r: dict, inp: Dict[str, Any], cfg: Dict[str, Any], scan_warns:
         y = inp.get("yahoo", {}).get(sym)
         r["rule_float"], r["float_shares"], r["float_source"], fw = R.float_rule(y, so, f)
         warns += fw
+        if r["float_shares"] and r["float_shares"] > f["float_max"]:
+            warns.append(f"above {f['float_max'] / 1e6:.0f}M float ({r['float_shares'] / 1e6:.1f}M, {r['float_source']})")
         if y and y.get("error"):
             warns.append(f"Yahoo error: {y['error']}")
         r["yahoo_shares_out"] = (y or {}).get("sharesOutstanding")
@@ -308,7 +339,8 @@ def apply_filters(r: dict, inp: Dict[str, Any], cfg: Dict[str, Any], scan_warns:
     r["dq_reasons"] = "; ".join(dq_reasons)
     # Audit trail: every offering / reverse-split match with its sentence and URL.
     r["evidence"] = " || ".join(f"[{e['rule']}:{e['result']}] {e['filing']} | \"{e['sentence']}\" | {e['url']}" for e in evidence)
-    r["eligible"] = passes_cheap(r) and r["rule_float"] in (R.PASS, R.UNKNOWN)
+    r["eligible"] = tier_a_ok(r) and r["rule_float"] in (R.PASS, R.UNKNOWN)   # Tier A
+    r["tier"] = "A" if r["eligible"] else ("B" if tier_b_ok(r) else "")
     r["warnings"] = "; ".join(scan_warns + warns)
 
 

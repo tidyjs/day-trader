@@ -25,8 +25,9 @@ All numbers below live in `config.yaml` and are assumptions to be tested, not kn
 | Account | $50, USD, T212, cash, no leverage, no options, fractional shares allowed |
 | Style | Day trade only, no overnight, no after-hours |
 | Price range | $1.00-$2.00 |
-| Risk per trade | 5% of equity |
-| Daily loss cap | 10% of equity, or 2 consecutive losses, whichever comes first |
+| Risk per trade | 5% of equity (profile `measure`) |
+| Daily loss cap | 10% of equity, or 2 consecutive losses, whichever comes first (profile `measure`) |
+| Risk profiles | Two named profiles in `config.yaml` (`risk_profiles`): `measure` (5% risk, 10% daily cap, position capped at equity) and `challenge` (blank, for the user to fill in). M4 sizing and M6 results report each profile separately. |
 | Max open positions | 1 |
 | Max names on shortlist | 5 |
 | Trader time zone | Africa/Johannesburg (no DST). All scheduling logic uses America/New_York. |
@@ -45,7 +46,7 @@ All numbers below live in `config.yaml` and are assumptions to be tested, not kn
 ### 4.2 Disqualifiers (any one removes the name)
 
 - Offering, ATM program, shelf takedown or prospectus filing in the last 5 days, when the evidence is clear: an EDGAR 424B*, S-1, S-3, F-1 or F-3 (or amendment) whose text names common stock, warrants, pre-funded warrants, units or an ATM; an 8-K with offering language; or an 8-K item 3.02 (unregistered sale of equity). A filing type alone is not enough (M0: `424B2` also covers debt notes). Ambiguous cases become the "possible offering" warning in 4.3, never a silent pass. The match must be wording about the company's **own** issuance ("we are offering", a securities purchase / underwriting / ATM agreement, pricing or closing of its offering), not a generic mention of listed common stock (M3: MRLN was wrongly disqualified on "Our shares of Common Stock are listed on Nasdaq"). A prospectus supplement that only attaches a periodic report is judged by the registration it supplements.
-- Reverse split announced or pending.
+- Reverse split pending: decided by the split's **effective date** against the scan day (2026-11-16): effective on or after the scan day disqualifies; effective before is "completed" (a warning if within the last 90 days); no effective date found is a "possible reverse split" warning, never a silent pass. Approval, meeting and record dates are not effective dates.
 - Classifier flags promo or pump-style news, or there is no verifiable catalyst and no prior-day volume surge.
 
 ### 4.3 Warnings (name stays on the list with a visible tag)
@@ -53,13 +54,25 @@ All numbers below live in `config.yaml` and are assumptions to be tested, not kn
 - Halted at scan time (show halt time). Source: Nasdaq Trader halts feed, saved in each scan. Feed failure, a historical run, or a listing market whose feed coverage is not confirmed (NYSE, ARCA, BATS until seen in the feed) gives "halt status unknown", never a clean pass.
 - Estimated spread over 3% (show the number).
 - Float figure missing or stale, including EDGAR shares outstanding that is missing or older than 120 days (common for foreign filers).
+- Above 50M float (shown with the float figure). Float is not part of the Tier B definition.
 - Yahoo and EDGAR shares outstanding differ by more than 25% (often a reverse split or new issuance since the last filing).
 - 8-K item 3.01 (listing-standards deficiency) in the last 90 days. Often comes before a reverse split.
 - Possible offering: an offering-type filing in the last 5 days that does not clearly meet the 4.2 disqualifier test.
 - Resale registration, supply overhang: selling holders may sell registered shares and the company receives no proceeds. A warning, not a disqualifier.
 - Classifier reports dilution language in recent news but no filing was found.
 - T212 list older than 1 day (show its age).
+- Recent amended filings (possible restatement): 2 or more 10-Q/A or 10-K/A in the last 90 days.
 - Merger target: "merger target: price likely pinned to deal terms" when the classifier's catalyst is a merger and the company is the one being acquired (`acquisition_target`). Warning only. **Pre-declared 2026-11-16**, before any forward scan; judge its effect only on scans from that date on.
+
+### 4.4b Tier B (pre-declared 2026-11-16)
+
+**Pre-declared on 2026-11-16, before any trade results existed. The definition must not change after seeing outcomes.**
+
+- **Tier A:** every 4.1 rule passes (float may be unknown, a warning) and no 4.2 disqualifier fails.
+- **Tier B:** the same price, gap, T212, premarket dollar-volume and trade-count rules and the same disqualifiers, **without** continuation and prior range. A name is Tier B if it qualifies for Tier B but not Tier A.
+- Every rule (offering, reverse split, classifier, spread, float) runs for every Tier B name, not only Tier A survivors. `candidates.csv` stores the tier from the 2026-11-16 scan on.
+- Messages list Tier A first, then Tier B, clearly labelled, up to `max_shortlist` (5) names in total. Within a tier, names are ordered by the 4.4 score.
+- M6 reports Tier A and Tier B results separately.
 
 ### 4.4a Candidate log (every name, every rule)
 
@@ -73,6 +86,9 @@ Fixed, documented scoring formula over: gap size, prior-day volume multiple, cat
 
 - No premarket buying. Entries from the open until 12:30 ET.
 - **Trigger:** price breaks above the higher of the opening 5-minute high and the premarket high. Limit orders only. Skip if price is already more than 3% above the trigger.
+- **Reference-trade trigger (pre-declared 2026-11-16, before any results existed):** M6's background reference trade uses the higher of the **high of the last 60 minutes before the open (08:30-09:29 ET)** and the real opening 5-minute high, instead of the full-session premarket high. Reason: an early-morning spike makes the full-session high irrelevant hours later (CRMN 2026-11-12 traded 10.84 at 04:41 ET on 6,247 trades in one minute and was 1.71 at 08:58). The live message shows both the full-session premarket high and the high of the 60 minutes ending at the 08:59 cutoff.
+- **Levels never gate the list (2026-11-16):** names are ranked by score only within each tier. Trigger, stop and share counts are used only by M6's reference trade and never appear in messages.
+- **Provisional levels at the 09:15 scan (M4, 2026-11-16):** the opening 5-minute range does not exist until 09:35, so the scan stores provisional levels (in `candidates.csv` only): trigger = high of the last 60 premarket minutes + 1 tick; stop = 1 tick under the most recent premarket higher low (fallback: lowest low of the last 30 premarket minutes); 1.5R target and share count from those. The message tells the trader to recompute at 09:35 with the opening range. M6 simulates with the real opening range.
 - **Stop:** under the opening-range low or the most recent higher low, placed as a real stop order immediately after fill. Skip the trade if the stop is more than 12% below entry.
 - **Size:** `shares = (equity * 0.05) / (entry - stop)`, capped so position value never exceeds equity.
 - **Exit:** sell half at 1.5R and move the stop to breakeven. Trail the rest under higher 5-minute lows.
@@ -100,7 +116,9 @@ repo/
     candidates.csv            every candidate with per-rule pass/fail (4.4a)
     t212/YYYY-MM-DD.json      daily T212 instrument snapshot used by the scan
     trades_sim.csv            every simulated trade
-    trades_actual.csv         trades the human reports
+    trades_actual.csv         the human's decisions: date, ticker, tier, decision (traded/skipped),
+                              gut_confidence (1-5), reason, entry, stop, shares, exit, exit_reason, pnl
+                              (append with `python -m src.log_trade`)
   tests/
   .github/workflows/scan.yml
 ```
@@ -136,6 +154,8 @@ Output: strict JSON, no prose.
 ```
 
 `quality` is 0-5. Validate the JSON, retry once, and on failure mark the name "classifier unavailable" (a warning, not a pass).
+
+**Three runs (approved 2026-11-16):** each name is classified 3 times and all three outputs are saved. A promo or no-catalyst disqualification needs at least 2 of 3 runs agreeing; a single dilution flag is enough for the warning; type is the majority (no majority = "unclear", which disqualifies nothing); quality is the median; fewer than 2 valid runs = "classifier unavailable". About $0.0037 per scan day.
 
 M3 must include a fixed test set of headlines where the named company differs from the gapper (for example a roundup about another company's merger tagged with the gapper's ticker). The expected label is "none" with quality 0.
 
@@ -186,7 +206,7 @@ GitHub Actions on a private repo. Cron is UTC only, so schedule two entries (one
 **M1 Scanner.** Universe, prior close, gap %, T212 filter, and the candidate log for those rules. Acceptance: reproducible on a saved day, no look-ahead.
 **M2 Filters and flags.** All of 4.1-4.3 with unit tests using fixture data. Yahoo (and SIP quotes) only for names that pass every cheaper rule; a pass/fail column per rule in `candidates.csv`. Status: built 2026-11-15 (`docs/m2.md`); halt warning waits on approval of a halt-data source.
 **M3 Classifier.** Contract in section 6, with validation and retry. Status: built 2026-11-15 (`docs/m3.md`); test set 14/14 including 5 wrong-company cases.
-**M4 Ranking and levels.** Deterministic, unit-tested, including sizing edge cases (stop too wide, position cap).
+**M4 Ranking and levels.** Deterministic, unit-tested, including sizing edge cases (stop too wide, position cap). Status: built 2026-11-16 (`docs/m4.md`), waiting on review before M5.
 **M5 Email.** All four email types, tested with a dry-run mode.
 **M6 Replay.** Both modes, unit-tested with synthetic bars including the stop-and-target-in-one-bar case.
 **M7 Scheduling.** DST-safe gating, failure alert verified by forcing an error. Status: `src/run.py` and `.github/workflows/scan.yml` built 2026-11-16 (`docs/m7.md`); gating tested on both sides of DST; forced-error alert verified with the `record` sender. Email delivery waits on M5 (provider choice); the workflow is not pushed until the repo is confirmed private.

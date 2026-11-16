@@ -9,7 +9,8 @@ import pytest
 from src import catalyst as C
 from src.config import load_config
 
-CFG = load_config()["catalyst"]
+CFG = {**load_config()["catalyst"], "runs": 1}   # single-run tests; 3-run voting is tested below
+CFG3 = {**load_config()["catalyst"], "runs": 3}
 CASES = json.loads(C.CASES.read_text())
 
 
@@ -189,3 +190,54 @@ def test_acquisition_target_is_required_and_cleared_when_forced_none():
     case = next(c for c in CASES if c["id"] == "wrong_co_ymat_greenfire_merger")
     rec = C.classify(FakeClient({**GOOD, "catalyst_type": "merger", "acquisition_target": True}), case["ticker"], case["company"], case["news"], [], CFG)
     assert rec["forced_none"] and rec["output"]["acquisition_target"] is False
+
+
+# ------------------------------------------------------------ 3 runs, 2-of-3 voting (approved 2026-11-16)
+
+
+def test_config_uses_three_runs():
+    assert load_config()["catalyst"]["runs"] == 3
+
+
+def _three(*outs):
+    return C.classify(FakeClient(*outs), "ABCD", "Abcd Corp", [item("Abcd signs deal")], [], CFG3)
+
+
+def test_all_three_runs_are_saved():
+    rec = _three(GOOD, GOOD, GOOD)
+    assert len(rec["runs"]) == 3 and all(r["output"] == GOOD for r in rec["runs"]) and rec["votes"]["valid_runs"] == 3
+
+
+def test_promo_needs_two_of_three():
+    promo = {**GOOD, "promo_or_pump_flag": True}
+    assert not _three(promo, GOOD, GOOD)["output"]["promo_or_pump_flag"]
+    rec = _three(promo, promo, GOOD)
+    assert rec["output"]["promo_or_pump_flag"] and rec["votes"]["promo"] == 2
+    assert _three({**GOOD, "catalyst_type": "promo"}, promo, GOOD)["output"]["promo_or_pump_flag"]  # type promo counts
+
+
+def test_none_needs_two_of_three_and_disagreement_is_unclear():
+    none = {**GOOD, "catalyst_type": "none", "quality": 0}
+    assert _three(none, GOOD, GOOD)["output"]["catalyst_type"] == "contract"
+    assert _three(none, none, GOOD)["output"]["catalyst_type"] == "none"
+    three_way = _three(none, GOOD, {**GOOD, "catalyst_type": "earnings"})
+    assert three_way["output"]["catalyst_type"] == "unclear"
+
+
+def test_any_single_dilution_flag_counts():
+    assert _three({**GOOD, "dilution_language": True}, GOOD, GOOD)["output"]["dilution_language"]
+
+
+def test_quality_is_the_median_and_target_needs_two():
+    m = {**GOOD, "catalyst_type": "merger", "acquisition_target": True}
+    rec = _three({**m, "quality": 5}, {**m, "quality": 2}, {**GOOD, "catalyst_type": "merger", "quality": 4})
+    assert rec["output"]["quality"] == 4 and rec["output"]["acquisition_target"]
+    assert not _three(m, {**m, "acquisition_target": False}, {**GOOD, "catalyst_type": "merger"})["output"]["acquisition_target"]
+
+
+def test_fewer_than_two_valid_runs_is_unavailable():
+    bad = {**GOOD, "quality": 9}
+    rec = _three(GOOD, bad, bad, bad, bad)  # run 1 ok; runs 2 and 3 fail both attempts
+    assert rec["status"] == "unavailable" and rec["votes"]["valid_runs"] == 1
+    ok = _three(GOOD, bad, bad, GOOD)        # run 2 fails both attempts, run 3 ok
+    assert ok["status"] == "ok" and ok["votes"]["valid_runs"] == 2

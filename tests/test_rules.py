@@ -249,12 +249,17 @@ def test_offering_older_than_lookback_ignored():
 # ------------------------------------------------------------ reverse split and 3.01
 
 
-# Real excerpts from the M2 run (2026-11-09..13), trimmed.
+# Real excerpts (2026-11-09..13), classified by EFFECTIVE date vs the scan day (rule of 2026-11-16).
+# expect: fail = pending (disqualify), completed = done (warning only if within 90 days),
+#         possible = no effective date (warning), ignore = boilerplate.
 RS_CASES = [
-    ("YMAT", "6-K", "2026-10-30", "(c) all fractional entitlements to the issued Consolidated Class A Ordinary Shares resulting from such share consolidation will not be issued to the shareholders.", "fail"),
-    ("EZGO", "6-K", "2026-11-05", "On August 6, 2026, the board of directors approved a reverse share split of the Company's ordinary shares at a ratio of 1-for-3.", "fail"),
-    ("AMIX", "8-K", "2026-11-03", "3. To approve an amendment to grant our Board of Directors authority to affect a reverse stock split of the outstanding shares of the Company's common stock, at a ratio of between 1-for-2 to 1-for-25.", "fail"),
-    ("WORX", "8-K", "2026-10-05", "each of which the Company satisfied, including effecting a 1-for-12 reverse stock split on August 3, 2026, and evidencing a closing bid price at or above $1.00.", "completed"),
+    ("YMAT_1for10", "6-K", "2026-10-30", "(c) all fractional entitlements to the issued Consolidated Class A Ordinary Shares resulting from such share consolidation will not be issued to the shareholders.", "possible"),
+    ("YMAT_1for5_approval", "6-K", "2026-10-23", "All the outstanding number of shares here have not considered the share consolidation of 1-for-5 shares as approved in annual general meeting held on June 8, 2026.", "possible"),
+    ("EZGO_board_approval", "6-K", "2026-11-05", "On August 6, 2026, the board of directors approved a reverse share split of the Company's ordinary shares at a ratio of 1-for-3.", "possible"),
+    ("EZGO_post_split", "6-K", "2026-11-05", "The Company's ordinary shares began trading on a post-split basis on the Nasdaq Stock Market on November 5, 2026, following the reverse share split.", "completed_recent"),
+    ("EZGO_real_two_sentences", "6-K", "2026-11-05", "On August 6, 2026, the board of directors of EZGO Technologies Ltd. approved a reverse share split of the Company's ordinary shares at a ratio of 1-for-3 (the \u201cReverse Share Split\u201d), such that every three (3) issued ordinary shares are combined into one (1) issued ordinary share. The Company's ordinary shares began trading on a post-split basis on the Nasdaq Stock Market on November 5, 2026, under the current symbol \u201cEZGO\u201d.", "completed_recent"),
+    ("AMIX", "8-K", "2026-11-03", "3. To approve an amendment to grant our Board of Directors authority to affect a reverse stock split of the outstanding shares of the Company's common stock, at a ratio of between 1-for-2 to 1-for-25.", "possible"),
+    ("WORX", "8-K", "2026-10-05", "each of which the Company satisfied, including effecting a 1-for-12 reverse stock split on August 3, 2026, and evidencing a closing bid price at or above $1.00.", "completed_old"),
     ("HTOO", "6-K", "2026-09-25", "calculated by dividing $2,000,000 by a price per share of $4.00, subject to adjustment for any share consolidation, share split, share dividend, or any similar event.", "ignore"),
     ("CABR", "8-K", "2026-10-22", "The floor is adjusted proportionately only for subdivisions, combinations, including reverse stock splits, and reclassifications specified in the PIPE Warrants.", "ignore"),
     ("XBIO", "8-K", "2026-11-13", "(xiv) risks related to compliance with Nasdaq listing requirements and the potential need for the combined company to effect a reverse stock split in order to satisfy Nasdaq listing requirements;", "ignore"),
@@ -263,18 +268,34 @@ RS_CASES = [
 
 @pytest.mark.parametrize("sym,form,filed,text,expect", RS_CASES, ids=[c[0] for c in RS_CASES])
 def test_reverse_split_real_wording(sym, form, filed, text, expect):
-    st, dq, warn, ev = R.reverse_split([filing(form, filed, hits=[text])], DAY, 60)
+    st, dq, warn, ev = R.reverse_split([filing(form, filed, hits=[text])], DAY, 60 if expect != "completed_old" else 120)
     if expect == "fail":
         assert st == "fail" and dq
-    elif expect == "completed":
-        assert st == "pass" and "completed" in warn[0]
+    elif expect == "completed_recent":
+        assert st == "pass" and ev[0]["result"] == "completed" and "completed 2026-11-05 (8 days ago" in warn[0]
+    elif expect == "completed_old":
+        assert st == "pass" and ev[0]["result"] == "completed" and warn == []  # Aug 3 is more than 90 days before 11-13
+    elif expect == "possible":
+        assert st == "pass" and ev[0]["result"] == "possible" and "no effective date found" in warn[0]
     else:
-        assert (st, dq, warn) == ("pass", [], [])
+        assert (st, dq, warn, ev) == ("pass", [], [], [])
+
+
+def test_approval_and_meeting_dates_are_not_effective_dates():
+    assert R.effective_dates("the share consolidation as approved in annual general meeting held on June 8, 2026") == []
+    assert R.effective_dates("On August 6, 2026, the board approved a reverse share split") == []
+    assert R.effective_dates("effecting a 1-for-12 reverse stock split on August 3, 2026") == [date(2026, 8, 3)]
+    assert R.effective_dates("will become effective at 12:01 a.m. on November 20, 2026") == [date(2026, 11, 20)]
+
+
+def test_split_effective_on_scan_day_is_pending():
+    f = filing("8-K", "2026-11-12", hits=["The reverse stock split will become effective on November 13, 2026."])
+    assert R.reverse_split([f], DAY, 60)[0] == "fail"
 
 
 def test_reverse_split_unclear_mention_is_a_warning():
     st, dq, warn, ev = R.reverse_split([filing("8-K", "2026-11-01", hits=["The company discussed a reverse stock split."])], DAY, 60)
-    assert st == "pass" and "possible reverse split" in warn[0]
+    assert st == "pass" and "possible reverse split" in warn[0] and "no effective date" in warn[0]
 
 
 def test_reverse_split_with_future_effective_date_is_pending():
@@ -283,7 +304,7 @@ def test_reverse_split_with_future_effective_date_is_pending():
 
 
 def test_reverse_split_outside_lookback_ignored():
-    f = filing("8-K", "2026-09-01", hits=["approved a 1-for-10 reverse stock split"])
+    f = filing("8-K", "2026-09-01", hits=["the 1-for-10 reverse stock split will become effective on December 1, 2026"])
     assert R.reverse_split([f], DAY, 60)[0] == "pass"
 
 
@@ -349,3 +370,11 @@ def test_selling_holder_sale_methods_are_not_primary_wording():
     f["base"]["text"]["cover"] = cover
     st, dq, warn, _ = R.offering([f], DAY, 5)
     assert st == "pass" and warn[0].startswith("resale registration, supply overhang")
+
+
+def test_amended_filings_warning():
+    fl = [filing("10-Q/A", "2026-11-10", text=False), filing("10-K/A", "2026-11-10", text=False), filing("10-Q/A", "2026-06-01", text=False)]
+    w = R.amended_filings(fl, DAY, 90, 2)
+    assert w and w.startswith("recent amended filings (possible restatement): 2 in 90 days")
+    assert R.amended_filings(fl[:1], DAY, 90, 2) is None
+    assert R.amended_filings([filing("10-Q", "2026-11-10", text=False)] * 3, DAY, 90, 2) is None

@@ -47,7 +47,7 @@ def make_inputs(prior_close: dict, bars: dict, t212=("GAPR",), names=None, as_of
     syms = sorted(set(prior_close) | set(bars))
     return copy.deepcopy(
         {
-            "schema": 5,
+            "schema": 6,
             "day": DAY,
             "as_of_et": as_of_dt.isoformat(),
             "data_cutoff_et": cutoff.isoformat(),

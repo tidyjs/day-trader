@@ -190,30 +190,76 @@ def call_model(client, prompt: str, cfg: dict) -> Tuple[Optional[dict], dict]:
         return None, meta
 
 
-def classify(client, ticker: str, company: str, news: List[dict], filings: List[dict], cfg: dict) -> dict:
-    """Full SPEC 6 pipeline for one company. Never raises."""
-    items, dropped = prepare_items(news, cfg["max_symbols_per_item"], cfg["max_items"])
-    about = [n for n in items if mentions_company(n, ticker, company)]
-    rec: Dict[str, Any] = {"model": cfg["model"], "items_used": len(items), "items_dropped_roundup": dropped,
-                           "items_mentioning_company": len(about), "attempts": [], "forced_none": False}
-    if not items and not filings:
-        rec.update(status="no_news", output=dict(NONE_RESULT))
-        return rec
-    prompt = build_prompt(ticker, company, items, filings, cfg["summary_chars"])
-    out = None
-    for _ in range(2):  # validate, retry once
+def one_run(client, prompt: str, cfg: dict) -> Tuple[Optional[dict], List[dict]]:
+    """One classification: validated JSON, retried once. (output or None, attempts)."""
+    attempts = []
+    for _ in range(2):
         parsed, meta = call_model(client, prompt, cfg)
         ok = valid(parsed)
         meta["valid"] = ok
         if not ok and parsed is not None:
             meta["invalid_output"] = parsed
-        rec["attempts"].append(meta)
+        attempts.append(meta)
         if ok:
-            out = parsed
-            break
-    if out is None:
-        rec.update(status="unavailable", output=None)
+            return parsed, attempts
+    return None, attempts
+
+
+def aggregate(outs: List[dict]) -> Tuple[dict, dict]:
+    """Combine valid runs (approved 2026-11-16):
+      - promo disqualifies only if >= 2 runs flag promo (flag or type "promo")
+      - type is the majority (>= 2 runs); no majority -> "unclear", which is
+        neither a catalyst nor "none", so it cannot trigger the no-catalyst rule
+      - any single dilution flag counts (it is a warning)
+      - quality: median; acquisition_target: >= 2 runs say merger + target
+    Returns (combined output, vote counts)."""
+    from collections import Counter
+    import statistics
+
+    n = len(outs)
+    types = Counter(o["catalyst_type"] for o in outs)
+    top, top_n = types.most_common(1)[0]
+    ctype = top if top_n >= 2 else "unclear"
+    promo_votes = sum(1 for o in outs if o["promo_or_pump_flag"] or o["catalyst_type"] == "promo")
+    target_votes = sum(1 for o in outs if o["catalyst_type"] == "merger" and o["acquisition_target"])
+    dil_votes = sum(1 for o in outs if o["dilution_language"])
+    lead = next((o for o in outs if o["catalyst_type"] == ctype), outs[0])
+    out = {
+        "catalyst_type": ctype,
+        "quality": int(statistics.median_low(o["quality"] for o in outs)),
+        "promo_or_pump_flag": promo_votes >= 2,
+        "dilution_language": dil_votes >= 1,
+        "acquisition_target": target_votes >= 2,
+        "one_line_summary": lead["one_line_summary"],
+    }
+    votes = {"valid_runs": n, "types": dict(types), "promo": promo_votes, "none": types.get("none", 0),
+             "dilution": dil_votes, "merger_target": target_votes}
+    return out, votes
+
+
+def classify(client, ticker: str, company: str, news: List[dict], filings: List[dict], cfg: dict) -> dict:
+    """Full SPEC 6 pipeline for one company: `runs` independent classifications
+    (3 since 2026-11-16), all saved, combined by `aggregate`. Never raises."""
+    items, dropped = prepare_items(news, cfg["max_symbols_per_item"], cfg["max_items"])
+    about = [n for n in items if mentions_company(n, ticker, company)]
+    rec: Dict[str, Any] = {"model": cfg["model"], "items_used": len(items), "items_dropped_roundup": dropped,
+                           "items_mentioning_company": len(about), "attempts": [], "runs": [], "forced_none": False}
+    if not items and not filings:
+        rec.update(status="no_news", output=dict(NONE_RESULT))
         return rec
+    prompt = build_prompt(ticker, company, items, filings, cfg["summary_chars"])
+    n_runs = int(cfg.get("runs", 1))
+    for _ in range(n_runs):
+        out, attempts = one_run(client, prompt, cfg)
+        rec["runs"].append({"output": out, "attempts": attempts})
+        rec["attempts"] += attempts  # flat list, for token accounting
+    outs = [r["output"] for r in rec["runs"] if r["output"] is not None]
+    need = 1 if n_runs == 1 else 2
+    if len(outs) < need:
+        rec.update(status="unavailable", output=None, votes={"valid_runs": len(outs)})
+        return rec
+    out, votes = aggregate(outs) if n_runs > 1 else (dict(outs[0]), {"valid_runs": 1})
+    rec["votes"] = votes
     rec["model_output"] = dict(out)
     if not about:
         # No remaining item mentions this company: whatever the model said, no catalyst.

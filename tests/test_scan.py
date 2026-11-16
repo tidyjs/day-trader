@@ -407,3 +407,34 @@ def test_merger_target_warning_only_for_target():
     assert "merger target: price likely pinned to deal terms" in r["warnings"] and r["eligible"]  # warning only
     assert "merger target" not in row(catalyst_type="merger", acquisition_target=False)["warnings"]
     assert "merger target" not in row(catalyst_type="earnings", acquisition_target=True)["warnings"]
+
+
+def test_promo_rule_reports_votes_and_unclear_is_not_a_disqualifier():
+    cat = dict(CAT_OK, votes={"valid_runs": 3, "promo": 2, "none": 0, "types": {"promo": 2, "other": 1}},
+               output={**CAT_OK["output"], "catalyst_type": "promo", "promo_or_pump_flag": True})
+    inp = make_inputs({"GAPR": 1.0}, {"GAPR": _liquid()}, history={"GAPR": _hist_pass()}, edgar={"GAPR": _edgar_clean()}, catalyst={"GAPR": cat})
+    r = cands(inp)["GAPR"]
+    assert r["dq_promo_or_no_catalyst"] == "fail" and "(2/3 runs)" in r["dq_reasons"]
+    flat = flat_history(25)
+    flat[-1] = daily("2026-11-12", 1.0, h=1.0, l=0.8)
+    unclear = dict(CAT_OK, votes={"valid_runs": 3, "promo": 0, "none": 1, "types": {"none": 1, "contract": 1, "other": 1}},
+                   output={**CAT_OK["output"], "catalyst_type": "unclear"})
+    inp = make_inputs({"GAPR": 1.0}, {"GAPR": _liquid()}, history={"GAPR": flat}, edgar={"GAPR": _edgar_clean()}, catalyst={"GAPR": unclear})
+    r = cands(inp)["GAPR"]
+    assert r["dq_promo_or_no_catalyst"] == "pass" and "classifier runs disagree" in r["warnings"]
+
+
+def test_last60_high_is_recorded_next_to_full_session_high():
+    bars = [bar("04:41", 1.9, h=9.0), bar("08:10", 1.2, h=1.30), bar("08:40", 1.25)]
+    r = cands(make_inputs({"GAPR": 1.0}, {"GAPR": bars}))["GAPR"]
+    assert r["pm_high"] == 9.0 and r["pm_high_last60"] == 1.30
+
+
+def test_above_float_cap_warning_and_float_logged_for_tier_b():
+    flat = flat_history(25)
+    flat[-1] = daily("2026-11-12", 1.0, v=5_000_000, h=1.0, l=0.5)  # fails prior range -> Tier B
+    inp = make_inputs({"GAPR": 1.0}, {"GAPR": _liquid()}, history={"GAPR": flat}, edgar={"GAPR": _edgar_clean()}, catalyst={"GAPR": CAT_OK},
+                      yahoo={"GAPR": {"fetched_at": "2026-11-13T09:15:00-05:00", "floatShares": 92e6, "sharesOutstanding": 95e6}})
+    r = cands(inp)["GAPR"]
+    assert r["tier"] == "B" and r["rule_float"] == "fail" and r["float_shares"] == 92e6
+    assert "above 50M float (92.0M, yahoo)" in r["warnings"]

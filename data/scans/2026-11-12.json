@@ -6,7 +6,19 @@
     "attempts": [
      {
       "input_tokens": 1407,
-      "output_tokens": 104,
+      "output_tokens": 101,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
+     {
+      "input_tokens": 1407,
+      "output_tokens": 101,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
+     {
+      "input_tokens": 1407,
+      "output_tokens": 101,
       "stop_reason": "end_turn",
       "valid": true
      }
@@ -20,7 +32,7 @@
      "acquisition_target": false,
      "catalyst_type": "other",
      "dilution_language": false,
-     "one_line_summary": "Skyline Builders changes NASDAQ ticker from KAZR to CRMN effective November 12; no operational catalyst.",
+     "one_line_summary": "Skyline Builders announces Nasdaq ticker change from KAZR to CRMN effective November 12, 2026.",
      "promo_or_pump_flag": false,
      "quality": 1
     },
@@ -28,11 +40,77 @@
      "acquisition_target": false,
      "catalyst_type": "other",
      "dilution_language": false,
-     "one_line_summary": "Skyline Builders changes NASDAQ ticker from KAZR to CRMN effective November 12; no operational catalyst.",
+     "one_line_summary": "Skyline Builders announces Nasdaq ticker change from KAZR to CRMN effective November 12, 2026.",
      "promo_or_pump_flag": false,
      "quality": 1
     },
-    "status": "ok"
+    "runs": [
+     {
+      "attempts": [
+       {
+        "input_tokens": 1407,
+        "output_tokens": 101,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "other",
+       "dilution_language": false,
+       "one_line_summary": "Skyline Builders announces Nasdaq ticker change from KAZR to CRMN effective November 12, 2026.",
+       "promo_or_pump_flag": false,
+       "quality": 1
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1407,
+        "output_tokens": 101,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "other",
+       "dilution_language": false,
+       "one_line_summary": "Skyline Builders changes NASDAQ ticker from KAZR to CRMN effective November 12; no operational news.",
+       "promo_or_pump_flag": false,
+       "quality": 1
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1407,
+        "output_tokens": 101,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "other",
+       "dilution_language": false,
+       "one_line_summary": "Skyline Builders changes NASDAQ ticker from KAZR to CRMN effective November 12; no operational news.",
+       "promo_or_pump_flag": false,
+       "quality": 1
+      }
+     }
+    ],
+    "status": "ok",
+    "votes": {
+     "dilution": 0,
+     "merger_target": 0,
+     "none": 0,
+     "promo": 0,
+     "types": {
+      "other": 3
+     },
+     "valid_runs": 3
+    }
    },
    "GITS": {
     "attempts": [],
@@ -49,13 +127,26 @@
      "promo_or_pump_flag": false,
      "quality": 0
     },
+    "runs": [],
     "status": "no_news"
    },
    "ICMB": {
     "attempts": [
      {
       "input_tokens": 1712,
-      "output_tokens": 103,
+      "output_tokens": 104,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
+     {
+      "input_tokens": 1712,
+      "output_tokens": 107,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
+     {
+      "input_tokens": 1712,
+      "output_tokens": 104,
       "stop_reason": "end_turn",
       "valid": true
      }
@@ -69,7 +160,7 @@
      "acquisition_target": true,
      "catalyst_type": "merger",
      "dilution_language": false,
-     "one_line_summary": "ICMB agreed to merge into BCP Investment, subject to ICMB stockholder approval; shares surged after hours.",
+     "one_line_summary": "ICMB agreed to merge into BCP Investment, subject to ICMB stockholder approval; shares jumped after hours.",
      "promo_or_pump_flag": false,
      "quality": 5
     },
@@ -77,14 +168,92 @@
      "acquisition_target": true,
      "catalyst_type": "merger",
      "dilution_language": false,
-     "one_line_summary": "ICMB agreed to merge into BCP Investment, subject to ICMB stockholder approval; shares surged after hours.",
+     "one_line_summary": "ICMB agreed to merge into BCP Investment, subject to ICMB stockholder approval; shares jumped after hours.",
      "promo_or_pump_flag": false,
      "quality": 5
     },
-    "status": "ok"
+    "runs": [
+     {
+      "attempts": [
+       {
+        "input_tokens": 1712,
+        "output_tokens": 104,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": true,
+       "catalyst_type": "merger",
+       "dilution_language": false,
+       "one_line_summary": "ICMB agreed to merge into BCP Investment, subject to ICMB stockholder approval; shares jumped after hours.",
+       "promo_or_pump_flag": false,
+       "quality": 5
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1712,
+        "output_tokens": 107,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": true,
+       "catalyst_type": "merger",
+       "dilution_language": false,
+       "one_line_summary": "ICMB agreed to merge into BCP Investment, subject to ICMB stockholder approval, with shareholders receiving a premium.",
+       "promo_or_pump_flag": false,
+       "quality": 5
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1712,
+        "output_tokens": 104,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": true,
+       "catalyst_type": "merger",
+       "dilution_language": false,
+       "one_line_summary": "ICMB agreed to merge into BCP Investment, subject to ICMB stockholder approval; shares jumped after hours.",
+       "promo_or_pump_flag": false,
+       "quality": 5
+      }
+     }
+    ],
+    "status": "ok",
+    "votes": {
+     "dilution": 0,
+     "merger_target": 3,
+     "none": 0,
+     "promo": 0,
+     "types": {
+      "merger": 3
+     },
+     "valid_runs": 3
+    }
    },
    "MSC": {
     "attempts": [
+     {
+      "input_tokens": 1448,
+      "output_tokens": 91,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
+     {
+      "input_tokens": 1448,
+      "output_tokens": 91,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
      {
       "input_tokens": 1448,
       "output_tokens": 92,
@@ -101,7 +270,7 @@
      "acquisition_target": false,
      "catalyst_type": "none",
      "dilution_language": false,
-     "one_line_summary": "No news about Studio City International; the only item concerns Millennium Silver Corp, a different company.",
+     "one_line_summary": "No news about Studio City; the only item concerns Millennium Silver Corp, a different company.",
      "promo_or_pump_flag": false,
      "quality": 0
     },
@@ -109,11 +278,77 @@
      "acquisition_target": false,
      "catalyst_type": "none",
      "dilution_language": false,
-     "one_line_summary": "No news about Studio City International; the only item concerns Millennium Silver Corp, a different company.",
+     "one_line_summary": "No news about Studio City; the only item concerns Millennium Silver Corp, a different company.",
      "promo_or_pump_flag": false,
      "quality": 0
     },
-    "status": "ok"
+    "runs": [
+     {
+      "attempts": [
+       {
+        "input_tokens": 1448,
+        "output_tokens": 91,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "none",
+       "dilution_language": false,
+       "one_line_summary": "No news about Studio City; the only item concerns Millennium Silver Corp, a different company.",
+       "promo_or_pump_flag": false,
+       "quality": 0
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1448,
+        "output_tokens": 91,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "none",
+       "dilution_language": false,
+       "one_line_summary": "No news about Studio City; the only item concerns Millennium Silver Corp., a different company.",
+       "promo_or_pump_flag": false,
+       "quality": 0
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1448,
+        "output_tokens": 92,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "none",
+       "dilution_language": false,
+       "one_line_summary": "No news about Studio City International; the only item concerns Millennium Silver Corp, a different company.",
+       "promo_or_pump_flag": false,
+       "quality": 0
+      }
+     }
+    ],
+    "status": "ok",
+    "votes": {
+     "dilution": 0,
+     "merger_target": 0,
+     "none": 3,
+     "promo": 0,
+     "types": {
+      "none": 3
+     },
+     "valid_runs": 3
+    }
    },
    "YXT": {
     "attempts": [],
@@ -130,6 +365,7 @@
      "promo_or_pump_flag": false,
      "quality": 0
     },
+    "runs": [],
     "status": "no_news"
    }
   },
@@ -21316,6 +21552,803 @@
   },
   "prior_day": "2026-11-11",
   "quotes": {
+   "CRMN": [
+    {
+     "ap": 1.68,
+     "bp": 1.67,
+     "t": "2026-11-12T13:57:04.328951416Z"
+    },
+    {
+     "ap": 1.68,
+     "bp": 1.67,
+     "t": "2026-11-12T13:57:04.417512227Z"
+    },
+    {
+     "ap": 1.7,
+     "bp": 1.67,
+     "t": "2026-11-12T13:57:06.943480025Z"
+    },
+    {
+     "ap": 1.71,
+     "bp": 1.67,
+     "t": "2026-11-12T13:57:06.943572741Z"
+    },
+    {
+     "ap": 1.71,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:06.94560999Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:06.945661073Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.67,
+     "t": "2026-11-12T13:57:06.955803167Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:06.975583249Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:07.703044432Z"
+    },
+    {
+     "ap": 1.71,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:07.703608907Z"
+    },
+    {
+     "ap": 1.71,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:07.976495081Z"
+    },
+    {
+     "ap": 1.7,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:09.002438069Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:09.00249272Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:13.746995903Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:13.749221314Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:13.749248624Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:16.019632092Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:16.027308852Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:16.415821201Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:16.758634217Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:18.458089876Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:18.458106019Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:18.461839704Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:18.462141043Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:22.01141476Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:23.442229467Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:24.486443447Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:24.488451851Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:25.571363915Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:28.861881328Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:32.761704344Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:34.196638691Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:35.266741657Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:35.763599695Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:36.995501678Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:37.464032718Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:38.292724077Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:38.717141998Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:38.717406798Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:38.719780016Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:38.71998012Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:40.159067666Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:41.42671464Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:44.9293233Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:44.930938091Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:44.933631606Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:44.935546647Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:45.757387453Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:50.768905917Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:51.42674599Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:52.143189519Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:54.038201611Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:54.062989336Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:54.063006155Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:54.063567018Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:54.065194698Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:54.065459777Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:54.065520796Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:54.722729769Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:55.214913113Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:58.785630932Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:58.805891451Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:59.164892977Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:57:59.165672825Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:58:00.08504562Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:58:00.816807508Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:58:00.900316253Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:58:01.564183553Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:58:01.565593952Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:58:01.567541244Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:58:01.567994234Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:58:01.569123814Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:58:05.364301334Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:58:09.07273447Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:58:09.817647849Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:58:10.828220327Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:58:13.300891282Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:58:13.300906835Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:58:13.30093272Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:58:13.614256191Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:58:13.614296042Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:58:16.013108751Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:58:16.013134685Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:58:16.013206627Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:58:16.013640032Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:58:16.013673503Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:58:16.013680792Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:58:16.014229342Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:58:16.34577825Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:58:16.921639356Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:58:19.794757065Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:58:20.921378437Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:58:21.689262267Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:58:21.942770699Z"
+    },
+    {
+     "ap": 1.69,
+     "bp": 1.68,
+     "t": "2026-11-12T13:58:21.94277759Z"
+    },
+    {
+     "ap": 1.7,
+     "bp": 1.68,
+     "t": "2026-11-12T13:58:21.942806972Z"
+    },
+    {
+     "ap": 1.71,
+     "bp": 1.68,
+     "t": "2026-11-12T13:58:21.942975794Z"
+    },
+    {
+     "ap": 1.7,
+     "bp": 1.68,
+     "t": "2026-11-12T13:58:21.943450761Z"
+    },
+    {
+     "ap": 1.7,
+     "bp": 1.68,
+     "t": "2026-11-12T13:58:21.944156509Z"
+    },
+    {
+     "ap": 1.7,
+     "bp": 1.68,
+     "t": "2026-11-12T13:58:21.972899874Z"
+    },
+    {
+     "ap": 1.7,
+     "bp": 1.68,
+     "t": "2026-11-12T13:58:22.559491243Z"
+    },
+    {
+     "ap": 1.7,
+     "bp": 1.69,
+     "t": "2026-11-12T13:58:23.247464133Z"
+    },
+    {
+     "ap": 1.7,
+     "bp": 1.69,
+     "t": "2026-11-12T13:58:26.499296298Z"
+    },
+    {
+     "ap": 1.7,
+     "bp": 1.69,
+     "t": "2026-11-12T13:58:33.711634193Z"
+    },
+    {
+     "ap": 1.7,
+     "bp": 1.69,
+     "t": "2026-11-12T13:58:33.711646399Z"
+    },
+    {
+     "ap": 1.7,
+     "bp": 1.69,
+     "t": "2026-11-12T13:58:33.907779677Z"
+    },
+    {
+     "ap": 1.7,
+     "bp": 1.69,
+     "t": "2026-11-12T13:58:33.908175164Z"
+    },
+    {
+     "ap": 1.7,
+     "bp": 1.69,
+     "t": "2026-11-12T13:58:33.911470141Z"
+    },
+    {
+     "ap": 1.7,
+     "bp": 1.69,
+     "t": "2026-11-12T13:58:33.912303352Z"
+    },
+    {
+     "ap": 1.7,
+     "bp": 1.69,
+     "t": "2026-11-12T13:58:33.914120893Z"
+    },
+    {
+     "ap": 1.7,
+     "bp": 1.69,
+     "t": "2026-11-12T13:58:37.049743742Z"
+    },
+    {
+     "ap": 1.7,
+     "bp": 1.69,
+     "t": "2026-11-12T13:58:39.820247896Z"
+    },
+    {
+     "ap": 1.7,
+     "bp": 1.69,
+     "t": "2026-11-12T13:58:39.820262023Z"
+    },
+    {
+     "ap": 1.7,
+     "bp": 1.69,
+     "t": "2026-11-12T13:58:39.820268666Z"
+    },
+    {
+     "ap": 1.71,
+     "bp": 1.69,
+     "t": "2026-11-12T13:58:39.820663212Z"
+    },
+    {
+     "ap": 1.7,
+     "bp": 1.69,
+     "t": "2026-11-12T13:58:39.820732773Z"
+    },
+    {
+     "ap": 1.7,
+     "bp": 1.69,
+     "t": "2026-11-12T13:58:39.820774895Z"
+    },
+    {
+     "ap": 1.71,
+     "bp": 1.69,
+     "t": "2026-11-12T13:58:39.820822696Z"
+    },
+    {
+     "ap": 1.71,
+     "bp": 1.7,
+     "t": "2026-11-12T13:58:39.820851563Z"
+    },
+    {
+     "ap": 1.71,
+     "bp": 1.69,
+     "t": "2026-11-12T13:58:39.822282787Z"
+    },
+    {
+     "ap": 1.71,
+     "bp": 1.69,
+     "t": "2026-11-12T13:58:39.822325374Z"
+    },
+    {
+     "ap": 1.7,
+     "bp": 1.69,
+     "t": "2026-11-12T13:58:39.822349423Z"
+    },
+    {
+     "ap": 1.7,
+     "bp": 1.69,
+     "t": "2026-11-12T13:58:40.554544526Z"
+    },
+    {
+     "ap": 1.7,
+     "bp": 1.69,
+     "t": "2026-11-12T13:58:41.454106637Z"
+    },
+    {
+     "ap": 1.7,
+     "bp": 1.7,
+     "t": "2026-11-12T13:58:41.454709805Z"
+    },
+    {
+     "ap": 1.7,
+     "bp": 1.7,
+     "t": "2026-11-12T13:58:42.245586307Z"
+    },
+    {
+     "ap": 1.7,
+     "bp": 1.69,
+     "t": "2026-11-12T13:58:42.246171464Z"
+    },
+    {
+     "ap": 1.71,
+     "bp": 1.69,
+     "t": "2026-11-12T13:58:42.473702121Z"
+    },
+    {
+     "ap": 1.71,
+     "bp": 1.7,
+     "t": "2026-11-12T13:58:42.474281481Z"
+    },
+    {
+     "ap": 1.71,
+     "bp": 1.7,
+     "t": "2026-11-12T13:58:42.475660117Z"
+    },
+    {
+     "ap": 1.71,
+     "bp": 1.69,
+     "t": "2026-11-12T13:58:42.476219988Z"
+    },
+    {
+     "ap": 1.71,
+     "bp": 1.7,
+     "t": "2026-11-12T13:58:42.745905106Z"
+    },
+    {
+     "ap": 1.71,
+     "bp": 1.7,
+     "t": "2026-11-12T13:58:45.612534554Z"
+    },
+    {
+     "ap": 1.71,
+     "bp": 1.7,
+     "t": "2026-11-12T13:58:49.810650094Z"
+    },
+    {
+     "ap": 1.71,
+     "bp": 1.7,
+     "t": "2026-11-12T13:58:49.827544484Z"
+    },
+    {
+     "ap": 1.71,
+     "bp": 1.7,
+     "t": "2026-11-12T13:58:49.828780447Z"
+    },
+    {
+     "ap": 1.71,
+     "bp": 1.71,
+     "t": "2026-11-12T13:58:49.829181125Z"
+    },
+    {
+     "ap": 1.71,
+     "bp": 1.7,
+     "t": "2026-11-12T13:58:49.82923746Z"
+    },
+    {
+     "ap": 1.71,
+     "bp": 1.71,
+     "t": "2026-11-12T13:58:49.829346028Z"
+    },
+    {
+     "ap": 1.71,
+     "bp": 1.7,
+     "t": "2026-11-12T13:58:50.393217312Z"
+    },
+    {
+     "ap": 1.72,
+     "bp": 1.7,
+     "t": "2026-11-12T13:58:51.05423304Z"
+    },
+    {
+     "ap": 1.72,
+     "bp": 1.7,
+     "t": "2026-11-12T13:58:51.054240683Z"
+    },
+    {
+     "ap": 1.72,
+     "bp": 1.71,
+     "t": "2026-11-12T13:58:51.054817995Z"
+    },
+    {
+     "ap": 1.72,
+     "bp": 1.71,
+     "t": "2026-11-12T13:58:51.056305919Z"
+    },
+    {
+     "ap": 1.72,
+     "bp": 1.7,
+     "t": "2026-11-12T13:58:51.056872846Z"
+    },
+    {
+     "ap": 1.72,
+     "bp": 1.7,
+     "t": "2026-11-12T13:58:51.057877372Z"
+    },
+    {
+     "ap": 1.72,
+     "bp": 1.71,
+     "t": "2026-11-12T13:58:51.448720838Z"
+    },
+    {
+     "ap": 1.72,
+     "bp": 1.71,
+     "t": "2026-11-12T13:58:52.778504073Z"
+    },
+    {
+     "ap": 1.72,
+     "bp": 1.7,
+     "t": "2026-11-12T13:58:52.778590914Z"
+    },
+    {
+     "ap": 1.72,
+     "bp": 1.7,
+     "t": "2026-11-12T13:58:52.778659116Z"
+    },
+    {
+     "ap": 1.71,
+     "bp": 1.7,
+     "t": "2026-11-12T13:58:52.778661757Z"
+    },
+    {
+     "ap": 1.72,
+     "bp": 1.7,
+     "t": "2026-11-12T13:58:52.782284141Z"
+    },
+    {
+     "ap": 1.72,
+     "bp": 1.7,
+     "t": "2026-11-12T13:58:53.909118011Z"
+    },
+    {
+     "ap": 1.71,
+     "bp": 1.7,
+     "t": "2026-11-12T13:58:54.002081096Z"
+    },
+    {
+     "ap": 1.72,
+     "bp": 1.69,
+     "t": "2026-11-12T13:58:58.069222551Z"
+    },
+    {
+     "ap": 1.71,
+     "bp": 1.69,
+     "t": "2026-11-12T13:58:58.069279316Z"
+    },
+    {
+     "ap": 1.72,
+     "bp": 1.69,
+     "t": "2026-11-12T13:58:58.069297529Z"
+    },
+    {
+     "ap": 1.72,
+     "bp": 1.71,
+     "t": "2026-11-12T13:58:58.911618249Z"
+    },
+    {
+     "ap": 1.72,
+     "bp": 1.71,
+     "t": "2026-11-12T13:58:58.911694568Z"
+    }
+   ],
    "ICMB": [
     {
      "ap": 1.03,
@@ -22319,7 +23352,7 @@
     }
    ]
   },
-  "schema": 5,
+  "schema": 6,
   "t212": {
    "as_of": "2026-11-15",
    "path": "data/t212/2026-11-15.json",
@@ -33269,6 +34302,12 @@
    }
   },
   "yahoo": {
+   "CRMN": {
+    "fetched_at": "2026-11-16T02:59:32.195681-05:00",
+    "floatShares": 328340,
+    "impliedSharesOutstanding": 17942094,
+    "sharesOutstanding": 15947094
+   },
    "ICMB": {
     "fetched_at": "2026-11-15T15:51:05.196346-05:00",
     "floatShares": null,
@@ -33285,7 +34324,7 @@
     "catalyst_forced_none": false,
     "catalyst_quality": 1,
     "catalyst_status": "ok",
-    "catalyst_summary": "Skyline Builders changes NASDAQ ticker from KAZR to CRMN effective November 12; no operational catalyst.",
+    "catalyst_summary": "Skyline Builders announces Nasdaq ticker change from KAZR to CRMN effective November 12, 2026.",
     "catalyst_type": "other",
     "continuation_detail": "11-09 +1.6% 0.4x; 11-10 -4.6% 1.2x; 11-11 -7.2% 0.9x",
     "data_cutoff_et": "2026-11-12T08:59:00-05:00",
@@ -33299,26 +34338,34 @@
     "eligible": false,
     "evidence": "",
     "exchange": "NASDAQ",
-    "float_shares": null,
-    "float_source": "",
+    "float_shares": 328340,
+    "float_source": "yahoo",
     "gap_pct": 47.41,
     "halt_status": "halt status unknown (historical run: the feed only holds current halts)",
     "last_bar_et": "08:58",
+    "levels_status": "skip: stop 19.2% below the trigger (max 12%)",
     "name": "Skyline Builders Group Holding Limited Class A Ordinary Shares",
     "news_dropped_roundup": 0,
     "news_used": 1,
     "pm_bars": 297,
     "pm_dollar_volume": 110337600.69,
     "pm_high": 10.84,
+    "pm_high_last60": 2.9,
+    "pm_high_used": 2.9,
     "pm_trades": 340776,
     "pm_volume": 26032027,
+    "position_usd_challenge": null,
+    "position_usd_measure": null,
     "price": 1.71,
     "prior_close": 1.16,
     "prior_date": "2026-11-11",
     "prior_day_volume_multiple": 0.85,
     "prior_range_pos_pct": 17.9,
+    "risk_per_share": 0.56,
+    "risk_usd_challenge": null,
+    "risk_usd_measure": null,
     "rule_continuation": "fail",
-    "rule_float": "",
+    "rule_float": "pass",
     "rule_gap": "pass",
     "rule_pm_dollar_volume": "pass",
     "rule_pm_trades": "pass",
@@ -33326,11 +34373,24 @@
     "rule_prior_range": "fail",
     "rule_t212": "pass",
     "scan_file": "data/scans/2026-11-12.json",
-    "spread_pct": null,
+    "score": 48.35,
+    "score_parts": "gap=0.9482 volume=0.0 catalyst=0.2 float=0.9934",
+    "shares_challenge": null,
+    "shares_measure": null,
+    "shortlist_rank": 2,
+    "size_note_challenge": "skip: stop 19.2% below the trigger (max 12%)",
+    "size_note_measure": "skip: stop 19.2% below the trigger (max 12%)",
+    "spread_pct": 0.59,
+    "stop": 2.35,
+    "stop_basis": "higher low 2.36 at 08:18",
+    "stop_pct": 19.24,
     "symbol": "CRMN",
     "t212_list": "data/t212/2026-11-15.json",
-    "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); EDGAR shares outstanding missing",
-    "yahoo_shares_out": null
+    "target_1_5r": 3.75,
+    "tier": "B",
+    "trigger": 2.91,
+    "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); EDGAR shares outstanding missing; historical run: float is today's Yahoo value",
+    "yahoo_shares_out": 15947094
    },
    {
     "as_of_et": "2026-11-12T09:15:00-05:00",
@@ -33338,7 +34398,7 @@
     "catalyst_forced_none": false,
     "catalyst_quality": 5,
     "catalyst_status": "ok",
-    "catalyst_summary": "ICMB agreed to merge into BCP Investment, subject to ICMB stockholder approval; shares surged after hours.",
+    "catalyst_summary": "ICMB agreed to merge into BCP Investment, subject to ICMB stockholder approval; shares jumped after hours.",
     "catalyst_type": "merger",
     "continuation_detail": "11-11 +2.6% 55.3x vol",
     "data_cutoff_et": "2026-11-12T08:59:00-05:00",
@@ -33357,19 +34417,27 @@
     "gap_pct": 68.26,
     "halt_status": "halt status unknown (historical run: the feed only holds current halts)",
     "last_bar_et": "08:58",
+    "levels_status": "skip: stop 15.3% below the trigger (max 12%)",
     "name": "Investcorp Credit Management BDC, Inc. Common Stock",
     "news_dropped_roundup": 0,
     "news_used": 4,
     "pm_bars": 299,
     "pm_dollar_volume": 31516830.45,
     "pm_high": 1.16,
+    "pm_high_last60": 1.1,
+    "pm_high_used": 1.1,
     "pm_trades": 106380,
     "pm_volume": 33914933,
+    "position_usd_challenge": null,
+    "position_usd_measure": null,
     "price": 1.04,
     "prior_close": 0.6181,
     "prior_date": "2026-11-11",
     "prior_day_volume_multiple": 53.8,
     "prior_range_pos_pct": 100.0,
+    "risk_per_share": 0.17,
+    "risk_usd_challenge": null,
+    "risk_usd_measure": null,
     "rule_continuation": "pass",
     "rule_float": "pass",
     "rule_gap": "pass",
@@ -33379,9 +34447,22 @@
     "rule_prior_range": "pass",
     "rule_t212": "pass",
     "scan_file": "data/scans/2026-11-12.json",
+    "score": 95.67,
+    "score_parts": "gap=1.0 volume=1.0 catalyst=1.0 float=0.7114",
+    "shares_challenge": null,
+    "shares_measure": null,
+    "shortlist_rank": 1,
+    "size_note_challenge": "skip: stop 15.3% below the trigger (max 12%)",
+    "size_note_measure": "skip: stop 15.3% below the trigger (max 12%)",
     "spread_pct": 0.97,
+    "stop": 0.94,
+    "stop_basis": "higher low 0.9504 at 08:45",
+    "stop_pct": 15.32,
     "symbol": "ICMB",
     "t212_list": "data/t212/2026-11-15.json",
+    "target_1_5r": 1.365,
+    "tier": "A",
+    "trigger": 1.11,
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); merger target: price likely pinned to deal terms; float missing (Yahoo); historical run: float is today's Yahoo value",
     "yahoo_shares_out": 14432472
    },
@@ -33416,6 +34497,7 @@
     "pm_bars": 3,
     "pm_dollar_volume": 1088.03,
     "pm_high": 1.55,
+    "pm_high_last60": null,
     "pm_trades": 8,
     "pm_volume": 746,
     "price": 1.5291,
@@ -33432,9 +34514,12 @@
     "rule_prior_range": "fail",
     "rule_t212": "pass",
     "scan_file": "data/scans/2026-11-12.json",
+    "score": null,
+    "shortlist_rank": null,
     "spread_pct": null,
     "symbol": "GITS",
     "t212_list": "data/t212/2026-11-15.json",
+    "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); 8-K 2026-09-10 item 3.01 (listing deficiency); 8-K 2026-08-21 item 3.01 (listing deficiency)",
     "yahoo_shares_out": null
    },
@@ -33469,6 +34554,7 @@
     "pm_bars": 1,
     "pm_dollar_volume": 151.8,
     "pm_high": 1.38,
+    "pm_high_last60": null,
     "pm_trades": 2,
     "pm_volume": 110,
     "price": 1.38,
@@ -33485,9 +34571,12 @@
     "rule_prior_range": "fail",
     "rule_t212": "pass",
     "scan_file": "data/scans/2026-11-12.json",
+    "score": null,
+    "shortlist_rank": null,
     "spread_pct": null,
     "symbol": "YXT",
     "t212_list": "data/t212/2026-11-15.json",
+    "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); EDGAR shares outstanding stale (as of 2025-12-31)",
     "yahoo_shares_out": null
    },
@@ -33497,7 +34586,7 @@
     "catalyst_forced_none": true,
     "catalyst_quality": 0,
     "catalyst_status": "ok",
-    "catalyst_summary": "No news about Studio City International; the only item concerns Millennium Silver Corp, a different company.",
+    "catalyst_summary": "No news about Studio City; the only item concerns Millennium Silver Corp, a different company.",
     "catalyst_type": "none",
     "continuation_detail": "11-09 -7.1% 0.4x; 11-10 +4.4% 1.0x; 11-11 +5.2% 0.1x",
     "data_cutoff_et": "2026-11-12T08:59:00-05:00",
@@ -33522,6 +34611,7 @@
     "pm_bars": 1,
     "pm_dollar_volume": 124.3,
     "pm_high": 1.1,
+    "pm_high_last60": null,
     "pm_trades": 2,
     "pm_volume": 113,
     "price": 1.1,
@@ -33538,13 +34628,17 @@
     "rule_prior_range": "pass",
     "rule_t212": "pass",
     "scan_file": "data/scans/2026-11-12.json",
+    "score": null,
+    "shortlist_rank": null,
     "spread_pct": null,
     "symbol": "MSC",
     "t212_list": "data/t212/2026-11-15.json",
+    "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (NYSE: feed coverage not confirmed); EDGAR shares outstanding missing",
     "yahoo_shares_out": null
    }
   ],
+  "day": "2026-11-12",
   "summary": {
    "candidates": 5,
    "checked_in_band": 785,
@@ -33569,7 +34663,7 @@
      "pass": 1
     },
     "rule_float": {
-     "pass": 1
+     "pass": 2
     },
     "rule_gap": {
      "pass": 5
@@ -33592,6 +34686,10 @@
     "rule_t212": {
      "pass": 5
     }
+   },
+   "tiers": {
+    "A": 1,
+    "B": 1
    },
    "universe": 5467,
    "warnings": [

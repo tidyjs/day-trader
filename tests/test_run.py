@@ -77,22 +77,26 @@ def _out(eligible=True):
     row = {"symbol": "ABCD", "date": "2026-11-16", "data_cutoff_et": "2026-11-16T08:59:00-05:00", "price": 1.25, "gap_pct": 22.5,
            "pm_dollar_volume": 1234567.0, "eligible": eligible, "catalyst_type": "earnings", "catalyst_quality": 4,
            "catalyst_summary": "Q3 beat", "warnings": "spread 3.4%; float missing (Yahoo)", "rule_price": "pass", "rule_gap": "pass",
-           "rule_t212": "pass", "rule_pm_dollar_volume": "pass", "rule_pm_trades": "pass", "rule_continuation": "pass" if eligible else "fail"}
-    thin = dict(row, symbol="THIN", eligible=False, rule_pm_dollar_volume="fail")
-    return {"summary": {"candidates": 2, "eligible": int(eligible), "warnings": []}, "candidates": [row, thin]}
+           "rule_t212": "pass", "rule_pm_dollar_volume": "pass", "rule_pm_trades": "pass", "rule_continuation": "pass" if eligible else "fail",
+           "tier": "A" if eligible else "", "shortlist_rank": 1 if eligible else None, "score": 61.5}
+    tb = dict(row, symbol="TIRB", eligible=False, tier="B", shortlist_rank=2 if eligible else 1, score=40.0, rule_continuation="fail")
+    thin = dict(row, symbol="THIN", eligible=False, tier="", shortlist_rank=None, rule_pm_dollar_volume="fail")
+    rows = [row, tb, thin] if eligible else [dict(row, rule_continuation="fail"), dict(tb, shortlist_rank=None, tier="", rule_prior_range="fail"), thin]
+    return {"summary": {"candidates": 3, "eligible": int(eligible), "tiers": {"A": int(eligible), "B": int(eligible)}, "warnings": []}, "candidates": rows}
 
 
 def test_successful_scan_exits_zero_and_writes_summary(tmp_path, monkeypatch, capsys):
     from src import alerts
     monkeypatch.setattr(alerts, "folder", lambda: tmp_path)
     assert run.main(["--now", "2026-11-16T09:15"], scan_fn=_out, trading_day_fn=lambda d: True) == 0
-    assert "2 candidates, 1 eligible" in capsys.readouterr().out
+    assert "3 candidates, 1 eligible" in capsys.readouterr().out
     files = list(tmp_path.glob("2026/11/2026-11-16_0915_scan_summary.md"))
     assert files
     t = files[0].read_text()
-    assert "# Scan summary: 1 name(s) passed all rules" in t and "| ABCD | 1.25 | 22.5 | 1,234,567 |" in t
+    assert "# Scan summary: 1 Tier A, 1 Tier B" in t and "| 1 | ABCD | 61.5 | 1.25 | 22.5 | 1,234,567 |" in t
+    assert t.index("## Tier A") < t.index("## Tier B") and "| 2 | TIRB | 40.0 |" in t
     assert "Do not trade from it" in t and "spread 3.4%<br>float missing" in t
-    assert "rule_pm_dollar_volume: THIN" in t and "data up to about 08:59 ET" in t
+    assert "rule_pm_dollar_volume: THIN" in t and "Levels use data up to about 08:59 ET. Re-check the live premarket high at the open." in t
     assert (tmp_path / "LATEST.md").exists()
 
 
@@ -101,7 +105,7 @@ def test_summary_when_nothing_passes(tmp_path, monkeypatch):
     monkeypatch.setattr(alerts, "folder", lambda: tmp_path)
     assert run.main(["--now", "2026-11-16T09:41"], scan_fn=lambda: _out(eligible=False), trading_day_fn=lambda d: True) == 0
     t = next(tmp_path.glob("2026/11/*_scan_summary.md")).read_text()
-    assert "no names passed all rules" in t and "No name passed every rule today." in t and "Late start" in t
+    assert "Scan summary: no names passed" in t and "No name passed Tier A or Tier B today." in t and "Late start" in t
     assert "rule_continuation: ABCD" in t
 
 
@@ -160,7 +164,7 @@ def test_mode_past_day_writes_rerun_summary(tmp_path, monkeypatch):
                     prior_day_fn=lambda d: date(2026, 11, 13), past_scan_fn=past_scan)
     assert code == 0 and seen == [date(2026, 11, 13)]
     t = next(tmp_path.glob("2026/11/2026-11-16_0220_scan_summary.md")).read_text()
-    assert t.startswith("# Manual re-run for 2026-11-13: 1 name(s) passed all rules") and "mode: past_day" in t
+    assert t.startswith("# Manual re-run for 2026-11-13: 1 Tier A, 1 Tier B") and "mode: past_day" in t
 
 
 def test_mode_past_day_failure_is_a_failure_alert(monkeypatch):

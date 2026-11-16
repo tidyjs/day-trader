@@ -5,11 +5,23 @@ timezone: America/New_York
 
 account:
   equity_usd: 50
-  risk_per_trade: 0.05
-  daily_loss_cap: 0.10
-  max_consecutive_losses: 2
   max_open_positions: 1
-  max_shortlist: 5
+  max_shortlist: 5            # Tier A first, then Tier B, at most this many names in total
+  share_decimals: 2           # fractional shares are floored to this many decimals
+
+# Risk profiles (SPEC 3). M4 sizing and M6 results report every profile separately.
+# A profile with any blank (null) value is reported as "not set".
+risk_profiles:
+  measure:                    # the SPEC 3 numbers: used to measure the edge
+    risk_per_trade: 0.05      # fraction of equity risked per trade
+    daily_loss_cap: 0.10      # stop for the day after losing this fraction of equity...
+    max_consecutive_losses: 2 # ...or after this many losses in a row
+    max_position_pct: 1.0     # position value capped at this fraction of equity
+  challenge:                  # left blank for you to fill in
+    risk_per_trade:
+    daily_loss_cap:
+    max_consecutive_losses:
+    max_position_pct:
 
 schedule:
   premarket_start: "04:00"
@@ -44,6 +56,21 @@ filters:                      # SPEC 4.1 must-pass rules
   float_max: 50000000
   float_margin_pct: 15        # never hard-fail within 15% over the cap
 
+ranking:                      # SPEC 4.4 score; weights pre-declared 2026-11-16 (first guess, not tuned)
+  weights: {gap: 0.30, volume: 0.30, catalyst: 0.25, float: 0.15}
+  gap_full_pct: 50            # a 50%+ gap scores 1 on the gap part
+  volume_full_multiple: 20    # prior-day volume 20x+ its average scores 1 (log scale from 1x)
+  float_unknown_score: 0.0    # unknown float never helps the score
+
+levels:                       # SPEC 4.5, provisional at the 09:15 scan (no opening range yet)
+  tick: 0.01
+  trigger_lookback_minutes: 60  # trigger basis: high of the last 60 premarket minutes (2026-11-16)
+  pivot_bars: 2               # a pivot low is below the 2 bars on each side
+  fallback_low_minutes: 30    # no higher low found: use the lowest low of the last 30 premarket minutes
+  max_stop_pct: 12            # skip if the stop is more than 12% below the trigger
+  entry_chase_pct: 3          # at the open: skip if price is already more than 3% above the trigger
+  target_r: 1.5
+
 warnings:                     # SPEC 4.3
   spread_warn_pct: 3
   spread_window_minutes: 2    # quotes in the last N minutes before the data cutoff
@@ -54,7 +81,8 @@ warnings:                     # SPEC 4.3
 edgar:
   offering_lookback_days: 5
   reverse_split_lookback_days: 60
-  deficiency_lookback_days: 90
+  deficiency_lookback_days: 90   # also the window for 10-Q/A, 10-K/A counting
+  amended_min: 2                 # >= this many 10-Q/A or 10-K/A in 90 days -> restatement warning
   max_docs_per_name: 8
   doc_max_bytes: 1500000
   cover_chars: 5000
@@ -62,6 +90,7 @@ edgar:
 
 catalyst:                     # SPEC 6; the LLM output is one input, never a selector
   model: claude-haiku-5-5
+  runs: 3                     # independent classifications per name, all saved (approved 2026-11-16)
   effort: low
   max_tokens: 4000
   news_lookback_hours: 48

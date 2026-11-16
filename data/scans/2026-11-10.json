@@ -6,6 +6,18 @@
     "attempts": [
      {
       "input_tokens": 1406,
+      "output_tokens": 104,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
+     {
+      "input_tokens": 1406,
+      "output_tokens": 105,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
+     {
+      "input_tokens": 1406,
       "output_tokens": 105,
       "stop_reason": "end_turn",
       "valid": true
@@ -20,7 +32,7 @@
      "acquisition_target": false,
      "catalyst_type": "other",
      "dilution_language": false,
-     "one_line_summary": "Autonomix Medical to be issued U.S. Patent 12,793,841 covering physiological signal circuitry for medical devices.",
+     "one_line_summary": "Autonomix Medical to be issued U.S. patent 12,793,841 covering physiological signal circuitry for medical devices.",
      "promo_or_pump_flag": false,
      "quality": 2
     },
@@ -28,11 +40,77 @@
      "acquisition_target": false,
      "catalyst_type": "other",
      "dilution_language": false,
-     "one_line_summary": "Autonomix Medical to be issued U.S. Patent 12,793,841 covering physiological signal circuitry for medical devices.",
+     "one_line_summary": "Autonomix Medical to be issued U.S. patent 12,793,841 covering physiological signal circuitry for medical devices.",
      "promo_or_pump_flag": false,
      "quality": 2
     },
-    "status": "ok"
+    "runs": [
+     {
+      "attempts": [
+       {
+        "input_tokens": 1406,
+        "output_tokens": 104,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "other",
+       "dilution_language": false,
+       "one_line_summary": "Autonomix Medical to be issued U.S. patent 12,793,841 covering physiological signal circuitry for medical devices.",
+       "promo_or_pump_flag": false,
+       "quality": 2
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1406,
+        "output_tokens": 105,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "other",
+       "dilution_language": false,
+       "one_line_summary": "Autonomix Medical will be issued U.S. Patent 12,793,841 covering physiological signal circuitry for medical devices.",
+       "promo_or_pump_flag": false,
+       "quality": 2
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1406,
+        "output_tokens": 105,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "other",
+       "dilution_language": false,
+       "one_line_summary": "Autonomix Medical will be issued U.S. Patent 12,793,841 covering physiological signal circuitry for medical devices.",
+       "promo_or_pump_flag": false,
+       "quality": 2
+      }
+     }
+    ],
+    "status": "ok",
+    "votes": {
+     "dilution": 0,
+     "merger_target": 0,
+     "none": 0,
+     "promo": 0,
+     "types": {
+      "other": 3
+     },
+     "valid_runs": 3
+    }
    },
    "HTOO": {
     "attempts": [],
@@ -49,13 +127,26 @@
      "promo_or_pump_flag": false,
      "quality": 0
     },
+    "runs": [],
     "status": "no_news"
    },
    "KLTR": {
     "attempts": [
      {
       "input_tokens": 1814,
-      "output_tokens": 115,
+      "output_tokens": 116,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
+     {
+      "input_tokens": 1814,
+      "output_tokens": 118,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
+     {
+      "input_tokens": 1814,
+      "output_tokens": 116,
       "stop_reason": "end_turn",
       "valid": true
      }
@@ -69,7 +160,7 @@
      "acquisition_target": false,
      "catalyst_type": "earnings",
      "dilution_language": false,
-     "one_line_summary": "Kaltura reported Q3 2026 sales of $47.3M beating estimates, adj. EPS $0.02, and raised FY2026 guidance.",
+     "one_line_summary": "Kaltura reported Q3 2026 sales of $47.3M beating estimates, adjusted EPS $0.02, and raised FY2026 guidance.",
      "promo_or_pump_flag": false,
      "quality": 5
     },
@@ -77,11 +168,77 @@
      "acquisition_target": false,
      "catalyst_type": "earnings",
      "dilution_language": false,
-     "one_line_summary": "Kaltura reported Q3 2026 sales of $47.3M beating estimates, adj. EPS $0.02, and raised FY2026 guidance.",
+     "one_line_summary": "Kaltura reported Q3 2026 sales of $47.3M beating estimates, adjusted EPS $0.02, and raised FY2026 guidance.",
      "promo_or_pump_flag": false,
      "quality": 5
     },
-    "status": "ok"
+    "runs": [
+     {
+      "attempts": [
+       {
+        "input_tokens": 1814,
+        "output_tokens": 116,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "earnings",
+       "dilution_language": false,
+       "one_line_summary": "Kaltura reported Q3 2026 sales of $47.3M beating estimates, adjusted EPS $0.02, and raised FY2026 guidance.",
+       "promo_or_pump_flag": false,
+       "quality": 5
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1814,
+        "output_tokens": 118,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "earnings",
+       "dilution_language": false,
+       "one_line_summary": "Kaltura reported Q3 2026 sales of $47.3M beating estimates, adjusted EPS $0.02, and raised FY2026 guidance.",
+       "promo_or_pump_flag": false,
+       "quality": 5
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1814,
+        "output_tokens": 116,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "earnings",
+       "dilution_language": false,
+       "one_line_summary": "Kaltura reported Q3 2026 sales of $47.3M beating estimates, adjusted EPS $0.02, and raised FY2026 guidance.",
+       "promo_or_pump_flag": false,
+       "quality": 5
+      }
+     }
+    ],
+    "status": "ok",
+    "votes": {
+     "dilution": 0,
+     "merger_target": 0,
+     "none": 0,
+     "promo": 0,
+     "types": {
+      "earnings": 3
+     },
+     "valid_runs": 3
+    }
    },
    "MNDO": {
     "attempts": [],
@@ -98,6 +255,7 @@
      "promo_or_pump_flag": false,
      "quality": 0
     },
+    "runs": [],
     "status": "no_news"
    },
    "ONEN": {
@@ -115,10 +273,23 @@
      "promo_or_pump_flag": false,
      "quality": 0
     },
+    "runs": [],
     "status": "no_news"
    },
    "TTEC": {
     "attempts": [
+     {
+      "input_tokens": 1647,
+      "output_tokens": 104,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
+     {
+      "input_tokens": 1647,
+      "output_tokens": 104,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
      {
       "input_tokens": 1647,
       "output_tokens": 104,
@@ -147,7 +318,73 @@
      "promo_or_pump_flag": false,
      "quality": 4
     },
-    "status": "ok"
+    "runs": [
+     {
+      "attempts": [
+       {
+        "input_tokens": 1647,
+        "output_tokens": 104,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "earnings",
+       "dilution_language": false,
+       "one_line_summary": "TTEC reported Q3 2026 sales of $492.2M beating estimates and affirmed FY2026 guidance.",
+       "promo_or_pump_flag": false,
+       "quality": 4
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1647,
+        "output_tokens": 104,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "earnings",
+       "dilution_language": false,
+       "one_line_summary": "TTEC reported Q3 2026 sales of $492.2M beating estimates and affirmed FY2026 guidance.",
+       "promo_or_pump_flag": false,
+       "quality": 4
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1647,
+        "output_tokens": 104,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "earnings",
+       "dilution_language": false,
+       "one_line_summary": "TTEC reported Q3 2026 sales of $492.2M beating estimates and affirmed FY2026 guidance.",
+       "promo_or_pump_flag": false,
+       "quality": 4
+      }
+     }
+    ],
+    "status": "ok",
+    "votes": {
+     "dilution": 0,
+     "merger_target": 0,
+     "none": 0,
+     "promo": 0,
+     "types": {
+      "earnings": 3
+     },
+     "valid_runs": 3
+    }
    },
    "WFF": {
     "attempts": [],
@@ -164,6 +401,7 @@
      "promo_or_pump_flag": false,
      "quality": 0
     },
+    "runs": [],
     "status": "no_news"
    },
    "YXT": {
@@ -181,10 +419,23 @@
      "promo_or_pump_flag": false,
      "quality": 0
     },
+    "runs": [],
     "status": "no_news"
    },
    "ZNTL": {
     "attempts": [
+     {
+      "input_tokens": 1653,
+      "output_tokens": 119,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
+     {
+      "input_tokens": 1653,
+      "output_tokens": 118,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
      {
       "input_tokens": 1653,
       "output_tokens": 118,
@@ -201,7 +452,7 @@
      "acquisition_target": false,
      "catalyst_type": "earnings",
      "dilution_language": false,
-     "one_line_summary": "Zentalis reported Q3 2026 results with EPS $(0.34) beating estimates and $228.9M cash; Wedbush upgraded to Outperform.",
+     "one_line_summary": "Zentalis reported Q3 2026 results with EPS of $(0.34) beating estimates and $228.9M cash; Wedbush upgraded to Outperform.",
      "promo_or_pump_flag": false,
      "quality": 4
     },
@@ -209,11 +460,77 @@
      "acquisition_target": false,
      "catalyst_type": "earnings",
      "dilution_language": false,
-     "one_line_summary": "Zentalis reported Q3 2026 results with EPS $(0.34) beating estimates and $228.9M cash; Wedbush upgraded to Outperform.",
+     "one_line_summary": "Zentalis reported Q3 2026 results with EPS of $(0.34) beating estimates and $228.9M cash; Wedbush upgraded to Outperform.",
      "promo_or_pump_flag": false,
      "quality": 4
     },
-    "status": "ok"
+    "runs": [
+     {
+      "attempts": [
+       {
+        "input_tokens": 1653,
+        "output_tokens": 119,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "earnings",
+       "dilution_language": false,
+       "one_line_summary": "Zentalis reported Q3 2026 results with EPS of $(0.34) beating estimates and $228.9M cash; Wedbush upgraded to Outperform.",
+       "promo_or_pump_flag": false,
+       "quality": 4
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1653,
+        "output_tokens": 118,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "earnings",
+       "dilution_language": false,
+       "one_line_summary": "Zentalis reported Q3 2026 results with EPS $(0.34) beating estimates and $228.9M cash; Wedbush upgraded to Outperform.",
+       "promo_or_pump_flag": false,
+       "quality": 4
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1653,
+        "output_tokens": 118,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "earnings",
+       "dilution_language": false,
+       "one_line_summary": "Zentalis reported Q3 2026 results with EPS $(0.34) beating estimates and $228.9M cash; Wedbush upgraded to Outperform.",
+       "promo_or_pump_flag": false,
+       "quality": 4
+      }
+     }
+    ],
+    "status": "ok",
+    "votes": {
+     "dilution": 0,
+     "merger_target": 0,
+     "none": 0,
+     "promo": 0,
+     "types": {
+      "earnings": 3
+     },
+     "valid_runs": 3
+    }
    }
   },
   "data_cutoff_et": "2026-11-10T08:59:00-05:00",
@@ -26864,8 +27181,905 @@
    "ZYN": 8.76
   },
   "prior_day": "2026-11-09",
-  "quotes": {},
-  "schema": 5,
+  "quotes": {
+   "AMIX": [
+    {
+     "ap": 1.89,
+     "bp": 1.89,
+     "t": "2026-11-10T13:57:06.209720467Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.89,
+     "t": "2026-11-10T13:57:06.209728202Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.89,
+     "t": "2026-11-10T13:57:06.209766865Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.89,
+     "t": "2026-11-10T13:57:06.209806523Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.89,
+     "t": "2026-11-10T13:57:06.209808746Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.89,
+     "t": "2026-11-10T13:57:06.209816479Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.89,
+     "t": "2026-11-10T13:57:06.210088331Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.89,
+     "t": "2026-11-10T13:57:06.210115195Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:06.210291213Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:06.210423626Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:06.210424038Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:06.210477458Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:06.210486172Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:06.210492876Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:06.210621917Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:06.210662308Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:06.210881916Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:06.211635986Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:06.211817207Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:06.211952681Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:06.212392731Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:06.21239984Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:06.212740533Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:06.234138648Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:06.234145756Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:08.7367487Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:08.7367507Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:08.736826466Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:08.737090378Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:08.737098396Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:08.737105166Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:08.737112598Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:08.737137341Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:08.738718155Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:10.283710203Z"
+    },
+    {
+     "ap": 1.88,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:10.283752323Z"
+    },
+    {
+     "ap": 1.88,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:12.296388686Z"
+    },
+    {
+     "ap": 1.88,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:12.296428933Z"
+    },
+    {
+     "ap": 1.88,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:12.296454972Z"
+    },
+    {
+     "ap": 1.88,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:12.296487021Z"
+    },
+    {
+     "ap": 1.88,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:12.29655191Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:12.29656788Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:12.296774819Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:12.296860666Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:12.296867762Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:12.296906973Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:12.296993178Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:12.298158971Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:13.829750119Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:13.830041609Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:13.830091714Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:13.830100504Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:13.830296061Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:13.83030388Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:13.831785073Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:22.742712849Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:22.742713604Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:22.743061219Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:22.74306867Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:22.743075475Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:22.74313232Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:22.743186064Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:22.743571989Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:22.744867047Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:23.007298347Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:28.342235576Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:28.342511489Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:28.342518427Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:31.953160057Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:31.953504545Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:31.953557699Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:31.954883362Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:31.954907042Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:34.993467012Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:34.993476258Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:34.993797568Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:34.993803298Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:34.993809428Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:34.993867645Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:36.030317023Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:36.030371282Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:39.286905056Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:39.286933916Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:39.286988387Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:39.28700724Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:39.28728946Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:39.287296371Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:39.287331598Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:39.287456716Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:40.196081488Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:40.196088353Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:43.072552952Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:47.273664271Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:47.273720876Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:47.273758519Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:47.273857688Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:47.274145614Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:48.692007919Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:48.692057575Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:52.466545973Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:52.466561925Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:57:55.617014326Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:00.0010931Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:14.775817535Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:14.77583825Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:14.775878283Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:14.776195899Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:14.77624136Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:16.434654364Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:16.434711911Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:16.434856713Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:16.434888466Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:16.434939385Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.89,
+     "t": "2026-11-10T13:58:16.434948102Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.89,
+     "t": "2026-11-10T13:58:16.436621916Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:16.436867834Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:16.437035723Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:16.437118734Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:16.437159069Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:16.437212944Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:16.437426901Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:16.437483448Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:16.437535916Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:16.437804122Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:16.438216548Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:19.650528246Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:19.650574727Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:19.650773941Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:22.031158786Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:22.031442224Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:23.916923162Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:23.917270251Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:35.420746882Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:55.161441815Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:55.161462543Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:55.161666906Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:55.161673226Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:55.16168924Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:58.441954038Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:58.442109925Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:58.442221053Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:58.442250245Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:58.442258286Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:58.442282975Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.89,
+     "t": "2026-11-10T13:58:58.442290472Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.89,
+     "t": "2026-11-10T13:58:58.442530142Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.89,
+     "t": "2026-11-10T13:58:58.442543051Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:58.442569829Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:58.442583195Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:58.442640527Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:58.442779641Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:58.442786388Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:58.442859113Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:58.442895025Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:58.443193174Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:58.443753778Z"
+    },
+    {
+     "ap": 1.89,
+     "bp": 1.88,
+     "t": "2026-11-10T13:58:58.444469459Z"
+    }
+   ],
+   "KLTR": [],
+   "TTEC": [
+    {
+     "ap": 1.67,
+     "bp": 1.66,
+     "t": "2026-11-10T13:57:05.134566011Z"
+    },
+    {
+     "ap": 1.67,
+     "bp": 1.65,
+     "t": "2026-11-10T13:57:05.687561069Z"
+    },
+    {
+     "ap": 1.66,
+     "bp": 1.65,
+     "t": "2026-11-10T13:57:05.687633077Z"
+    },
+    {
+     "ap": 1.66,
+     "bp": 1.65,
+     "t": "2026-11-10T13:57:05.687639725Z"
+    },
+    {
+     "ap": 1.66,
+     "bp": 1.65,
+     "t": "2026-11-10T13:57:05.687646478Z"
+    },
+    {
+     "ap": 1.66,
+     "bp": 1.65,
+     "t": "2026-11-10T13:57:05.693347743Z"
+    },
+    {
+     "ap": 1.66,
+     "bp": 1.65,
+     "t": "2026-11-10T13:57:05.693354399Z"
+    },
+    {
+     "ap": 1.66,
+     "bp": 1.65,
+     "t": "2026-11-10T13:57:05.693361002Z"
+    },
+    {
+     "ap": 1.66,
+     "bp": 1.65,
+     "t": "2026-11-10T13:57:33.047242403Z"
+    },
+    {
+     "ap": 1.66,
+     "bp": 1.65,
+     "t": "2026-11-10T13:57:35.586584014Z"
+    },
+    {
+     "ap": 1.66,
+     "bp": 1.65,
+     "t": "2026-11-10T13:57:36.852708461Z"
+    },
+    {
+     "ap": 1.66,
+     "bp": 1.65,
+     "t": "2026-11-10T13:57:37.292625973Z"
+    },
+    {
+     "ap": 1.66,
+     "bp": 1.65,
+     "t": "2026-11-10T13:57:40.510633033Z"
+    },
+    {
+     "ap": 1.66,
+     "bp": 1.65,
+     "t": "2026-11-10T13:57:49.438909254Z"
+    },
+    {
+     "ap": 1.66,
+     "bp": 1.65,
+     "t": "2026-11-10T13:57:51.63745043Z"
+    },
+    {
+     "ap": 1.66,
+     "bp": 1.65,
+     "t": "2026-11-10T13:57:54.519995598Z"
+    },
+    {
+     "ap": 1.66,
+     "bp": 1.65,
+     "t": "2026-11-10T13:58:09.845814595Z"
+    },
+    {
+     "ap": 1.66,
+     "bp": 1.65,
+     "t": "2026-11-10T13:58:15.912469116Z"
+    },
+    {
+     "ap": 1.66,
+     "bp": 1.65,
+     "t": "2026-11-10T13:58:20.636591941Z"
+    },
+    {
+     "ap": 1.66,
+     "bp": 1.65,
+     "t": "2026-11-10T13:58:31.189594694Z"
+    },
+    {
+     "ap": 1.66,
+     "bp": 1.65,
+     "t": "2026-11-10T13:58:32.872563532Z"
+    }
+   ],
+   "ZNTL": []
+  },
+  "schema": 6,
   "t212": {
    "as_of": "2026-11-15",
    "path": "data/t212/2026-11-15.json",
@@ -37814,7 +39028,32 @@
     "ZYN": "PTL LTD Class A Ordinary Shares"
    }
   },
-  "yahoo": {}
+  "yahoo": {
+   "AMIX": {
+    "fetched_at": "2026-11-16T02:58:40.819641-05:00",
+    "floatShares": 1934016,
+    "impliedSharesOutstanding": 2045193,
+    "sharesOutstanding": 2045193
+   },
+   "KLTR": {
+    "fetched_at": "2026-11-16T02:58:40.819641-05:00",
+    "floatShares": 92227490,
+    "impliedSharesOutstanding": 154082280,
+    "sharesOutstanding": 154082280
+   },
+   "TTEC": {
+    "fetched_at": "2026-11-16T02:58:40.819641-05:00",
+    "floatShares": 20434705,
+    "impliedSharesOutstanding": 49383048,
+    "sharesOutstanding": 49383048
+   },
+   "ZNTL": {
+    "fetched_at": "2026-11-16T02:58:40.819641-05:00",
+    "floatShares": 78412228,
+    "impliedSharesOutstanding": 98265863,
+    "sharesOutstanding": 98265863
+   }
+  }
  },
  "outputs": {
   "candidates": [
@@ -37824,40 +39063,48 @@
     "catalyst_forced_none": false,
     "catalyst_quality": 2,
     "catalyst_status": "ok",
-    "catalyst_summary": "Autonomix Medical to be issued U.S. Patent 12,793,841 covering physiological signal circuitry for medical devices.",
+    "catalyst_summary": "Autonomix Medical to be issued U.S. patent 12,793,841 covering physiological signal circuitry for medical devices.",
     "catalyst_type": "other",
     "continuation_detail": "11-09 +11.8% 6.4x vol",
     "data_cutoff_et": "2026-11-10T08:59:00-05:00",
     "date": "2026-11-10",
     "dq_offering": "pass",
     "dq_promo_or_no_catalyst": "pass",
-    "dq_reasons": "8-K 2026-11-03 reverse split approved or pending; DEF 14A 2026-09-14 reverse split approved or pending",
-    "dq_reverse_split": "fail",
+    "dq_reasons": "",
+    "dq_reverse_split": "pass",
     "edgar_shares_asof": "2026-08-06",
     "edgar_shares_out": 971043,
     "eligible": false,
-    "evidence": "[reverse_split:disqualify] 8-K 2026-11-03 | \"To approve an amendment to the Company's amended and restated certificate of incorporation to grant our Board of Directors authority to affect a reverse stock split of the outstanding shares of the Company\u2019s common stock, at a reverse stock split ratio of between 1-for-2 to 1-for-25 (or any whole number in between), as determined by the Board in its sole discretion, prior to the one-year anniversa\" | https://www.sec.gov/Archives/edgar/data/1617867/000143774926034696/amix20261029_8k.htm || [reverse_split:disqualify] DEF 14A 2026-09-14 | \"To approve an amendment to the Company's amended and restated certificate of incorporation to grant our Board of Directors authority to effect a reverse stock split of the outstanding shares of the Company\u2019s common st\" | https://www.sec.gov/Archives/edgar/data/1617867/000143774926030345/amix20260905_def14a.htm",
+    "evidence": "[reverse_split:possible] 8-K 2026-11-03 no effective date | \"To approve an amendment to the Company's amended and restated certificate of incorporation to grant our Board of Directors authority to affect a reverse stock split of the outstanding shares of the Company\u2019s common stock, at a reverse stock split ratio of between 1-for-2 to 1-for-25 (or any whole number in between), as determined by the Board in its sole discretion, prior to the one-year anniversa\" | https://www.sec.gov/Archives/edgar/data/1617867/000143774926034696/amix20261029_8k.htm || [reverse_split:possible] DEF 14A 2026-09-14 no effective date | \"To approve an amendment to the Company's amended and restated certificate of incorporation to grant our Board of Directors authority to effect a reverse stock split of the outstanding shares of the Company\u2019s common st\" | https://www.sec.gov/Archives/edgar/data/1617867/000143774926030345/amix20260905_def14a.htm",
     "exchange": "NASDAQ",
-    "float_shares": null,
-    "float_source": "",
+    "float_shares": 1934016,
+    "float_source": "yahoo",
     "gap_pct": 11.18,
     "halt_status": "halt status unknown (historical run: the feed only holds current halts)",
     "last_bar_et": "08:58",
+    "levels_status": "ok",
     "name": "Autonomix Medical, Inc. Common Stock",
     "news_dropped_roundup": 0,
     "news_used": 1,
     "pm_bars": 297,
     "pm_dollar_volume": 11195427.5,
     "pm_high": 2.3797,
+    "pm_high_last60": 1.9,
+    "pm_high_used": 1.9,
     "pm_trades": 43029,
     "pm_volume": 5726209,
+    "position_usd_challenge": null,
+    "position_usd_measure": 49.98,
     "price": 1.89,
     "prior_close": 1.7,
     "prior_date": "2026-11-09",
     "prior_day_volume_multiple": 6.2,
     "prior_range_pos_pct": 70.8,
+    "risk_per_share": 0.09,
+    "risk_usd_challenge": null,
+    "risk_usd_measure": 2.36,
     "rule_continuation": "pass",
-    "rule_float": "",
+    "rule_float": "pass",
     "rule_gap": "pass",
     "rule_pm_dollar_volume": "pass",
     "rule_pm_trades": "pass",
@@ -37865,11 +39112,24 @@
     "rule_prior_range": "fail",
     "rule_t212": "pass",
     "scan_file": "data/scans/2026-11-10.json",
-    "spread_pct": null,
+    "score": 49.4,
+    "score_parts": "gap=0.2236 volume=0.609 catalyst=0.4 float=0.9613",
+    "shares_challenge": null,
+    "shares_measure": 26.17,
+    "shortlist_rank": 1,
+    "size_note_challenge": "profile not set",
+    "size_note_measure": "capped by position limit",
+    "spread_pct": 0.53,
+    "stop": 1.82,
+    "stop_basis": "higher low 1.83 at 08:52",
+    "stop_pct": 4.71,
     "symbol": "AMIX",
     "t212_list": "data/t212/2026-11-15.json",
-    "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts)",
-    "yahoo_shares_out": null
+    "target_1_5r": 2.045,
+    "tier": "B",
+    "trigger": 1.91,
+    "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); possible reverse split: 8-K 2026-11-03 mentions one, no effective date found; possible reverse split: DEF 14A 2026-09-14 mentions one, no effective date found; Yahoo vs EDGAR shares outstanding differ 111% (2.0M vs 1.0M); historical run: float is today's Yahoo value",
+    "yahoo_shares_out": 2045193
    },
    {
     "as_of_et": "2026-11-10T09:15:00-05:00",
@@ -37902,6 +39162,7 @@
     "pm_bars": 141,
     "pm_dollar_volume": 10454275.06,
     "pm_high": 1.28,
+    "pm_high_last60": 1.28,
     "pm_trades": 20871,
     "pm_volume": 8434120,
     "price": 1.2599,
@@ -37918,9 +39179,12 @@
     "rule_prior_range": "fail",
     "rule_t212": "pass",
     "scan_file": "data/scans/2026-11-10.json",
+    "score": null,
+    "shortlist_rank": null,
     "spread_pct": null,
     "symbol": "MNDO",
     "t212_list": "data/t212/2026-11-15.json",
+    "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); EDGAR shares outstanding stale (as of 2025-12-31)",
     "yahoo_shares_out": null
    },
@@ -37955,6 +39219,7 @@
     "pm_bars": 299,
     "pm_dollar_volume": 8775346.51,
     "pm_high": 1.57,
+    "pm_high_last60": 1.29,
     "pm_trades": 33228,
     "pm_volume": 6561063,
     "price": 1.2797,
@@ -37971,9 +39236,12 @@
     "rule_prior_range": "fail",
     "rule_t212": "pass",
     "scan_file": "data/scans/2026-11-10.json",
+    "score": null,
+    "shortlist_rank": null,
     "spread_pct": null,
     "symbol": "WFF",
     "t212_list": "data/t212/2026-11-15.json",
+    "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); EDGAR shares outstanding stale (as of 2025-12-31)",
     "yahoo_shares_out": null
    },
@@ -37997,26 +39265,34 @@
     "eligible": false,
     "evidence": "",
     "exchange": "NASDAQ",
-    "float_shares": null,
-    "float_source": "",
+    "float_shares": 20434705,
+    "float_source": "yahoo",
     "gap_pct": 18.28,
     "halt_status": "halt status unknown (historical run: the feed only holds current halts)",
     "last_bar_et": "08:58",
+    "levels_status": "ok",
     "name": "TTEC Holdings, Inc. Common Stock",
     "news_dropped_roundup": 1,
     "news_used": 3,
     "pm_bars": 47,
     "pm_dollar_volume": 550333.56,
     "pm_high": 1.7,
+    "pm_high_last60": 1.7,
+    "pm_high_used": 1.7,
     "pm_trades": 2167,
     "pm_volume": 332534,
+    "position_usd_challenge": null,
+    "position_usd_measure": 32.88,
     "price": 1.65,
     "prior_close": 1.395,
     "prior_date": "2026-11-09",
     "prior_day_volume_multiple": 0.79,
     "prior_range_pos_pct": 94.1,
+    "risk_per_share": 0.13,
+    "risk_usd_challenge": null,
+    "risk_usd_measure": 2.5,
     "rule_continuation": "fail",
-    "rule_float": "",
+    "rule_float": "pass",
     "rule_gap": "pass",
     "rule_pm_dollar_volume": "pass",
     "rule_pm_trades": "pass",
@@ -38024,11 +39300,24 @@
     "rule_prior_range": "pass",
     "rule_t212": "pass",
     "scan_file": "data/scans/2026-11-10.json",
-    "spread_pct": null,
+    "score": 39.84,
+    "score_parts": "gap=0.3656 volume=0.0 catalyst=0.8 float=0.5913",
+    "shares_challenge": null,
+    "shares_measure": 19.23,
+    "shortlist_rank": 3,
+    "size_note_challenge": "profile not set",
+    "size_note_measure": "sized by risk",
+    "spread_pct": 0.6,
+    "stop": 1.58,
+    "stop_basis": "higher low 1.59 at 08:47",
+    "stop_pct": 7.6,
     "symbol": "TTEC",
     "t212_list": "data/t212/2026-11-15.json",
-    "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts)",
-    "yahoo_shares_out": null
+    "target_1_5r": 1.905,
+    "tier": "B",
+    "trigger": 1.71,
+    "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); historical run: float is today's Yahoo value",
+    "yahoo_shares_out": 49383048
    },
    {
     "as_of_et": "2026-11-10T09:15:00-05:00",
@@ -38036,7 +39325,7 @@
     "catalyst_forced_none": false,
     "catalyst_quality": 5,
     "catalyst_status": "ok",
-    "catalyst_summary": "Kaltura reported Q3 2026 sales of $47.3M beating estimates, adj. EPS $0.02, and raised FY2026 guidance.",
+    "catalyst_summary": "Kaltura reported Q3 2026 sales of $47.3M beating estimates, adjusted EPS $0.02, and raised FY2026 guidance.",
     "catalyst_type": "earnings",
     "continuation_detail": "11-05 -3.9% 1.0x; 11-06 +2.7% 0.8x; 11-09 -5.9% 1.9x",
     "data_cutoff_et": "2026-11-10T08:59:00-05:00",
@@ -38050,26 +39339,34 @@
     "eligible": false,
     "evidence": "",
     "exchange": "NASDAQ",
-    "float_shares": null,
-    "float_source": "",
+    "float_shares": 92227490,
+    "float_source": "yahoo",
     "gap_pct": 17.48,
     "halt_status": "halt status unknown (historical run: the feed only holds current halts)",
     "last_bar_et": "08:55",
+    "levels_status": "ok",
     "name": "Kaltura, Inc. Common Stock",
     "news_dropped_roundup": 1,
     "news_used": 5,
     "pm_bars": 96,
     "pm_dollar_volume": 197889.22,
     "pm_high": 1.73,
+    "pm_high_last60": 1.71,
+    "pm_high_used": 1.71,
     "pm_trades": 598,
     "pm_volume": 117043,
+    "position_usd_challenge": null,
+    "position_usd_measure": 49.98,
     "price": 1.68,
     "prior_close": 1.43,
     "prior_date": "2026-11-09",
     "prior_day_volume_multiple": 1.91,
     "prior_range_pos_pct": 7.1,
+    "risk_per_share": 0.06,
+    "risk_usd_challenge": null,
+    "risk_usd_measure": 1.74,
     "rule_continuation": "fail",
-    "rule_float": "",
+    "rule_float": "fail",
     "rule_gap": "pass",
     "rule_pm_dollar_volume": "pass",
     "rule_pm_trades": "pass",
@@ -38077,11 +39374,24 @@
     "rule_prior_range": "fail",
     "rule_t212": "pass",
     "scan_file": "data/scans/2026-11-10.json",
+    "score": 41.97,
+    "score_parts": "gap=0.3496 volume=0.216 catalyst=1.0 float=0.0",
+    "shares_challenge": null,
+    "shares_measure": 29.06,
+    "shortlist_rank": 2,
+    "size_note_challenge": "profile not set",
+    "size_note_measure": "capped by position limit",
     "spread_pct": null,
+    "stop": 1.66,
+    "stop_basis": "higher low 1.67 at 08:51",
+    "stop_pct": 3.49,
     "symbol": "KLTR",
     "t212_list": "data/t212/2026-11-15.json",
-    "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts)",
-    "yahoo_shares_out": null
+    "target_1_5r": 1.81,
+    "tier": "B",
+    "trigger": 1.72,
+    "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); spread unknown (no SIP quotes before cutoff); above 50M float (92.2M, yahoo); historical run: float is today's Yahoo value",
+    "yahoo_shares_out": 154082280
    },
    {
     "as_of_et": "2026-11-10T09:15:00-05:00",
@@ -38089,7 +39399,7 @@
     "catalyst_forced_none": false,
     "catalyst_quality": 4,
     "catalyst_status": "ok",
-    "catalyst_summary": "Zentalis reported Q3 2026 results with EPS $(0.34) beating estimates and $228.9M cash; Wedbush upgraded to Outperform.",
+    "catalyst_summary": "Zentalis reported Q3 2026 results with EPS of $(0.34) beating estimates and $228.9M cash; Wedbush upgraded to Outperform.",
     "catalyst_type": "earnings",
     "continuation_detail": "11-05 -2.8% 1.3x; 11-06 +0.6% 1.0x; 11-09 +1.2% 1.0x",
     "data_cutoff_et": "2026-11-10T08:59:00-05:00",
@@ -38103,26 +39413,34 @@
     "eligible": false,
     "evidence": "",
     "exchange": "NASDAQ",
-    "float_shares": null,
-    "float_source": "",
+    "float_shares": 78412228,
+    "float_source": "yahoo",
     "gap_pct": 12.43,
     "halt_status": "halt status unknown (historical run: the feed only holds current halts)",
     "last_bar_et": "08:45",
+    "levels_status": "ok",
     "name": "Zentalis Pharmaceuticals, Inc. Common Stock",
     "news_dropped_roundup": 0,
     "news_used": 3,
     "pm_bars": 31,
     "pm_dollar_volume": 157885.59,
     "pm_high": 1.9738,
+    "pm_high_last60": 1.9738,
+    "pm_high_used": 1.9738,
     "pm_trades": 118,
     "pm_volume": 84293,
+    "position_usd_challenge": null,
+    "position_usd_measure": 49.99,
     "price": 1.9562,
     "prior_close": 1.74,
     "prior_date": "2026-11-09",
     "prior_day_volume_multiple": 0.96,
     "prior_range_pos_pct": 53.3,
+    "risk_per_share": 0.07,
+    "risk_usd_challenge": null,
+    "risk_usd_measure": 1.76,
     "rule_continuation": "fail",
-    "rule_float": "",
+    "rule_float": "fail",
     "rule_gap": "pass",
     "rule_pm_dollar_volume": "pass",
     "rule_pm_trades": "pass",
@@ -38130,11 +39448,24 @@
     "rule_prior_range": "fail",
     "rule_t212": "pass",
     "scan_file": "data/scans/2026-11-10.json",
+    "score": 27.46,
+    "score_parts": "gap=0.2486 volume=0.0 catalyst=0.8 float=0.0",
+    "shares_challenge": null,
+    "shares_measure": 25.12,
+    "shortlist_rank": 4,
+    "size_note_challenge": "profile not set",
+    "size_note_measure": "capped by position limit",
     "spread_pct": null,
+    "stop": 1.92,
+    "stop_basis": "higher low 1.9301 at 08:25",
+    "stop_pct": 3.52,
     "symbol": "ZNTL",
     "t212_list": "data/t212/2026-11-15.json",
-    "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts)",
-    "yahoo_shares_out": null
+    "target_1_5r": 2.095,
+    "tier": "B",
+    "trigger": 1.99,
+    "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); spread unknown (no SIP quotes before cutoff); above 50M float (78.4M, yahoo); historical run: float is today's Yahoo value",
+    "yahoo_shares_out": 98265863
    },
    {
     "as_of_et": "2026-11-10T09:15:00-05:00",
@@ -38167,6 +39498,7 @@
     "pm_bars": 12,
     "pm_dollar_volume": 8700.28,
     "pm_high": 1.72,
+    "pm_high_last60": 1.72,
     "pm_trades": 50,
     "pm_volume": 5327,
     "price": 1.69,
@@ -38183,9 +39515,12 @@
     "rule_prior_range": "fail",
     "rule_t212": "pass",
     "scan_file": "data/scans/2026-11-10.json",
+    "score": null,
+    "shortlist_rank": null,
     "spread_pct": null,
     "symbol": "ONEN",
     "t212_list": "data/t212/2026-11-15.json",
+    "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); EDGAR shares outstanding missing",
     "yahoo_shares_out": null
    },
@@ -38220,6 +39555,7 @@
     "pm_bars": 3,
     "pm_dollar_volume": 3190.7,
     "pm_high": 1.4,
+    "pm_high_last60": null,
     "pm_trades": 10,
     "pm_volume": 2358,
     "price": 1.4,
@@ -38236,9 +39572,12 @@
     "rule_prior_range": "fail",
     "rule_t212": "pass",
     "scan_file": "data/scans/2026-11-10.json",
+    "score": null,
+    "shortlist_rank": null,
     "spread_pct": null,
     "symbol": "YXT",
     "t212_list": "data/t212/2026-11-15.json",
+    "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); EDGAR shares outstanding stale (as of 2025-12-31)",
     "yahoo_shares_out": null
    },
@@ -38273,6 +39612,7 @@
     "pm_bars": 5,
     "pm_dollar_volume": 1701.63,
     "pm_high": 1.45,
+    "pm_high_last60": 1.45,
     "pm_trades": 5,
     "pm_volume": 1248,
     "price": 1.36,
@@ -38289,13 +39629,17 @@
     "rule_prior_range": "fail",
     "rule_t212": "pass",
     "scan_file": "data/scans/2026-11-10.json",
+    "score": null,
+    "shortlist_rank": null,
     "spread_pct": null,
     "symbol": "HTOO",
     "t212_list": "data/t212/2026-11-15.json",
+    "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); EDGAR: 1 older filings not read (cap); EDGAR shares outstanding stale (as of 2025-12-31)",
     "yahoo_shares_out": null
    }
   ],
+  "day": "2026-11-10",
   "summary": {
    "candidates": 9,
    "checked_in_band": 774,
@@ -38313,14 +39657,16 @@
      "pass": 4
     },
     "dq_reverse_split": {
-     "fail": 1,
-     "pass": 8
+     "pass": 9
     },
     "rule_continuation": {
      "fail": 8,
      "pass": 1
     },
-    "rule_float": {},
+    "rule_float": {
+     "fail": 2,
+     "pass": 2
+    },
     "rule_gap": {
      "pass": 9
     },
@@ -38342,6 +39688,10 @@
     "rule_t212": {
      "pass": 9
     }
+   },
+   "tiers": {
+    "A": 0,
+    "B": 4
    },
    "universe": 5467,
    "warnings": [

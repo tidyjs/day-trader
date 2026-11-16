@@ -292,14 +292,17 @@ RS_BOILERPLATE = re.compile(
     r"|(?:potential need|may (?:need|be required) to|could|might|if we)[^.]{0,80}reverse",
     re.I,
 )
-RS_ACTION = re.compile(
-    r"approv|authori[sz]|ratio|\b1-for-\d+|\b\d+-for-1\b|consolidated (?:class [ab] )?(?:ordinary |common )?shares"
-    r"|split-adjusted|will (?:effect|become effective|begin trading)|intends? to effect|plans? to effect|announc|effective (?:date|time)",
-    re.I,
-)
-RS_DONE = re.compile(r"\b(?:effected|effecting|completed|became effective|was effective|following (?:the|our|its))\b", re.I)
 MONTHS = "January|February|March|April|May|June|July|August|September|October|November|December"
 DATE_RE = re.compile(rf"\b({MONTHS}) (\d{{1,2}}), (\d{{4}})")
+# Wording just before a date that makes it the split's EFFECTIVE date.
+EFFECTIVE_CTX = re.compile(
+    r"effective(?: as of| on| date)?|effected|effecting|became effective|become effective|took effect|take effect"
+    r"|(?:post|split)[- ]?(?:split|adjusted)? basis[^.]{0,80}?on|began trading[^.]{0,80}?on|begin trading[^.]{0,80}?on|market open on",
+    re.I,
+)
+# Wording that makes a date an approval / meeting / record date instead.
+APPROVAL_CTX = re.compile(r"approv|meeting|held on|record date|dated|adopt|resolution|vote|filed|announced", re.I)
+RECENT_SPLIT_DAYS = 90
 
 
 def _dates(s: str) -> List[date]:
@@ -312,47 +315,92 @@ def _dates(s: str) -> List[date]:
     return out
 
 
-def classify_reverse_split_sentence(s: str, day: date) -> Optional[str]:
-    """'pending' | 'completed' | 'mention' | None (boilerplate / no match)."""
+def effective_dates(s: str) -> List[date]:
+    """Dates in a sentence that are the split's effective date: an effective-type
+    word within 100 chars before the date, with no approval/meeting word between."""
+    out = []
+    for m in DATE_RE.finditer(s):
+        before = s[max(0, m.start() - 100):m.start()]
+        ctx = list(EFFECTIVE_CTX.finditer(before))
+        if not ctx:
+            continue
+        between = before[ctx[-1].end():]
+        if APPROVAL_CTX.search(between):
+            continue
+        try:
+            out.append(datetime.strptime(" ".join(m.groups()), "%B %d %Y").date())
+        except ValueError:
+            pass
+    return out
+
+
+def classify_reverse_split_sentence(s: str, day: date, following: str = "") -> Optional[Tuple[str, Optional[date]]]:
+    """('pending' | 'completed' | 'nodate', effective date) or None (boilerplate / no match).
+
+    Decided by the effective date against the scan day (rule set 2026-11-16):
+      effective on or after the scan day  -> pending (disqualify)
+      effective before the scan day       -> completed (warning if within 90 days)
+      no effective date in the sentence   -> nodate ("possible reverse split" warning)
+    """
     if not RSPLIT.search(s) or RS_BOILERPLATE.search(s):
         return None
-    ds = _dates(s)
-    if ds and any(d >= day for d in ds):
-        return "pending"  # a date on or after the scan day: not done yet
-    if RS_DONE.search(s) and ds:
-        return "completed"
-    if RS_ACTION.search(s):
-        return "pending"
-    return "mention"
+    # The effective date is often in the next sentence (EZGO 11-05: "...approved a
+    # reverse share split ... The Company's ordinary shares began trading on a
+    # post-split basis ... on November 5, 2026").
+    ds = effective_dates(s) or effective_dates(following)
+    if not ds:
+        return "nodate", None
+    eff = max(ds)
+    return ("pending" if eff >= day else "completed"), eff
 
 
 def reverse_split(filings: List[dict], day: date, lookback_days: int) -> Tuple[str, List[str], List[str], List[dict]]:
-    """(status, disqualify reasons, warnings). Sentence-level so boilerplate
-    (warrant adjustment clauses, risk factors) and completed splits don't
-    disqualify, while an unclear mention is still a warning, never silent."""
+    """(status, disqualify reasons, warnings, evidence), by effective date."""
     since = day - timedelta(days=lookback_days)
     dq, warn, ev = [], [], []
     for f in filings:
         if date.fromisoformat(f["filed"]) < since or not f.get("text"):
             continue
         t = f["text"]
-        kinds: Dict[str, str] = {}  # kind -> first sentence of that kind
+        found: Dict[str, Tuple[str, Optional[date]]] = {}  # kind -> (sentence, date); latest date wins
         for h in [t["cover"]] + t["hits"]:
-            for s in re.split(r"(?<=[.;])\s+", h):
-                k = classify_reverse_split_sentence(s, day)
-                if k and k not in kinds:
-                    kinds[k] = s.strip()[:400]
+            sents = re.split(r"(?<=[.;])\s+", h)
+            for i, sent in enumerate(sents):
+                k = classify_reverse_split_sentence(sent, day, " ".join(sents[i + 1:i + 3]))
+                if not k:
+                    continue
+                kind, eff = k
+                if kind not in found or (eff and (found[kind][1] is None or eff > found[kind][1])):
+                    found[kind] = (sent.strip()[:400], eff)
         label = f"{f['form']} {f['filed']}"
-        for k, result, msg, bucket in (
-            ("pending", "disqualify", f"{label} reverse split approved or pending", dq),
-            ("completed", "completed", f"reverse split completed (per {label})", warn),
-            ("mention", "possible", f"possible reverse split: {label} mentions one", warn),
-        ):
-            if k in kinds:
-                bucket.append(msg)
-                ev.append({"rule": "reverse_split", "result": result, "filing": label, "sentence": kinds[k], "url": filing_url(f)})
-                break
+        if "pending" in found:
+            sent, eff = found["pending"]
+            dq.append(f"{label} reverse split effective {eff} (on or after the scan day)")
+            ev.append({"rule": "reverse_split", "result": "disqualify", "filing": f"{label} effective {eff}", "sentence": sent, "url": f.get("url", "")})
+        elif "completed" in found:
+            sent, eff = found["completed"]
+            age = (day - eff).days
+            if age <= RECENT_SPLIT_DAYS:
+                warn.append(f"reverse split completed {eff} ({age} days ago, per {label})")
+            ev.append({"rule": "reverse_split", "result": "completed", "filing": f"{label} effective {eff}", "sentence": sent, "url": f.get("url", "")})
+        elif "nodate" in found:
+            sent, _ = found["nodate"]
+            warn.append(f"possible reverse split: {label} mentions one, no effective date found")
+            ev.append({"rule": "reverse_split", "result": "possible", "filing": f"{label} no effective date", "sentence": sent, "url": f.get("url", "")})
     return (FAIL if dq else PASS), dq, warn, ev
+
+
+AMENDED_FORMS = ("10-Q/A", "10-K/A")
+
+
+def amended_filings(filings: List[dict], day: date, lookback_days: int = 90, minimum: int = 2) -> Optional[str]:
+    """Warning when there are >= `minimum` 10-Q/A or 10-K/A filings in the window."""
+    since = day - timedelta(days=lookback_days)
+    n = [f for f in filings if f["form"].upper() in AMENDED_FORMS and date.fromisoformat(f["filed"]) >= since]
+    if len(n) >= minimum:
+        forms = ", ".join(sorted({f"{f['form']} {f['filed']}" for f in n}))
+        return f"recent amended filings (possible restatement): {len(n)} in {lookback_days} days ({forms})"
+    return None
 
 
 def deficiency(filings: List[dict], day: date, lookback_days: int) -> List[str]:
@@ -405,11 +453,17 @@ def catalyst_rule(rec: Optional[dict], surge: Optional[float], surge_min: float)
     if rec.get("status") == "unavailable":
         return UNKNOWN, "", [f"classifier unavailable{': ' + rec['error'] if rec.get('error') else ''}"]
     out = rec["output"]
+    votes = rec.get("votes") or {}
+    vote_note = f" ({votes['promo']}/{votes['valid_runs']} runs)" if "promo" in votes else ""
     if out["promo_or_pump_flag"] or out["catalyst_type"] == "promo":
-        return FAIL, f"classifier: promo/pump ({out['one_line_summary'][:80]})", []
+        return FAIL, f"classifier: promo/pump{vote_note} ({out['one_line_summary'][:80]})", []
+    warns = []
+    if out["catalyst_type"] == "unclear":
+        warns.append(f"classifier runs disagree on catalyst type ({votes.get('types')})")
     if out["catalyst_type"] == "none":
         if surge is None:
             return UNKNOWN, "", ["no verifiable catalyst; prior-day volume surge unknown (short history)"]
         if surge < surge_min:
-            return FAIL, f"no verifiable catalyst and no prior-day volume surge ({surge:.1f}x)", []
-    return PASS, "", []
+            none_note = f", {votes['none']}/{votes['valid_runs']} runs" if "none" in votes and not rec.get("forced_none") else ""
+            return FAIL, f"no verifiable catalyst{none_note} and no prior-day volume surge ({surge:.1f}x)", []
+    return PASS, "", warns

@@ -6,6 +6,18 @@
     "attempts": [
      {
       "input_tokens": 1315,
+      "output_tokens": 93,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
+     {
+      "input_tokens": 1315,
+      "output_tokens": 96,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
+     {
+      "input_tokens": 1315,
       "output_tokens": 96,
       "stop_reason": "end_turn",
       "valid": true
@@ -20,7 +32,7 @@
      "acquisition_target": false,
      "catalyst_type": "none",
      "dilution_language": false,
-     "one_line_summary": "No company news in last 48 hours; only Form 3, Form 4 and 6-K filing titles listed.",
+     "one_line_summary": "No news items for Bradbury Capital in the last 48 hours; only routine filing titles listed.",
      "promo_or_pump_flag": false,
      "quality": 0
     },
@@ -28,17 +40,95 @@
      "acquisition_target": false,
      "catalyst_type": "none",
      "dilution_language": false,
-     "one_line_summary": "No company news in last 48 hours; only Form 3, Form 4 and 6-K filing titles listed.",
+     "one_line_summary": "No news items for Bradbury Capital in the last 48 hours; only routine filing titles listed.",
      "promo_or_pump_flag": false,
      "quality": 0
     },
-    "status": "ok"
+    "runs": [
+     {
+      "attempts": [
+       {
+        "input_tokens": 1315,
+        "output_tokens": 93,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "none",
+       "dilution_language": false,
+       "one_line_summary": "No news items for Bradbury Capital in the last 48 hours; only routine filing titles listed.",
+       "promo_or_pump_flag": false,
+       "quality": 0
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1315,
+        "output_tokens": 96,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "none",
+       "dilution_language": false,
+       "one_line_summary": "No news items for Bradbury Capital in the last 48 hours; only routine SEC filing titles listed.",
+       "promo_or_pump_flag": false,
+       "quality": 0
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1315,
+        "output_tokens": 96,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "none",
+       "dilution_language": false,
+       "one_line_summary": "No news items about Bradbury Capital in the last 48 hours; only routine SEC filing titles listed.",
+       "promo_or_pump_flag": false,
+       "quality": 0
+      }
+     }
+    ],
+    "status": "ok",
+    "votes": {
+     "dilution": 0,
+     "merger_target": 0,
+     "none": 3,
+     "promo": 0,
+     "types": {
+      "none": 3
+     },
+     "valid_runs": 3
+    }
    },
    "BIRD": {
     "attempts": [
      {
       "input_tokens": 1930,
-      "output_tokens": 107,
+      "output_tokens": 117,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
+     {
+      "input_tokens": 1930,
+      "output_tokens": 117,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
+     {
+      "input_tokens": 1930,
+      "output_tokens": 117,
       "stop_reason": "end_turn",
       "valid": true
      }
@@ -52,7 +142,7 @@
      "acquisition_target": false,
      "catalyst_type": "contract",
      "dilution_language": false,
-     "one_line_summary": "Smartbird signed multi-year colocation deal with Expedient for over 3.7 MW data center capacity; terms undisclosed.",
+     "one_line_summary": "Smartbird signed multi-year colocation deal with Expedient for 3.7+ MW data center capacity; terms undisclosed; Q3 EPS reported.",
      "promo_or_pump_flag": false,
      "quality": 3
     },
@@ -60,14 +150,92 @@
      "acquisition_target": false,
      "catalyst_type": "contract",
      "dilution_language": false,
-     "one_line_summary": "Smartbird signed multi-year colocation deal with Expedient for over 3.7 MW data center capacity; terms undisclosed.",
+     "one_line_summary": "Smartbird signed multi-year colocation deal with Expedient for 3.7+ MW data center capacity; terms undisclosed; Q3 EPS reported.",
      "promo_or_pump_flag": false,
      "quality": 3
     },
-    "status": "ok"
+    "runs": [
+     {
+      "attempts": [
+       {
+        "input_tokens": 1930,
+        "output_tokens": 117,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "contract",
+       "dilution_language": false,
+       "one_line_summary": "Smartbird signed multi-year colocation deal with Expedient for 3.7+ MW data center capacity; terms undisclosed; Q3 EPS reported.",
+       "promo_or_pump_flag": false,
+       "quality": 3
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1930,
+        "output_tokens": 117,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "contract",
+       "dilution_language": false,
+       "one_line_summary": "Smartbird signed multi-year colocation deal with Expedient for 3.7+ MW data center capacity; terms undisclosed; Q3 EPS reported.",
+       "promo_or_pump_flag": false,
+       "quality": 3
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1930,
+        "output_tokens": 117,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "contract",
+       "dilution_language": false,
+       "one_line_summary": "Smartbird signed multi-year colocation deal with Expedient for 3.7+ MW data center capacity; terms undisclosed, Q3 EPS reported.",
+       "promo_or_pump_flag": false,
+       "quality": 3
+      }
+     }
+    ],
+    "status": "ok",
+    "votes": {
+     "dilution": 0,
+     "merger_target": 0,
+     "none": 0,
+     "promo": 0,
+     "types": {
+      "contract": 3
+     },
+     "valid_runs": 3
+    }
    },
    "BOF": {
     "attempts": [
+     {
+      "input_tokens": 1415,
+      "output_tokens": 109,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
+     {
+      "input_tokens": 1415,
+      "output_tokens": 109,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
      {
       "input_tokens": 1415,
       "output_tokens": 109,
@@ -96,13 +264,91 @@
      "promo_or_pump_flag": false,
      "quality": 1
     },
-    "status": "ok"
+    "runs": [
+     {
+      "attempts": [
+       {
+        "input_tokens": 1415,
+        "output_tokens": 109,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "other",
+       "dilution_language": false,
+       "one_line_summary": "BranchOut Food confirms participation in StoneX 15th Annual Discovery 1x1 Investor Conference on December 10, 2026.",
+       "promo_or_pump_flag": false,
+       "quality": 1
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1415,
+        "output_tokens": 109,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "other",
+       "dilution_language": false,
+       "one_line_summary": "BranchOut Food confirms participation in StoneX 15th Annual Discovery 1x1 Investor Conference on December 10, 2026.",
+       "promo_or_pump_flag": false,
+       "quality": 1
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1415,
+        "output_tokens": 109,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "other",
+       "dilution_language": false,
+       "one_line_summary": "BranchOut Food confirms participation in StoneX 15th Annual Discovery 1x1 Investor Conference on December 10, 2026.",
+       "promo_or_pump_flag": false,
+       "quality": 1
+      }
+     }
+    ],
+    "status": "ok",
+    "votes": {
+     "dilution": 0,
+     "merger_target": 0,
+     "none": 0,
+     "promo": 0,
+     "types": {
+      "other": 3
+     },
+     "valid_runs": 3
+    }
    },
    "CALC": {
     "attempts": [
      {
       "input_tokens": 1307,
+      "output_tokens": 99,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
+     {
+      "input_tokens": 1307,
       "output_tokens": 96,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
+     {
+      "input_tokens": 1307,
+      "output_tokens": 97,
       "stop_reason": "end_turn",
       "valid": true
      }
@@ -116,7 +362,7 @@
      "acquisition_target": false,
      "catalyst_type": "none",
      "dilution_language": false,
-     "one_line_summary": "No news items in last 48 hours; only a 10-Q and an earnings-related 8-K filing listed.",
+     "one_line_summary": "No news items in last 48 hours; only a 10-Q and an earnings 8-K filed by CalciMedica.",
      "promo_or_pump_flag": false,
      "quality": 0
     },
@@ -124,17 +370,95 @@
      "acquisition_target": false,
      "catalyst_type": "none",
      "dilution_language": false,
-     "one_line_summary": "No news items in last 48 hours; only a 10-Q and an earnings-related 8-K filing listed.",
+     "one_line_summary": "No news items in last 48 hours; only a 10-Q and an earnings 8-K filed by CalciMedica.",
      "promo_or_pump_flag": false,
      "quality": 0
     },
-    "status": "ok"
+    "runs": [
+     {
+      "attempts": [
+       {
+        "input_tokens": 1307,
+        "output_tokens": 99,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "none",
+       "dilution_language": false,
+       "one_line_summary": "No news items in last 48 hours; only a 10-Q and an earnings 8-K filed by CalciMedica.",
+       "promo_or_pump_flag": false,
+       "quality": 0
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1307,
+        "output_tokens": 96,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "none",
+       "dilution_language": false,
+       "one_line_summary": "No news items in last 48 hours; only a 10-Q and an earnings-related 8-K filing appear.",
+       "promo_or_pump_flag": false,
+       "quality": 0
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1307,
+        "output_tokens": 97,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "none",
+       "dilution_language": false,
+       "one_line_summary": "No news items in last 48 hours; only a 10-Q and an earnings 8-K filed Nov 10.",
+       "promo_or_pump_flag": false,
+       "quality": 0
+      }
+     }
+    ],
+    "status": "ok",
+    "votes": {
+     "dilution": 0,
+     "merger_target": 0,
+     "none": 3,
+     "promo": 0,
+     "types": {
+      "none": 3
+     },
+     "valid_runs": 3
+    }
    },
    "CDXS": {
     "attempts": [
      {
       "input_tokens": 1642,
-      "output_tokens": 412,
+      "output_tokens": 394,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
+     {
+      "input_tokens": 1642,
+      "output_tokens": 405,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
+     {
+      "input_tokens": 1642,
+      "output_tokens": 293,
       "stop_reason": "end_turn",
       "valid": true
      }
@@ -148,7 +472,7 @@
      "acquisition_target": false,
      "catalyst_type": "earnings",
      "dilution_language": true,
-     "one_line_summary": "Codexis reported Q3 2026 sales of $19.262M and EPS of $(0.08), beating estimates, and affirmed FY2026 sales guidance.",
+     "one_line_summary": "Codexis reported Q3 2026 results beating EPS and sales estimates and affirmed FY2026 sales guidance of $72-76M.",
      "promo_or_pump_flag": false,
      "quality": 4
     },
@@ -156,17 +480,95 @@
      "acquisition_target": false,
      "catalyst_type": "earnings",
      "dilution_language": true,
-     "one_line_summary": "Codexis reported Q3 2026 sales of $19.262M and EPS of $(0.08), beating estimates, and affirmed FY2026 sales guidance.",
+     "one_line_summary": "Codexis reported Q3 2026 results beating EPS and sales estimates and affirmed FY2026 sales guidance of $72-76M.",
      "promo_or_pump_flag": false,
      "quality": 4
     },
-    "status": "ok"
+    "runs": [
+     {
+      "attempts": [
+       {
+        "input_tokens": 1642,
+        "output_tokens": 394,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "earnings",
+       "dilution_language": true,
+       "one_line_summary": "Codexis reported Q3 2026 results beating EPS and sales estimates and affirmed FY2026 sales guidance of $72-76M.",
+       "promo_or_pump_flag": false,
+       "quality": 4
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1642,
+        "output_tokens": 405,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "earnings",
+       "dilution_language": false,
+       "one_line_summary": "Codexis reported Q3 2026 sales of $19.26M beating estimates, EPS $(0.08) beat, and affirmed FY2026 sales guidance.",
+       "promo_or_pump_flag": false,
+       "quality": 5
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1642,
+        "output_tokens": 293,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "earnings",
+       "dilution_language": false,
+       "one_line_summary": "Codexis reported Q3 2026 EPS of $(0.08) beating estimates, sales of $19.26M beat, and affirmed FY2026 guidance.",
+       "promo_or_pump_flag": false,
+       "quality": 4
+      }
+     }
+    ],
+    "status": "ok",
+    "votes": {
+     "dilution": 1,
+     "merger_target": 0,
+     "none": 0,
+     "promo": 0,
+     "types": {
+      "earnings": 3
+     },
+     "valid_runs": 3
+    }
    },
    "LFMD": {
     "attempts": [
      {
       "input_tokens": 1850,
-      "output_tokens": 109,
+      "output_tokens": 110,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
+     {
+      "input_tokens": 1850,
+      "output_tokens": 111,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
+     {
+      "input_tokens": 1850,
+      "output_tokens": 111,
       "stop_reason": "end_turn",
       "valid": true
      }
@@ -179,23 +581,101 @@
     "model_output": {
      "acquisition_target": false,
      "catalyst_type": "earnings",
-     "dilution_language": false,
-     "one_line_summary": "LifeMD reported Q3 2026 results with sales miss and cut full-year 2026 revenue guidance to $188M-$191M.",
+     "dilution_language": true,
+     "one_line_summary": "LifeMD reported Q3 2026 results with revenue miss and cut full-year 2026 revenue guidance to $188M-$191M.",
      "promo_or_pump_flag": false,
      "quality": 4
     },
     "output": {
      "acquisition_target": false,
      "catalyst_type": "earnings",
-     "dilution_language": false,
-     "one_line_summary": "LifeMD reported Q3 2026 results with sales miss and cut full-year 2026 revenue guidance to $188M-$191M.",
+     "dilution_language": true,
+     "one_line_summary": "LifeMD reported Q3 2026 results with revenue miss and cut full-year 2026 revenue guidance to $188M-$191M.",
      "promo_or_pump_flag": false,
      "quality": 4
     },
-    "status": "ok"
+    "runs": [
+     {
+      "attempts": [
+       {
+        "input_tokens": 1850,
+        "output_tokens": 110,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "earnings",
+       "dilution_language": true,
+       "one_line_summary": "LifeMD reported Q3 2026 results with revenue miss and cut full-year 2026 revenue guidance to $188M-$191M.",
+       "promo_or_pump_flag": false,
+       "quality": 4
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1850,
+        "output_tokens": 111,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "earnings",
+       "dilution_language": false,
+       "one_line_summary": "LifeMD reported Q3 2026 revenue of $44.6M, missed estimates, and cut full-year 2026 revenue guidance.",
+       "promo_or_pump_flag": false,
+       "quality": 4
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1850,
+        "output_tokens": 111,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "earnings",
+       "dilution_language": true,
+       "one_line_summary": "LifeMD reported Q3 2026 revenue of $44.6M, missed estimates, and cut full-year 2026 revenue guidance.",
+       "promo_or_pump_flag": false,
+       "quality": 4
+      }
+     }
+    ],
+    "status": "ok",
+    "votes": {
+     "dilution": 2,
+     "merger_target": 0,
+     "none": 0,
+     "promo": 0,
+     "types": {
+      "earnings": 3
+     },
+     "valid_runs": 3
+    }
    },
    "MRLN": {
     "attempts": [
+     {
+      "input_tokens": 1921,
+      "output_tokens": 112,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
+     {
+      "input_tokens": 1921,
+      "output_tokens": 116,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
      {
       "input_tokens": 1921,
       "output_tokens": 116,
@@ -212,7 +692,7 @@
      "acquisition_target": false,
      "catalyst_type": "earnings",
      "dilution_language": true,
-     "one_line_summary": "Merlin reported Q3 2026 results with EPS of $0.37 and revenue of $3.5M, plus a $8.9M USSOCOM task order.",
+     "one_line_summary": "Merlin reports Q3 2026 results with EPS beat and $8.9M USSOCOM C-130J task order; 424B3 filings present.",
      "promo_or_pump_flag": false,
      "quality": 4
     },
@@ -220,14 +700,92 @@
      "acquisition_target": false,
      "catalyst_type": "earnings",
      "dilution_language": true,
-     "one_line_summary": "Merlin reported Q3 2026 results with EPS of $0.37 and revenue of $3.5M, plus a $8.9M USSOCOM task order.",
+     "one_line_summary": "Merlin reports Q3 2026 results with EPS beat and $8.9M USSOCOM C-130J task order; 424B3 filings present.",
      "promo_or_pump_flag": false,
      "quality": 4
     },
-    "status": "ok"
+    "runs": [
+     {
+      "attempts": [
+       {
+        "input_tokens": 1921,
+        "output_tokens": 112,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "earnings",
+       "dilution_language": true,
+       "one_line_summary": "Merlin reports Q3 2026 results with EPS beat and $8.9M USSOCOM C-130J task order; 424B3 filings present.",
+       "promo_or_pump_flag": false,
+       "quality": 4
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1921,
+        "output_tokens": 116,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "earnings",
+       "dilution_language": true,
+       "one_line_summary": "Merlin reported Q3 2026 results with EPS of $0.37 and revenue of $3.5M, plus an $8.9M USSOCOM task order.",
+       "promo_or_pump_flag": false,
+       "quality": 4
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1921,
+        "output_tokens": 116,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "earnings",
+       "dilution_language": true,
+       "one_line_summary": "Merlin reported Q3 2026 results with EPS of $0.37 and revenue of $3.5M, plus a $8.9M USSOCOM task order.",
+       "promo_or_pump_flag": false,
+       "quality": 4
+      }
+     }
+    ],
+    "status": "ok",
+    "votes": {
+     "dilution": 3,
+     "merger_target": 0,
+     "none": 0,
+     "promo": 0,
+     "types": {
+      "earnings": 3
+     },
+     "valid_runs": 3
+    }
    },
    "SKYE": {
     "attempts": [
+     {
+      "input_tokens": 1312,
+      "output_tokens": 88,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
+     {
+      "input_tokens": 1312,
+      "output_tokens": 90,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
      {
       "input_tokens": 1312,
       "output_tokens": 101,
@@ -244,7 +802,7 @@
      "acquisition_target": false,
      "catalyst_type": "none",
      "dilution_language": false,
-     "one_line_summary": "No company-specific news in the last 48 hours; only routine SEC filings (DEFA14A, 8-K) listed.",
+     "one_line_summary": "No company-specific news in the last 48 hours; only routine SEC filings listed.",
      "promo_or_pump_flag": false,
      "quality": 0
     },
@@ -252,14 +810,92 @@
      "acquisition_target": false,
      "catalyst_type": "none",
      "dilution_language": false,
-     "one_line_summary": "No company-specific news in the last 48 hours; only routine SEC filings (DEFA14A, 8-K) listed.",
+     "one_line_summary": "No company-specific news in the last 48 hours; only routine SEC filings listed.",
      "promo_or_pump_flag": false,
      "quality": 0
     },
-    "status": "ok"
+    "runs": [
+     {
+      "attempts": [
+       {
+        "input_tokens": 1312,
+        "output_tokens": 88,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "none",
+       "dilution_language": false,
+       "one_line_summary": "No company-specific news in the last 48 hours; only routine SEC filings listed.",
+       "promo_or_pump_flag": false,
+       "quality": 0
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1312,
+        "output_tokens": 90,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "none",
+       "dilution_language": false,
+       "one_line_summary": "No company-specific news in last 48 hours; only filings with undisclosed titles listed.",
+       "promo_or_pump_flag": false,
+       "quality": 0
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1312,
+        "output_tokens": 101,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "none",
+       "dilution_language": false,
+       "one_line_summary": "No company-specific news in the last 48 hours; only routine SEC filings (DEFA14A, 8-K) listed.",
+       "promo_or_pump_flag": false,
+       "quality": 0
+      }
+     }
+    ],
+    "status": "ok",
+    "votes": {
+     "dilution": 0,
+     "merger_target": 0,
+     "none": 3,
+     "promo": 0,
+     "types": {
+      "none": 3
+     },
+     "valid_runs": 3
+    }
    },
    "SLSN": {
     "attempts": [
+     {
+      "input_tokens": 1705,
+      "output_tokens": 106,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
+     {
+      "input_tokens": 1705,
+      "output_tokens": 114,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
      {
       "input_tokens": 1705,
       "output_tokens": 114,
@@ -276,7 +912,7 @@
      "acquisition_target": false,
      "catalyst_type": "earnings",
      "dilution_language": false,
-     "one_line_summary": "Sol\u00e9sence reported Q3 2026 results: EPS $0.05 versus $(0.02) prior year, sales $19.98M up from $14.60M.",
+     "one_line_summary": "Sol\u00e9sence reported Q3 2026 results with EPS of $0.05 and sales of $19.98M, up from $14.6M.",
      "promo_or_pump_flag": false,
      "quality": 4
     },
@@ -284,17 +920,95 @@
      "acquisition_target": false,
      "catalyst_type": "earnings",
      "dilution_language": false,
-     "one_line_summary": "Sol\u00e9sence reported Q3 2026 results: EPS $0.05 versus $(0.02) prior year, sales $19.98M up from $14.60M.",
+     "one_line_summary": "Sol\u00e9sence reported Q3 2026 results with EPS of $0.05 and sales of $19.98M, up from $14.6M.",
      "promo_or_pump_flag": false,
      "quality": 4
     },
-    "status": "ok"
+    "runs": [
+     {
+      "attempts": [
+       {
+        "input_tokens": 1705,
+        "output_tokens": 106,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "earnings",
+       "dilution_language": false,
+       "one_line_summary": "Sol\u00e9sence reported Q3 2026 results with EPS of $0.05 and sales of $19.98M, up from $14.6M.",
+       "promo_or_pump_flag": false,
+       "quality": 4
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1705,
+        "output_tokens": 114,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "earnings",
+       "dilution_language": false,
+       "one_line_summary": "Sol\u00e9sence reported Q3 2026 results: EPS $0.05 vs $(0.02) prior year, sales $19.98M vs $14.60M.",
+       "promo_or_pump_flag": false,
+       "quality": 4
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1705,
+        "output_tokens": 114,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "earnings",
+       "dilution_language": false,
+       "one_line_summary": "Sol\u00e9sence reported Q3 2026 results: EPS $0.05 versus $(0.02) prior year, sales $19.98M up from $14.60M.",
+       "promo_or_pump_flag": false,
+       "quality": 4
+      }
+     }
+    ],
+    "status": "ok",
+    "votes": {
+     "dilution": 0,
+     "merger_target": 0,
+     "none": 0,
+     "promo": 0,
+     "types": {
+      "earnings": 3
+     },
+     "valid_runs": 3
+    }
    },
    "SPRU": {
     "attempts": [
      {
       "input_tokens": 1627,
-      "output_tokens": 105,
+      "output_tokens": 117,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
+     {
+      "input_tokens": 1627,
+      "output_tokens": 118,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
+     {
+      "input_tokens": 1627,
+      "output_tokens": 118,
       "stop_reason": "end_turn",
       "valid": true
      }
@@ -308,7 +1022,7 @@
      "acquisition_target": false,
      "catalyst_type": "earnings",
      "dilution_language": false,
-     "one_line_summary": "Spruce Power reported Q3 2026 results with EPS of $0.28 and sales of $29.7M, down year over year.",
+     "one_line_summary": "Spruce Power reported Q3 2026 results: EPS $0.28 versus $(0.04) a year ago, sales $29.7M versus $30.7M.",
      "promo_or_pump_flag": false,
      "quality": 4
     },
@@ -316,11 +1030,77 @@
      "acquisition_target": false,
      "catalyst_type": "earnings",
      "dilution_language": false,
-     "one_line_summary": "Spruce Power reported Q3 2026 results with EPS of $0.28 and sales of $29.7M, down year over year.",
+     "one_line_summary": "Spruce Power reported Q3 2026 results: EPS $0.28 versus $(0.04) a year ago, sales $29.7M versus $30.7M.",
      "promo_or_pump_flag": false,
      "quality": 4
     },
-    "status": "ok"
+    "runs": [
+     {
+      "attempts": [
+       {
+        "input_tokens": 1627,
+        "output_tokens": 117,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "earnings",
+       "dilution_language": false,
+       "one_line_summary": "Spruce Power reported Q3 2026 results: EPS $0.28 versus $(0.04) a year ago, sales $29.7M versus $30.7M.",
+       "promo_or_pump_flag": false,
+       "quality": 4
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1627,
+        "output_tokens": 118,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "earnings",
+       "dilution_language": false,
+       "one_line_summary": "Spruce Power reported Q3 2026 results: EPS $0.28 versus $(0.04) a year earlier, sales $29.7M versus $30.7M.",
+       "promo_or_pump_flag": false,
+       "quality": 4
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1627,
+        "output_tokens": 118,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "earnings",
+       "dilution_language": false,
+       "one_line_summary": "Spruce Power reported Q3 2026 results: EPS $0.28 versus $(0.04) a year earlier, sales $29.7M versus $30.7M.",
+       "promo_or_pump_flag": false,
+       "quality": 4
+      }
+     }
+    ],
+    "status": "ok",
+    "votes": {
+     "dilution": 0,
+     "merger_target": 0,
+     "none": 0,
+     "promo": 0,
+     "types": {
+      "earnings": 3
+     },
+     "valid_runs": 3
+    }
    },
    "STAK": {
     "attempts": [],
@@ -337,10 +1117,23 @@
      "promo_or_pump_flag": false,
      "quality": 0
     },
+    "runs": [],
     "status": "no_news"
    },
    "XBIO": {
     "attempts": [
+     {
+      "input_tokens": 1512,
+      "output_tokens": 100,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
+     {
+      "input_tokens": 1512,
+      "output_tokens": 100,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
      {
       "input_tokens": 1512,
       "output_tokens": 100,
@@ -357,7 +1150,7 @@
      "acquisition_target": false,
      "catalyst_type": "earnings",
      "dilution_language": false,
-     "one_line_summary": "Xenetic reported Q3 2026 financial results and updated on proposed share exchange with Santersus AG.",
+     "one_line_summary": "Xenetic reports Q3 2026 financial results and updates on proposed share exchange with Santersus AG.",
      "promo_or_pump_flag": false,
      "quality": 3
     },
@@ -365,11 +1158,77 @@
      "acquisition_target": false,
      "catalyst_type": "earnings",
      "dilution_language": false,
-     "one_line_summary": "Xenetic reported Q3 2026 financial results and updated on proposed share exchange with Santersus AG.",
+     "one_line_summary": "Xenetic reports Q3 2026 financial results and updates on proposed share exchange with Santersus AG.",
      "promo_or_pump_flag": false,
      "quality": 3
     },
-    "status": "ok"
+    "runs": [
+     {
+      "attempts": [
+       {
+        "input_tokens": 1512,
+        "output_tokens": 100,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "earnings",
+       "dilution_language": false,
+       "one_line_summary": "Xenetic reports Q3 2026 financial results and updates on proposed share exchange with Santersus AG.",
+       "promo_or_pump_flag": false,
+       "quality": 3
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1512,
+        "output_tokens": 100,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "earnings",
+       "dilution_language": false,
+       "one_line_summary": "Xenetic reports Q3 2026 financial results and updates on proposed share exchange with Santersus AG.",
+       "promo_or_pump_flag": false,
+       "quality": 3
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1512,
+        "output_tokens": 100,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "earnings",
+       "dilution_language": false,
+       "one_line_summary": "Xenetic reported Q3 2026 financial results and updated on proposed share exchange with Santersus AG.",
+       "promo_or_pump_flag": false,
+       "quality": 3
+      }
+     }
+    ],
+    "status": "ok",
+    "votes": {
+     "dilution": 0,
+     "merger_target": 0,
+     "none": 0,
+     "promo": 0,
+     "types": {
+      "earnings": 3
+     },
+     "valid_runs": 3
+    }
    }
   },
   "data_cutoff_et": "2026-11-13T08:59:00-05:00",
@@ -29483,6 +30342,613 @@
   },
   "prior_day": "2026-11-12",
   "quotes": {
+   "MRLN": [
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:00.217535813Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:01.021347483Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:01.11614282Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:01.116487673Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:01.116494808Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:01.116834379Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:11.07361637Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:11.074073852Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:11.104070572Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:11.114023686Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:12.017827834Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:12.018212856Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:12.018219592Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:12.018582211Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:13.671713802Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:13.797938664Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:14.71167819Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:15.467002253Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:19.502289303Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:24.551391446Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:25.751634947Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:25.751642951Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:26.792479663Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:28.262140093Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:28.262190542Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:30.14297975Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:31.987096881Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:31.98710577Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:32.074537887Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:34.36876271Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:35.243284606Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:36.533208997Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:36.533218307Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:39.856975981Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:39.857023201Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:41.060154704Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:42.232839581Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:42.842184212Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:43.253177291Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:45.781527523Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:47.16191896Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:47.523903098Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:49.702083976Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:51.151543603Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:51.300204641Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:53.21987721Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:54.56930427Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:55.51041868Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:55.51047047Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:56.692333335Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:57.428549013Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:57:57.428557479Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:04.817536588Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:05.24187Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:05.38042717Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:06.846691952Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:08.800206502Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:08.961229393Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:08.961275734Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:11.049762467Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:13.352480308Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:13.352531483Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:22.232239979Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:24.611188416Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:24.611192871Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:24.953053594Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:30.885162215Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:30.885214075Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:32.500602877Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:35.208219343Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:36.767054218Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:43.225885422Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:44.85640568Z"
+    },
+    {
+     "ap": 1.28,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:46.506556296Z"
+    },
+    {
+     "ap": 1.28,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:46.507027037Z"
+    },
+    {
+     "ap": 1.28,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:46.507059133Z"
+    },
+    {
+     "ap": 1.28,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:46.507077393Z"
+    },
+    {
+     "ap": 1.28,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:46.50716902Z"
+    },
+    {
+     "ap": 1.28,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:46.507280358Z"
+    },
+    {
+     "ap": 1.28,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:46.50766988Z"
+    },
+    {
+     "ap": 1.28,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:46.507796833Z"
+    },
+    {
+     "ap": 1.28,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:46.507816441Z"
+    },
+    {
+     "ap": 1.28,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:46.507843221Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:46.507922589Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:46.508424153Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:46.508980621Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:46.512604469Z"
+    },
+    {
+     "ap": 1.28,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:46.846614589Z"
+    },
+    {
+     "ap": 1.28,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:46.847279451Z"
+    },
+    {
+     "ap": 1.28,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:46.847326797Z"
+    },
+    {
+     "ap": 1.28,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:46.847360477Z"
+    },
+    {
+     "ap": 1.28,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:46.847416837Z"
+    },
+    {
+     "ap": 1.28,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:46.847426524Z"
+    },
+    {
+     "ap": 1.28,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:46.847470995Z"
+    },
+    {
+     "ap": 1.28,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:46.847803934Z"
+    },
+    {
+     "ap": 1.28,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:46.847853054Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:46.847982796Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:46.848056288Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:46.848868121Z"
+    },
+    {
+     "ap": 1.28,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:47.313250912Z"
+    },
+    {
+     "ap": 1.28,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:47.313874741Z"
+    },
+    {
+     "ap": 1.28,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:47.314003776Z"
+    },
+    {
+     "ap": 1.28,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:47.314004627Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:47.314197785Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:47.518603353Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:48.638272227Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:49.542784053Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:49.599834168Z"
+    },
+    {
+     "ap": 1.28,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:49.732721215Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:51.056052177Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:51.623763512Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:52.181017065Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:53.238316646Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:54.313463454Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:54.313810721Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:54.610696642Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:54.610749029Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:54.611286433Z"
+    },
+    {
+     "ap": 1.29,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:56.232362785Z"
+    },
+    {
+     "ap": 1.28,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:59.3087759Z"
+    },
+    {
+     "ap": 1.28,
+     "bp": 1.28,
+     "t": "2026-11-13T13:58:59.705270317Z"
+    }
+   ],
    "SLSN": [
     {
      "ap": 1.18,
@@ -29496,7 +30962,7 @@
     }
    ]
   },
-  "schema": 5,
+  "schema": 6,
   "t212": {
    "as_of": "2026-11-15",
    "path": "data/t212/2026-11-15.json",
@@ -40446,6 +41912,12 @@
    }
   },
   "yahoo": {
+   "MRLN": {
+    "fetched_at": "2026-11-16T03:00:23.358915-05:00",
+    "floatShares": 46411337,
+    "impliedSharesOutstanding": 102418930,
+    "sharesOutstanding": 102418930
+   },
    "SLSN": {
     "fetched_at": "2026-11-15T15:51:30.450479-05:00",
     "floatShares": 18332202,
@@ -40462,7 +41934,7 @@
     "catalyst_forced_none": false,
     "catalyst_quality": 4,
     "catalyst_status": "ok",
-    "catalyst_summary": "Merlin reported Q3 2026 results with EPS of $0.37 and revenue of $3.5M, plus a $8.9M USSOCOM task order.",
+    "catalyst_summary": "Merlin reports Q3 2026 results with EPS beat and $8.9M USSOCOM C-130J task order; 424B3 filings present.",
     "catalyst_type": "earnings",
     "continuation_detail": "11-12 -4.5% 6.3x vol",
     "data_cutoff_et": "2026-11-13T08:59:00-05:00",
@@ -40476,26 +41948,34 @@
     "eligible": false,
     "evidence": "[offering:resale] 424B3 2026-11-13 supplement to resale registration (424B3 2026-05-13), supply overhang | \"We will not receive any proceeds from the sale of the Resale Shares by the Selling Stockholder.\" | https://www.sec.gov/Archives/edgar/data/2028707/000162828026073595/merlinpipeprospectussupple.htm || [offering:possible] 424B3 2026-11-13 supplement to a primary offering prospectus (424B3 2026-04-21); no new offering terms | \"Primary Offering of up to 66,813,783 SHARES OF COMMON STOCK Secondary Offering of up to 157,700,431 SHARES OF COMMON STOCK 736,744 SHARES OF SERIES A PREFERRED STOCK 760,232 SERIES A PREFERRED INVESTOR WARRANTS This prospectus relates to the o\" | https://www.sec.gov/Archives/edgar/data/2028707/000162828026073594/merlinpipeprospectussupple.htm",
     "exchange": "NASDAQ",
-    "float_shares": null,
-    "float_source": "",
+    "float_shares": 46411337,
+    "float_source": "yahoo",
     "gap_pct": 32.75,
     "halt_status": "halt status unknown (historical run: the feed only holds current halts)",
     "last_bar_et": "08:58",
+    "levels_status": "ok",
     "name": "Merlin, Inc. Common Stock",
     "news_dropped_roundup": 1,
     "news_used": 6,
     "pm_bars": 299,
     "pm_dollar_volume": 15408095.54,
     "pm_high": 1.53,
+    "pm_high_last60": 1.3784,
+    "pm_high_used": 1.3784,
     "pm_trades": 48540,
     "pm_volume": 11286168,
+    "position_usd_challenge": null,
+    "position_usd_measure": 50.0,
     "price": 1.2802,
     "prior_close": 0.9644,
     "prior_date": "2026-11-12",
     "prior_day_volume_multiple": 7.64,
     "prior_range_pos_pct": 63.5,
+    "risk_per_share": 0.02,
+    "risk_usd_challenge": null,
+    "risk_usd_measure": 0.72,
     "rule_continuation": "pass",
-    "rule_float": "",
+    "rule_float": "pass",
     "rule_gap": "pass",
     "rule_pm_dollar_volume": "pass",
     "rule_pm_trades": "pass",
@@ -40503,11 +41983,24 @@
     "rule_prior_range": "fail",
     "rule_t212": "pass",
     "scan_file": "data/scans/2026-11-13.json",
-    "spread_pct": null,
+    "score": 61.09,
+    "score_parts": "gap=0.655 volume=0.6788 catalyst=0.8 float=0.0718",
+    "shares_challenge": null,
+    "shares_measure": 35.97,
+    "shortlist_rank": 2,
+    "size_note_challenge": "profile not set",
+    "size_note_measure": "capped by position limit",
+    "spread_pct": 0.78,
+    "stop": 1.37,
+    "stop_basis": "higher low 1.38 at 07:23",
+    "stop_pct": 1.44,
     "symbol": "MRLN",
     "t212_list": "data/t212/2026-11-15.json",
-    "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); resale registration, supply overhang: 424B3 2026-11-13 supplement to resale registration (424B3 2026-05-13), supply overhang; possible offering: 424B3 2026-11-13 supplement to a primary offering prospectus (424B3 2026-04-21); no new offering terms",
-    "yahoo_shares_out": null
+    "target_1_5r": 1.42,
+    "tier": "B",
+    "trigger": 1.39,
+    "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); resale registration, supply overhang: 424B3 2026-11-13 supplement to resale registration (424B3 2026-05-13), supply overhang; possible offering: 424B3 2026-11-13 supplement to a primary offering prospectus (424B3 2026-04-21); no new offering terms; historical run: float is today's Yahoo value",
+    "yahoo_shares_out": 102418930
    },
    {
     "as_of_et": "2026-11-13T09:15:00-05:00",
@@ -40540,6 +42033,7 @@
     "pm_bars": 198,
     "pm_dollar_volume": 8237208.03,
     "pm_high": 2.1,
+    "pm_high_last60": 2.1,
     "pm_trades": 32984,
     "pm_volume": 4452934,
     "price": 1.75,
@@ -40556,9 +42050,12 @@
     "rule_prior_range": "fail",
     "rule_t212": "pass",
     "scan_file": "data/scans/2026-11-13.json",
+    "score": null,
+    "shortlist_rank": null,
     "spread_pct": null,
     "symbol": "STAK",
     "t212_list": "data/t212/2026-11-15.json",
+    "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); EDGAR shares outstanding stale (as of 2026-06-30)",
     "yahoo_shares_out": null
    },
@@ -40568,7 +42065,7 @@
     "catalyst_forced_none": false,
     "catalyst_quality": 4,
     "catalyst_status": "ok",
-    "catalyst_summary": "Sol\u00e9sence reported Q3 2026 results: EPS $0.05 versus $(0.02) prior year, sales $19.98M up from $14.60M.",
+    "catalyst_summary": "Sol\u00e9sence reported Q3 2026 results with EPS of $0.05 and sales of $19.98M, up from $14.6M.",
     "catalyst_type": "earnings",
     "continuation_detail": "11-12 -0.2% 75.6x vol",
     "data_cutoff_et": "2026-11-13T08:59:00-05:00",
@@ -40587,19 +42084,27 @@
     "gap_pct": 26.51,
     "halt_status": "halt status unknown (historical run: the feed only holds current halts)",
     "last_bar_et": "08:56",
+    "levels_status": "ok",
     "name": "Solesence, Inc. Common Stock",
     "news_dropped_roundup": 0,
     "news_used": 2,
     "pm_bars": 218,
     "pm_dollar_volume": 533044.54,
     "pm_high": 1.35,
+    "pm_high_last60": 1.2,
+    "pm_high_used": 1.2,
     "pm_trades": 2461,
     "pm_volume": 447157,
+    "position_usd_challenge": null,
+    "position_usd_measure": 50.0,
     "price": 1.15,
     "prior_close": 0.909,
     "prior_date": "2026-11-12",
     "prior_day_volume_multiple": 71.31,
     "prior_range_pos_pct": 96.7,
+    "risk_per_share": 0.05,
+    "risk_usd_challenge": null,
+    "risk_usd_measure": 2.07,
     "rule_continuation": "pass",
     "rule_float": "pass",
     "rule_gap": "pass",
@@ -40609,10 +42114,23 @@
     "rule_prior_range": "pass",
     "rule_t212": "pass",
     "scan_file": "data/scans/2026-11-13.json",
+    "score": 75.41,
+    "score_parts": "gap=0.5302 volume=1.0 catalyst=0.8 float=0.6334",
+    "shares_challenge": null,
+    "shares_measure": 41.32,
+    "shortlist_rank": 1,
+    "size_note_challenge": "profile not set",
+    "size_note_measure": "capped by position limit",
     "spread_pct": 2.58,
+    "stop": 1.16,
+    "stop_basis": "higher low 1.17 at 07:39",
+    "stop_pct": 4.13,
     "symbol": "SLSN",
     "t212_list": "data/t212/2026-11-15.json",
-    "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); 8-K 2026-10-02 item 3.01 (listing deficiency); historical run: float is today's Yahoo value",
+    "target_1_5r": 1.285,
+    "tier": "A",
+    "trigger": 1.21,
+    "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); 8-K 2026-10-02 item 3.01 (listing deficiency); recent amended filings (possible restatement): 5 in 90 days (10-K/A 2026-11-10, 10-Q/A 2026-11-10); historical run: float is today's Yahoo value",
     "yahoo_shares_out": 70647045
    },
    {
@@ -40621,7 +42139,7 @@
     "catalyst_forced_none": true,
     "catalyst_quality": 0,
     "catalyst_status": "ok",
-    "catalyst_summary": "No company news in last 48 hours; only Form 3, Form 4 and 6-K filing titles listed.",
+    "catalyst_summary": "No news items for Bradbury Capital in the last 48 hours; only routine filing titles listed.",
     "catalyst_type": "none",
     "continuation_detail": "11-10 -9.6% 0.0x; 11-11 -0.8% 0.1x; 11-12 -5.0% 0.2x",
     "data_cutoff_et": "2026-11-13T08:59:00-05:00",
@@ -40646,6 +42164,7 @@
     "pm_bars": 57,
     "pm_dollar_volume": 95818.37,
     "pm_high": 1.34,
+    "pm_high_last60": 1.31,
     "pm_trades": 292,
     "pm_volume": 75771,
     "price": 1.28,
@@ -40662,9 +42181,12 @@
     "rule_prior_range": "fail",
     "rule_t212": "pass",
     "scan_file": "data/scans/2026-11-13.json",
+    "score": null,
+    "shortlist_rank": null,
     "spread_pct": null,
     "symbol": "BBCI",
     "t212_list": "data/t212/2026-11-15.json",
+    "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); possible offering: 6-K 2026-11-09 offering language, no issuance wording; EDGAR shares outstanding missing",
     "yahoo_shares_out": null
    },
@@ -40674,7 +42196,7 @@
     "catalyst_forced_none": false,
     "catalyst_quality": 4,
     "catalyst_status": "ok",
-    "catalyst_summary": "LifeMD reported Q3 2026 results with sales miss and cut full-year 2026 revenue guidance to $188M-$191M.",
+    "catalyst_summary": "LifeMD reported Q3 2026 results with revenue miss and cut full-year 2026 revenue guidance to $188M-$191M.",
     "catalyst_type": "earnings",
     "continuation_detail": "11-10 -16.9% 3.0x vol",
     "data_cutoff_et": "2026-11-13T08:59:00-05:00",
@@ -40699,6 +42221,7 @@
     "pm_bars": 41,
     "pm_dollar_volume": 80870.06,
     "pm_high": 1.92,
+    "pm_high_last60": 1.9186,
     "pm_trades": 103,
     "pm_volume": 43129,
     "price": 1.89,
@@ -40715,9 +42238,12 @@
     "rule_prior_range": "fail",
     "rule_t212": "pass",
     "scan_file": "data/scans/2026-11-13.json",
+    "score": null,
+    "shortlist_rank": null,
     "spread_pct": null,
     "symbol": "LFMD",
     "t212_list": "data/t212/2026-11-15.json",
+    "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts)",
     "yahoo_shares_out": null
    },
@@ -40727,7 +42253,7 @@
     "catalyst_forced_none": false,
     "catalyst_quality": 3,
     "catalyst_status": "ok",
-    "catalyst_summary": "Smartbird signed multi-year colocation deal with Expedient for over 3.7 MW data center capacity; terms undisclosed.",
+    "catalyst_summary": "Smartbird signed multi-year colocation deal with Expedient for 3.7+ MW data center capacity; terms undisclosed; Q3 EPS reported.",
     "catalyst_type": "contract",
     "continuation_detail": "11-10 -6.7% 0.8x; 11-11 +0.0% 1.6x; 11-12 -11.9% 1.4x",
     "data_cutoff_et": "2026-11-13T08:59:00-05:00",
@@ -40752,6 +42278,7 @@
     "pm_bars": 39,
     "pm_dollar_volume": 72036.8,
     "pm_high": 1.2934,
+    "pm_high_last60": 1.27,
     "pm_trades": 105,
     "pm_volume": 58200,
     "price": 1.26,
@@ -40768,9 +42295,12 @@
     "rule_prior_range": "fail",
     "rule_t212": "pass",
     "scan_file": "data/scans/2026-11-13.json",
+    "score": null,
+    "shortlist_rank": null,
     "spread_pct": null,
     "symbol": "BIRD",
     "t212_list": "data/t212/2026-11-15.json",
+    "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); EDGAR shares outstanding missing",
     "yahoo_shares_out": null
    },
@@ -40780,7 +42310,7 @@
     "catalyst_forced_none": false,
     "catalyst_quality": 4,
     "catalyst_status": "ok",
-    "catalyst_summary": "Codexis reported Q3 2026 sales of $19.262M and EPS of $(0.08), beating estimates, and affirmed FY2026 sales guidance.",
+    "catalyst_summary": "Codexis reported Q3 2026 results beating EPS and sales estimates and affirmed FY2026 sales guidance of $72-76M.",
     "catalyst_type": "earnings",
     "continuation_detail": "11-10 -9.9% 0.8x; 11-11 -2.4% 2.0x; 11-12 -1.9% 1.2x",
     "data_cutoff_et": "2026-11-13T08:59:00-05:00",
@@ -40805,6 +42335,7 @@
     "pm_bars": 36,
     "pm_dollar_volume": 31911.37,
     "pm_high": 1.1445,
+    "pm_high_last60": 1.1,
     "pm_trades": 87,
     "pm_volume": 28769,
     "price": 1.0701,
@@ -40821,9 +42352,12 @@
     "rule_prior_range": "pass",
     "rule_t212": "pass",
     "scan_file": "data/scans/2026-11-13.json",
+    "score": null,
+    "shortlist_rank": null,
     "spread_pct": null,
     "symbol": "CDXS",
     "t212_list": "data/t212/2026-11-15.json",
+    "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts)",
     "yahoo_shares_out": null
    },
@@ -40858,6 +42392,7 @@
     "pm_bars": 11,
     "pm_dollar_volume": 13628.52,
     "pm_high": 2,
+    "pm_high_last60": 1.95,
     "pm_trades": 29,
     "pm_volume": 7111,
     "price": 1.95,
@@ -40874,9 +42409,12 @@
     "rule_prior_range": "fail",
     "rule_t212": "pass",
     "scan_file": "data/scans/2026-11-13.json",
+    "score": null,
+    "shortlist_rank": null,
     "spread_pct": null,
     "symbol": "BOF",
     "t212_list": "data/t212/2026-11-15.json",
+    "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts)",
     "yahoo_shares_out": null
    },
@@ -40886,7 +42424,7 @@
     "catalyst_forced_none": false,
     "catalyst_quality": 3,
     "catalyst_status": "ok",
-    "catalyst_summary": "Xenetic reported Q3 2026 financial results and updated on proposed share exchange with Santersus AG.",
+    "catalyst_summary": "Xenetic reports Q3 2026 financial results and updates on proposed share exchange with Santersus AG.",
     "catalyst_type": "earnings",
     "continuation_detail": "11-10 +0.1% 0.2x; 11-11 +3.7% 0.1x; 11-12 -11.0% 0.8x",
     "data_cutoff_et": "2026-11-13T08:59:00-05:00",
@@ -40911,6 +42449,7 @@
     "pm_bars": 2,
     "pm_dollar_volume": 2054.12,
     "pm_high": 1.827,
+    "pm_high_last60": 1.827,
     "pm_trades": 3,
     "pm_volume": 1167,
     "price": 1.827,
@@ -40927,9 +42466,12 @@
     "rule_prior_range": "fail",
     "rule_t212": "pass",
     "scan_file": "data/scans/2026-11-13.json",
+    "score": null,
+    "shortlist_rank": null,
     "spread_pct": null,
     "symbol": "XBIO",
     "t212_list": "data/t212/2026-11-15.json",
+    "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts)",
     "yahoo_shares_out": null
    },
@@ -40939,7 +42481,7 @@
     "catalyst_forced_none": true,
     "catalyst_quality": 0,
     "catalyst_status": "ok",
-    "catalyst_summary": "No company-specific news in the last 48 hours; only routine SEC filings (DEFA14A, 8-K) listed.",
+    "catalyst_summary": "No company-specific news in the last 48 hours; only routine SEC filings listed.",
     "catalyst_type": "none",
     "continuation_detail": "11-10 +21.6% 61.9x vol",
     "data_cutoff_et": "2026-11-13T08:59:00-05:00",
@@ -40964,6 +42506,7 @@
     "pm_bars": 2,
     "pm_dollar_volume": 1209.0,
     "pm_high": 1.19,
+    "pm_high_last60": 1.19,
     "pm_trades": 2,
     "pm_volume": 1100,
     "price": 1.19,
@@ -40980,9 +42523,12 @@
     "rule_prior_range": "fail",
     "rule_t212": "pass",
     "scan_file": "data/scans/2026-11-13.json",
+    "score": null,
+    "shortlist_rank": null,
     "spread_pct": null,
     "symbol": "SKYE",
     "t212_list": "data/t212/2026-11-15.json",
+    "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); 8-K 2026-08-19 item 3.01 (listing deficiency)",
     "yahoo_shares_out": null
    },
@@ -40992,7 +42538,7 @@
     "catalyst_forced_none": false,
     "catalyst_quality": 4,
     "catalyst_status": "ok",
-    "catalyst_summary": "Spruce Power reported Q3 2026 results with EPS of $0.28 and sales of $29.7M, down year over year.",
+    "catalyst_summary": "Spruce Power reported Q3 2026 results: EPS $0.28 versus $(0.04) a year ago, sales $29.7M versus $30.7M.",
     "catalyst_type": "earnings",
     "continuation_detail": "11-10 -4.6% 0.5x; 11-11 +5.6% 0.4x; 11-12 -8.6% 0.5x",
     "data_cutoff_et": "2026-11-13T08:59:00-05:00",
@@ -41017,6 +42563,7 @@
     "pm_bars": 2,
     "pm_dollar_volume": 358.27,
     "pm_high": 1.5522,
+    "pm_high_last60": null,
     "pm_trades": 2,
     "pm_volume": 231,
     "price": 1.5522,
@@ -41033,9 +42580,12 @@
     "rule_prior_range": "fail",
     "rule_t212": "pass",
     "scan_file": "data/scans/2026-11-13.json",
+    "score": null,
+    "shortlist_rank": null,
     "spread_pct": null,
     "symbol": "SPRU",
     "t212_list": "data/t212/2026-11-15.json",
+    "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (NYSE: feed coverage not confirmed)",
     "yahoo_shares_out": null
    },
@@ -41045,7 +42595,7 @@
     "catalyst_forced_none": true,
     "catalyst_quality": 0,
     "catalyst_status": "ok",
-    "catalyst_summary": "No news items in last 48 hours; only a 10-Q and an earnings-related 8-K filing listed.",
+    "catalyst_summary": "No news items in last 48 hours; only a 10-Q and an earnings 8-K filed by CalciMedica.",
     "catalyst_type": "none",
     "continuation_detail": "11-10 -9.6% 0.2x; 11-11 -9.5% 1.1x; 11-12 -1.6% 0.5x",
     "data_cutoff_et": "2026-11-13T08:59:00-05:00",
@@ -41070,6 +42620,7 @@
     "pm_bars": 1,
     "pm_dollar_volume": 209.99,
     "pm_high": 1.3636,
+    "pm_high_last60": null,
     "pm_trades": 7,
     "pm_volume": 154,
     "price": 1.3636,
@@ -41086,13 +42637,17 @@
     "rule_prior_range": "fail",
     "rule_t212": "pass",
     "scan_file": "data/scans/2026-11-13.json",
+    "score": null,
+    "shortlist_rank": null,
     "spread_pct": null,
     "symbol": "CALC",
     "t212_list": "data/t212/2026-11-15.json",
+    "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts)",
     "yahoo_shares_out": null
    }
   ],
+  "day": "2026-11-13",
   "summary": {
    "candidates": 12,
    "checked_in_band": 804,
@@ -41118,7 +42673,7 @@
      "pass": 5
     },
     "rule_float": {
-     "pass": 1
+     "pass": 2
     },
     "rule_gap": {
      "pass": 12
@@ -41141,6 +42696,10 @@
     "rule_t212": {
      "pass": 12
     }
+   },
+   "tiers": {
+    "A": 1,
+    "B": 1
    },
    "universe": 5467,
    "warnings": [

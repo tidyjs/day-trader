@@ -17,13 +17,26 @@
      "promo_or_pump_flag": false,
      "quality": 0
     },
+    "runs": [],
     "status": "no_news"
    },
    "BRAI": {
     "attempts": [
      {
       "input_tokens": 1405,
-      "output_tokens": 105,
+      "output_tokens": 107,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
+     {
+      "input_tokens": 1405,
+      "output_tokens": 95,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
+     {
+      "input_tokens": 1405,
+      "output_tokens": 95,
       "stop_reason": "end_turn",
       "valid": true
      }
@@ -49,7 +62,73 @@
      "promo_or_pump_flag": true,
      "quality": 1
     },
-    "status": "ok"
+    "runs": [
+     {
+      "attempts": [
+       {
+        "input_tokens": 1405,
+        "output_tokens": 107,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "promo",
+       "dilution_language": false,
+       "one_line_summary": "Braiin named presenting partner of a defence robotics and counter-UAS congress in Queensland; no financial terms disclosed.",
+       "promo_or_pump_flag": true,
+       "quality": 1
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1405,
+        "output_tokens": 95,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "promo",
+       "dilution_language": false,
+       "one_line_summary": "Braiin named presenting partner for a defence robotics and counter-UAS congress in Queensland.",
+       "promo_or_pump_flag": true,
+       "quality": 1
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1405,
+        "output_tokens": 95,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "promo",
+       "dilution_language": false,
+       "one_line_summary": "Braiin named presenting partner of a defence robotics and counter-UAS congress in Queensland.",
+       "promo_or_pump_flag": true,
+       "quality": 1
+      }
+     }
+    ],
+    "status": "ok",
+    "votes": {
+     "dilution": 0,
+     "merger_target": 0,
+     "none": 0,
+     "promo": 3,
+     "types": {
+      "promo": 3
+     },
+     "valid_runs": 3
+    }
    },
    "CABR": {
     "attempts": [],
@@ -66,6 +145,7 @@
      "promo_or_pump_flag": false,
      "quality": 0
     },
+    "runs": [],
     "status": "no_news"
    },
    "CANG": {
@@ -83,13 +163,26 @@
      "promo_or_pump_flag": false,
      "quality": 0
     },
+    "runs": [],
     "status": "no_news"
    },
    "DLPN": {
     "attempts": [
      {
       "input_tokens": 1947,
-      "output_tokens": 115,
+      "output_tokens": 119,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
+     {
+      "input_tokens": 1947,
+      "output_tokens": 116,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
+     {
+      "input_tokens": 1947,
+      "output_tokens": 114,
       "stop_reason": "end_turn",
       "valid": true
      }
@@ -103,7 +196,7 @@
      "acquisition_target": false,
      "catalyst_type": "earnings",
      "dilution_language": false,
-     "one_line_summary": "Dolphin Entertainment reported record Q3 2026 revenue of $16.0M, up 8.3%, with adjusted EPS beating estimates.",
+     "one_line_summary": "Dolphin reported record Q3 2026 revenue of $16.0M, up 8.3% YoY, with adjusted EPS of $0.08 beating estimates.",
      "promo_or_pump_flag": false,
      "quality": 4
     },
@@ -111,14 +204,92 @@
      "acquisition_target": false,
      "catalyst_type": "earnings",
      "dilution_language": false,
-     "one_line_summary": "Dolphin Entertainment reported record Q3 2026 revenue of $16.0M, up 8.3%, with adjusted EPS beating estimates.",
+     "one_line_summary": "Dolphin reported record Q3 2026 revenue of $16.0M, up 8.3% YoY, with adjusted EPS of $0.08 beating estimates.",
      "promo_or_pump_flag": false,
      "quality": 4
     },
-    "status": "ok"
+    "runs": [
+     {
+      "attempts": [
+       {
+        "input_tokens": 1947,
+        "output_tokens": 119,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "earnings",
+       "dilution_language": false,
+       "one_line_summary": "Dolphin reported record Q3 2026 revenue of $16.0M, up 8.3% YoY, with adjusted EPS of $0.08 beating estimates.",
+       "promo_or_pump_flag": false,
+       "quality": 4
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1947,
+        "output_tokens": 116,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "earnings",
+       "dilution_language": false,
+       "one_line_summary": "Dolphin reported record Q3 2026 revenue of $16.0M, up 8.3%, with adjusted EPS of $0.08 beating estimates.",
+       "promo_or_pump_flag": false,
+       "quality": 4
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1947,
+        "output_tokens": 114,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "earnings",
+       "dilution_language": false,
+       "one_line_summary": "Dolphin Entertainment reported record Q3 2026 revenue of $16.0M, up 8.3%, with return to profitability and EPS beat.",
+       "promo_or_pump_flag": false,
+       "quality": 4
+      }
+     }
+    ],
+    "status": "ok",
+    "votes": {
+     "dilution": 0,
+     "merger_target": 0,
+     "none": 0,
+     "promo": 0,
+     "types": {
+      "earnings": 3
+     },
+     "valid_runs": 3
+    }
    },
    "DPU": {
     "attempts": [
+     {
+      "input_tokens": 1426,
+      "output_tokens": 114,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
+     {
+      "input_tokens": 1426,
+      "output_tokens": 113,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
      {
       "input_tokens": 1426,
       "output_tokens": 112,
@@ -135,7 +306,7 @@
      "acquisition_target": false,
      "catalyst_type": "other",
      "dilution_language": false,
-     "one_line_summary": "Subsidiary Top Kingwin Technology to host Asia-Pacific music creation challenge on DPU Platform, November 8-18, 2026.",
+     "one_line_summary": "Subsidiary Top Kingwin Technology to host Asia-Pacific music creation challenge on DPU Platform, Nov 8-18, 2026.",
      "promo_or_pump_flag": false,
      "quality": 1
     },
@@ -143,17 +314,95 @@
      "acquisition_target": false,
      "catalyst_type": "other",
      "dilution_language": false,
-     "one_line_summary": "Subsidiary Top Kingwin Technology to host Asia-Pacific music creation challenge on DPU Platform, November 8-18, 2026.",
+     "one_line_summary": "Subsidiary Top Kingwin Technology to host Asia-Pacific music creation challenge on DPU Platform, Nov 8-18, 2026.",
      "promo_or_pump_flag": false,
      "quality": 1
     },
-    "status": "ok"
+    "runs": [
+     {
+      "attempts": [
+       {
+        "input_tokens": 1426,
+        "output_tokens": 114,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "other",
+       "dilution_language": false,
+       "one_line_summary": "Subsidiary Top Kingwin Technology to host Asia-Pacific music creation challenge on DPU Platform, Nov 8-18, 2026.",
+       "promo_or_pump_flag": false,
+       "quality": 1
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1426,
+        "output_tokens": 113,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "other",
+       "dilution_language": false,
+       "one_line_summary": "Subsidiary Top Kingwin Technology to host Asia-Pacific music creation challenge on DPU Platform Nov 8-18, 2026.",
+       "promo_or_pump_flag": false,
+       "quality": 1
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1426,
+        "output_tokens": 112,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "other",
+       "dilution_language": false,
+       "one_line_summary": "Subsidiary Top Kingwin Technology plans Asia-Pacific music creation challenge on DPU Platform, November 8-18, 2026.",
+       "promo_or_pump_flag": false,
+       "quality": 1
+      }
+     }
+    ],
+    "status": "ok",
+    "votes": {
+     "dilution": 0,
+     "merger_target": 0,
+     "none": 0,
+     "promo": 0,
+     "types": {
+      "other": 3
+     },
+     "valid_runs": 3
+    }
    },
    "GEVO": {
     "attempts": [
      {
       "input_tokens": 1798,
-      "output_tokens": 109,
+      "output_tokens": 108,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
+     {
+      "input_tokens": 1798,
+      "output_tokens": 112,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
+     {
+      "input_tokens": 1798,
+      "output_tokens": 110,
       "stop_reason": "end_turn",
       "valid": true
      }
@@ -167,19 +416,85 @@
      "acquisition_target": false,
      "catalyst_type": "earnings",
      "dilution_language": false,
-     "one_line_summary": "Gevo reported record Q3 2026 results: revenue up 94% to $83M, net income $23M, EPS $0.12 beat.",
+     "one_line_summary": "Gevo reports record Q3 2026 results: revenue about $83M, net income $23M, EPS $0.12 beating estimates.",
      "promo_or_pump_flag": false,
-     "quality": 4
+     "quality": 5
     },
     "output": {
      "acquisition_target": false,
      "catalyst_type": "earnings",
      "dilution_language": false,
-     "one_line_summary": "Gevo reported record Q3 2026 results: revenue up 94% to $83M, net income $23M, EPS $0.12 beat.",
+     "one_line_summary": "Gevo reports record Q3 2026 results: revenue about $83M, net income $23M, EPS $0.12 beating estimates.",
      "promo_or_pump_flag": false,
-     "quality": 4
+     "quality": 5
     },
-    "status": "ok"
+    "runs": [
+     {
+      "attempts": [
+       {
+        "input_tokens": 1798,
+        "output_tokens": 108,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "earnings",
+       "dilution_language": false,
+       "one_line_summary": "Gevo reports record Q3 2026 results: revenue about $83M, net income $23M, EPS $0.12 beating estimates.",
+       "promo_or_pump_flag": false,
+       "quality": 5
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1798,
+        "output_tokens": 112,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "earnings",
+       "dilution_language": false,
+       "one_line_summary": "Gevo reported record Q3 2026 results: revenue about $83M, net income $23M, adjusted EPS $0.12 beating estimates.",
+       "promo_or_pump_flag": false,
+       "quality": 5
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1798,
+        "output_tokens": 110,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "earnings",
+       "dilution_language": false,
+       "one_line_summary": "Gevo reported record Q3 2026 results: revenue up 94% to $83M, adjusted EPS $0.12 beating estimates.",
+       "promo_or_pump_flag": false,
+       "quality": 4
+      }
+     }
+    ],
+    "status": "ok",
+    "votes": {
+     "dilution": 0,
+     "merger_target": 0,
+     "none": 0,
+     "promo": 0,
+     "types": {
+      "earnings": 3
+     },
+     "valid_runs": 3
+    }
    },
    "SCLX": {
     "attempts": [],
@@ -196,13 +511,26 @@
      "promo_or_pump_flag": false,
      "quality": 0
     },
+    "runs": [],
     "status": "no_news"
    },
    "SNOA": {
     "attempts": [
      {
       "input_tokens": 1545,
-      "output_tokens": 120,
+      "output_tokens": 129,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
+     {
+      "input_tokens": 1545,
+      "output_tokens": 122,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
+     {
+      "input_tokens": 1545,
+      "output_tokens": 113,
       "stop_reason": "end_turn",
       "valid": true
      }
@@ -216,7 +544,7 @@
      "acquisition_target": false,
      "catalyst_type": "earnings",
      "dilution_language": false,
-     "one_line_summary": "Sonoma reported Q2 FY2027 results: first-ever pre-tax net income, EPS $(0.01), sales $7.174M versus $5.604M.",
+     "one_line_summary": "Sonoma Pharmaceuticals reported Q2 FY2027 results: EPS $(0.01) vs $(0.32) YoY, sales $7.17M, first pre-tax profit.",
      "promo_or_pump_flag": false,
      "quality": 4
     },
@@ -224,17 +552,95 @@
      "acquisition_target": false,
      "catalyst_type": "earnings",
      "dilution_language": false,
-     "one_line_summary": "Sonoma reported Q2 FY2027 results: first-ever pre-tax net income, EPS $(0.01), sales $7.174M versus $5.604M.",
+     "one_line_summary": "Sonoma Pharmaceuticals reported Q2 FY2027 results: EPS $(0.01) vs $(0.32) YoY, sales $7.17M, first pre-tax profit.",
      "promo_or_pump_flag": false,
      "quality": 4
     },
-    "status": "ok"
+    "runs": [
+     {
+      "attempts": [
+       {
+        "input_tokens": 1545,
+        "output_tokens": 129,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "earnings",
+       "dilution_language": false,
+       "one_line_summary": "Sonoma Pharmaceuticals reported Q2 FY2027 results: EPS $(0.01) vs $(0.32) YoY, sales $7.17M, first pre-tax profit.",
+       "promo_or_pump_flag": false,
+       "quality": 4
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1545,
+        "output_tokens": 122,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "earnings",
+       "dilution_language": false,
+       "one_line_summary": "Sonoma reported Q2 FY2027 results: EPS $(0.01) vs $(0.32) prior year, sales $7.174M, first pre-tax profit.",
+       "promo_or_pump_flag": false,
+       "quality": 4
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1545,
+        "output_tokens": 113,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "earnings",
+       "dilution_language": false,
+       "one_line_summary": "Sonoma Pharmaceuticals reported Q2 FY2027 results with first-ever pre-tax net income and sales up to $7.17M.",
+       "promo_or_pump_flag": false,
+       "quality": 4
+      }
+     }
+    ],
+    "status": "ok",
+    "votes": {
+     "dilution": 0,
+     "merger_target": 0,
+     "none": 0,
+     "promo": 0,
+     "types": {
+      "earnings": 3
+     },
+     "valid_runs": 3
+    }
    },
    "YMAT": {
     "attempts": [
      {
       "input_tokens": 1537,
-      "output_tokens": 111,
+      "output_tokens": 110,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
+     {
+      "input_tokens": 1537,
+      "output_tokens": 110,
+      "stop_reason": "end_turn",
+      "valid": true
+     },
+     {
+      "input_tokens": 1537,
+      "output_tokens": 116,
       "stop_reason": "end_turn",
       "valid": true
      }
@@ -248,7 +654,7 @@
      "acquisition_target": false,
      "catalyst_type": "other",
      "dilution_language": true,
-     "one_line_summary": "J-Star updates U.S. carbon fiber supply chain efforts; chairman converts $8.2M debt to equity, plus delegation site visit.",
+     "one_line_summary": "J-Star updates U.S. carbon fiber supply chain efforts; chairman converts $8.2M debt to equity; delegation visit planned.",
      "promo_or_pump_flag": false,
      "quality": 2
     },
@@ -256,11 +662,77 @@
      "acquisition_target": false,
      "catalyst_type": "other",
      "dilution_language": true,
-     "one_line_summary": "J-Star updates U.S. carbon fiber supply chain efforts; chairman converts $8.2M debt to equity, plus delegation site visit.",
+     "one_line_summary": "J-Star updates U.S. carbon fiber supply chain efforts; chairman converts $8.2M debt to equity; delegation visit planned.",
      "promo_or_pump_flag": false,
      "quality": 2
     },
-    "status": "ok"
+    "runs": [
+     {
+      "attempts": [
+       {
+        "input_tokens": 1537,
+        "output_tokens": 110,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "other",
+       "dilution_language": true,
+       "one_line_summary": "J-Star updates U.S. carbon fiber supply chain efforts; chairman converts $8.2M debt to equity; delegation visit planned.",
+       "promo_or_pump_flag": false,
+       "quality": 2
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1537,
+        "output_tokens": 110,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "other",
+       "dilution_language": true,
+       "one_line_summary": "J-Star updates U.S. carbon fiber supply chain efforts; chairman converts $8.2M debt to equity; delegation visit planned.",
+       "promo_or_pump_flag": false,
+       "quality": 2
+      }
+     },
+     {
+      "attempts": [
+       {
+        "input_tokens": 1537,
+        "output_tokens": 116,
+        "stop_reason": "end_turn",
+        "valid": true
+       }
+      ],
+      "output": {
+       "acquisition_target": false,
+       "catalyst_type": "other",
+       "dilution_language": true,
+       "one_line_summary": "J-Star updates U.S. carbon fiber supply chain efforts; Chairman and CEO converts $8.2M debt to equity, hosts delegation visit.",
+       "promo_or_pump_flag": false,
+       "quality": 2
+      }
+     }
+    ],
+    "status": "ok",
+    "votes": {
+     "dilution": 3,
+     "merger_target": 0,
+     "none": 0,
+     "promo": 0,
+     "types": {
+      "other": 3
+     },
+     "valid_runs": 3
+    }
    }
   },
   "data_cutoff_et": "2026-11-11T08:59:00-05:00",
@@ -27175,8 +27647,21 @@
    "ZYN": 8.58
   },
   "prior_day": "2026-11-10",
-  "quotes": {},
-  "schema": 5,
+  "quotes": {
+   "GEVO": [
+    {
+     "ap": 1.66,
+     "bp": 1.65,
+     "t": "2026-11-11T13:57:10.18365613Z"
+    },
+    {
+     "ap": 1.66,
+     "bp": 1.65,
+     "t": "2026-11-11T13:58:32.459427065Z"
+    }
+   ]
+  },
+  "schema": 6,
   "t212": {
    "as_of": "2026-11-15",
    "path": "data/t212/2026-11-15.json",
@@ -38125,7 +38610,14 @@
     "ZYN": "PTL LTD Class A Ordinary Shares"
    }
   },
-  "yahoo": {}
+  "yahoo": {
+   "GEVO": {
+    "fetched_at": "2026-11-16T02:59:16.159208-05:00",
+    "floatShares": 228348694,
+    "impliedSharesOutstanding": 247376240,
+    "sharesOutstanding": 247376240
+   }
+  }
  },
  "outputs": {
   "candidates": [
@@ -38135,19 +38627,19 @@
     "catalyst_forced_none": false,
     "catalyst_quality": 2,
     "catalyst_status": "ok",
-    "catalyst_summary": "J-Star updates U.S. carbon fiber supply chain efforts; chairman converts $8.2M debt to equity, plus delegation site visit.",
+    "catalyst_summary": "J-Star updates U.S. carbon fiber supply chain efforts; chairman converts $8.2M debt to equity; delegation visit planned.",
     "catalyst_type": "other",
     "continuation_detail": "11-06 -3.7% 0.0x; 11-09 +12.4% 1.2x; 11-10 -15.3% 0.0x",
     "data_cutoff_et": "2026-11-11T08:59:00-05:00",
     "date": "2026-11-11",
     "dq_offering": "pass",
     "dq_promo_or_no_catalyst": "pass",
-    "dq_reasons": "6-K 2026-10-30 reverse split approved or pending; 6-K 2026-10-23 reverse split approved or pending",
-    "dq_reverse_split": "fail",
+    "dq_reasons": "",
+    "dq_reverse_split": "pass",
     "edgar_shares_asof": "2026-04-30",
     "edgar_shares_out": 13953333,
     "eligible": false,
-    "evidence": "[reverse_split:disqualify] 6-K 2026-10-30 | \"(c) all fractional entitlements to the issued Consolidated Class A Ordinary Shares or Consolidated Class B Ordinary Shares resulting from such share consolidation will not be issued to the shareholders, and instead, any fractional shares that would have resulted from the share consolidation will be rounded up to the next whole number of Consolidated Class A Ordinary Share or Consolidated Class B O\" | https://www.sec.gov/Archives/edgar/data/1875016/000149315226049455/form6-k.htm || [reverse_split:disqualify] 6-K 2026-10-23 | \"All the outstanding number of shares here have not considered the share consolidation of 1-for-5 shares as approved in annual general meeting held on June 8, 2026.\" | https://www.sec.gov/Archives/edgar/data/1875016/000149315226048239/form6-k.htm",
+    "evidence": "[reverse_split:possible] 6-K 2026-10-30 no effective date | \"(c) all fractional entitlements to the issued Consolidated Class A Ordinary Shares or Consolidated Class B Ordinary Shares resulting from such share consolidation will not be issued to the shareholders, and instead, any fractional shares that would have resulted from the share consolidation will be rounded up to the next whole number of Consolidated Class A Ordinary Share or Consolidated Class B O\" | https://www.sec.gov/Archives/edgar/data/1875016/000149315226049455/form6-k.htm || [reverse_split:possible] 6-K 2026-10-23 no effective date | \"All the outstanding number of shares here have not considered the share consolidation of 1-for-5 shares as approved in annual general meeting held on June 8, 2026.\" | https://www.sec.gov/Archives/edgar/data/1875016/000149315226048239/form6-k.htm",
     "exchange": "NASDAQ",
     "float_shares": null,
     "float_source": "",
@@ -38160,6 +38652,7 @@
     "pm_bars": 299,
     "pm_dollar_volume": 20302486.4,
     "pm_high": 1.79,
+    "pm_high_last60": 1.35,
     "pm_trades": 77605,
     "pm_volume": 13977275,
     "price": 1.275,
@@ -38176,10 +38669,13 @@
     "rule_prior_range": "fail",
     "rule_t212": "fail",
     "scan_file": "data/scans/2026-11-11.json",
+    "score": null,
+    "shortlist_rank": null,
     "spread_pct": null,
     "symbol": "YMAT",
     "t212_list": "data/t212/2026-11-15.json",
-    "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); EDGAR shares outstanding stale (as of 2026-04-30); classifier: dilution language in news, no offering filing found",
+    "tier": "",
+    "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); possible reverse split: 6-K 2026-10-30 mentions one, no effective date found; possible reverse split: 6-K 2026-10-23 mentions one, no effective date found; EDGAR shares outstanding stale (as of 2026-04-30); classifier: dilution language in news, no offering filing found",
     "yahoo_shares_out": null
    },
    {
@@ -38213,6 +38709,7 @@
     "pm_bars": 231,
     "pm_dollar_volume": 1516889.22,
     "pm_high": 2.3,
+    "pm_high_last60": 2.08,
     "pm_trades": 7901,
     "pm_volume": 763320,
     "price": 2,
@@ -38229,9 +38726,12 @@
     "rule_prior_range": "fail",
     "rule_t212": "fail",
     "scan_file": "data/scans/2026-11-11.json",
+    "score": null,
+    "shortlist_rank": null,
     "spread_pct": null,
     "symbol": "BDAI",
     "t212_list": "data/t212/2026-11-15.json",
+    "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); EDGAR shares outstanding stale (as of 2022-12-31)",
     "yahoo_shares_out": null
    },
@@ -38239,9 +38739,9 @@
     "as_of_et": "2026-11-11T09:15:00-05:00",
     "catalyst_acquisition_target": false,
     "catalyst_forced_none": false,
-    "catalyst_quality": 4,
+    "catalyst_quality": 5,
     "catalyst_status": "ok",
-    "catalyst_summary": "Gevo reported record Q3 2026 results: revenue up 94% to $83M, net income $23M, EPS $0.12 beat.",
+    "catalyst_summary": "Gevo reports record Q3 2026 results: revenue about $83M, net income $23M, EPS $0.12 beating estimates.",
     "catalyst_type": "earnings",
     "continuation_detail": "11-06 +13.9% 1.0x; 11-09 +5.8% 1.0x; 11-10 -5.4% 2.5x",
     "data_cutoff_et": "2026-11-11T08:59:00-05:00",
@@ -38255,26 +38755,34 @@
     "eligible": false,
     "evidence": "",
     "exchange": "NASDAQ",
-    "float_shares": null,
-    "float_source": "",
+    "float_shares": 228348694,
+    "float_source": "yahoo",
     "gap_pct": 19.42,
     "halt_status": "halt status unknown (historical run: the feed only holds current halts)",
     "last_bar_et": "08:58",
+    "levels_status": "ok",
     "name": "Gevo, Inc. Common Stock",
     "news_dropped_roundup": 1,
     "news_used": 4,
     "pm_bars": 202,
     "pm_dollar_volume": 848230.82,
     "pm_high": 1.68,
+    "pm_high_last60": 1.67,
+    "pm_high_used": 1.67,
     "pm_trades": 2129,
     "pm_volume": 519665,
+    "position_usd_challenge": null,
+    "position_usd_measure": 50.0,
     "price": 1.66,
     "prior_close": 1.39,
     "prior_date": "2026-11-10",
     "prior_day_volume_multiple": 2.42,
     "prior_range_pos_pct": 0.0,
+    "risk_per_share": 0.05,
+    "risk_usd_challenge": null,
+    "risk_usd_measure": 1.49,
     "rule_continuation": "fail",
-    "rule_float": "",
+    "rule_float": "fail",
     "rule_gap": "pass",
     "rule_pm_dollar_volume": "pass",
     "rule_pm_trades": "pass",
@@ -38282,11 +38790,24 @@
     "rule_prior_range": "fail",
     "rule_t212": "pass",
     "scan_file": "data/scans/2026-11-11.json",
-    "spread_pct": null,
+    "score": 45.5,
+    "score_parts": "gap=0.3884 volume=0.295 catalyst=1.0 float=0.0",
+    "shares_challenge": null,
+    "shares_measure": 29.76,
+    "shortlist_rank": 1,
+    "size_note_challenge": "profile not set",
+    "size_note_measure": "capped by position limit",
+    "spread_pct": 0.6,
+    "stop": 1.63,
+    "stop_basis": "higher low 1.64 at 08:40",
+    "stop_pct": 2.98,
     "symbol": "GEVO",
     "t212_list": "data/t212/2026-11-15.json",
-    "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts)",
-    "yahoo_shares_out": null
+    "target_1_5r": 1.755,
+    "tier": "B",
+    "trigger": 1.68,
+    "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); above 50M float (228.3M, yahoo); historical run: float is today's Yahoo value",
+    "yahoo_shares_out": 247376240
    },
    {
     "as_of_et": "2026-11-11T09:15:00-05:00",
@@ -38301,7 +38822,7 @@
     "date": "2026-11-11",
     "dq_offering": "pass",
     "dq_promo_or_no_catalyst": "fail",
-    "dq_reasons": "classifier: promo/pump (Braiin named presenting partner of a defence robotics and counter-UAS congress i)",
+    "dq_reasons": "classifier: promo/pump (3/3 runs) (Braiin named presenting partner of a defence robotics and counter-UAS congress i)",
     "dq_reverse_split": "pass",
     "edgar_shares_asof": null,
     "edgar_shares_out": null,
@@ -38319,6 +38840,7 @@
     "pm_bars": 94,
     "pm_dollar_volume": 270216.24,
     "pm_high": 2,
+    "pm_high_last60": 2,
     "pm_trades": 804,
     "pm_volume": 141090,
     "price": 1.97,
@@ -38335,9 +38857,12 @@
     "rule_prior_range": "fail",
     "rule_t212": "pass",
     "scan_file": "data/scans/2026-11-11.json",
+    "score": null,
+    "shortlist_rank": null,
     "spread_pct": null,
     "symbol": "BRAI",
     "t212_list": "data/t212/2026-11-15.json",
+    "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); EDGAR shares outstanding missing",
     "yahoo_shares_out": null
    },
@@ -38372,6 +38897,7 @@
     "pm_bars": 58,
     "pm_dollar_volume": 241744.81,
     "pm_high": 1.34,
+    "pm_high_last60": 1.33,
     "pm_trades": 526,
     "pm_volume": 191369,
     "price": 1.31,
@@ -38388,9 +38914,12 @@
     "rule_prior_range": "fail",
     "rule_t212": "pass",
     "scan_file": "data/scans/2026-11-11.json",
+    "score": null,
+    "shortlist_rank": null,
     "spread_pct": null,
     "symbol": "CANG",
     "t212_list": "data/t212/2026-11-15.json",
+    "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (NYSE: feed coverage not confirmed); EDGAR shares outstanding missing",
     "yahoo_shares_out": null
    },
@@ -38400,7 +38929,7 @@
     "catalyst_forced_none": false,
     "catalyst_quality": 4,
     "catalyst_status": "ok",
-    "catalyst_summary": "Sonoma reported Q2 FY2027 results: first-ever pre-tax net income, EPS $(0.01), sales $7.174M versus $5.604M.",
+    "catalyst_summary": "Sonoma Pharmaceuticals reported Q2 FY2027 results: EPS $(0.01) vs $(0.32) YoY, sales $7.17M, first pre-tax profit.",
     "catalyst_type": "earnings",
     "continuation_detail": "11-06 +3.7% 1.1x; 11-09 +1.8% 0.7x; 11-10 +0.9% 2.4x",
     "data_cutoff_et": "2026-11-11T08:59:00-05:00",
@@ -38425,6 +38954,7 @@
     "pm_bars": 53,
     "pm_dollar_volume": 78554.71,
     "pm_high": 1.41,
+    "pm_high_last60": 1.32,
     "pm_trades": 159,
     "pm_volume": 59791,
     "price": 1.28,
@@ -38441,9 +38971,12 @@
     "rule_prior_range": "fail",
     "rule_t212": "pass",
     "scan_file": "data/scans/2026-11-11.json",
+    "score": null,
+    "shortlist_rank": null,
     "spread_pct": null,
     "symbol": "SNOA",
     "t212_list": "data/t212/2026-11-15.json",
+    "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts)",
     "yahoo_shares_out": null
    },
@@ -38453,7 +38986,7 @@
     "catalyst_forced_none": false,
     "catalyst_quality": 4,
     "catalyst_status": "ok",
-    "catalyst_summary": "Dolphin Entertainment reported record Q3 2026 revenue of $16.0M, up 8.3%, with adjusted EPS beating estimates.",
+    "catalyst_summary": "Dolphin reported record Q3 2026 revenue of $16.0M, up 8.3% YoY, with adjusted EPS of $0.08 beating estimates.",
     "catalyst_type": "earnings",
     "continuation_detail": "11-06 +3.5% 0.9x; 11-09 +5.7% 1.9x; 11-10 -6.1% 0.5x",
     "data_cutoff_et": "2026-11-11T08:59:00-05:00",
@@ -38478,6 +39011,7 @@
     "pm_bars": 8,
     "pm_dollar_volume": 3275.98,
     "pm_high": 1.1611,
+    "pm_high_last60": 1.06,
     "pm_trades": 16,
     "pm_volume": 2981,
     "price": 1.06,
@@ -38494,9 +39028,12 @@
     "rule_prior_range": "fail",
     "rule_t212": "pass",
     "scan_file": "data/scans/2026-11-11.json",
+    "score": null,
+    "shortlist_rank": null,
     "spread_pct": null,
     "symbol": "DLPN",
     "t212_list": "data/t212/2026-11-15.json",
+    "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts)",
     "yahoo_shares_out": null
    },
@@ -38506,7 +39043,7 @@
     "catalyst_forced_none": false,
     "catalyst_quality": 1,
     "catalyst_status": "ok",
-    "catalyst_summary": "Subsidiary Top Kingwin Technology to host Asia-Pacific music creation challenge on DPU Platform, November 8-18, 2026.",
+    "catalyst_summary": "Subsidiary Top Kingwin Technology to host Asia-Pacific music creation challenge on DPU Platform, Nov 8-18, 2026.",
     "catalyst_type": "other",
     "continuation_detail": "11-09 +11.3% 3.8x vol",
     "data_cutoff_et": "2026-11-11T08:59:00-05:00",
@@ -38531,6 +39068,7 @@
     "pm_bars": 3,
     "pm_dollar_volume": 1596.97,
     "pm_high": 1.5,
+    "pm_high_last60": 1.5,
     "pm_trades": 8,
     "pm_volume": 1162,
     "price": 1.5,
@@ -38547,9 +39085,12 @@
     "rule_prior_range": "fail",
     "rule_t212": "pass",
     "scan_file": "data/scans/2026-11-11.json",
+    "score": null,
+    "shortlist_rank": null,
     "spread_pct": null,
     "symbol": "DPU",
     "t212_list": "data/t212/2026-11-15.json",
+    "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts); EDGAR shares outstanding missing",
     "yahoo_shares_out": null
    },
@@ -38584,6 +39125,7 @@
     "pm_bars": 3,
     "pm_dollar_volume": 1580.06,
     "pm_high": 1.04,
+    "pm_high_last60": null,
     "pm_trades": 33,
     "pm_volume": 1659,
     "price": 1.04,
@@ -38600,9 +39142,12 @@
     "rule_prior_range": "fail",
     "rule_t212": "fail",
     "scan_file": "data/scans/2026-11-11.json",
+    "score": null,
+    "shortlist_rank": null,
     "spread_pct": null,
     "symbol": "CABR",
     "t212_list": "data/t212/2026-11-15.json",
+    "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts)",
     "yahoo_shares_out": null
    },
@@ -38637,6 +39182,7 @@
     "pm_bars": 2,
     "pm_dollar_volume": 963.94,
     "pm_high": 1.8,
+    "pm_high_last60": null,
     "pm_trades": 6,
     "pm_volume": 548,
     "price": 1.8,
@@ -38653,13 +39199,17 @@
     "rule_prior_range": "fail",
     "rule_t212": "pass",
     "scan_file": "data/scans/2026-11-11.json",
+    "score": null,
+    "shortlist_rank": null,
     "spread_pct": null,
     "symbol": "SCLX",
     "t212_list": "data/t212/2026-11-15.json",
+    "tier": "",
     "warnings": "historical run: T212 list is from 2026-11-15 (later than scan day); historical run: universe is Alpaca's asset list from 2026-11-15 (no delisted names); halt status unknown (historical run: the feed only holds current halts)",
     "yahoo_shares_out": null
    }
   ],
+  "day": "2026-11-11",
   "summary": {
    "candidates": 10,
    "checked_in_band": 783,
@@ -38677,14 +39227,15 @@
      "pass": 6
     },
     "dq_reverse_split": {
-     "fail": 1,
-     "pass": 9
+     "pass": 10
     },
     "rule_continuation": {
      "fail": 8,
      "pass": 2
     },
-    "rule_float": {},
+    "rule_float": {
+     "fail": 1
+    },
     "rule_gap": {
      "pass": 10
     },
@@ -38706,6 +39257,10 @@
      "fail": 3,
      "pass": 7
     }
+   },
+   "tiers": {
+    "A": 0,
+    "B": 1
    },
    "universe": 5467,
    "warnings": [
