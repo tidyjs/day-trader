@@ -2,44 +2,48 @@
 
 Newest first. Every message is also kept as its own file under `messages/YYYY/MM/`.
 
-## Newest: [2026-11-19_0921_shortlist.md](2026/11/2026-11-19_0921_shortlist.md)
+## Newest: [2026-11-20_0934_shortlist.md](2026/11/2026-11-20_0934_shortlist.md)
 
-### Shortlist 2026-11-19: 0 Tier A, 1 Tier B, 0 Watch
+### Shortlist 2026-11-20: 0 Tier A, 0 Tier B, 1 Watch
 
 - kind: `shortlist` (Morning shortlist)
-- time: 2026-11-19 09:21 New York (2026-11-19T09:21:05.960184-05:00)
+- time: 2026-11-20 09:34 New York (2026-11-20T09:34:40.822624-05:00)
 
 > Levels use data up to about 08:59 ET. Re-check the live premarket high at the open.
 >
 > Rules output only: names, rule results and warnings.
 
-Candidates (price and gap passed): 5 · Tier A 0 · Tier B 1 · Watch 0 · shown 1 of at most 5
+**Late start:** the workflow began after the 09:30 open; the scan still used data up to the normal cutoff.
 
-## Tier B: Tier A rules without continuation and prior range
+Candidates (price and gap passed): 4 · Tier A 0 · Tier B 0 · Watch 1 · shown 1 of at most 5
 
-### 1. GMM: Global Mofy AI Limited · score 49.2
+## Watch: liquid and on T212, but in no tier
 
-- **price** 1.9504 · **gap** 25.8% vs prior close 1.55
-- **premarket high** 2.22 full session · 2.03 in the 60 minutes to the cutoff
-- **premarket** $31,739,763 traded · 103,779 trades
-- **float** 0.6M (yahoo)
-- **catalyst** none, quality 0/5
-- **rules** price ✓ · gap ✓ · T212 ✓ · $ vol ✓ · trades ✓ · continuation ✓ · prior range ✗ · float ✓ · no offering ✓ · no pending split ✓ · catalyst ✓
-- **warnings:**
-  - EDGAR shares outstanding stale (as of 2023-09-30)
-  - Yahoo vs EDGAR shares outstanding differ 111% (54.6M vs 25.9M)
+### 1. CRVO: CervoMed Inc.
+
+> **WATCH: NO VERIFIABLE CATALYST** (and no prior-day volume surge)
+
+- **price** 1.5 · **gap** 12.8% vs prior close 1.33
+- **premarket high** 1.54 full session · 1.54 in the 60 minutes to the cutoff
+- **premarket** $231,508 traded · 458 trades
+- **float** unknown (not checked)
+- **catalyst** none, quality 0/5 (3/3 runs agree): No news items for CervoMed in the last 48 hours; only a Form 4 and an 8-K filing titled generically.
+- **rules** price ✓ · gap ✓ · T212 ✓ · $ vol ✓ · trades ✓ · continuation ✗ · prior range ✗ · float – · no offering ✓ · no pending split ✓ · catalyst ✗
+- **not tiered:** fails continuation, prior range, catalyst (no verifiable catalyst and no prior-day volume surge (0.3x))
 
 ## Not shown (first failing rule)
 
-- rule_pm_dollar_volume: MDRN, ARTL, WLDS, HTOO
+- excluded from Watch: pending reverse split: VWAV
+- rule_pm_dollar_volume: GLE, ALGS
 
 _halts feed: NYSE first seen 2026-11-16T09:36:02.551673-05:00; add NYSE to halts.confirmed_markets_
 
-Detail: `data/scans/2026-11-19.json`, `data/candidates.csv`.
+Detail: `data/scans/2026-11-20.json`, `data/candidates.csv`.
 
 
 ## Earlier
 
+- [2026-11-19_0921_shortlist.md](2026/11/2026-11-19_0921_shortlist.md): Shortlist 2026-11-19: 0 Tier A, 1 Tier B, 0 Watch
 - [2026-11-18_0939_shortlist.md](2026/11/2026-11-18_0939_shortlist.md): Shortlist 2026-11-18: 0 Tier A, 2 Tier B, 0 Watch
 - [2026-11-17_0920_shortlist.md](2026/11/2026-11-17_0920_shortlist.md): Shortlist 2026-11-17: 1 Tier A, 1 Tier B, 0 Watch
 - [2026-11-16_0936_shortlist.md](2026/11/2026-11-16_0936_shortlist.md): Shortlist 2026-11-16: 0 Tier A, 2 Tier B, 1 Watch
