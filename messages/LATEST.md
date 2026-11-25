@@ -2,12 +2,12 @@
 
 Newest first. Every message is also kept as its own file under `messages/YYYY/MM/`.
 
-## Newest: [2026-11-24_0930_shortlist.md](2026/11/2026-11-24_0930_shortlist.md)
+## Newest: [2026-11-25_0932_no_trade.md](2026/11/2026-11-25_0932_no_trade.md)
 
-### Shortlist 2026-11-24: 0 Tier A, 0 Tier B, 1 Watch
+### No names today (2026-11-25)
 
-- kind: `shortlist` (Morning shortlist)
-- time: 2026-11-24 09:30 New York (2026-11-24T09:30:23.307392-05:00)
+- kind: `no_trade` (No names today)
+- time: 2026-11-25 09:32 New York (2026-11-25T09:32:49.276124-05:00)
 
 > Levels use data up to about 08:59 ET. Re-check the live premarket high at the open.
 >
@@ -15,39 +15,23 @@ Newest first. Every message is also kept as its own file under `messages/YYYY/MM
 
 **Late start:** the workflow began after the 09:30 open; the scan still used data up to the normal cutoff.
 
-Candidates (price and gap passed): 6 · Tier A 0 · Tier B 0 · Watch 1 · shown 1 of at most 5
+Candidates (price and gap passed): 7 · Tier A 0 · Tier B 0 · Watch 0 · shown 0 of at most 5
 
-## Watch: liquid and on T212, but in no tier
-
-### 1. MSS: Maison Solutions Inc.
-
-> **WATCH: NO VERIFIABLE CATALYST** (and no prior-day volume surge)
-
-- **price** 1.38 · **gap** 15.0% vs prior close 1.2
-- **premarket high** 1.56 full session · 1.4 in the 60 minutes to the cutoff
-- **premarket** $2,773,161 traded · 11,468 trades
-- **float** unknown (not checked)
-- **catalyst** none, quality 0/5 (3/3 runs agree): No company-specific news in last 48 hours; only an 8-K filing titled current report on 2026-11-23.
-- **rules** price ✓ · gap ✓ · T212 ✓ · $ vol ✓ · trades ✓ · continuation ✓ · prior range ✗ · float – · no offering ✓ · no pending split ✓ · catalyst ✗
-- **not tiered:** fails prior range, catalyst (no verifiable catalyst and no prior-day volume surge (2.1x))
-- **warnings:**
-  - 8-K 2026-11-23 item 3.01 (listing deficiency)
-  - 8-K 2026-09-29 item 3.01 (listing deficiency)
-  - EDGAR shares outstanding stale (as of 2024-08-06)
+No name reached Tier A, Tier B or Watch today.
 
 ## Not shown (first failing rule)
 
-- excluded from Watch: offering disqualifier: YFOR, APUS
-- rule_t212: HTLM, FOXX
-- rule_pm_dollar_volume: HTCR
+- rule_t212: MEDS, DKI
+- rule_pm_dollar_volume: BJDX, ERNA, SNTG, AURE, RECT
 
 _halts feed: NYSE first seen 2026-11-16T09:36:02.551673-05:00; add NYSE to halts.confirmed_markets_
 
-Detail: `data/scans/2026-11-24.json`, `data/candidates.csv`.
+Detail: `data/scans/2026-11-25.json`, `data/candidates.csv`.
 
 
 ## Earlier
 
+- [2026-11-24_0930_shortlist.md](2026/11/2026-11-24_0930_shortlist.md): Shortlist 2026-11-24: 0 Tier A, 0 Tier B, 1 Watch
 - [2026-11-23_0941_shortlist.md](2026/11/2026-11-23_0941_shortlist.md): Shortlist 2026-11-23: 0 Tier A, 4 Tier B, 1 Watch
 - [2026-11-20_0934_shortlist.md](2026/11/2026-11-20_0934_shortlist.md): Shortlist 2026-11-20: 0 Tier A, 0 Tier B, 1 Watch
 - [2026-11-19_0921_shortlist.md](2026/11/2026-11-19_0921_shortlist.md): Shortlist 2026-11-19: 0 Tier A, 1 Tier B, 0 Watch
