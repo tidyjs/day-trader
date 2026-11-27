@@ -2,35 +2,78 @@
 
 Newest first. Every message is also kept as its own file under `messages/YYYY/MM/`.
 
-## Newest: [2026-11-25_0932_no_trade.md](2026/11/2026-11-25_0932_no_trade.md)
+## Newest: [2026-11-27_0916_shortlist.md](2026/11/2026-11-27_0916_shortlist.md)
 
-### No names today (2026-11-25)
+### Shortlist 2026-11-27: 0 Tier A, 0 Tier B, 3 Watch
 
-- kind: `no_trade` (No names today)
-- time: 2026-11-25 09:32 New York (2026-11-25T09:32:49.276124-05:00)
+- kind: `shortlist` (Morning shortlist)
+- time: 2026-11-27 09:16 New York (2026-11-27T09:16:54.813040-05:00)
 
 > Levels use data up to about 08:59 ET. Re-check the live premarket high at the open.
 >
 > Rules output only: names, rule results and warnings.
 
-**Late start:** the workflow began after the 09:30 open; the scan still used data up to the normal cutoff.
+Candidates (price and gap passed): 12 · Tier A 0 · Tier B 0 · Watch 3 · shown 3 of at most 5
 
-Candidates (price and gap passed): 7 · Tier A 0 · Tier B 0 · Watch 0 · shown 0 of at most 5
+## Watch: liquid and on T212, but in no tier
 
-No name reached Tier A, Tier B or Watch today.
+### 1. BENF: Beneficient
+
+> **WATCH: NO VERIFIABLE CATALYST** (and no prior-day volume surge)
+
+- **price** 1.05 · **gap** 16.7% vs prior close 0.8998
+- **premarket high** 1.14 full session · 1.14 in the 60 minutes to the cutoff
+- **premarket** $4,037,736 traded · 11,658 trades
+- **float** unknown (not checked)
+- **catalyst** none, quality 0/5 (3/3 runs agree): No news items about Beneficient in the last 48 hours; only Form 4, Form 3 and one 8-K filing titles.
+- **rules** price ✓ · gap ✓ · T212 ✓ · $ vol ✓ · trades ✓ · continuation ✓ · prior range ✗ · float – · no offering ✓ · no pending split ✓ · catalyst ✗
+- **not tiered:** fails prior range, catalyst (no verifiable catalyst and no prior-day volume surge (0.7x))
+- **warnings:**
+  - 8-K 2026-11-12 item 3.01 (listing deficiency)
+  - EDGAR shares outstanding missing
+
+### 2. XCUR: Exicure, Inc.
+
+> **WATCH: NO VERIFIABLE CATALYST** (and no prior-day volume surge)
+
+- **price** 1.15 · **gap** 18.6% vs prior close 0.9699
+- **premarket high** 1.2399 full session · 1.2399 in the 60 minutes to the cutoff
+- **premarket** $185,580 traded · 797 trades
+- **float** unknown (not checked)
+- **catalyst** none, quality 0/5
+- **rules** price ✓ · gap ✓ · T212 ✓ · $ vol ✓ · trades ✓ · continuation ✗ · prior range ✗ · float – · no offering ✓ · no pending split ✓ · catalyst ✗
+- **not tiered:** fails continuation, prior range, catalyst (no verifiable catalyst and no prior-day volume surge (0.3x))
+- **warnings:**
+  - 8-K 2026-09-16 item 3.01 (listing deficiency)
+
+### 3. XLAB: Exascale Labs Holdings Inc.
+
+> **WATCH: NO VERIFIABLE CATALYST** (and no prior-day volume surge)
+
+- **price** 1.69 · **gap** 10.5% vs prior close 1.53
+- **premarket high** 1.72 full session · 1.69 in the 60 minutes to the cutoff
+- **premarket** $103,995 traded · 151 trades
+- **float** unknown (not checked)
+- **catalyst** none, quality 0/5
+- **rules** price ✓ · gap ✓ · T212 ✓ · $ vol ✓ · trades ✓ · continuation ✗ · prior range ✗ · float – · no offering ✓ · no pending split ✓ · catalyst ✗
+- **not tiered:** fails continuation, prior range, catalyst (no verifiable catalyst and no prior-day volume surge (0.2x))
+- **warnings:**
+  - 8-K 2026-09-02 item 3.01 (listing deficiency)
+  - EDGAR shares outstanding missing
 
 ## Not shown (first failing rule)
 
-- rule_t212: MEDS, DKI
-- rule_pm_dollar_volume: BJDX, ERNA, SNTG, AURE, RECT
+- rule_t212: MEDS
+- rule_pm_dollar_volume: RCT, WXM, ORIO, ATPC, XGPU, DRIO, BMRA, ORKT
 
 _halts feed: NYSE first seen 2026-11-16T09:36:02.551673-05:00; add NYSE to halts.confirmed_markets_
 
-Detail: `data/scans/2026-11-25.json`, `data/candidates.csv`.
+Detail: `data/scans/2026-11-27.json`, `data/candidates.csv`.
 
 
 ## Earlier
 
+- [2026-11-25_0932_no_trade.md](2026/11/2026-11-25_0932_no_trade.md): No names today (2026-11-25)
 - [2026-11-24_0930_shortlist.md](2026/11/2026-11-24_0930_shortlist.md): Shortlist 2026-11-24: 0 Tier A, 0 Tier B, 1 Watch
 - [2026-11-23_0941_shortlist.md](2026/11/2026-11-23_0941_shortlist.md): Shortlist 2026-11-23: 0 Tier A, 4 Tier B, 1 Watch
 - [2026-11-20_0934_shortlist.md](2026/11/2026-11-20_0934_shortlist.md): Shortlist 2026-11-20: 0 Tier A, 0 Tier B, 1 Watch
